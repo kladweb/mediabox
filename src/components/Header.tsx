@@ -15,7 +15,8 @@ import MenuItem from '@mui/material/MenuItem';
 import { createTheme, ThemeProvider } from "@mui/material";
 import { useTranslation } from "react-i18next";
 
-import './Header.scss';
+import { appColors } from "../services/appColors";
+import './header.scss';
 
 // const pages = ['Products', 'Pricing', 'Blog'];
 // const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -25,7 +26,7 @@ function Header() {
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
   const {t, i18n} = useTranslation();
   const pages: string[] = [`${t('menu1')}`, 'Pricing', 'Blog'];
-  const navigation: string[] = ['operator', 'menu2', 'menu3'];
+  const navigation: string[] = ['choose', 'menu2', 'menu3'];
   const locales = {
     en: {title: 'English'},
     ru: {title: 'Русский'},
@@ -71,7 +72,7 @@ function Header() {
       position="fixed"
       // color="secondary"
       sx={{
-        backgroundColor: "#27061c",
+        backgroundColor: appColors.dark2,
       }}
     >
       <Container maxWidth="xl">
@@ -79,7 +80,7 @@ function Header() {
           <Typography
             variant="h5"
             noWrap
-            component="a"
+            component="div"
             // href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
@@ -88,11 +89,11 @@ function Header() {
               fontWeight: 700,
               letterSpacing: '.3rem',
               textDecoration: 'none',
-              color: '#f4c951',
+              color: appColors.mid2,
               cursor: 'default'
             }}
           >
-            <NavLink to={'/'} key={0} className='navPages-links navPages-links-first'>
+            <NavLink id="RouterNavLink" to={'/'} key={0} className='navPages-links navPages-links-first'>
               IPTV-BOX
             </NavLink>
           </Typography>
@@ -100,7 +101,7 @@ function Header() {
             sx={{
               flexGrow: 1,
               display: {xs: 'flex', md: 'none'},
-              color: 'yellow',
+              color: appColors.light1,
             }}
           >
             <IconButton
@@ -108,8 +109,8 @@ function Header() {
               aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
+              color='inherit'
               onClick={handleOpenNavMenu}
-              color="inherit"
             >
               <MenuIcon/>
             </IconButton>
@@ -148,7 +149,7 @@ function Header() {
           <Typography
             variant="h5"
             noWrap
-            component="a"
+            component="div"
             // href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
@@ -157,7 +158,7 @@ function Header() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
+              color: appColors.mid2,
               textDecoration: 'none',
             }}
           >
@@ -172,21 +173,22 @@ function Header() {
                 key={index}
                 className={`navPages-links navPages-links-${navigation[index]}`}
               >
-                <Button
+                <Box
                   key={page}
                   // onClick={handleCloseNavMenu}
                   sx={{
-                    my: 2,
-                    color: '#efedf5',
+                    m: 2,
+                    color: appColors.light1,
                     display: 'block',
+                    textTransform: 'uppercase',
                     ':hover': {
-                      color: '#f4c951',
+                      color: appColors.mid2,
                       // color: '#84285b',
                     },
                   }}
                 >
                   {page}
-                </Button>
+                </Box>
               </NavLink>
             ))}
           </Box>
@@ -195,10 +197,10 @@ function Header() {
               onClick={handleOpenUserMenu}
               sx={{
                 my: 2,
-                color: '#efedf5',
+                color: appColors.light1,
                 display: 'block',
                 ':hover': {
-                  color: '#f4c951',
+                  color: appColors.mid2,
                   // color: '#84285b',
                 },
               }}
