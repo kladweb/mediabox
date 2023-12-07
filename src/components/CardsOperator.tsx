@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
 import { Box } from '@mui/material';
-import { appColors } from "../services/appColors";
 import { useTranslation } from "react-i18next";
 import CardOperator from "./CardOperator";
+import { appColors } from "../services/appColors";
 
 import { operators } from "../data/operators";
 import './cards.scss';
