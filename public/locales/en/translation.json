@@ -1,4 +1,9 @@
 {
   "lang": "EN",
-  "menu1": "Choose operator"
+  "menu1": "Choose service",
+  "headDevice": "Select your device receiving the content",
+  "headOperator": "Select an IPTV service",
+  "android": "ANDROID TV BOX",
+  "smartTv": "TV with SMART-TV function (without TV BOX)",
+  "whichChooseOperator": "Which service should I choose?"
 }

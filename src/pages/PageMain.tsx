@@ -1,8 +1,14 @@
+import { Container, Toolbar } from "@mui/material";
+import CardsDevice from "../components/CardsDevice";
+
+
 function PageMain() {
   return (
-    <div>
-      Главная страница
-    </div>
+    <Container maxWidth="xl">
+      <Toolbar disableGutters sx={{flexWrap: 'wrap'}}>
+        <CardsDevice/>
+      </Toolbar>
+    </Container>
   )
 }
 

@@ -1,17 +1,23 @@
 import React, { Suspense } from 'react';
 import { BrowserRouter } from "react-router-dom";
-import { useTranslation } from 'react-i18next';
+import { Box } from '@mui/material'
 
 import Header from "./Header";
 import { PagesRouter } from "../routes/PagesRouter";
-import './App.css';
+import { appColors } from "../services/appColors";
 
 function App(): JSX.Element {
   return (
     <BrowserRouter>
       <Suspense fallback='...loading'>
         <Header/>
-        <PagesRouter/>
+        <Box
+          sx={{
+            minHeight: '100vh',
+            backgroundColor: appColors.mid1,
+          }}>
+          <PagesRouter/>
+        </Box>
       </Suspense>
     </BrowserRouter>
   );
