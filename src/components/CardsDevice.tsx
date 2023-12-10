@@ -4,7 +4,7 @@ import { appColors } from "../services/appColors";
 import { useTranslation } from "react-i18next";
 import CardDevice from "./CardDevice";
 
-import { devices } from "../data/devices";
+import { devices } from "../data/dataIPTV";
 import './cards.scss';
 
 function CardsDevice() {
