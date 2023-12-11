@@ -4,7 +4,7 @@ import { appColors } from "../services/appColors";
 import { useTranslation } from "react-i18next";
 import CardDevice from "./CardDevice";
 
-import { devices } from "../data/devices";
+import { devices } from "../data/dataIPTV";
 import './cards.scss';
 
 function CardsDevice() {
@@ -33,8 +33,9 @@ function CardsDevice() {
       }}
       >
         {
-          devices.map((device: string) =>
-            <NavLink key={device} to={`/${device}`} className='nav-cards'>
+          devices.map((device: string, i: number) =>
+            <NavLink key={i} to={device.toLowerCase()} className='nav-cards'>
+              {/*<NavLink key={device} to={'player'} className='nav-cards'>*/}
               <CardDevice device={device}/>
             </NavLink>
           )

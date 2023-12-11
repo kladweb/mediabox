@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Card, CardContent, CardMedia, Typography, CardActionArea } from '@mui/material';
 import { appColors } from "../services/appColors";
 import { useTranslation } from "react-i18next";
+import { operators } from "../data/dataIPTV";
 
 
 type Props = {
@@ -36,7 +37,7 @@ export default function CardOperator({operator}: Props): JSX.Element {
           <Typography gutterBottom variant="h6" component="div"
                       sx={{fontSize: '1.45em', lineHeight: '1.25em'}}
           >
-            {t(operator)}
+            {operators[operator as keyof (typeof operators)]['name']}
           </Typography>
         </CardContent>
       </CardActionArea>

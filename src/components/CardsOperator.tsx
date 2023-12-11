@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import CardOperator from "./CardOperator";
 import { appColors } from "../services/appColors";
 
-import { operators } from "../data/operators";
+import { operators } from "../data/dataIPTV";
 import './cards.scss';
 
 function CardsOperator() {
@@ -32,25 +32,36 @@ function CardsOperator() {
       }}
       >
         {
-          operators.map((operator: string) =>
-            <NavLink key={operator} to={`${operator.toLowerCase()}`} className='nav-cards'>
+          Object.keys(operators).map((operator, i) => (
+            <NavLink
+              key={i}
+              // key={operators[operator as keyof (typeof operators)]['name']}
+              // to={'/device'}
+              to={operator.toLowerCase()}
+              className='nav-cards'
+            >
               <CardOperator operator={operator}/>
             </NavLink>
-          )
+          ))
+          // operators.map((operator: string) =>
+          //   <NavLink key={operator} to={`${operator.toLowerCase()}`} className='nav-cards'>
+          //     <CardOperator operator={operator}/>
+          //   </NavLink>
+          // )
         }
       </Box>
       <Box
         component='h3'
         sx={{
-          m: '0.5em auto 1em',
+          m: '0.5em auto 2em',
           width: '100%',
           fontSize: '1.5em',
           fontWeight: '400',
           color: appColors.light1,
-          textAlign: 'center',
+          textAlign: 'center'
         }}
       >
-        <NavLink to={'/choose'} className='nav-cards'>
+        <NavLink to={'/choose'} className='nav-cards nav-link'>
           {t('whichChooseOperator')}
         </NavLink>
       </Box>
