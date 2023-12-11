@@ -32,10 +32,12 @@ function CardsOperator() {
       }}
       >
         {
-          Object.keys(operators).map((operator) => (
+          Object.keys(operators).map((operator, i) => (
             <NavLink
-              key={operators[operator as keyof (typeof operators)]['name']}
-              to={`${operator.toLowerCase()}`}
+              key={i}
+              // key={operators[operator as keyof (typeof operators)]['name']}
+              // to={'/device'}
+              to={operator.toLowerCase()}
               className='nav-cards'
             >
               <CardOperator operator={operator}/>

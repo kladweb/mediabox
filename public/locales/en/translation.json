@@ -2,6 +2,8 @@
     "lang": "EN",
     "back": "BACK",
     "menu1": "IPTV services",
+    "mainText1": "Before you go to the IPTV setup instructions page, we will ask you to specify what kind of IPTV and on what equipment do you want to watch it? And we will tell you how to set it all up! So, let's go!",
+    "mainButton": "Step-by-step manual for setup IPTV on your device",
     "headDevice": "Select your device receiving the content",
     "headOperator": "Select an IPTV service",
     "android": "ANDROID TV BOX",
