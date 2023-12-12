@@ -7,7 +7,7 @@ import CardDevice from "./CardDevice";
 import { devices } from "../data/dataIPTV";
 import './cards.scss';
 
-function CardsDevice() {
+function CardsDevices() {
   const {t} = useTranslation();
   return (
     <>
@@ -45,4 +45,4 @@ function CardsDevice() {
   )
 }
 
-export default CardsDevice;
+export default CardsDevices;
