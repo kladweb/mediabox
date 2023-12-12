@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { Container, Toolbar } from "@mui/material";
-import CardsDevice from "../components/CardsDevice";
+import CardsDevices from "../components/CardsDevices";
 import { operators } from "../data/dataIPTV";
 
 function PageDevices() {
@@ -17,7 +17,7 @@ function PageDevices() {
   return (
     <Container maxWidth="xl">
       <Toolbar disableGutters sx={{flexWrap: 'wrap'}}>
-        <CardsDevice/>
+        <CardsDevices/>
       </Toolbar>
     </Container>
   )

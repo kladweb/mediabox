@@ -1,4 +1,21 @@
-export const devices: string[] = ['android', 'smartTv'];
+export const devices: string[] = ['android', 'smarttv'];
+
+export const players = {
+  android: [
+    'OTT Navigator',
+    'OTT-play FOSS',
+    'Ott-Play by Alex',
+    'Televizo',
+    'OttPlayer',
+  ],
+  smarttv: [
+    'OTT Navigator',
+    'OTT-play FOSS',
+    'Ott-Play by Alex',
+    'Televizo',
+    'OttPlayer',
+  ],
+};
 
 export const operators: object = {
   ilooktv: {
@@ -52,6 +69,7 @@ export const operators: object = {
     ]
   }
 }
+
 
 // export const operators: string[] = [
 //   'ILookTv',

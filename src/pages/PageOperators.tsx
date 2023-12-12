@@ -1,16 +1,14 @@
 import { Container, Toolbar } from "@mui/material";
-import CardsDevices from "../components/CardsDevices";
-import MainInfo from "../components/MainInfo";
+import CardsOperators from "../components/CardsOperators";
 
-
-function PageMain() {
+function PageOperators() {
   return (
     <Container maxWidth="xl">
       <Toolbar disableGutters sx={{flexWrap: 'wrap'}}>
-        <MainInfo/>
+        <CardsOperators/>
       </Toolbar>
     </Container>
   )
 }
 
-export default PageMain;
+export default PageOperators;

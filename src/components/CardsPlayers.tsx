@@ -1,14 +1,18 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import { Box } from '@mui/material';
 import { useTranslation } from "react-i18next";
 import CardOperator from "./CardOperator";
 import { appColors } from "../services/appColors";
 
-import { operators } from "../data/dataIPTV";
+import { players } from "../data/dataIPTV";
 import './cards.scss';
+import CardPlayer from "./CardPlayer";
 
-function CardsOperator() {
+function CardsPlayers() {
   const {t} = useTranslation();
+  const params = useParams();
+  const device = params.device;
+
   return (
     <>
       <Box
@@ -32,22 +36,17 @@ function CardsOperator() {
       }}
       >
         {
-          Object.keys(operators).map((operator, i) => (
+          players[device as keyof (typeof players)].map((player, i) => (
             <NavLink
               key={i}
               // key={operators[operator as keyof (typeof operators)]['name']}
               // to={'/device'}
-              to={operator.toLowerCase()}
+              to={player.toLowerCase()}
               className='nav-cards'
             >
-              <CardOperator operator={operator}/>
+              <CardPlayer player={player}/>
             </NavLink>
           ))
-          // operators.map((operator: string) =>
-          //   <NavLink key={operator} to={`${operator.toLowerCase()}`} className='nav-cards'>
-          //     <CardOperator operator={operator}/>
-          //   </NavLink>
-          // )
         }
       </Box>
       <Box
@@ -58,7 +57,12 @@ function CardsOperator() {
           fontSize: '1.5em',
           fontWeight: '400',
           color: appColors.light1,
-          textAlign: 'center'
+          textAlign: 'center',
+          transition: '0.2s',
+          ':hover': {
+            color: appColors.mid2,
+            transition: '0.1s'
+          }
         }}
       >
         <NavLink to={'/choose'} className='nav-cards nav-link'>
@@ -69,4 +73,4 @@ function CardsOperator() {
   )
 }
 
-export default CardsOperator;
+export default CardsPlayers;
