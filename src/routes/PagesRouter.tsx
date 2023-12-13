@@ -14,7 +14,8 @@ export const PagesRouter = () => {
       <Route path='/' element={<PageMain/>}/>
       <Route path='/operators' element={<PageOperators/>}/>
       <Route path='/operators/:operator' element={<PageDevices/>}/>
-      <Route path='/operators/:operator/:device' element={<PagePlayers/>}/>
+      <Route path='/operators/:operator/:devices' element={<PageDevices/>}/>
+      <Route path='/operators/:operator/:devices/:device' element={<PagePlayers/>}/>
 
       <Route path='/choose' element={<PageChoosingOperator/>}/>
       <Route path='*' element={<Navigate to='/'/>}/>
