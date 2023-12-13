@@ -1,4 +1,9 @@
-export const devices: string[] = ['android', 'smarttv'];
+// export const devices: string[] = ['android', 'smarttv'];
+
+export const devices = {
+  boxes: ['Android TV Box', 'Apple TV'],
+  smarttv: ['LG Smart TV', 'SAMSUNG Smart TV', 'Android TV']
+}
 
 export const players = {
   android: [

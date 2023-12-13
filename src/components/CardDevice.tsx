@@ -4,10 +4,10 @@ import { appColors } from "../services/appColors";
 import { useTranslation } from "react-i18next";
 
 
-type Props = {
+type IProps = {
   device: string
 }
-export default function CardDevice({device}: Props): JSX.Element {
+export default function CardDevice({device}: IProps): JSX.Element {
   const {t} = useTranslation();
 
   return (
