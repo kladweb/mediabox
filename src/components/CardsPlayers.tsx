@@ -36,17 +36,17 @@ function CardsPlayers() {
       }}
       >
         {
-          players[device as keyof (typeof players)].map((player, i) => (
+          players[device as keyof (typeof players)].map((player, i) =>
             <NavLink
               key={i}
               // key={operators[operator as keyof (typeof operators)]['name']}
               // to={'/device'}
-              to={player.toLowerCase()}
+              to={player.replace(/[-\s]/g, '').toLowerCase()}
               className='nav-cards'
             >
               <CardPlayer player={player}/>
             </NavLink>
-          ))
+          )
         }
       </Box>
       <Box

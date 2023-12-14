@@ -28,7 +28,7 @@ export default function CardOperator({operator}: Props): JSX.Element {
         <CardMedia
           component="img"
           height="100"
-          image={`/img/${operator.toLowerCase()}.png`}
+          image={`/img/operators/${operator.toLowerCase()}.png`}
           // image="/img/android.png"
           alt="green iguana"
           sx={{margin: "1em 0", objectFit: "contain"}}

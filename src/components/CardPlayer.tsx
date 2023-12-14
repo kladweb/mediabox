@@ -2,17 +2,12 @@ import * as React from 'react';
 import { Card, CardContent, CardMedia, Typography, CardActionArea } from '@mui/material';
 import { appColors } from "../services/appColors";
 import { useTranslation } from "react-i18next";
-import { operators } from "../data/dataIPTV";
-import { log } from "util";
-
 
 type Props = {
   player: string
 }
 export default function CardPlayer({player}: Props): JSX.Element {
   const {t} = useTranslation();
-
-  console.log(player.replace(/[-\s]/g, '').toLowerCase());
 
   return (
     <Card sx={{
