@@ -6,14 +6,35 @@ export const devices = {
 }
 
 export const players = {
-  android: [
+  androidtvbox: [
     'OTT Navigator',
     'OTT-play FOSS',
     'Ott-Play by Alex',
     'Televizo',
     'OttPlayer',
   ],
-  smarttv: [
+  appletv: [
+    'Televizo',
+    'OTT Navigator',
+    'OTT-play FOSS',
+    'Ott-Play by Alex',
+    'OttPlayer',
+  ],
+  lgsmarttv: [
+    'OTT Navigator',
+    'OTT-play FOSS',
+    'Ott-Play by Alex',
+    'Televizo',
+    'OttPlayer',
+  ],
+  samsungsmarttv: [
+    'OTT Navigator',
+    'OTT-play FOSS',
+    'Ott-Play by Alex',
+    'Televizo',
+    'OttPlayer',
+  ],
+  androidtv: [
     'OTT Navigator',
     'OTT-play FOSS',
     'Ott-Play by Alex',

@@ -27,7 +27,7 @@ export default function CardDevice({device}: IProps): JSX.Element {
         <CardMedia
           component="img"
           height="140"
-          image={`/img/${device}.png`}
+          image={`/img/devices/${device}.png`}
           // image="/img/android.png"
           alt="green iguana"
           sx={{margin: "1em 0", objectFit: "contain"}}

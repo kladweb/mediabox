@@ -3,7 +3,7 @@ import CardsPlayers from "../components/CardsPlayers";
 
 function PageOperators() {
   return (
-    <Container maxWidth="xl">
+    <Container maxWidth="xl" >
       <Toolbar disableGutters sx={{flexWrap: 'wrap'}}>
         <CardsPlayers/>
       </Toolbar>

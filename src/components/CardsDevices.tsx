@@ -11,7 +11,6 @@ function CardsDevices() {
   const {t} = useTranslation();
   const params = useParams();
   const devicesPage = params.devices;
-  console.log(devicesPage);
 
   return (
     <>
@@ -51,11 +50,15 @@ function CardsDevices() {
             :
             <>
               {
-                devices[devicesPage as keyof (typeof devices)].map((device: string, i: number) =>
-                  <NavLink key={i} to={device.toLowerCase()} className='nav-cards'>
-                    {/*<NavLink key={device} to={'player'} className='nav-cards'>*/}
-                    <CardDevice device={device}/>
-                  </NavLink>
+                devices[devicesPage as keyof (typeof devices)].map((device: string, i: number) => {
+                    device = device.replace(/[\s]/g, '').toLowerCase();
+                    return (
+                      <NavLink key={i} to={device.toLowerCase()} className='nav-cards'>
+                        {/*<NavLink key={device} to={'player'} className='nav-cards'>*/}
+                        <CardDevice device={device}/>
+                      </NavLink>
+                    );
+                  }
                 )
               }
             </>

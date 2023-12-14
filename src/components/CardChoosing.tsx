@@ -33,7 +33,7 @@ export default function CardChoosing({operator}: Props): JSX.Element {
       <CardMedia
         component="img"
         height="100"
-        image={`/img/${operator.toLowerCase()}.png`}
+        image={`/img/operators/${operator.toLowerCase()}.png`}
         alt="green iguana"
         sx={{margin: "1em 0 -1em", objectFit: "contain"}}
       />
