@@ -49,6 +49,10 @@ function MainInfo() {
             boxShadow: `4px 4px 10px ${appColors.dark2}`,
             transition: '0.3s'
           },
+          ':active': {
+            transform: 'translate(0, 0)',
+            boxShadow: `2px 2px 2px ${appColors.dark2}`
+          },
         }}
         onClick={handlerChoosePage}
       >

@@ -3,7 +3,12 @@ import { useParams } from "react-router-dom";
 import { Box } from '@mui/material';
 import { appColors } from "../../services/appColors";
 import { useTranslation } from "react-i18next";
-import Ilooktv from "./Ilooktv";
+import IlookRegistration from "./IlookRegistration";
+import IlookBuy from "./IlookBuy";
+import IlookPlaylist from "./IlookPlaylist";
+import TelevizoDownload from "./TelevizoDownload";
+import AndroidTvBoxTransferl from "./AndroidTvBoxTransferl";
+import TelevizoInstall from "./TelevizoInstall";
 
 function Manuals() {
   const {t} = useTranslation();
@@ -33,10 +38,14 @@ function Manuals() {
       >
         {t('headManual')}
       </Box>
-      <Ilooktv/>
+      <IlookRegistration/>
+      <IlookBuy/>
+      <IlookPlaylist/>
+      <TelevizoDownload/>
+      <AndroidTvBoxTransferl/>
+      <TelevizoInstall/>
     </>
-  )
-    ;
+  );
 }
 
 export default Manuals;
