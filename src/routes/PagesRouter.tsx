@@ -6,6 +6,7 @@ import PageChoosingOperator from "../pages/PageChoosingOperator";
 import PageManual from "../pages/PageManual";
 import PageMain from "../pages/PageMain";
 import PagePlayers from "../pages/PagePlayers";
+import Blank from "../components/Blank";
 
 export const PagesRouter = () => {
   return (
@@ -18,6 +19,7 @@ export const PagesRouter = () => {
       <Route path='/operators/:operator/:devices/:device/:player' element={<PageManual/>}/>
 
       <Route path='/choose' element={<PageChoosingOperator/>}/>
+      <Route path='/blank' element={<Blank/>}/>
       <Route path='*' element={<Navigate to='/'/>}/>
     </Routes>
   );
