@@ -30,6 +30,7 @@ function AndroidTvBoxTransferl() {
       <CardContent sx={sxManualText1}>{t('androidtvbox_manual2-4')}</CardContent>
       <CardContent sx={sxManualText1}>{t('androidtvbox_manual2-5')}</CardContent>
       <ImageManual image={`androidtvbox_manual5.jpg`}/>
+      <CardContent sx={sxManualText1}>{t('androidtvbox_manual2-6')}</CardContent>
     </Card>
   );
 }
