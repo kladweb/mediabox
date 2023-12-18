@@ -44,6 +44,7 @@ function TelevizoInstall() {
       <ImageManual image={`televizo_manual10.jpg`}/>
       <CardContent sx={sxManualText1}>{t('televizo_manual2-8')}</CardContent>
       <ImageManual image={`televizo_manual11.jpg`}/>
+      <CardContent sx={sxManualText1}>{t('televizo_manual2-9')}</CardContent>
     </Card>
   );
 }
