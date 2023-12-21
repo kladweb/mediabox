@@ -1,4 +1,4 @@
-import { NavLink, useParams } from "react-router-dom";
+import { NavLink, useNavigate, useParams } from "react-router-dom";
 import { Box } from '@mui/material';
 import { useTranslation } from "react-i18next";
 import CardOperator from "./CardOperator";
@@ -7,12 +7,22 @@ import { appColors } from "../services/appColors";
 import { players } from "../data/dataIPTV";
 import './cards.scss';
 import CardPlayer from "./CardPlayer";
+import { useEffect } from "react";
 
 function CardsPlayers() {
+  const navigate = useNavigate();
+  const deviceNames = Object.keys(players);
   const {t} = useTranslation();
   const params = useParams();
   const device = params.device;
 
+  useEffect(() => {
+    if (device && !(deviceNames.includes(device))) {
+      navigate('/');
+    }
+  }, []);
+
+  console.log(device);
   return (
     <>
       <Box
@@ -36,18 +46,24 @@ function CardsPlayers() {
       }}
       >
         {
-          players[device as keyof (typeof players)].map((player, i) =>
-            <NavLink
-              key={i}
-              // key={operators[operator as keyof (typeof operators)]['name']}
-              // to={'/device'}
-              to={player.replace(/[-\s]/g, '').toLowerCase()}
-              className='nav-cards'
-            >
-              <CardPlayer player={player}/>
-            </NavLink>
-          )
+          (device && deviceNames.includes(device)) &&
+          <>
+            {
+              players[device as keyof (typeof players)].map((player, i) =>
+                <NavLink
+                  key={i}
+                  // key={operators[operator as keyof (typeof operators)]['name']}
+                  // to={'/device'}
+                  to={player.replace(/[-\s]/g, '').toLowerCase()}
+                  className='nav-cards'
+                >
+                  <CardPlayer player={player}/>
+                </NavLink>
+              )
+            }
+          </>
         }
+
       </Box>
       <Box
         component='h3'

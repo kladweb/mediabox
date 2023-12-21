@@ -7,7 +7,11 @@ import ImageManual from "./ImageManual";
 import { operators } from "../../data/dataIPTV";
 import { sxManualText1, sxCardMain, sxHeadMain } from "./sxsManuals";
 
-function IlookBuy() {
+type Props = {
+  step: number;
+}
+
+function IlookBuy({step}: Props) {
   const {t} = useTranslation();
   const params = useParams();
   const operator = params.operator;
@@ -18,7 +22,7 @@ function IlookBuy() {
       sx={sxCardMain}
     >
       <Box component='h4' sx={sxHeadMain}>
-        {t('step')}2{t('step2')}
+        {t('step')}{step}{t('step-IlookBuy')}
       </Box>
       <CardContent sx={sxManualText1}>{t('ilooktv_manual2-1')}</CardContent>
       <ImageManual image={`${operator}_manual3.jpg`}/>

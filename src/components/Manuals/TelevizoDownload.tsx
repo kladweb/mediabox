@@ -7,7 +7,11 @@ import ImageManual from "./ImageManual";
 import { operators } from "../../data/dataIPTV";
 import { sxManualText1, sxCardMain, sxHeadMain, sxLinksRegistration } from "./sxsManuals";
 
-function TelevizoDownload() {
+type Props = {
+  step: number;
+}
+
+function TelevizoDownload({step}: Props) {
   const {t} = useTranslation();
   const params = useParams();
   const operator = params.operator;
@@ -23,7 +27,7 @@ function TelevizoDownload() {
       sx={sxCardMain}
     >
       <Box component='h4' sx={sxHeadMain}>
-        {t('step')}4{t('step4')}
+        {t('step')}{step}{t('step-TelevizoDownload')}
       </Box>
       <CardContent sx={sxManualText1}>{t('televizo_manual1-1')}</CardContent>
       {

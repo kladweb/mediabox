@@ -7,7 +7,11 @@ import ImageManual from "./ImageManual";
 import { operators } from "../../data/dataIPTV";
 import { sxManualText1, sxCardMain, sxHeadMain, sxLinksRegistration } from "./sxsManuals";
 
-function IlookRegistration() {
+type Props = {
+  step: number;
+}
+
+function IlookRegistration({step}: Props) {
   const {t} = useTranslation();
   const params = useParams();
   const operator = params.operator;
@@ -19,7 +23,7 @@ function IlookRegistration() {
       sx={sxCardMain}
     >
       <Box component='h4' sx={sxHeadMain}>
-        {t('step')}1{t('step1')}
+        {t('step')}{step}{t('step-IlookRegistration')}
       </Box>
       <CardContent sx={sxManualText1}>{t('ilooktv_manual1-1')}
       </CardContent>

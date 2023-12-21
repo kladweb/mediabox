@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Box } from '@mui/material';
 import { appColors } from "../../services/appColors";
 import { useTranslation } from "react-i18next";
@@ -9,19 +8,61 @@ import IlookPlaylist from "./IlookPlaylist";
 import TelevizoDownload from "./TelevizoDownload";
 import AndroidTvBoxTransferl from "./AndroidTvBoxTransferl";
 import TelevizoInstall from "./TelevizoInstall";
+import { useEffect } from "react";
+import { playersAll } from "../../data/dataIPTV";
 
 function Manuals() {
+  const navigate = useNavigate();
   const {t} = useTranslation();
   const params = useParams();
-
   const operator = params.operator;
   const device = params.device;
   const player = params.player;
+  const stepManuals: JSX.Element[] = [];
 
+  useEffect(() => {
+    if (player && !playersAll.includes(player)) {
+      navigate('/');
+    }
+  }, []);
+
+  // const [stepManuals, setStepManuals] = useState<JSX.Element[]>([]);
 
   // useEffect(() => {
-  //
+  //   if (operator === 'ilooktv') {
+  //     setStepManuals([...stepManuals,
+  //       <IlookRegistration key={stepManuals.length + 1} step={stepManuals.length + 1}/>,
+  //       <IlookBuy key={stepManuals.length + 2} step={stepManuals.length + 2}/>
+  //     ]);
+  //   }
+  //   if (operator === 'ilooktv' && player === 'televizo') {
+  //     setStepManuals([...stepManuals,
+  //      <IlookPlaylist
+  //     ]);
+  //   }
   // }, []);
+
+  if (operator === 'ilooktv') {
+    stepManuals.push(<IlookRegistration key={stepManuals.length} step={stepManuals.length + 1}/>);
+    stepManuals.push(<IlookBuy key={stepManuals.length} step={stepManuals.length + 1}/>)
+  }
+
+  if (operator === 'ilooktv' && (player === 'televizo' || player === 'ottnavigator' || player === 'ottplayer')) {
+    stepManuals.push(<IlookPlaylist key={stepManuals.length} step={stepManuals.length + 1}/>);
+  }
+
+  if (player === 'televizo') {
+    stepManuals.push(<TelevizoDownload key={stepManuals.length} step={stepManuals.length + 1}/>);
+  }
+
+  if (device === 'androidtvbox' && (player === 'televizo' || player === 'ottnavigator')) {
+    stepManuals.push(<AndroidTvBoxTransferl key={stepManuals.length} step={stepManuals.length + 1}/>);
+  }
+
+  if (player === 'televizo') {
+    stepManuals.push(<TelevizoInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
+  }
+
 
   return (
     <>
@@ -38,12 +79,7 @@ function Manuals() {
       >
         {t('headManual')}
       </Box>
-      <IlookRegistration/>
-      <IlookBuy/>
-      <IlookPlaylist/>
-      <TelevizoDownload/>
-      <AndroidTvBoxTransferl/>
-      <TelevizoInstall/>
+      {stepManuals}
     </>
   );
 }
