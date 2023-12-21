@@ -1,4 +1,5 @@
-import { NavLink, useParams } from "react-router-dom";
+import { useEffect } from "react";
+import { NavLink, useNavigate, useParams } from "react-router-dom";
 import { Box } from '@mui/material';
 import { appColors } from "../services/appColors";
 import { useTranslation } from "react-i18next";
@@ -8,9 +9,17 @@ import { devices } from "../data/dataIPTV";
 import './cards.scss';
 
 function CardsDevices() {
+  const navigate = useNavigate();
+  const devicesNames = Object.keys(devices);
   const {t} = useTranslation();
   const params = useParams();
   const devicesPage = params.devices;
+
+  useEffect(() => {
+    if (devicesPage && !devicesNames.includes(devicesPage)) {
+      navigate('/');
+    }
+  }, [devicesPage]);
 
   return (
     <>
@@ -50,16 +59,21 @@ function CardsDevices() {
             :
             <>
               {
-                devices[devicesPage as keyof (typeof devices)].map((device: string, i: number) => {
-                    device = device.replace(/[\s]/g, '').toLowerCase();
-                    return (
-                      <NavLink key={i} to={device.toLowerCase()} className='nav-cards'>
-                        {/*<NavLink key={device} to={'player'} className='nav-cards'>*/}
-                        <CardDevice device={device}/>
-                      </NavLink>
-                    );
+                (devicesPage && devicesNames.includes(devicesPage)) &&
+                <>
+                  {
+                    devices[devicesPage as keyof (typeof devices)].map((device: string, i: number) => {
+                        device = device.replace(/[\s]/g, '').toLowerCase();
+                        return (
+                          <NavLink key={i} to={device.toLowerCase()} className='nav-cards'>
+                            {/*<NavLink key={device} to={'player'} className='nav-cards'>*/}
+                            <CardDevice device={device}/>
+                          </NavLink>
+                        );
+                      }
+                    )
                   }
-                )
+                </>
               }
             </>
         }

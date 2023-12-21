@@ -7,7 +7,11 @@ import ImageManual from "./ImageManual";
 import { operators } from "../../data/dataIPTV";
 import { sxManualText1, sxCardMain, sxHeadMain, sxLinksRegistration } from "./sxsManuals";
 
-function AndroidTvBoxTransferl() {
+type Props = {
+  step: number;
+}
+
+function AndroidTvBoxTransferl({step}: Props) {
   const {t} = useTranslation();
   const params = useParams();
   const operator = params.operator;
@@ -18,7 +22,7 @@ function AndroidTvBoxTransferl() {
       sx={sxCardMain}
     >
       <Box component='h4' sx={sxHeadMain}>
-        {t('step')}5{t('step5')}
+        {t('step')}{step}{t('step-AndroidTvBoxTransferl')}
       </Box>
       <CardContent sx={sxManualText1}>{t('androidtvbox_manual2-1')}</CardContent>
       <ImageManual image={`androidtvbox_manual1.jpg`}/>

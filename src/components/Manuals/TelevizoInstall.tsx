@@ -7,7 +7,10 @@ import ImageManual from "./ImageManual";
 import { operators } from "../../data/dataIPTV";
 import { sxManualText1, sxCardMain, sxHeadMain, sxLinksRegistration } from "./sxsManuals";
 
-function TelevizoInstall() {
+type Props = {
+  step: number;
+}
+function TelevizoInstall({step}: Props) {
   const {t} = useTranslation();
   const params = useParams();
   const operator = params.operator;
@@ -23,7 +26,7 @@ function TelevizoInstall() {
       sx={sxCardMain}
     >
       <Box component='h4' sx={sxHeadMain}>
-        {t('step')}6{t('step6')}
+        {t('step')}{step}{t('step-TelevizoInstall')}
       </Box>
       <CardContent sx={sxManualText1}>{t('televizo_manual2-1')}</CardContent>
       <ImageManual image={`televizo_manual1.jpg`}/>

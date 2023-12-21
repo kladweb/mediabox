@@ -7,7 +7,11 @@ import ImageManual from "./ImageManual";
 import { operators } from "../../data/dataIPTV";
 import { sxManualText1, sxCardMain, sxHeadMain } from "./sxsManuals";
 
-function IlookPlaylist() {
+type Props = {
+  step: number;
+}
+
+function IlookPlaylist({step}: Props) {
   const {t} = useTranslation();
   const params = useParams();
   const operator = params.operator;
@@ -18,7 +22,7 @@ function IlookPlaylist() {
       sx={sxCardMain}
     >
       <Box component='h4' sx={sxHeadMain}>
-        {t('step')}3{t('step3')}
+        {t('step')}{step}{t('step-IlookPlaylist')}
       </Box>
       <CardContent sx={sxManualText1}>{t('ilooktv_manual3-1')}</CardContent>
       <ImageManual image={`${operator}_manual4.jpg`}/>
