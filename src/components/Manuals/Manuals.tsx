@@ -10,6 +10,8 @@ import AndroidTvBoxTransferl from "./AndroidTvBoxTransferl";
 import TelevizoInstall from "./TelevizoInstall";
 import { useEffect } from "react";
 import { playersAll } from "../../data/dataIPTV";
+import OttNavigatorDownload from "./OttNavigatorDownload";
+import OttNavigatorInstall from "./OttNavigatorInstall";
 
 function Manuals() {
   const navigate = useNavigate();
@@ -55,12 +57,20 @@ function Manuals() {
     stepManuals.push(<TelevizoDownload key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
+  if (player === 'ottnavigator') {
+    stepManuals.push(<OttNavigatorDownload key={stepManuals.length} step={stepManuals.length + 1}/>);
+  }
+
   if (device === 'androidtvbox' && (player === 'televizo' || player === 'ottnavigator')) {
     stepManuals.push(<AndroidTvBoxTransferl key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
   if (player === 'televizo') {
     stepManuals.push(<TelevizoInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
+  }
+
+  if (player === 'ottnavigator') {
+    stepManuals.push(<OttNavigatorInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
 

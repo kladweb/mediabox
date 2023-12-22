@@ -9,10 +9,10 @@ export const playersAll = ['ottnavigator', 'ottplayfoss', 'ottplaybyalex', 'tele
 
 export const players = {
   androidtvbox: [
+    'Televizo',
     'OTT Navigator',
     'OTT-play FOSS',
     'Ott-Play by Alex',
-    'Televizo',
     'OttPlayer',
   ],
   appletv: [
@@ -23,10 +23,10 @@ export const players = {
     'OttPlayer',
   ],
   lgsmarttv: [
+    'Televizo',
     'OTT Navigator',
     'OTT-play FOSS',
     'Ott-Play by Alex',
-    'Televizo',
     'OttPlayer',
   ],
   samsungsmarttv: [
@@ -81,19 +81,19 @@ export const operators: object = {
   kineskopclub: {
     name: 'Kineskop.club',
     links: [
-      'https://ztempz.xyz/YZoaV4m2wgp-qvc0IYnwHb4TgHBqZaaFgzY8AoVUr2zQJ8fB-w4elw=='
+      'https://kineskop.club/?p=MTAxMTI0MA'
     ]
   },
   satbiling: {
     name: 'Satbiling',
     links: [
-      'https://ztempz.xyz/YZoaV4m2wgp-qvc0IYnwHb4TgHBqZaaFgzY8AoVUr2zQJ8fB-w4elw=='
+      'https://satbiling.com/register.php?partner=62513'
     ]
   },
   sharatv: {
     name: 'SHARA-TV',
     links: [
-      'https://ztempz.xyz/YZoaV4m2wgp-qvc0IYnwHb4TgHBqZaaFgzY8AoVUr2zQJ8fB-w4elw=='
+      'https://shara-tv.org/r/19149/'
     ]
   }
 }
