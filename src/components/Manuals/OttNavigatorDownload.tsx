@@ -7,12 +7,10 @@ type Props = {
   step: number;
 }
 
-function TelevizoDownload({step}: Props) {
+function OttNavigatorDownload({step}: Props) {
   const {t} = useTranslation();
   const links = {
-    linkOfficial: 'https://televizo.net/',
-    link4PDA: 'https://4pda.to/forum/index.php?showtopic=943863',
-    // linkFast: 'https://www.dropbox.com/scl/fi/6haivb3jrcasqfy0t9xfb/Televizo_1.9.6.50-google.apk?rlkey=zxgpn050trbdp9bfwq0k5jzn7&dl=1'
+    link4PDA: 'https://4pda.to/forum/index.php?showtopic=881962',
   };
 
   return (
@@ -21,9 +19,9 @@ function TelevizoDownload({step}: Props) {
       sx={sxCardMain}
     >
       <Box component='h4' sx={sxHeadMain}>
-        {t('step')}{step}{t('step-TelevizoDownload')}
+        {t('step')}{step}{t('step-OttNavigatorDownload')}
       </Box>
-      <CardContent sx={sxManualText1}>{t('televizo_manual1-1')}</CardContent>
+      <CardContent sx={sxManualText1}>{t('ottnavigator_manual1-1')}</CardContent>
       {
         Object.keys(links).map((nameLink, i) =>
           <Box
@@ -42,4 +40,4 @@ function TelevizoDownload({step}: Props) {
   );
 }
 
-export default TelevizoDownload;
+export default OttNavigatorDownload;

@@ -1,24 +1,15 @@
 import * as React from "react";
-import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
-import { appColors } from "../../services/appColors";
+import { Box, Card, CardContent } from "@mui/material";
 import ImageManual from "./ImageManual";
-import { operators } from "../../data/dataIPTV";
-import { sxManualText1, sxCardMain, sxHeadMain, sxLinksRegistration } from "./sxsManuals";
+import { sxManualText1, sxCardMain, sxHeadMain } from "./sxsManuals";
 
 type Props = {
   step: number;
 }
+
 function TelevizoInstall({step}: Props) {
   const {t} = useTranslation();
-  const params = useParams();
-  const operator = params.operator;
-  const links = {
-    televizoLink1: 'https://televizo.net/',
-    televizoLink2: 'https://4pda.to/forum/index.php?showtopic=943863',
-    televizoLink3: 'https://www.dropbox.com/scl/fi/6haivb3jrcasqfy0t9xfb/Televizo_1.9.6.50-google.apk?rlkey=zxgpn050trbdp9bfwq0k5jzn7&dl=1'
-  };
 
   return (
     <Card
