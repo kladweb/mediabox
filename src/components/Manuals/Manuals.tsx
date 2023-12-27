@@ -12,6 +12,7 @@ import { useEffect } from "react";
 import { playersAll } from "../../data/dataIPTV";
 import OttNavigatorDownload from "./OttNavigatorDownload";
 import OttNavigatorInstall from "./OttNavigatorInstall";
+import OttPlayFossDownload from "./OttPlayFossDownload";
 
 function Manuals() {
   const navigate = useNavigate();
@@ -49,7 +50,7 @@ function Manuals() {
     stepManuals.push(<IlookBuy key={stepManuals.length} step={stepManuals.length + 1}/>)
   }
 
-  if (operator === 'ilooktv' && (player === 'televizo' || player === 'ottnavigator' || player === 'ottplayer')) {
+  if (operator === 'ilooktv' && (player !== 'cbilling')) {
     stepManuals.push(<IlookPlaylist key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
@@ -61,13 +62,18 @@ function Manuals() {
     stepManuals.push(<OttNavigatorDownload key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
-  if (device === 'androidtvbox' && (player === 'televizo' || player === 'ottnavigator')) {
+  if (player === 'ottplayfoss') {
+    stepManuals.push(<OttPlayFossDownload key={stepManuals.length} step={stepManuals.length + 1}/>);
+  }
+
+  if (device === 'androidtvbox' && (player !== 'cbilling')) {
     stepManuals.push(<AndroidTvBoxTransferl key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
   if (player === 'televizo') {
     stepManuals.push(<TelevizoInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
+
 
   if (player === 'ottnavigator') {
     stepManuals.push(<OttNavigatorInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
