@@ -20,11 +20,11 @@ function OttPlayFossInstall({step}: Props) {
         {t('step')}{step}{t('step-TelevizoInstall')}
       </Box>
       <CardContent sx={sxManualText1}>{t('televizo_manual2-1')}</CardContent>
-      <ImageManual image={`televizo_manual1.jpg`}/>
+      <ImageManual image={`ottplayerfoss_manual1.jpg`}/>
       <CardContent sx={sxManualText1}>{t('televizo_manual2-2')}</CardContent>
       <ImageManual image={`televizo_manual2.jpg`}/>
       <CardContent sx={sxManualText1}>{t('televizo_manual2-3')}</CardContent>
-      <ImageManual image={`televizo_manual3.jpg`}/>
+      <ImageManual image={`ottplayerfoss_manual3.jpg`}/>
       <CardContent sx={sxManualText1}>{t('televizo_manual2-4')}</CardContent>
       <ImageManual image={`televizo_manual4.jpg`}/>
       <ImageManual image={`televizo_manual5.jpg`}/>

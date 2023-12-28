@@ -20,13 +20,14 @@ export const sxHeadMain = {
   fontWeight: '600',
   color: appColors.dark2,
   backgroundColor: appColors.mid2,
-  borderRadius: '0.25em'
+  borderRadius: '0.25em',
 }
 
 export const sxManualText1 = {
   fontSize: '1.25em',
   textAlign: 'left',
   color: `${appColors.light1}`,
+  whiteSpace: 'pre-line',
 }
 
 export const sxLinksRegistration = {

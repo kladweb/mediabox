@@ -24,6 +24,7 @@ function OttPlayFossDownload({step}: Props) {
         {t('step')}{step}{t('step-OttPlayFossDownload')}
       </Box>
       <CardContent sx={sxManualText1}>{t('ottplayfoss_manual1-1')}</CardContent>
+      <CardContent sx={sxManualText1}>{t('ottplayfoss_manual1-2')}</CardContent>
       {
         Object.keys(links).map((nameLink, i) =>
           <Box

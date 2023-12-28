@@ -1,20 +1,19 @@
 import * as React from "react";
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
-import { appColors } from "../../services/appColors";
+import { Box, Card, CardContent } from "@mui/material";
 import ImageManual from "./ImageManual";
-import { operators } from "../../data/dataIPTV";
-import { sxManualText1, sxCardMain, sxHeadMain, sxLinksRegistration } from "./sxsManuals";
+import { sxManualText1, sxCardMain, sxHeadMain } from "./sxsManuals";
 
 type Props = {
   step: number;
 }
 
-function AndroidTvBoxTransferl({step}: Props) {
+function AndroidTvBoxTransfer({step}: Props) {
   const {t} = useTranslation();
   const params = useParams();
   const operator = params.operator;
+  const player = params.player;
 
   return (
     <Card
@@ -22,7 +21,7 @@ function AndroidTvBoxTransferl({step}: Props) {
       sx={sxCardMain}
     >
       <Box component='h4' sx={sxHeadMain}>
-        {t('step')}{step}{t('step-AndroidTvBoxTransferl')}
+        {t('step')}{step}{t('step-AndroidTvBoxTransfer')}
       </Box>
       <CardContent sx={sxManualText1}>{t('androidtvbox_manual2-1')}</CardContent>
       <ImageManual image={`androidtvbox_manual1.jpg`}/>
@@ -33,10 +32,13 @@ function AndroidTvBoxTransferl({step}: Props) {
       <ImageManual image={`androidtvbox_manual4.jpg`}/>
       <CardContent sx={sxManualText1}>{t('androidtvbox_manual2-4')}</CardContent>
       <CardContent sx={sxManualText1}>{t('androidtvbox_manual2-5')}</CardContent>
-      <ImageManual image={`androidtvbox_manual5.jpg`}/>
+      <ImageManual image={`androidtvbox_manual5_${player}.jpg`}/>
       <CardContent sx={sxManualText1}>{t('androidtvbox_manual2-6')}</CardContent>
+      <ImageManual image={'androidtvbox_manual6.jpg'}/>
+      <ImageManual image={'androidtvbox_manual7.jpg'}/>
+      <ImageManual image={`androidtvbox_manual8_${player}.jpg`}/>
     </Card>
   );
 }
 
-export default AndroidTvBoxTransferl;
+export default AndroidTvBoxTransfer;
