@@ -8,7 +8,7 @@ type Props = {
   step: number;
 }
 
-function OttPlayFossInstall({step}: Props) {
+function OttPlayByAlexInstall({step}: Props) {
   const {t} = useTranslation();
 
   return (
@@ -17,15 +17,15 @@ function OttPlayFossInstall({step}: Props) {
       sx={sxCardMain}
     >
       <Box component='h4' sx={sxHeadMain}>
-        {t('step')}{step}{t('step-ottplayfossInstall')}
+        {t('step')}{step}{t('step-ottplaybyalexInstall')}
       </Box>
       <CardContent sx={sxManualText1}>{t('televizo_manual2-1')}</CardContent>
-      <ImageManual image={`ottplayerfoss_manual1.jpg`}/>
+      <ImageManual image={'ottplaybyalex_manual1.jpg'}/>
       <CardContent sx={sxManualText1}>{t('televizo_manual2-2')}</CardContent>
       <ImageManual image={`televizo_manual2.jpg`}/>
-      <CardContent sx={sxManualText1}>{t('ottplayfoss_manual2-3')}</CardContent>
-      <ImageManual image={`ottplayerfoss_manual3.jpg`}/>
-      <CardContent sx={sxManualText1}>{t('ottplayfosso_manual2-4')}</CardContent>
+      <CardContent sx={sxManualText1}>{t('ottplaybyalex_manual2-3')}</CardContent>
+      <ImageManual image={'ottplaybyalex_manual3.jpg'}/>
+      <CardContent sx={sxManualText1}>{t('ottplaybyalex_manual2-4')}</CardContent>
       <ImageManual image={'ottplayfoss_manual4.jpg'}/>
       <CardContent sx={sxManualText1}>{t('ottplayfosso_manual2-5')}</CardContent>
       <ImageManual image={'ottplayfoss_manual5.jpg'}/>
@@ -50,4 +50,4 @@ function OttPlayFossInstall({step}: Props) {
   );
 }
 
-export default OttPlayFossInstall;
+export default OttPlayByAlexInstall;

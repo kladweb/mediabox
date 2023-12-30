@@ -15,7 +15,11 @@ import OttNavigatorInstall from "./OttNavigatorInstall";
 import OttPlayFossInstall from "./OttPlayFossInstall";
 import { appColors } from "../../services/appColors";
 import { playersAll } from "../../data/dataIPTV";
-import AndroidTvBoxAppsHelp from "./AndroidTvBoxAppsHelp";
+import AppsHelpDownload from "./AppsHelpDownload";
+import AppsHelpInstall from "./AppsHelpInstall";
+import OttPlayByAlexDownload from "./OttPlayByAlexDownload";
+import OttPlayByAlexInstall from "./OttPlayByAlexInstall";
+import OttplayerSetup from "./OttplayerSetup";
 
 function Manuals() {
   const navigate = useNavigate();
@@ -45,8 +49,8 @@ function Manuals() {
     stepManuals.push(<IlookPlaylist key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
-  if (device === 'androidtvbox') {
-    stepManuals.push(<AndroidTvBoxAppsHelp key={stepManuals.length} step={stepManuals.length + 1}/>);
+  if (device === 'androidtvbox' && player !== 'ottplayer') {
+    stepManuals.push(<AppsHelpDownload key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
   if (player === 'televizo') {
@@ -61,8 +65,20 @@ function Manuals() {
     stepManuals.push(<OttPlayFossDownload key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
+  if (player === 'ottplaybyalex') {
+    stepManuals.push(<OttPlayByAlexDownload key={stepManuals.length} step={stepManuals.length + 1}/>);
+  }
+
+  if (player === 'ottplayer') {
+    stepManuals.push(<OttplayerSetup key={stepManuals.length} step={stepManuals.length + 1}/>);
+  }
+
   if (device === 'androidtvbox' && (player !== 'cbilling')) {
     stepManuals.push(<AndroidTvBoxTransfer key={stepManuals.length} step={stepManuals.length + 1}/>);
+  }
+
+  if (device === 'androidtvbox') {
+    stepManuals.push(<AppsHelpInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
   if (player === 'televizo') {
@@ -77,6 +93,9 @@ function Manuals() {
     stepManuals.push(<OttPlayFossInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
+  if (player === 'ottplaybyalex') {
+    stepManuals.push(<OttPlayByAlexInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
+  }
 
   return (
     <>

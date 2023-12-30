@@ -1,4 +1,3 @@
-import * as React from "react";
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Box, Card, CardContent } from "@mui/material";
@@ -12,7 +11,6 @@ type Props = {
 function AndroidTvBoxTransfer({step}: Props) {
   const {t} = useTranslation();
   const params = useParams();
-  const operator = params.operator;
   const player = params.player;
 
   return (

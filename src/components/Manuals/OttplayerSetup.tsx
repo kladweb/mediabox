@@ -5,17 +5,18 @@ import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
 import { appColors } from "../../services/appColors";
 import ImageManual from "./ImageManual";
 import { operators } from "../../data/dataIPTV";
-import { sxManualText1, sxCardMain, sxHeadMain } from "./sxsManuals";
+import { sxManualText1, sxCardMain, sxHeadMain, sxLinksRegistration } from "./sxsManuals";
 
 type Props = {
   step: number;
 }
 
-function IlookPlaylist({step}: Props) {
+function OttplayerSetup({step}: Props) {
   const {t} = useTranslation();
   const params = useParams();
   const operator = params.operator;
   const player = params.player;
+  const linkOttplayer = 'https://ottplayer.tv/';
 
   return (
     <Card
@@ -23,19 +24,15 @@ function IlookPlaylist({step}: Props) {
       sx={sxCardMain}
     >
       <Box component='h4' sx={sxHeadMain}>
-        {t('step')}{step}{t('step-IlookPlaylist')}
+        {t('step')}{step}{t('step-OttplayerSetup')}
       </Box>
-      <CardContent sx={sxManualText1}>{t('ilooktv_manual3-1')}</CardContent>
+      <CardContent sx={sxManualText1}>{t('ottplayer_manual1-1')}</CardContent>
+      <Box component='a' href={linkOttplayer} target="_blank" sx={sxLinksRegistration}>
+        OttPlayer website
+      </Box>
       <ImageManual image={`${operator}_manual4.jpg`}/>
-      <CardContent sx={sxManualText1}>{t('ilooktv_manual3-2')}</CardContent>
-      {
-        (player !== 'ottplayer') ?
-          <CardContent sx={sxManualText1}>{t('ilooktv_manual3-3')}</CardContent>
-          :
-          null
-      }
     </Card>
   );
 }
 
-export default IlookPlaylist;
+export default OttplayerSetup;
