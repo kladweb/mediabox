@@ -23,7 +23,7 @@ function ImageManual({image}: any) {
     <CardMedia
       component="img"
       image={`/img/manuals/${image}`}
-      alt={image}
+      alt={image.split('_')[1]}
       onClick={handlerZoom}
       sx={{
         margin: "0.25em auto 0.5em",

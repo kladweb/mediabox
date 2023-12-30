@@ -22,7 +22,6 @@ function CardsPlayers() {
     }
   }, []);
 
-  console.log(device);
   return (
     <>
       <Box
