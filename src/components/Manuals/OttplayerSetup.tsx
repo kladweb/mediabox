@@ -30,7 +30,15 @@ function OttplayerSetup({step}: Props) {
       <Box component='a' href={linkOttplayer} target="_blank" sx={sxLinksRegistration}>
         OttPlayer website
       </Box>
-      <ImageManual image={`${operator}_manual4.jpg`}/>
+      <ImageManual image={'ottplayer_manual_01.jpg'}/>
+      <ImageManual image={'ottplayer_manual_02.jpg'}/>
+      <CardContent sx={sxManualText1}>{t('ottplayer_manual1-2')}</CardContent>
+      <CardContent sx={sxManualText1}>{t('ottplayer_manual1-3')}</CardContent>
+      <ImageManual image={'ottplayer_manual_03.jpg'}/>
+      <CardContent sx={sxManualText1}>{t('ottplayer_manual1-4')}</CardContent>
+      <ImageManual image={'ottplayer_manual_04.jpg'}/>
+      <ImageManual image={'ottplayer_manual_05.jpg'}/>
+      <CardContent sx={sxManualText1}>{t('ottplayer_manual1-5')}</CardContent>
     </Card>
   );
 }

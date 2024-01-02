@@ -24,6 +24,7 @@ export const sxHeadMain = {
 }
 
 export const sxManualText1 = {
+  py: '0.5em',
   fontSize: '1.25em',
   textAlign: 'left',
   color: `${appColors.light1}`,

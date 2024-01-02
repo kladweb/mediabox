@@ -35,12 +35,12 @@ function CardsPlayers() {
           textAlign: 'center',
         }}
       >
-        {t('headOperator')}
+        {t('headPlayer')}
       </Box>
       <Box component='div' sx={{
         margin: '0 auto',
         display: 'flex',
-        flexWrap: 'wrap',
+        flexDirection: 'column',
         justifyContent: 'center'
       }}
       >
@@ -62,28 +62,17 @@ function CardsPlayers() {
             }
           </>
         }
-
       </Box>
-      <Box
-        component='h3'
-        sx={{
-          m: '0.5em auto 2em',
-          width: '100%',
-          fontSize: '1.5em',
-          fontWeight: '400',
-          color: appColors.light1,
-          textAlign: 'center',
-          transition: '0.2s',
-          ':hover': {
-            color: appColors.mid2,
-            transition: '0.1s'
-          }
-        }}
-      >
-        <NavLink to={'/choose'} className='nav-cards nav-link'>
-          {t('whichChooseOperator')}
-        </NavLink>
-      </Box>
+      {/*<Box sx={{*/}
+      {/*  margin: '0 auto',*/}
+      {/*  display: 'block',*/}
+      {/*  width: '100%',*/}
+      {/*  textAlign: 'center',*/}
+      {/*  fontSize: '1rem',*/}
+      {/*  color: appColors.light1,*/}
+      {/*}}>*/}
+      {/*  {t('ottplaybyalex-Note')}*/}
+      {/*</Box>*/}
     </>
   )
 }

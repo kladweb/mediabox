@@ -23,10 +23,9 @@ export const players = {
     'OttPlayer',
   ],
   lgsmarttv: [
-    'Televizo',
-    'OTT Navigator',
     'OTT-play FOSS',
     'Ott-Play by Alex',
+    'SS IPTV',
     'OttPlayer',
   ],
   samsungsmarttv: [
