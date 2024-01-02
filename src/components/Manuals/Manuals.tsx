@@ -20,6 +20,7 @@ import AppsHelpInstall from "./AppsHelpInstall";
 import OttPlayByAlexDownload from "./OttPlayByAlexDownload";
 import OttPlayByAlexInstall from "./OttPlayByAlexInstall";
 import OttplayerSetup from "./OttplayerSetup";
+import OttplayerInstall from "./OttplayerInstall";
 
 function Manuals() {
   const navigate = useNavigate();
@@ -73,11 +74,11 @@ function Manuals() {
     stepManuals.push(<OttplayerSetup key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
-  if (device === 'androidtvbox' && (player !== 'cbilling')) {
+  if (device === 'androidtvbox' && (operator !== 'cbilling' && player !== 'ottplayer')) {
     stepManuals.push(<AndroidTvBoxTransfer key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
-  if (device === 'androidtvbox') {
+  if (device === 'androidtvbox' && player !== 'ottplayer') {
     stepManuals.push(<AppsHelpInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
@@ -95,6 +96,10 @@ function Manuals() {
 
   if (player === 'ottplaybyalex') {
     stepManuals.push(<OttPlayByAlexInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
+  }
+
+  if (player === 'ottplayer') {
+    stepManuals.push(<OttplayerInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
   return (

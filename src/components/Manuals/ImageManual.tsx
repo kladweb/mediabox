@@ -26,7 +26,7 @@ function ImageManual({image}: any) {
       alt={image.split('_')[1]}
       onClick={handlerZoom}
       sx={{
-        margin: "0.25em auto 0.5em",
+        margin: "0.5em auto 1em",
         objectFit: "contain",
         cursor: `${cursor}`,
         width: `${scaleImg}%`,

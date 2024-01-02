@@ -7,14 +7,17 @@ type Props = {
   player: string
 }
 export default function CardPlayer({player}: Props): JSX.Element {
+  console.log(player);
   const {t} = useTranslation();
-
   return (
     <Card sx={{
       width: 345,
-      height: 180,
-      margin: "1.5em",
+      height: 90,
+      m: "0.75em",
+      p: "0",
       display: 'flex',
+      // justifyContent: 'start',
+      alignContent: 'flex-start',
       backgroundColor: appColors.light1,
       transition: '1s',
       ':hover': {
@@ -22,21 +25,38 @@ export default function CardPlayer({player}: Props): JSX.Element {
         transition: '0.4s'
       },
     }}>
-      <CardActionArea>
+      <CardActionArea sx={{
+        display: 'flex',
+        justifyContent: 'start',
+        alignContent: 'center',
+      }}>
         <CardMedia
           component="img"
-          height="100"
           image={`/img/players/${player.replace(/[-\s]/g, '').toLowerCase()}.png`}
-          // image="/img/android.png"
-          alt="green iguana"
-          sx={{margin: "1em 0", objectFit: "contain"}}
+          alt={player}
+          sx={{display: "block", width: "18%", margin: "0.5em", objectFit: "contain"}}
         />
-        <CardContent sx={{textAlign: 'center', color: `${appColors.mid1}`}}>
-          <Typography gutterBottom variant="h6" component="div"
-                      sx={{fontSize: '1.45em', lineHeight: '1.25em'}}
+        <CardContent
+          sx={{display: "block", width: "60%", color: `${appColors.mid1}`}}>
+          <Typography gutterBottom component="div"
+                      sx={{m: "0", fontSize: '1.45em', lineHeight: '1em'}}
           >
             {player}
           </Typography>
+          {
+            (player === 'Ott-Play by Alex') &&
+            <Typography gutterBottom component="div"
+                        sx={{
+                          m: "0",
+                          fontSize: '1em',
+                          lineHeight: '1.5em',
+                          position: 'absolute',
+                          fontStretch: 'condensed'
+                        }}
+            >
+              {t('ottplaybyalex-Note')}
+            </Typography>
+          }
         </CardContent>
       </CardActionArea>
     </Card>
