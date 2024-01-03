@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { Box } from '@mui/material';
 import IlookRegistration from "./IlookRegistration";
 import IlookBuy from "./IlookBuy";
-import IlookPlaylist from "./IlookPlaylist";
+import IlookPlaylistTvBox from "./IlookPlaylistTvBox";
 import IlookKey from "./IlookKey";
 import TelevizoDownload from "./TelevizoDownload";
 import AndroidTvBoxTransfer from "./AndroidTvBoxTransfer";
@@ -46,31 +46,31 @@ function Manuals() {
     stepManuals.push(<IlookKey key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
-  if (operator === 'ilooktv' && (player !== 'cbilling')) {
-    stepManuals.push(<IlookPlaylist key={stepManuals.length} step={stepManuals.length + 1}/>);
+  if (operator === 'ilooktv' && device === 'androidtvbox' && (player !== 'cbilling')) {
+    stepManuals.push(<IlookPlaylistTvBox key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
   if (device === 'androidtvbox' && player !== 'ottplayer') {
     stepManuals.push(<AppsHelpDownload key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
-  if (player === 'televizo') {
+  if (player === 'televizo' && device === 'androidtvbox') {
     stepManuals.push(<TelevizoDownload key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
-  if (player === 'ottnavigator') {
+  if (player === 'ottnavigator' && device === 'androidtvbox') {
     stepManuals.push(<OttNavigatorDownload key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
-  if (player === 'ottplayfoss') {
+  if (player === 'ottplayfoss' && device === 'androidtvbox') {
     stepManuals.push(<OttPlayFossDownload key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
-  if (player === 'ottplaybyalex') {
+  if (player === 'ottplaybyalex' && device === 'androidtvbox') {
     stepManuals.push(<OttPlayByAlexDownload key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
-  if (player === 'ottplayer') {
+  if (player === 'ottplayer' && device === 'androidtvbox') {
     stepManuals.push(<OttplayerSetup key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
@@ -82,23 +82,23 @@ function Manuals() {
     stepManuals.push(<AppsHelpInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
-  if (player === 'televizo') {
+  if (player === 'televizo' && device === 'androidtvbox') {
     stepManuals.push(<TelevizoInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
-  if (player === 'ottnavigator') {
+  if (player === 'ottnavigator' && device === 'androidtvbox') {
     stepManuals.push(<OttNavigatorInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
-  if (player === 'ottplayfoss') {
+  if (player === 'ottplayfoss' && device === 'androidtvbox') {
     stepManuals.push(<OttPlayFossInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
-  if (player === 'ottplaybyalex') {
+  if (player === 'ottplaybyalex' && device === 'androidtvbox') {
     stepManuals.push(<OttPlayByAlexInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
-  if (player === 'ottplayer') {
+  if (player === 'ottplayer' && device === 'androidtvbox') {
     stepManuals.push(<OttplayerInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 

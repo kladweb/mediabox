@@ -1,7 +1,5 @@
 import { Container, Toolbar } from "@mui/material";
-import CardsDevices from "../components/CardsDevices";
 import MainInfo from "../components/MainInfo";
-
 
 function PageMain() {
   return (

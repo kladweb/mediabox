@@ -24,6 +24,8 @@ function TelevizoInstall({step}: Props) {
       <CardContent sx={sxManualText1}>{t('televizo_manual2-12')}</CardContent>
       <ImageManual image={'androidtvbox_manual10_text_editor.jpg'}/>
       <CardContent sx={sxManualText1}>{t('televizo_manual2-2')}</CardContent>
+      <CardContent sx={sxManualText1}>{t('televizo_manual2-13')}</CardContent>
+      <ImageManual image={'televizo_manual2.jpg'}/>
       <CardContent sx={sxManualText1}>{t('televizo_manual2-3')}</CardContent>
       <ImageManual image={`televizo_manual3.jpg`}/>
       <CardContent sx={sxManualText1}>{t('televizo_manual2-4')}</CardContent>
