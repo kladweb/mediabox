@@ -13,10 +13,13 @@ function PageOperators() {
     if (params.device && !deviceNames.includes(params.device)) {
       navigate('/');
     }
+    // if (params.device === 'appletv') {
+    //   navigate('/blank');
+    // }
   }, []);
 
   return (
-    <Container maxWidth="xl" >
+    <Container maxWidth="xl">
       <Toolbar disableGutters sx={{flexWrap: 'wrap'}}>
         <CardsPlayers/>
       </Toolbar>

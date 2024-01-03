@@ -12,21 +12,18 @@ type Props = {
 function IlookKey({step}: Props) {
   const {t} = useTranslation();
   const params = useParams();
-  const operator = params.operator;
+  const device = params.device;
 
   return (
-    <Card
-      component='div'
-      sx={sxCardMain}
-    >
-      <Box component='h4' sx={sxHeadMain}>
-        {t('step')}{step}{t('step-IlookKey')}
-      </Box>
-      <CardContent sx={sxManualText1}>
-        {t('ilooktv_manual2-3')}
-        {}
-      </CardContent>
-
+    <Card component='div' sx={sxCardMain}>
+      <Box component='h4' sx={sxHeadMain}>{t('step')}{step}{t('step-IlookKey')}</Box>
+      <CardContent sx={sxManualText1}>{t('ilooktv_manual2-3')}</CardContent>
+      {
+        (device === 'androidtvbox') ?
+          <CardContent sx={sxManualText1}>{t('ilooktv_manual2-4')}</CardContent>
+          :
+          <CardContent sx={sxManualText1}>{t('ilooktv_manual2-5')}</CardContent>
+      }
     </Card>
   );
 }
