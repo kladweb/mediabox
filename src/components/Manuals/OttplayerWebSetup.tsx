@@ -11,7 +11,7 @@ type Props = {
   step: number;
 }
 
-function OttplayerSetup({step}: Props) {
+function OttplayerWebSetup({step}: Props) {
   const {t} = useTranslation();
   const params = useParams();
   const operator = params.operator;
@@ -24,7 +24,7 @@ function OttplayerSetup({step}: Props) {
       sx={sxCardMain}
     >
       <Box component='h4' sx={sxHeadMain}>
-        {t('step')}{step}{t('step-OttplayerSetup')}
+        {t('step')}{step}{t('step-OttplayerWebSetup')}
       </Box>
       <CardContent sx={sxManualText1}>{t('ottplayer_manual1-1')}</CardContent>
       <Box component='a' href={linkOttplayer} target="_blank" sx={sxLinksRegistration}>
@@ -43,4 +43,4 @@ function OttplayerSetup({step}: Props) {
   );
 }
 
-export default OttplayerSetup;
+export default OttplayerWebSetup;

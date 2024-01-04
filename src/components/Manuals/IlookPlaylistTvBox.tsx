@@ -26,13 +26,14 @@ function IlookPlaylistTvBox({step}: Props) {
         {t('step')}{step}{t('step-IlookPlaylist-androidtvbox')}
       </Box>
       <CardContent sx={sxManualText1}>{t('ilooktv_manual3-1')}</CardContent>
+      <CardContent sx={sxManualText1}>{t('ilooktv_manual3-11')}</CardContent>
       <ImageManual image={`${operator}_manual4.jpg`}/>
       <CardContent sx={sxManualText1}>{t('ilooktv_manual3-2')}</CardContent>
       {
-        (player !== 'ottplayer') ?
-          <CardContent sx={sxManualText1}>{t('ilooktv_manual3-3')}</CardContent>
-          :
+        (player == 'ottplayer' || player == 'ssiptv') ?
           null
+          :
+          <CardContent sx={sxManualText1}>{t('ilooktv_manual3-3')}</CardContent>
       }
     </Card>
   );

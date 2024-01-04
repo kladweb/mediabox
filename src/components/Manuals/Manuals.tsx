@@ -19,20 +19,25 @@ import AppsHelpDownload from "./AppsHelpDownload";
 import AppsHelpInstall from "./AppsHelpInstall";
 import OttPlayByAlexDownload from "./OttPlayByAlexDownload";
 import OttPlayByAlexInstall from "./OttPlayByAlexInstall";
-import OttplayerSetup from "./OttplayerSetup";
+import OttplayerWebSetup from "./OttplayerWebSetup";
 import OttplayerInstall from "./OttplayerInstall";
+import IlookPlaylistSmartTv from "./IlookPlaylistSmartTv";
+import SmartTvOttPlayInstall from "./SmartTvOttPlayInstall";
+import OttPlayFossSetup from "./OttPlayFossSetup";
+import OttPlaySmartTVSetup from "./OttPlaySmartTVSetup";
 
 function Manuals() {
   const navigate = useNavigate();
   const {t} = useTranslation();
   const params = useParams();
   const operator = params.operator;
+  const devices = params.devices;
   const device = params.device;
   const player = params.player;
   const stepManuals: JSX.Element[] = [];
 
   useEffect(() => {
-    if (player && !playersAll.includes(player)) {
+    if (player && !Object.keys(playersAll).includes(player)) {
       navigate('/');
     }
   }, []);
@@ -46,7 +51,12 @@ function Manuals() {
     stepManuals.push(<IlookKey key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
-  if (operator === 'ilooktv' && device === 'androidtvbox' && (player !== 'cbilling')) {
+  // if (operator === 'ilooktv' && ((device === 'androidtvbox' && player !== 'cbilling') ||
+  //   (devices === 'smarttv' && player === 'ssiptv'))) {
+  //   stepManuals.push(<IlookPlaylistTvBox key={stepManuals.length} step={stepManuals.length + 1}/>);
+  // }
+
+  if (operator === 'ilooktv' && (player === 'ssiptv' || player === 'ottplayer')) {
     stepManuals.push(<IlookPlaylistTvBox key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
@@ -70,8 +80,8 @@ function Manuals() {
     stepManuals.push(<OttPlayByAlexDownload key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
-  if (player === 'ottplayer' && device === 'androidtvbox') {
-    stepManuals.push(<OttplayerSetup key={stepManuals.length} step={stepManuals.length + 1}/>);
+  if (player === 'ottplayer') {
+    stepManuals.push(<OttplayerWebSetup key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
   if (device === 'androidtvbox' && (operator !== 'cbilling' && player !== 'ottplayer')) {
@@ -92,14 +102,28 @@ function Manuals() {
 
   if (player === 'ottplayfoss' && device === 'androidtvbox') {
     stepManuals.push(<OttPlayFossInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
+    stepManuals.push(<OttPlayFossSetup key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
   if (player === 'ottplaybyalex' && device === 'androidtvbox') {
     stepManuals.push(<OttPlayByAlexInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
+    stepManuals.push(<OttPlayFossSetup key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
   if (player === 'ottplayer' && device === 'androidtvbox') {
     stepManuals.push(<OttplayerInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
+  }
+
+  //SMART TV
+  if ((device === 'lgsmarttv' || device === 'samsungsmarttv') &&
+    (player === 'ottplayfoss' || player === 'ottplaybyalex')) {
+    stepManuals.push(<IlookPlaylistSmartTv key={stepManuals.length} step={stepManuals.length + 1}/>);
+  }
+
+  if ((device === 'lgsmarttv' || device === 'samsungsmarttv') &&
+    (player === 'ottplayfoss' || player === 'ottplaybyalex')) {
+    stepManuals.push(<SmartTvOttPlayInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
+    stepManuals.push(<OttPlaySmartTVSetup key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
   return (
