@@ -28,27 +28,7 @@ function OttPlayFossInstall({step}: Props) {
       <ImageManual image={`televizo_manual2.jpg`}/>
       <CardContent sx={sxManualText1}>{t('ottplayfoss_manual2-3')}</CardContent>
       <ImageManual image={`ottplayerfoss_manual3.jpg`}/>
-      <CardContent sx={sxManualText1}>{t('ottplayfosso_manual2-4')}</CardContent>
-      <ImageManual image={'ottplayfoss_manual4.jpg'}/>
-      <CardContent sx={sxManualText1}>{t('ottplayfosso_manual2-5')}</CardContent>
-      <ImageManual image={'ottplayfoss_manual5.jpg'}/>
-      <CardContent sx={sxManualText1}>{t('ottplayfosso_manual2-6')}</CardContent>
-      <ImageManual image={'ottplayfoss_manual6.jpg'}/>
-      <ImageManual image={'ottplayfoss_manual7.jpg'}/>
-      <CardContent sx={sxManualText1}>{t('ottplayfosso_manual2-7')}</CardContent>
-      <ImageManual image={'ottplayfoss_manual8.jpg'}/>
-      <ImageManual image={'ottplayfoss_manual9.jpg'}/>
-      <ImageManual image={'ottplayfoss_manual10.jpg'}/>
-      <CardContent sx={sxManualText1}>{t('ottplayfosso_manual2-8')}</CardContent>
-      <ImageManual image={'ottplayfoss_manual11.jpg'}/>
-      <CardContent sx={sxManualText1}>{t('ottplayfosso_manual2-9')}</CardContent>
-      <ImageManual image={'ottplayfoss_manual12.jpg'}/>
-      <CardContent sx={sxManualText1}>{t('ottplayfosso_manual2-10')}</CardContent>
-      <ImageManual image={'ottplayfoss_manual13.jpg'}/>
-      <CardContent sx={sxManualText1}>{t('ottplayfosso_manual2-11')}</CardContent>
-      <ImageManual image={'ottplayfoss_manual14.jpg'}/>
-      <ImageManual image={'ottplayfoss_manual15.jpg'}/>
-      <CardContent sx={sxManualText1}>{t('televizo_manual2-9')}</CardContent>
+      <CardContent sx={sxManualText1}>{t('ottplayfoss_manual2-4')}</CardContent>
     </Card>
   );
 }

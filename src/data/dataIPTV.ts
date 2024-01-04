@@ -5,7 +5,15 @@ export const devices = {
   smarttv: ['LG Smart TV', 'SAMSUNG Smart TV', 'Android TV']
 }
 
-export const playersAll = ['ottnavigator', 'ottplayfoss', 'ottplaybyalex', 'televizo', 'ottplayer']
+// export const playersAll = ['ottnavigator', 'ottplayfoss', 'ottplaybyalex', 'televizo', 'ottplayer']
+export const playersAll = {
+  ottnavigator: 'OTT Navigator',
+  ottplayfoss: 'OTT-play FOSS',
+  ottplaybyalex: 'Ott-Play by Alex',
+  televizo: 'Televizo',
+  ottplayer: 'OttPlayer',
+  ssiptv: 'SS IPTV'
+}
 
 export const players = {
   androidtvbox: [
@@ -29,10 +37,8 @@ export const players = {
     'OttPlayer',
   ],
   samsungsmarttv: [
-    'OTT Navigator',
     'OTT-play FOSS',
     'Ott-Play by Alex',
-    'Televizo',
     'OttPlayer',
   ],
   androidtv: [

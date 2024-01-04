@@ -47,3 +47,9 @@ export const sxLinksRegistration = {
     transition: '0.2s'
   }
 }
+
+export const sxToggle1 = {
+  px: '1em',
+  fontSize: '1em',
+  color: '#efedf5',
+}

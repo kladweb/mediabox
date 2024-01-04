@@ -9,7 +9,8 @@ import { appColors } from "../services/appColors";
 function App(): JSX.Element {
   return (
     <BrowserRouter>
-      <Suspense fallback='...loading'>
+      {/*<Suspense fallback='...loading'>*/}
+      <Suspense>
         <Header/>
         <Box
           sx={{
