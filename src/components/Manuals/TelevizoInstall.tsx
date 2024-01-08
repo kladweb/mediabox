@@ -34,6 +34,8 @@ function TelevizoInstall({step}: Props) {
       <CardContent sx={sxManualText1}>{t('televizo_manual2-5')}</CardContent>
       <ImageManual image={`televizo_manual6.jpg`}/>
       <ImageManual image={`televizo_manual7.jpg`}/>
+      <CardContent sx={sxManualText1}>{t('televizo_manual2-51')}</CardContent>
+      <ImageManual image={`televizo_manual71.jpg`}/>
       <CardContent sx={sxManualText1}>{t('televizo_manual2-6')}</CardContent>
       <ImageManual image={`televizo_manual8.jpg`}/>
       <ImageManual image={`televizo_manual9.jpg`}/>
@@ -41,7 +43,7 @@ function TelevizoInstall({step}: Props) {
       <ImageManual image={`televizo_manual10.jpg`}/>
       <CardContent sx={sxManualText1}>{t('televizo_manual2-8')}</CardContent>
       <ImageManual image={`televizo_manual11.jpg`}/>
-      <CardContent sx={sxManualText1}>{t('televizo_manual2-9')}</CardContent>
+      <CardContent sx={sxManualText1}>{t('enjoy_manual01')}</CardContent>
     </Card>
   );
 }

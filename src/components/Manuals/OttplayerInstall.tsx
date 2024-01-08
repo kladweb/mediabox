@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Box, Card, CardContent } from "@mui/material";
 import ImageManual from "./ImageManual";
 import { sxManualText1, sxCardMain, sxHeadMain } from "./sxsManuals";
+import { useParams } from "react-router-dom";
 
 type Props = {
   step: number;
@@ -10,6 +11,11 @@ type Props = {
 
 function OttplayerInstall({step}: Props) {
   const {t} = useTranslation();
+  const params = useParams();
+  const devices = params.devices;
+  const device = params.device;
+
+  console.log(devices);
 
   return (
     <Card
@@ -19,7 +25,7 @@ function OttplayerInstall({step}: Props) {
       <Box component='h4' sx={sxHeadMain}>
         {t('step')}{step}{t('step-ottplayerInstall')}
       </Box>
-      <CardContent sx={sxManualText1}>{t('ottplayer_manual2-1')}</CardContent>
+      <CardContent sx={sxManualText1}>{t(`ottplayer_manual2-1_${devices}`)}</CardContent>
       <ImageManual image={'ottplayer_manual_12.jpg'}/>
       <CardContent sx={sxManualText1}>{t('ottplayer_manual2-2')}</CardContent>
       <ImageManual image={'ottplayer_manual_13.jpg'}/>
@@ -39,14 +45,14 @@ function OttplayerInstall({step}: Props) {
       <ImageManual image={'ottplayer_manual_10.jpg'}/>
       <CardContent sx={sxManualText1}>{t('ottplayer_manual2-9')}</CardContent>
       <ImageManual image={'ottplayer_manual_11.jpg'}/>
-      <CardContent sx={sxManualText1}>{t('ottplayer_manual2-10')}</CardContent>
+      <CardContent sx={sxManualText1}>{t(`ottplayer_manual2-10_${devices}`)}</CardContent>
       <ImageManual image={'ottplayer_manual_21.jpg'}/>
       <ImageManual image={'ottplayer_manual_22.jpg'}/>
       <CardContent sx={sxManualText1}>{t('ottplayer_manual2-11')}</CardContent>
       <ImageManual image={'ottplayer_manual_23.jpg'}/>
       <CardContent sx={sxManualText1}>{t('ottplayer_manual2-12')}</CardContent>
       <ImageManual image={'ottplayer_manual_24.jpg'}/>
-      <CardContent sx={sxManualText1}>{t('televizo_manual2-9')}</CardContent>
+      <CardContent sx={sxManualText1}>{t('enjoy_manual01')}</CardContent>
     </Card>
   );
 }

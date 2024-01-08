@@ -46,7 +46,7 @@ function OttPlaySmartTVSetup({step}: Props) {
       <ImageManual image={'ilooktv_smartTv_ottplay_04.jpg'}/>
       <CardContent sx={sxManualText1}>{t('ottplay-smarttv_manual1-7')}</CardContent>
       <ImageManual image={'ottplayfoss_manual15.jpg'}/>
-      <CardContent sx={sxManualText1}>{t('televizo_manual2-9')}</CardContent>
+      <CardContent sx={sxManualText1}>{t('enjoy_manual01')}</CardContent>
     </Card>
   );
 }

@@ -43,7 +43,7 @@ function OttPlayFossSetup({step}: Props) {
       <CardContent sx={sxManualText1}>{t('ottplayfoss_manual2-11')}</CardContent>
       <ImageManual image={'ottplayfoss_manual14.jpg'}/>
       <ImageManual image={'ottplayfoss_manual15.jpg'}/>
-      <CardContent sx={sxManualText1}>{t('televizo_manual2-9')}</CardContent>
+      <CardContent sx={sxManualText1}>{t('enjoy_manual01')}</CardContent>
     </Card>
   );
 }
