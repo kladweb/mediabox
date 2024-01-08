@@ -2,7 +2,8 @@
 
 export const devices = {
   boxes: ['Android TV Box', 'Apple TV'],
-  smarttv: ['LG Smart TV', 'SAMSUNG Smart TV', 'Android TV']
+  smarttv: ['LG Smart TV', 'SAMSUNG Smart TV']
+  // smarttv: ['LG Smart TV', 'SAMSUNG Smart TV', 'Android TV']
 }
 
 // export const playersAll = ['ottnavigator', 'ottplayfoss', 'ottplaybyalex', 'televizo', 'ottplayer']
@@ -12,7 +13,9 @@ export const playersAll = {
   ottplaybyalex: 'Ott-Play by Alex',
   televizo: 'Televizo',
   ottplayer: 'OttPlayer',
-  ssiptv: 'SS IPTV'
+  ssiptv: 'SS IPTV',
+  riptv: 'rIPTV',
+  flexiptv: 'Flex IPTV'
 }
 
 export const players = {
@@ -24,10 +27,8 @@ export const players = {
     'OttPlayer',
   ],
   appletv: [
-    'Televizo',
-    'OTT Navigator',
-    'OTT-play FOSS',
-    'Ott-Play by Alex',
+    // 'rIPTV',
+    'Flex IPTV',
     'OttPlayer',
   ],
   lgsmarttv: [
@@ -39,13 +40,14 @@ export const players = {
   samsungsmarttv: [
     'OTT-play FOSS',
     'Ott-Play by Alex',
+    'SS IPTV',
     'OttPlayer',
   ],
   androidtv: [
+    'Televizo',
     'OTT Navigator',
     'OTT-play FOSS',
     'Ott-Play by Alex',
-    'Televizo',
     'OttPlayer',
   ],
 };
@@ -60,19 +62,22 @@ export const operators: object = {
       'https://melord.net/welcome/signup/54e9515db854ab61',
       'https://jinopro.net/welcome/signup/54e9515db854ab61',
       'https://iseetv.net/welcome/signup/54e9515db854ab61',
-    ]
+    ],
+    epg: 'http://epg.it999.ru/epg.xml.gz'
   },
   sharavoz: {
     name: 'Sharavoz',
     links: [
       'https://ztempz.xyz/YZoaV4m2wgp-qvc0IYnwHb4TgHBqZaaFgzY8AoVUr2zQJ8fB-w4elw=='
-    ]
+    ],
+    epg: 'http://iptv-content.webhop.net/guide.xml'
   },
   viplime: {
     name: 'VipLime',
     links: [
       'http://viplime.fun/index.php?user=2006'
-    ]
+    ],
+    epg: 'http://epg.cdntv.online/full.xml.gz'
   },
   cbilling: {
     name: 'cbilling',
@@ -81,25 +86,29 @@ export const operators: object = {
       'https://otttviptv.com/?pp=23417',
       'https://smotrivip.com/?pp=23417',
       'https://russianiptv.com/?pp=23417'
-    ]
+    ],
+    epg: 'http://epg.iptvx.tv/xmltv.xml.gz'
   },
   kineskopclub: {
     name: 'Kineskop.club',
     links: [
       'https://kineskop.club/?p=MTAxMTI0MA'
-    ]
+    ],
+    epg: 'http://st.kineskop.tv/epg.xml.gz'
   },
   satbiling: {
     name: 'Satbiling',
     links: [
       'https://satbiling.com/register.php?partner=62513'
-    ]
+    ],
+    epg: 'http://epg.cdntv.online/full.xml.gz'
   },
   sharatv: {
     name: 'SHARA-TV',
     links: [
       'https://shara-tv.org/r/19149/'
-    ]
+    ],
+    epg: 'http://stb.shara-tv.org/epg/epgtv.xml.gz'
   }
 }
 

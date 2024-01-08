@@ -43,7 +43,7 @@ function OttNavigatorInstall({step}: Props) {
       <CardContent sx={sxManualText1}>{t('ottnavigator_manual2-7')}</CardContent>
       <ImageManual image={`ottnavigator_manual8.jpg`}/>
       <ImageManual image={`ottnavigator_manual9.jpg`}/>
-      <CardContent sx={sxManualText1}>{t('televizo_manual2-9')}</CardContent>
+      <CardContent sx={sxManualText1}>{t('enjoy_manual01')}</CardContent>
     </Card>
   );
 }

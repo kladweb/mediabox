@@ -16,7 +16,7 @@ function OttplayerWebSetup({step}: Props) {
   const params = useParams();
   const operator = params.operator;
   const player = params.player;
-  const linkOttplayer = 'https://ottplayer.tv/';
+  const linkOttplayer: string = 'https://ottplayer.tv/';
 
   return (
     <Card

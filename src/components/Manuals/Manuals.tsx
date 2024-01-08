@@ -25,6 +25,10 @@ import IlookPlaylistSmartTv from "./IlookPlaylistSmartTv";
 import SmartTvOttPlayInstall from "./SmartTvOttPlayInstall";
 import OttPlayFossSetup from "./OttPlayFossSetup";
 import OttPlaySmartTVSetup from "./OttPlaySmartTVSetup";
+import SsIptvLgTvInstall from "./SsIptvLgTvInstall";
+import SsIptvSetup from "./SsIptvSetup";
+import SsIptvSamsungInstall from "./SsIptvSamsungInstall";
+import FlexIptvInstall from "./FlexIptvInstall";
 
 function Manuals() {
   const navigate = useNavigate();
@@ -56,7 +60,8 @@ function Manuals() {
   //   stepManuals.push(<IlookPlaylistTvBox key={stepManuals.length} step={stepManuals.length + 1}/>);
   // }
 
-  if (operator === 'ilooktv' && (player === 'ssiptv' || player === 'ottplayer')) {
+  if (operator === 'ilooktv' && !((devices === 'smarttv' && player === 'ottplayfoss') ||
+    (devices === 'smarttv' && player === 'ottplaybyalex'))) {
     stepManuals.push(<IlookPlaylistTvBox key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
@@ -110,20 +115,35 @@ function Manuals() {
     stepManuals.push(<OttPlayFossSetup key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
-  if (player === 'ottplayer' && device === 'androidtvbox') {
+  if (player === 'ottplayer') {
     stepManuals.push(<OttplayerInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
   //SMART TV
-  if ((device === 'lgsmarttv' || device === 'samsungsmarttv') &&
-    (player === 'ottplayfoss' || player === 'ottplaybyalex')) {
+  if (devices === 'smarttv' && (player === 'ottplayfoss' || player === 'ottplaybyalex')) {
     stepManuals.push(<IlookPlaylistSmartTv key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
-  if ((device === 'lgsmarttv' || device === 'samsungsmarttv') &&
-    (player === 'ottplayfoss' || player === 'ottplaybyalex')) {
+  if (devices === 'smarttv' && (player === 'ottplayfoss' || player === 'ottplaybyalex')) {
     stepManuals.push(<SmartTvOttPlayInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
     stepManuals.push(<OttPlaySmartTVSetup key={stepManuals.length} step={stepManuals.length + 1}/>);
+  }
+
+  if (device === 'lgsmarttv' && player === 'ssiptv') {
+    stepManuals.push(<SsIptvLgTvInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
+  }
+
+  if (device === 'samsungsmarttv' && player === 'ssiptv') {
+    stepManuals.push(<SsIptvSamsungInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
+  }
+
+  if (devices === 'smarttv' && player === 'ssiptv') {
+    stepManuals.push(<SsIptvSetup key={stepManuals.length} step={stepManuals.length + 1}/>);
+  }
+
+  //APPLE TV
+  if (player === 'flexiptv') {
+    stepManuals.push(<FlexIptvInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
   return (
