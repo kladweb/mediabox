@@ -29,6 +29,8 @@ import SsIptvLgTvInstall from "./SsIptvLgTvInstall";
 import SsIptvSetup from "./SsIptvSetup";
 import SsIptvSamsungInstall from "./SsIptvSamsungInstall";
 import FlexIptvInstall from "./FlexIptvInstall";
+import SzaravozRegistration from "./SzaravozRegistration";
+import SzaravozBuy from "./SzaravozBuy";
 
 function Manuals() {
   const navigate = useNavigate();
@@ -49,6 +51,11 @@ function Manuals() {
   if (operator === 'ilooktv') {
     stepManuals.push(<IlookRegistration key={stepManuals.length} step={stepManuals.length + 1}/>);
     stepManuals.push(<IlookBuy key={stepManuals.length} step={stepManuals.length + 1}/>)
+  }
+
+  if (operator === 'sharavoz') {
+    stepManuals.push(<SzaravozRegistration key={stepManuals.length} step={stepManuals.length + 1}/>);
+    stepManuals.push(<SzaravozBuy key={stepManuals.length} step={stepManuals.length + 1}/>)
   }
 
   if (operator === 'ilooktv' && (player === 'ottplayfoss' || player === 'ottplaybyalex')) {

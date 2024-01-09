@@ -13,7 +13,6 @@ function IlookPlaylistSmartTv({step}: Props) {
   const {t} = useTranslation();
   const params = useParams();
   const operator = params.operator;
-  const player = params.player;
 
   return (
     <Card

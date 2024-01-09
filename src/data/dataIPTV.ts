@@ -108,7 +108,14 @@ export const operators: object = {
     links: [
       'https://shara-tv.org/r/19149/'
     ],
-    epg: 'http://stb.shara-tv.org/epg/epgtv.xml.gz'
+    epg: 'http://iptv-content.rv77.pw/epg.xml.gz',
+    epgOld: 'http://stb.shara-tv.org/epg/epgtv.xml.gz',
+    epg1: 'http://iptv-content.rv77.pw/guide.xml',
+    epg2: 'http://iptv-content.rv77.pw/epg.xml.gz',
+    epg3: 'http://iptv-content.rv77.pw/epg.xml.xz',
+    epg1_lite: 'http://iptv-content.rv77.pw/guide-lite.xml',
+    epg2_lite: 'http://iptv-content.rv77.pw/epg-lite.xml.gz',
+    epg3_lite: 'http://iptv-content.rv77.pw/epg-lite.xml.xz'
   }
 }
 
