@@ -11,7 +11,7 @@ import AndroidTvBoxTransfer from "./AndroidTvBoxTransfer";
 import TelevizoInstall from "./TelevizoInstall";
 import OttNavigatorDownload from "./OttNavigatorDownload";
 import OttPlayFossDownload from "./OttPlayFossDownload";
-import OttNavigatorInstall from "./OttNavigatorInstall";
+import OttNavigatorInstallPlaylist from "./OttNavigatorInstallPlaylist";
 import OttPlayFossInstall from "./OttPlayFossInstall";
 import { appColors } from "../../services/appColors";
 import { playersAll } from "../../data/dataIPTV";
@@ -31,6 +31,10 @@ import SsIptvSamsungInstall from "./SsIptvSamsungInstall";
 import FlexIptvInstall from "./FlexIptvInstall";
 import SzaravozRegistration from "./SzaravozRegistration";
 import SzaravozBuy from "./SzaravozBuy";
+import SzaravozPlaylist from "./SzaravozPlaylist";
+import OttNavigatorInstallKey from "./OttNavigatorInstallKey";
+import VipLimeRegistration from "./VipLimeRegistration";
+import VipLimeBuy from "./VipLimeBuy";
 
 function Manuals() {
   const navigate = useNavigate();
@@ -53,11 +57,6 @@ function Manuals() {
     stepManuals.push(<IlookBuy key={stepManuals.length} step={stepManuals.length + 1}/>)
   }
 
-  if (operator === 'sharavoz') {
-    stepManuals.push(<SzaravozRegistration key={stepManuals.length} step={stepManuals.length + 1}/>);
-    stepManuals.push(<SzaravozBuy key={stepManuals.length} step={stepManuals.length + 1}/>)
-  }
-
   if (operator === 'ilooktv' && (player === 'ottplayfoss' || player === 'ottplaybyalex')) {
     stepManuals.push(<IlookKey key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
@@ -72,7 +71,21 @@ function Manuals() {
     stepManuals.push(<IlookPlaylistTvBox key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
-  if (device === 'androidtvbox' && player !== 'ottplayer') {
+  if (operator === 'sharavoz') {
+    stepManuals.push(<SzaravozRegistration key={stepManuals.length} step={stepManuals.length + 1}/>);
+    stepManuals.push(<SzaravozBuy key={stepManuals.length} step={stepManuals.length + 1}/>)
+    stepManuals.push(<SzaravozPlaylist key={stepManuals.length} step={stepManuals.length + 1}/>)
+  }
+
+  if (operator === 'viplime') {
+    stepManuals.push(<VipLimeRegistration key={stepManuals.length} step={stepManuals.length + 1}/>);
+    stepManuals.push(<VipLimeBuy key={stepManuals.length} step={stepManuals.length + 1}/>);
+  }
+
+  if (device === 'androidtvbox' &&
+    player !== 'ottplayer' &&
+    !(player === 'ottnavigator' && operator === 'sharavoz') &&
+    !(player === 'ottnavigator' && operator === 'viplime')) {
     stepManuals.push(<AppsHelpDownload key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
@@ -100,7 +113,10 @@ function Manuals() {
     stepManuals.push(<AndroidTvBoxTransfer key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
-  if (device === 'androidtvbox' && player !== 'ottplayer') {
+  if (device === 'androidtvbox' &&
+    player !== 'ottplayer' &&
+    !(player === 'ottnavigator' && operator === 'sharavoz') &&
+    !(player === 'ottnavigator' && operator === 'viplime')) {
     stepManuals.push(<AppsHelpInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
@@ -109,7 +125,11 @@ function Manuals() {
   }
 
   if (player === 'ottnavigator' && device === 'androidtvbox') {
-    stepManuals.push(<OttNavigatorInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
+    if (operator === 'sharavoz' || operator === 'viplime' || operator === 'cbilling') {
+      stepManuals.push(<OttNavigatorInstallKey key={stepManuals.length} step={stepManuals.length + 1}/>);
+    } else {
+      stepManuals.push(<OttNavigatorInstallPlaylist key={stepManuals.length} step={stepManuals.length + 1}/>);
+    }
   }
 
   if (player === 'ottplayfoss' && device === 'androidtvbox') {

@@ -35,7 +35,7 @@ function OttNavigatorDownload({step}: Props) {
           </Box>
         )
       }
-      <CardContent sx={sxManualText1}>{t('sendFiles_manual1-2')}</CardContent>
+      <CardContent sx={sxManualText1}>{t('ottnavigator_manual1-2')}</CardContent>
     </Card>
   );
 }

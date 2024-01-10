@@ -1,10 +1,8 @@
 import * as React from "react";
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
-import { appColors } from "../../services/appColors";
+import { Box, Card, CardContent } from "@mui/material";
 import ImageManual from "./ImageManual";
-import { operators } from "../../data/dataIPTV";
 import { sxManualText1, sxCardMain, sxHeadMain } from "./sxsManuals";
 
 type Props = {
