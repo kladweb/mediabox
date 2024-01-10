@@ -1,10 +1,7 @@
-import * as React from "react";
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
-import { appColors } from "../../services/appColors";
+import { Box, Card, CardContent } from "@mui/material";
 import ImageManual from "./ImageManual";
-import { operators } from "../../data/dataIPTV";
 import { sxManualText1, sxCardMain, sxHeadMain } from "./sxsManuals";
 
 type Props = {
@@ -23,7 +20,7 @@ function IlookPlaylistTvBox({step}: Props) {
       sx={sxCardMain}
     >
       <Box component='h4' sx={sxHeadMain}>
-        {t('step')}{step}{t('step-IlookPlaylist-androidtvbox')}
+        {t('step')}{step}{t('step-IlookPlaylist')}
       </Box>
       <CardContent sx={sxManualText1}>{t('ilooktv_manual3-1')}</CardContent>
       <CardContent sx={sxManualText1}>{t('ilooktv_manual3-11')}</CardContent>

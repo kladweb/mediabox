@@ -9,7 +9,7 @@ type Props = {
   step: number;
 }
 
-function SzaravozRegistration({step}: Props) {
+function VipLimeRegistration({step}: Props) {
   const {t} = useTranslation();
   const params = useParams();
   const operator = params.operator;
@@ -23,18 +23,19 @@ function SzaravozRegistration({step}: Props) {
       <Box component='h4' sx={sxHeadMain}>
         {t('step')}{step}{t('step-IlookRegistration')}
       </Box>
-      <CardContent sx={sxManualText1}>{t('szaravoz_manual1-1')}
+      <CardContent sx={sxManualText1}>{t('viplime_manual1-1')}
       </CardContent>
       <Box component='a' href={links[0]} target="_blank" sx={sxLinksRegistration}>
         {operators[operator as keyof (typeof operators)]['name']}
       </Box>
       <CardContent sx={sxManualText1}>{t('ilooktv_manual1-2')}</CardContent>
-      <ImageManual image={`szaravoz_manual_01.jpg`}/>
-      <CardContent sx={sxManualText1}>{t('szaravoz_manual1-3')}</CardContent>
+      <ImageManual image={'viplime_manual_01.jpg'}/>
+      <ImageManual image={'viplime_manual_02.jpg'}/>
+      <CardContent sx={sxManualText1}>{t('viplime_manual1-3')}</CardContent>
       <CardContent sx={sxManualText1}>{t('ilooktv_manual1-4')}</CardContent>
-      <ImageManual image={`szaravoz_manual_02.jpg`}/>
+      <ImageManual image={'viplime_manual_04.jpg'}/>
     </Card>
   );
 }
 
-export default SzaravozRegistration;
+export default VipLimeRegistration;
