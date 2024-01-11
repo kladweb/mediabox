@@ -18,7 +18,7 @@ function AndroidTvBoxTransfer({step}: Props) {
   const [numberFiles, setNumberFiles] = useState(2);
 
   useEffect(() => {
-    if ((player === 'ottnavigator') && (operator === 'sharavoz' || operator === 'viplime')) {
+    if ((player === 'ottnavigator') && (operator === 'sharavoz' || operator === 'viplime' || operator === 'cbilling')) {
       setNumberFiles(1);
     }
   }, []);

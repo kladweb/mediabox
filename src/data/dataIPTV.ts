@@ -14,8 +14,8 @@ export const playersAll = {
   televizo: 'Televizo',
   ottplayer: 'OttPlayer',
   ssiptv: 'SS IPTV',
+  flexiptv: 'Flex IPTV',
   riptv: 'rIPTV',
-  flexiptv: 'Flex IPTV'
 }
 
 export const players = {
@@ -96,13 +96,13 @@ export const operators: object = {
     ],
     epg: 'http://st.kineskop.tv/epg.xml.gz'
   },
-  satbiling: {
-    name: 'Satbiling',
-    links: [
-      'https://satbiling.com/register.php?partner=62513'
-    ],
-    epg: 'http://epg.cdntv.online/full.xml.gz'
-  },
+  // satbiling: {
+  //   name: 'Satbiling',
+  //   links: [
+  //     'https://satbiling.com/register.php?partner=62513'
+  //   ],
+  //   epg: 'http://epg.cdntv.online/full.xml.gz'
+  // },
   sharatv: {
     name: 'SHARA-TV',
     links: [
@@ -118,7 +118,6 @@ export const operators: object = {
     epg3_lite: 'http://iptv-content.rv77.pw/epg-lite.xml.xz'
   }
 }
-
 
 // export const operators: string[] = [
 //   'ILookTv',

@@ -10,10 +10,11 @@ type Props = {
   step: number;
 }
 
-function OttPlayFossSetup({step}: Props) {
+function OttPlayFossSetupPlaylist({step}: Props) {
   const {t} = useTranslation();
   const params = useParams();
   const player = params.player;
+  const devices = params.devices;
 
   return (
     <Card
@@ -36,16 +37,31 @@ function OttPlayFossSetup({step}: Props) {
       <ImageManual image={'ottplayfoss_manual10.jpg'}/>
       <CardContent sx={sxManualText1}>{t('ottplayfoss_manual2-8')}</CardContent>
       <ImageManual image={'ottplayfoss_manual11.jpg'}/>
-      <CardContent sx={sxManualText1}>{t('ottplayfoss_manual2-9')}</CardContent>
-      <ImageManual image={'ottplayfoss_manual12.jpg'}/>
+
+      {
+        (devices !== 'smarttv') ?
+          <>
+            <CardContent sx={sxManualText1}>{t('ottplayfoss_manual2-9')}</CardContent>
+            <ImageManual image={'ottplayfoss_manual12.jpg'}/>
+          </>
+          :
+          <>
+            <CardContent sx={sxManualText1}>{t('ottplayfoss_manual2-92')}</CardContent>
+            <ImageManual image={'ottplayfoss_manual122.jpg'}/>
+          </>
+      }
+
+
+
       <CardContent sx={sxManualText1}>{t('ottplayfoss_manual2-10')}</CardContent>
       <ImageManual image={'ottplayfoss_manual13.jpg'}/>
       <CardContent sx={sxManualText1}>{t('ottplayfoss_manual2-11')}</CardContent>
       <ImageManual image={'ottplayfoss_manual14.jpg'}/>
       <ImageManual image={'ottplayfoss_manual15.jpg'}/>
+      <CardContent sx={sxManualText1}>{t('note_manual01')}</CardContent>
       <CardContent sx={sxManualText1}>{t('enjoy_manual01')}</CardContent>
     </Card>
   );
 }
 
-export default OttPlayFossSetup;
+export default OttPlayFossSetupPlaylist;

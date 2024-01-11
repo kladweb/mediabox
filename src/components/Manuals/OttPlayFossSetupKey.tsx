@@ -10,7 +10,7 @@ type Props = {
   step: number;
 }
 
-function OttPlaySmartTVSetup({step}: Props) {
+function OttPlayFossSetupKey({step}: Props) {
   const {t} = useTranslation();
   const params = useParams();
   const player = params.player;
@@ -46,9 +46,10 @@ function OttPlaySmartTVSetup({step}: Props) {
       <ImageManual image={'ilooktv_smartTv_ottplay_04.jpg'}/>
       <CardContent sx={sxManualText1}>{t('ottplay-smarttv_manual1-7')}</CardContent>
       <ImageManual image={'ottplayfoss_manual15.jpg'}/>
+      <CardContent sx={sxManualText1}>{t('note_manual01')}</CardContent>
       <CardContent sx={sxManualText1}>{t('enjoy_manual01')}</CardContent>
     </Card>
   );
 }
 
-export default OttPlaySmartTVSetup;
+export default OttPlayFossSetupKey;

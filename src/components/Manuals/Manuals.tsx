@@ -2,10 +2,10 @@ import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Box } from '@mui/material';
+import { appColors } from "../../services/appColors";
+import { playersAll } from "../../data/dataIPTV";
 import IlookRegistration from "./IlookRegistration";
 import IlookBuy from "./IlookBuy";
-import IlookPlaylistTvBox from "./IlookPlaylistTvBox";
-import IlookKey from "./IlookKey";
 import TelevizoDownload from "./TelevizoDownload";
 import AndroidTvBoxTransfer from "./AndroidTvBoxTransfer";
 import TelevizoInstall from "./TelevizoInstall";
@@ -13,18 +13,16 @@ import OttNavigatorDownload from "./OttNavigatorDownload";
 import OttPlayFossDownload from "./OttPlayFossDownload";
 import OttNavigatorInstallPlaylist from "./OttNavigatorInstallPlaylist";
 import OttPlayFossInstall from "./OttPlayFossInstall";
-import { appColors } from "../../services/appColors";
-import { playersAll } from "../../data/dataIPTV";
 import AppsHelpDownload from "./AppsHelpDownload";
 import AppsHelpInstall from "./AppsHelpInstall";
 import OttPlayByAlexDownload from "./OttPlayByAlexDownload";
 import OttPlayByAlexInstall from "./OttPlayByAlexInstall";
 import OttplayerWebSetup from "./OttplayerWebSetup";
 import OttplayerInstall from "./OttplayerInstall";
-import IlookPlaylistSmartTv from "./IlookPlaylistSmartTv";
+import IlookPlaylist from "./IlookPlaylist";
 import SmartTvOttPlayInstall from "./SmartTvOttPlayInstall";
-import OttPlayFossSetup from "./OttPlayFossSetup";
-import OttPlaySmartTVSetup from "./OttPlaySmartTVSetup";
+import OttPlayFossSetupPlaylist from "./OttPlayFossSetupPlaylist";
+import OttPlayFossSetupKey from "./OttPlayFossSetupKey";
 import SsIptvLgTvInstall from "./SsIptvLgTvInstall";
 import SsIptvSetup from "./SsIptvSetup";
 import SsIptvSamsungInstall from "./SsIptvSamsungInstall";
@@ -35,6 +33,13 @@ import SzaravozPlaylist from "./SzaravozPlaylist";
 import OttNavigatorInstallKey from "./OttNavigatorInstallKey";
 import VipLimeRegistration from "./VipLimeRegistration";
 import VipLimeBuy from "./VipLimeBuy";
+import VipLimePlaylist from "./VipLimePlaylist";
+import CbillingRegistration from "./CbillingRegistration";
+import CbillingBuy from "./CbillingBuy";
+import CbillingPlaylist from "./CbillingPlaylist";
+import KineskopRegistration from "./KineskopRegistration";
+import KineskopBuy from "./KineskopBuy";
+import KineskopPlaylist from "./KineskopPlaylist";
 
 function Manuals() {
   const navigate = useNavigate();
@@ -55,20 +60,7 @@ function Manuals() {
   if (operator === 'ilooktv') {
     stepManuals.push(<IlookRegistration key={stepManuals.length} step={stepManuals.length + 1}/>);
     stepManuals.push(<IlookBuy key={stepManuals.length} step={stepManuals.length + 1}/>)
-  }
-
-  if (operator === 'ilooktv' && (player === 'ottplayfoss' || player === 'ottplaybyalex')) {
-    stepManuals.push(<IlookKey key={stepManuals.length} step={stepManuals.length + 1}/>);
-  }
-
-  // if (operator === 'ilooktv' && ((device === 'androidtvbox' && player !== 'cbilling') ||
-  //   (devices === 'smarttv' && player === 'ssiptv'))) {
-  //   stepManuals.push(<IlookPlaylistTvBox key={stepManuals.length} step={stepManuals.length + 1}/>);
-  // }
-
-  if (operator === 'ilooktv' && !((devices === 'smarttv' && player === 'ottplayfoss') ||
-    (devices === 'smarttv' && player === 'ottplaybyalex'))) {
-    stepManuals.push(<IlookPlaylistTvBox key={stepManuals.length} step={stepManuals.length + 1}/>);
+    stepManuals.push(<IlookPlaylist key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
   if (operator === 'sharavoz') {
@@ -80,12 +72,24 @@ function Manuals() {
   if (operator === 'viplime') {
     stepManuals.push(<VipLimeRegistration key={stepManuals.length} step={stepManuals.length + 1}/>);
     stepManuals.push(<VipLimeBuy key={stepManuals.length} step={stepManuals.length + 1}/>);
+    stepManuals.push(<VipLimePlaylist key={stepManuals.length} step={stepManuals.length + 1}/>);
+  }
+
+  if (operator === 'cbilling') {
+    stepManuals.push(<CbillingRegistration key={stepManuals.length} step={stepManuals.length + 1}/>);
+    stepManuals.push(<CbillingBuy key={stepManuals.length} step={stepManuals.length + 1}/>);
+    stepManuals.push(<CbillingPlaylist key={stepManuals.length} step={stepManuals.length + 1}/>);
+  }
+
+  if (operator === 'kineskopclub') {
+    stepManuals.push(<KineskopRegistration key={stepManuals.length} step={stepManuals.length + 1}/>);
+    stepManuals.push(<KineskopBuy key={stepManuals.length} step={stepManuals.length + 1}/>);
+    stepManuals.push(<KineskopPlaylist key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
   if (device === 'androidtvbox' &&
     player !== 'ottplayer' &&
-    !(player === 'ottnavigator' && operator === 'sharavoz') &&
-    !(player === 'ottnavigator' && operator === 'viplime')) {
+    !(player === 'ottnavigator' && (operator === 'sharavoz' || operator === 'viplime' || operator === 'cbilling'))) {
     stepManuals.push(<AppsHelpDownload key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
@@ -109,14 +113,13 @@ function Manuals() {
     stepManuals.push(<OttplayerWebSetup key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
-  if (device === 'androidtvbox' && (operator !== 'cbilling' && player !== 'ottplayer')) {
+  if (device === 'androidtvbox' && player !== 'ottplayer') {
     stepManuals.push(<AndroidTvBoxTransfer key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
   if (device === 'androidtvbox' &&
     player !== 'ottplayer' &&
-    !(player === 'ottnavigator' && operator === 'sharavoz') &&
-    !(player === 'ottnavigator' && operator === 'viplime')) {
+    !(player === 'ottnavigator' && (operator === 'sharavoz' || operator === 'viplime' || operator === 'cbilling'))) {
     stepManuals.push(<AppsHelpInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
@@ -134,12 +137,12 @@ function Manuals() {
 
   if (player === 'ottplayfoss' && device === 'androidtvbox') {
     stepManuals.push(<OttPlayFossInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
-    stepManuals.push(<OttPlayFossSetup key={stepManuals.length} step={stepManuals.length + 1}/>);
+    stepManuals.push(<OttPlayFossSetupPlaylist key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
   if (player === 'ottplaybyalex' && device === 'androidtvbox') {
     stepManuals.push(<OttPlayByAlexInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
-    stepManuals.push(<OttPlayFossSetup key={stepManuals.length} step={stepManuals.length + 1}/>);
+    stepManuals.push(<OttPlayFossSetupPlaylist key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
   if (player === 'ottplayer') {
@@ -147,13 +150,14 @@ function Manuals() {
   }
 
   //SMART TV
-  if (devices === 'smarttv' && (player === 'ottplayfoss' || player === 'ottplaybyalex')) {
-    stepManuals.push(<IlookPlaylistSmartTv key={stepManuals.length} step={stepManuals.length + 1}/>);
-  }
 
   if (devices === 'smarttv' && (player === 'ottplayfoss' || player === 'ottplaybyalex')) {
     stepManuals.push(<SmartTvOttPlayInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
-    stepManuals.push(<OttPlaySmartTVSetup key={stepManuals.length} step={stepManuals.length + 1}/>);
+    if (operator !== 'sharavoz') {
+      stepManuals.push(<OttPlayFossSetupKey key={stepManuals.length} step={stepManuals.length + 1}/>);
+    } else {
+      stepManuals.push(<OttPlayFossSetupPlaylist key={stepManuals.length} step={stepManuals.length + 1}/>);
+    }
   }
 
   if (device === 'lgsmarttv' && player === 'ssiptv') {

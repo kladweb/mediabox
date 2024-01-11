@@ -2,9 +2,6 @@ import { useTranslation } from "react-i18next";
 import { Box, Card, CardContent } from "@mui/material";
 import ImageManual from "./ImageManual";
 import { sxManualText1, sxCardMain, sxHeadMain, sxLinksRegistration } from "./sxsManuals";
-import { useParams } from "react-router-dom";
-import * as React from "react";
-import { operators } from "../../data/dataIPTV";
 
 type Props = {
   step: number;
@@ -12,8 +9,6 @@ type Props = {
 
 function VipLimeBuy({step}: Props) {
   const {t} = useTranslation();
-  const params = useParams();
-  const operator = params.operator;
   const linkVipLimeBot = 'https://t.me/VipLime_test_bot'
 
   return (

@@ -15,8 +15,6 @@ function OttplayerInstall({step}: Props) {
   const devices = params.devices;
   const device = params.device;
 
-  console.log(devices);
-
   return (
     <Card
       component='div'
@@ -52,6 +50,7 @@ function OttplayerInstall({step}: Props) {
       <ImageManual image={'ottplayer_manual_23.jpg'}/>
       <CardContent sx={sxManualText1}>{t('ottplayer_manual2-12')}</CardContent>
       <ImageManual image={'ottplayer_manual_24.jpg'}/>
+      <CardContent sx={sxManualText1}>{t('note_manual01')}</CardContent>
       <CardContent sx={sxManualText1}>{t('enjoy_manual01')}</CardContent>
     </Card>
   );
