@@ -60,7 +60,7 @@ function FlexIptvInstall({step}: Props) {
       <ImageManual image={'flexiptv_manual16.jpg'}/>
       <ImageManual image={'flexiptv_manual17.jpg'}/>
       <ImageManual image={'flexiptv_manual18.jpg'}/>
-      <CardContent sx={sxManualText1}>{t('flexiptv_manual1-15')}</CardContent>
+      <CardContent sx={sxManualText1}>{t('note_manual01')}</CardContent>
       <CardContent sx={sxManualText1}>{t('enjoy_manual01')}</CardContent>
     </Card>
   );

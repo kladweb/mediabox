@@ -7,7 +7,6 @@ type Props = {
   player: string
 }
 export default function CardPlayer({player}: Props): JSX.Element {
-  console.log(player);
   const {t} = useTranslation();
   return (
     <Card sx={{

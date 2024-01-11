@@ -41,6 +41,7 @@ function SsIptvSetup({step}: Props) {
       <CardContent sx={sxManualText1}>{t('ssiptv_manual2-10')}</CardContent>
       <ImageManual image={'ssiptv_manual09.jpg'}/>
       <ImageManual image={'ssiptv_manual10.jpg'}/>
+      <CardContent sx={sxManualText1}>{t('note_manual01')}</CardContent>
       <CardContent sx={sxManualText1}>{t('enjoy_manual01')}</CardContent>
     </Card>
   );

@@ -43,6 +43,7 @@ function TelevizoInstall({step}: Props) {
       <ImageManual image={`televizo_manual10.jpg`}/>
       <CardContent sx={sxManualText1}>{t('televizo_manual2-8')}</CardContent>
       <ImageManual image={`televizo_manual11.jpg`}/>
+      <CardContent sx={sxManualText1}>{t('note_manual01')}</CardContent>
       <CardContent sx={sxManualText1}>{t('enjoy_manual01')}</CardContent>
     </Card>
   );

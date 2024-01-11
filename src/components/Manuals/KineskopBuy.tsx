@@ -8,7 +8,7 @@ type Props = {
   step: number;
 }
 
-function IlookBuy({step}: Props) {
+function KineskopBuy({step}: Props) {
   const {t} = useTranslation();
   const params = useParams();
   const operator = params.operator;
@@ -22,10 +22,12 @@ function IlookBuy({step}: Props) {
         {t('step')}{step}{t('step-IlookBuy')}
       </Box>
       <CardContent sx={sxManualText1}>{t('ilooktv_manual2-1')}</CardContent>
-      <ImageManual image={`${operator}_manual3.jpg`}/>
-      <CardContent sx={sxManualText1}>{t('ilooktv_manual2-2')}</CardContent>
+      <CardContent sx={sxManualText1}>{t('kineskopclub_manual2-2')}</CardContent>
+      <ImageManual image={'kineskop_manual_09.jpg'}/>
+      <CardContent sx={sxManualText1}>{t('kineskopclub_manual2-3')}</CardContent>
+      <ImageManual image={'kineskop_manual_10.jpg'}/>
     </Card>
   );
 }
 
-export default IlookBuy;
+export default KineskopBuy;
