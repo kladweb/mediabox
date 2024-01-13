@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Box, Card, CardContent } from "@mui/material";
 import ImageManual from "./ImageManual";
-import { sxManualText1, sxCardMain, sxHeadMain } from "./sxsManuals";
+import { sxManualText1, sxCardMain, sxHeadMain } from "../../services/sxStyles";
 
 type Props = {
   step: number;

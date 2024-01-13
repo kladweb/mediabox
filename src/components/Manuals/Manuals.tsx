@@ -40,6 +40,9 @@ import CbillingPlaylist from "./CbillingPlaylist";
 import KineskopRegistration from "./KineskopRegistration";
 import KineskopBuy from "./KineskopBuy";
 import KineskopPlaylist from "./KineskopPlaylist";
+import SharaTvRegistration from "./SharaTvRegistration";
+import SharaTvBuy from "./SharaTvBuy";
+import SharaTvPlaylist from "./SharaTvPlaylist";
 
 function Manuals() {
   const navigate = useNavigate();
@@ -85,6 +88,12 @@ function Manuals() {
     stepManuals.push(<KineskopRegistration key={stepManuals.length} step={stepManuals.length + 1}/>);
     stepManuals.push(<KineskopBuy key={stepManuals.length} step={stepManuals.length + 1}/>);
     stepManuals.push(<KineskopPlaylist key={stepManuals.length} step={stepManuals.length + 1}/>);
+  }
+
+  if (operator === 'sharatv') {
+    stepManuals.push(<SharaTvRegistration key={stepManuals.length} step={stepManuals.length + 1}/>);
+    stepManuals.push(<SharaTvBuy key={stepManuals.length} step={stepManuals.length + 1}/>);
+    stepManuals.push(<SharaTvPlaylist key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
   if (device === 'androidtvbox' &&

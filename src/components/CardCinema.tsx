@@ -2,11 +2,12 @@ import * as React from 'react';
 import { Card, CardContent, CardMedia, Typography, CardActionArea } from '@mui/material';
 import { appColors } from "../services/appColors";
 import { useTranslation } from "react-i18next";
+import { cinemas } from "../data/dataIPTV";
 
 type Props = {
-  player: string
+  cinema: string
 }
-export default function CardPlayer({player}: Props): JSX.Element {
+export default function CardCinema({cinema}: Props): JSX.Element {
   const {t} = useTranslation();
   return (
     <Card sx={{
@@ -31,16 +32,15 @@ export default function CardPlayer({player}: Props): JSX.Element {
       }}>
         <CardMedia
           component="img"
-          image={`/img/players/${player.replace(/[-\s]/g, '').toLowerCase()}.png`}
-          alt={player}
+          image={`/img/players/${cinema.replace(/[-\s]/g, '').toLowerCase()}.png`}
+          alt={cinema}
           sx={{display: "block", width: "18%", margin: "0.5em", objectFit: "contain"}}
         />
         <CardContent sx={{display: "block", width: "60%", color: `${appColors.mid1}`}}>
           <Typography gutterBottom component="div" sx={{m: "0", fontSize: '1.45em', lineHeight: '1em'}}>
-            {player}
+            {cinemas[cinema as keyof (typeof cinemas)]}
           </Typography>
           {
-            (player === 'Ott-Play by Alex') &&
             <Typography gutterBottom component="div"
                         sx={{
                           m: "0",

@@ -5,7 +5,7 @@ import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
 import { appColors } from "../../services/appColors";
 import ImageManual from "./ImageManual";
 import { operators } from "../../data/dataIPTV";
-import { sxManualText1, sxCardMain, sxHeadMain, sxLinksRegistration } from "./sxsManuals";
+import { sxManualText1, sxCardMain, sxHeadMain, sxLinksRegistration } from "../../services/sxStyles";
 
 type Props = {
   step: number;

@@ -1,27 +1,27 @@
-import { Container, Toolbar } from "@mui/material";
-import CardsPlayers from "../components/CardsPlayers";
 import { useEffect } from "react";
+import { Container, Toolbar } from "@mui/material";
 import { useNavigate, useParams } from "react-router-dom";
 import { players } from "../data/dataIPTV";
+import CardsCinemas from "../components/CardsCinemas";
 
-function PagePlayers() {
+function PageCinemas() {
   const navigate = useNavigate();
   const params = useParams();
   const deviceNames = Object.keys(players);
 
-  useEffect(() => {
-    if (params.device && !deviceNames.includes(params.device)) {
-      navigate('/');
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (params.cinema && !deviceNames.includes(params.device)) {
+  //     navigate('/blank');
+  //   }
+  // }, []);
 
   return (
     <Container maxWidth="xl">
       <Toolbar disableGutters sx={{flexWrap: 'wrap'}}>
-        <CardsPlayers/>
+        <CardsCinemas/>
       </Toolbar>
     </Container>
   )
 }
 
-export default PagePlayers;
+export default PageCinemas;

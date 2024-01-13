@@ -7,16 +7,20 @@ import PageManual from "../pages/PageManual";
 import PageMain from "../pages/PageMain";
 import PagePlayers from "../pages/PagePlayers";
 import Blank from "../components/Blank";
+import PageCinemas from "../pages/PageCinemas";
 
 export const PagesRouter = () => {
   return (
     <Routes>
       <Route path='/' element={<PageMain/>}/>
-      <Route path='/operators' element={<PageOperators/>}/>
-      <Route path='/operators/:operator' element={<PageDevices/>}/>
-      <Route path='/operators/:operator/:devices' element={<PageDevices/>}/>
-      <Route path='/operators/:operator/:devices/:device' element={<PagePlayers/>}/>
-      <Route path='/operators/:operator/:devices/:device/:player' element={<PageManual/>}/>
+      <Route path='/iptv' element={<PageOperators/>}/>
+      <Route path='/iptv/:operator' element={<PageDevices/>}/>
+      <Route path='/iptv/:operator/:devices' element={<PageDevices/>}/>
+      <Route path='/iptv/:operator/:devices/:device' element={<PagePlayers/>}/>
+      <Route path='/iptv/:operator/:devices/:device/:player' element={<PageManual/>}/>
+
+      <Route path='/media' element={<PageCinemas/>}/>
+      <Route path='/media/:cinema' element={<Blank/>}/>
 
       <Route path='/choose' element={<PageChoosingOperator/>}/>
       <Route path='/blank' element={<Blank/>}/>

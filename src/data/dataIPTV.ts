@@ -108,7 +108,8 @@ export const operators: object = {
     links: [
       'https://shara-tv.org/r/19149/'
     ],
-    epg: 'http://iptv-content.rv77.pw/epg.xml.gz',
+    epg: 'http://epg.tvfor.pro/epgtv.xml.gz',
+    epgold2: 'http://iptv-content.rv77.pw/epg.xml.gz',
     epgOld: 'http://stb.shara-tv.org/epg/epgtv.xml.gz',
     epg1: 'http://iptv-content.rv77.pw/guide.xml',
     epg2: 'http://iptv-content.rv77.pw/epg.xml.gz',
@@ -118,6 +119,15 @@ export const operators: object = {
     epg3_lite: 'http://iptv-content.rv77.pw/epg-lite.xml.xz'
   }
 }
+
+export const cinemas = {
+  hdvideobox: 'HD Videobox',
+  lampaandroid: 'Lampa for android',
+  lampasmarttv: 'Lampa for Smart TV',
+  lampabrowser: 'Lampa for browser'
+}
+
+// export const cinemas = ['hdvideobox', 'lampaandroid', 'lampasmarttv', 'lampabrowser'];
 
 // export const operators: string[] = [
 //   'ILookTv',

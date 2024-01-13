@@ -25,8 +25,8 @@ function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
   const {t, i18n} = useTranslation();
-  const pages: string[] = [`${t('menu1')}`, 'Pricing', 'Blog'];
-  const navigation: string[] = ['choose', 'blank', 'blank'];
+  const pages: string[] = [`${t('menu1')}`, `${t('menu2')}`, `${t('menu3')}`];
+  const navigation: string[] = ['choose', 'iptv', 'media'];
   const locales = {
     en: {title: 'English'},
     ru: {title: 'Русский'},

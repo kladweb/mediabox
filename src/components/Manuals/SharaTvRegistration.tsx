@@ -9,7 +9,7 @@ type Props = {
   step: number;
 }
 
-function KineskopRegistration({step}: Props) {
+function SharaTvRegistration({step}: Props) {
   const {t} = useTranslation();
   const params = useParams();
   const operator = params.operator;
@@ -23,21 +23,19 @@ function KineskopRegistration({step}: Props) {
       <Box component='h4' sx={sxHeadMain}>
         {t('step')}{step}{t('step-IlookRegistration')}
       </Box>
-      <CardContent sx={sxManualText1}>{t('kineskopclub_manual1-1')}
+      <CardContent sx={sxManualText1}>{t('sharatv_manual1-1')}
       </CardContent>
       <Box component='a' href={links[0]} target="_blank" sx={sxLinksRegistration}>
         {operators[operator as keyof (typeof operators)]['name']}
       </Box>
+      <ImageManual image={'sharatv_manual_01.jpg'}/>
+      <ImageManual image={'sharatv_manual_02.jpg'}/>
       <CardContent sx={sxManualText1}>{t('ilooktv_manual1-2')}</CardContent>
-      <ImageManual image={'kineskop_manual_01.jpg'}/>
-      <ImageManual image={'kineskop_manual_02.jpg'}/>
-      <CardContent sx={sxManualText1}>{t('ilooktv_manual1-4')}</CardContent>
-      <ImageManual image={'kineskop_manual_03.jpg'}/>
-      <CardContent sx={sxManualText1}>{t('kineskopclub_manual1-2')}</CardContent>
-      <ImageManual image={'kineskop_manual_04.jpg'}/>
+      <ImageManual image={'sharatv_manual_03.jpg'}/>
       <CardContent sx={sxManualText1}>{t('viplime_manual1-3')}</CardContent>
+      <CardContent sx={sxManualText1}>{t('ilooktv_manual1-4')}</CardContent>
     </Card>
   );
 }
 
-export default KineskopRegistration;
+export default SharaTvRegistration;

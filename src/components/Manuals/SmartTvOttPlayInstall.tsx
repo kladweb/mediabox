@@ -5,7 +5,7 @@ import { Box, Card, CardContent } from "@mui/material";
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import ImageManual from "./ImageManual";
-import { sxManualText1, sxCardMain, sxHeadMain, sxToggle1 } from "./sxsManuals";
+import { sxManualText1, sxCardMain, sxHeadMain, sxToggle1 } from "../../services/sxStyles";
 import { playersAll } from "../../data/dataIPTV";
 
 type Props = {
