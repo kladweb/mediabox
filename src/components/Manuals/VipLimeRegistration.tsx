@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Box, Card, CardContent } from "@mui/material";
 import ImageManual from "./ImageManual";
 import { operators } from "../../data/dataIPTV";
-import { sxManualText1, sxCardMain, sxHeadMain, sxLinksRegistration } from "./sxsManuals";
+import { sxManualText1, sxCardMain, sxHeadMain, sxLinksRegistration } from "../../services/sxStyles";
 
 type Props = {
   step: number;

@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Box, Card, CardContent } from "@mui/material";
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import ImageManual from "./ImageManual";
-import { sxManualText1, sxCardMain, sxHeadMain, sxToggle1, sxLinksRegistration } from "./sxsManuals";
+import { sxManualText1, sxCardMain, sxHeadMain, sxToggle1, sxLinksRegistration } from "../../services/sxStyles";
 import { useState } from "react";
 import ToggleButton from "@mui/material/ToggleButton";
 

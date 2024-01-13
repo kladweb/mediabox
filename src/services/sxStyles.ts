@@ -1,4 +1,4 @@
-import { appColors } from "../../services/appColors";
+import { appColors } from "./appColors";
 export const sxCardMain = {
   width: '100%',
   m: "1.5em auto",
@@ -52,4 +52,36 @@ export const sxToggle1 = {
   px: '1em',
   fontSize: '1em',
   color: '#efedf5',
+}
+
+export const sxMainCards = {
+  m: '1em auto',
+  p: '1em',
+  width: 'fit-content',
+  textAlign: 'center',
+  backgroundColor: appColors.mid2,
+  borderRadius: '1em',
+  boxShadow: `2px 2px 2px ${appColors.dark2}`,
+  transition: '0.3s',
+  ':hover': {
+    transform: 'translate(-0.05em, -0.05em)',
+    boxShadow: `4px 4px 10px ${appColors.dark2}`,
+    transition: '0.3s'
+  },
+  ':active': {
+    transform: 'translate(0, 0)',
+    boxShadow: `2px 2px 2px ${appColors.dark2}`
+  },
+}
+
+export const sxMainDescription = {
+  mt: 12,
+  mx: 'auto',
+  width: '100%',
+  fontSize: '1.25em',
+  fontWeight: '400',
+  color: appColors.light1,
+  textAlign: 'left',
+  // whiteSpace: 'pre-line',
+  textIndent: '2em'
 }
