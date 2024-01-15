@@ -16,7 +16,7 @@ export const sxHeadMain = {
   display: 'block',
   // textDecoration: 'underline',
   textAlign: 'center',
-  fontSize: '1.25em',
+  fontSize: {xs: '1rem', md: '1.25rem'},
   fontWeight: '600',
   color: appColors.dark2,
   backgroundColor: appColors.mid2,
@@ -25,7 +25,7 @@ export const sxHeadMain = {
 
 export const sxManualText1 = {
   py: '0.5em',
-  fontSize: '1.25em',
+  fontSize: {xs: '1rem', md: '1.25rem'},
   textAlign: 'left',
   color: appColors.light1,
   whiteSpace: 'pre-line',
@@ -34,10 +34,10 @@ export const sxManualText1 = {
 export const sxLinksRegistration = {
   display: 'inline-block',
   p: '0.2em 0.5em 0.4em',
-  m: '0 0.5em',
+  m: '0.25em 0.5em',
   textDecoration: 'none',
   color: `${appColors.mid2}`,
-  fontSize: '1.1em',
+  fontSize: {xs: '0.8rem', md: '1.1rem'},
   fontWeight: '400',
   backgroundColor: `${appColors.mid1}`,
   borderRadius: '0.5em',
@@ -75,13 +75,13 @@ export const sxMainCards = {
 }
 
 export const sxMainDescription = {
-  mt: 12,
+  mt: 5,
   mx: 'auto',
   width: '100%',
-  fontSize: '1.25em',
+  fontSize: {xs: '1em', md: '1.25em'},
   fontWeight: '400',
   color: appColors.light1,
   textAlign: 'left',
-  // whiteSpace: 'pre-line',
   textIndent: '2em'
+  // whiteSpace: 'pre-line',
 }

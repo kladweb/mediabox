@@ -10,7 +10,8 @@ export default function CardPlayer({player}: Props): JSX.Element {
   const {t} = useTranslation();
   return (
     <Card sx={{
-      width: 345,
+      width: {xs: '85vw', md: 345},
+      maxWidth: 345,
       height: 90,
       m: "0.75em",
       p: "0",

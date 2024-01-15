@@ -13,6 +13,7 @@ export default function Blank() {
     }}>
       <Box component='h5' sx={{
         display: "block",
+        px: "0.25em",
         fontSize: "1.5em",
         fontWeight: "300",
         textAlign: "center",

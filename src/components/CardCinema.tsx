@@ -12,8 +12,9 @@ export default function CardCinema({cinema}: Props): JSX.Element {
 
   return (
     <Card sx={{
-      width: 345,
-      height: 90,
+      width: {xs: '85vw', md: 345},
+      maxWidth: 345,
+      height: 100,
       m: "0.75em",
       p: "0",
       display: 'flex',

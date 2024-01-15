@@ -29,7 +29,7 @@ function CardsDevices() {
           mt: 12,
           mx: 'auto',
           width: '100%',
-          fontSize: '2rem',
+          fontSize: {xs: '1.25rem', md: '1.5rem'},
           fontWeight: '400',
           color: appColors.mid2,
           textAlign: 'center',

@@ -1,5 +1,7 @@
 // export const devices: string[] = ['android', 'smarttv'];
 
+export const nameApp = 'MEDIABOX';
+
 export const devices = {
   boxes: ['Android TV Box', 'Apple TV'],
   smarttv: ['LG Smart TV', 'SAMSUNG Smart TV']

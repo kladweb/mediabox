@@ -14,9 +14,9 @@ function CardsOperators() {
       <Box
         component='h3'
         sx={{
-          m: '3em auto 0.5em',
+          m: {xs: '3.5em auto 0.5em', md: '3em auto 0.5em'},
           width: '100%',
-          fontSize: '2rem',
+          fontSize: {xs: '1.5rem', md: '2rem'},
           fontWeight: '400',
           color: appColors.mid2,
           textAlign: 'center',
@@ -55,7 +55,7 @@ function CardsOperators() {
         sx={{
           m: '0.5em auto 2em',
           width: '100%',
-          fontSize: '1.5em',
+          fontSize: {xs: '1.25rem', md: '1.5rem'},
           fontWeight: '400',
           color: appColors.light1,
           textAlign: 'center',

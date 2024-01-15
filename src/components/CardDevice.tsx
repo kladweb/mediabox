@@ -12,10 +12,12 @@ export default function CardDevice({device}: IProps): JSX.Element {
 
   return (
     <Card sx={{
-      width: 345,
+      width: {xs: '90vw', md: 345},
       height: 250,
-      margin: "2em",
+      maxWidth: 345,
+      margin: {xs: '1rem 0', sm: '1rem', md: '2rem'},
       display: 'flex',
+      justifyContent: 'center',
       backgroundColor: appColors.mid2,
       transition: '1s',
       ':hover': {

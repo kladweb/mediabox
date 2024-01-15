@@ -2,19 +2,17 @@ import { useState } from "react";
 import { CardMedia } from "@mui/material";
 
 function ImageManual({image}: any) {
-
-  // {xs: 'none', md: 'flex'},
-  // window.innerWidth
-
-  const [scaleImg, setScaleImg] = useState(15);
+  const scaleBig = (window.innerWidth <= 900) ? 98 : 70;
+  const scaleSmall = (window.innerWidth <= 900) ? 35 : 15;
+  const [scaleImg, setScaleImg] = useState(scaleSmall);
   const [cursor, setCursor] = useState('zoom-in');
 
   const handlerZoom = () => {
-    if (scaleImg === 15) {
-      setScaleImg((window.innerWidth <= 900) ? 98 : 70);
+    if (scaleImg <= scaleSmall) {
+      setScaleImg(scaleBig);
       setCursor('zoom-out');
     } else {
-      setScaleImg(15);
+      setScaleImg(scaleSmall);
       setCursor('zoom-in');
     }
   }
@@ -27,7 +25,7 @@ function ImageManual({image}: any) {
       alt={image}
       onClick={handlerZoom}
       sx={{
-        margin: "0.5em auto 1em",
+        margin: {xs: '0 auto 0.25rem', md: '0.5em auto 1em'},
         objectFit: "contain",
         cursor: `${cursor}`,
         width: `${scaleImg}%`,
