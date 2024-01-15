@@ -8,6 +8,7 @@ import PageMain from "../pages/PageMain";
 import PagePlayers from "../pages/PagePlayers";
 import Blank from "../components/Blank";
 import PageCinemas from "../pages/PageCinemas";
+import PageAbout from "../pages/PageAbout";
 
 export const PagesRouter = () => {
   return (
@@ -24,7 +25,7 @@ export const PagesRouter = () => {
       <Route path='/media/:cinema' element={<PageManual/>}/>
 
       <Route path='/faq' element={<Blank/>}/>
-      <Route path='/about' element={<Blank/>}/>
+      <Route path='/about' element={<PageAbout/>}/>
 
       <Route path='/blank' element={<Blank/>}/>
       <Route path='*' element={<Navigate to='/'/>}/>

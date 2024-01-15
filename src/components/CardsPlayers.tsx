@@ -7,7 +7,8 @@ import { appColors } from "../services/appColors";
 import { players } from "../data/dataIPTV";
 import './cards.scss';
 import CardPlayer from "./CardPlayer";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import LoaderLinear from "./LoaderLinear";
 
 function CardsPlayers() {
   const navigate = useNavigate();
@@ -16,11 +17,22 @@ function CardsPlayers() {
   const params = useParams();
   const device = params.device;
 
+  const [isOpenLoader, setIsOpenLoader] = useState(false);
+
   useEffect(() => {
     if (device && !(deviceNames.includes(device))) {
       navigate('/');
     }
   }, []);
+
+  const hendlerClickPlayer = (e: any, player: string) => {
+    e.preventDefault();
+    setIsOpenLoader(true);
+    setTimeout(() => {
+      setIsOpenLoader(false);
+      navigate(player.replace(/[-\s]/g, '').toLowerCase());
+    }, 1500);
+  }
 
   return (
     <>
@@ -55,6 +67,9 @@ function CardsPlayers() {
                   // to={'/device'}
                   to={player.replace(/[-\s]/g, '').toLowerCase()}
                   className='nav-cards'
+                  onClick={(e) => {
+                    hendlerClickPlayer(e, player);
+                  }}
                 >
                   <CardPlayer player={player}/>
                 </NavLink>
@@ -63,6 +78,7 @@ function CardsPlayers() {
           </>
         }
       </Box>
+      <LoaderLinear isOpenLoader={isOpenLoader}/>
       {/*<Box sx={{*/}
       {/*  margin: '0 auto',*/}
       {/*  display: 'block',*/}
