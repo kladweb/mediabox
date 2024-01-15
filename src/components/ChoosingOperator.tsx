@@ -20,9 +20,9 @@ function ChoosingOperator() {
       <Box
         component='h3'
         sx={{
-          m: '3em auto 0.5em',
+          m: {xs: '4.5em auto 0.75em', md: '3em auto 0.5em'},
           width: '100%',
-          fontSize: '2rem',
+          fontSize: {xs: '1.2rem', md: '1.5rem'},
           fontWeight: '400',
           color: appColors.mid2,
           textAlign: 'center',
@@ -35,7 +35,7 @@ function ChoosingOperator() {
         sx={{
           m: '0 auto',
           width: '100%',
-          fontSize: '1.25em',
+          fontSize: {xs: '1rem', md: '1.25rem'},
           fontWeight: '400',
           color: appColors.light1,
           textAlign: 'justify',

@@ -17,6 +17,7 @@ import { useTranslation } from "react-i18next";
 
 import { appColors } from "../services/appColors";
 import './header.scss';
+import { nameApp } from "../data/dataIPTV";
 
 // const pages = ['Products', 'Pricing', 'Blog'];
 // const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -25,8 +26,8 @@ function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
   const {t, i18n} = useTranslation();
-  const pages: string[] = [`${t('menu1')}`, `${t('menu2')}`, `${t('menu3')}`];
-  const navigation: string[] = ['choose', 'iptv', 'media'];
+  const pages: string[] = [`${t('menu1')}`, `${t('menu2')}`, `${t('menu3')}`, `${t('menu4')}`, `${t('menu5')}`];
+  const navigation: string[] = ['choose', 'iptv', 'media', 'faq', 'about'];
   const locales = {
     en: {title: 'English'},
     ru: {title: 'Русский'},
@@ -54,20 +55,7 @@ function Header() {
     }
   };
 
-  // const theme = createTheme({
-  //   components: {
-  //     MuiAppBar: {
-  //       styleOverrides: {
-  //         colorPrimary: {
-  //           backgroundColor: "#b1091d"
-  //         }
-  //       }
-  //     }
-  //   }
-  // });
-
   return (
-    // <ThemeProvider theme={theme}>
     <AppBar
       position="fixed"
       // color="secondary"
@@ -81,7 +69,6 @@ function Header() {
             variant="h5"
             noWrap
             component="div"
-            // href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
               display: {xs: 'none', md: 'flex'},
@@ -90,17 +77,17 @@ function Header() {
               letterSpacing: '.3rem',
               textDecoration: 'none',
               color: appColors.mid2,
-              cursor: 'default'
+              cursor: 'default',
             }}
           >
             <NavLink id="RouterNavLink" to={'/'} key={0} className='navPages-links navPages-links-first'>
-              MEDIABOX
+              {nameApp}
             </NavLink>
           </Typography>
           <Box
             sx={{
-              flexGrow: 1,
               display: {xs: 'flex', md: 'none'},
+              mr: '0.5rem',
               color: appColors.light1,
             }}
           >
@@ -132,17 +119,24 @@ function Header() {
                 display: {xs: 'block', md: 'none'},
               }}
             >
-              {pages.map((page) => (
-                <MenuItem
-                  key={page}
-                  onClick={handleCloseNavMenu}
+              {pages.map((page: string, index: number) => (
+                <NavLink
+                  to={`/${navigation[index]}`}
+                  key={index}
+                  className={`navPages-links navPages-links-${navigation[index]}`}
                 >
-                  <Typography
-                    textAlign="center"
+                  <MenuItem
+                    key={page}
+                    onClick={handleCloseNavMenu}
                   >
-                    {page}
-                  </Typography>
-                </MenuItem>
+                    <Typography
+                      textAlign="center"
+                      sx={{color: appColors.mid1}}
+                    >
+                      {page}
+                    </Typography>
+                  </MenuItem>
+                </NavLink>
               ))}
             </Menu>
           </Box>
@@ -150,7 +144,6 @@ function Header() {
             variant="h5"
             noWrap
             component="div"
-            // href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
               display: {xs: 'flex', md: 'none'},
@@ -163,7 +156,7 @@ function Header() {
             }}
           >
             <NavLink to={'/'} key={0} className='navPages-links navPages-links-first'>
-              IPTV-BOX
+              {nameApp}
             </NavLink>
           </Typography>
           <Box sx={{flexGrow: 1, display: {xs: 'none', md: 'flex'}}}>
@@ -175,7 +168,7 @@ function Header() {
               >
                 <Box
                   key={page}
-                  // onClick={handleCloseNavMenu}
+                  onClick={handleCloseNavMenu}
                   sx={{
                     m: 2,
                     color: appColors.light1,
@@ -183,7 +176,6 @@ function Header() {
                     textTransform: 'uppercase',
                     ':hover': {
                       color: appColors.mid2,
-                      // color: '#84285b',
                     },
                   }}
                 >
@@ -201,17 +193,11 @@ function Header() {
                 display: 'block',
                 ':hover': {
                   color: appColors.mid2,
-                  // color: '#84285b',
                 },
               }}
             >
               {t('lang')}
             </Button>
-            {/*<Tooltip title="Open settings">*/}
-            {/*  <IconButton onClick={handleOpenUserMenu} sx={{p: 0}}>*/}
-            {/*    <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg"/>*/}
-            {/*  </IconButton>*/}
-            {/*</Tooltip>*/}
             <Menu
               sx={{mt: '45px'}}
               id="menu-appbar"
@@ -235,19 +221,11 @@ function Header() {
                   <Typography textAlign="center">{locales[locale as keyof (typeof locales)].title}</Typography>
                 </MenuItem>
               ))}
-
-
-              {/*{settings.map((setting) => (*/}
-              {/*  <MenuItem key={setting} onClick={handleCloseUserMenu}>*/}
-              {/*    <Typography textAlign="center">{setting}</Typography>*/}
-              {/*  </MenuItem>*/}
-              {/*))}*/}
             </Menu>
           </Box>
         </Toolbar>
       </Container>
     </AppBar>
-    // </ThemeProvider>
   );
 }
 

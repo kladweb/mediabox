@@ -13,6 +13,7 @@ export const PagesRouter = () => {
   return (
     <Routes>
       <Route path='/' element={<PageMain/>}/>
+      <Route path='/choose' element={<PageChoosingOperator/>}/>
       <Route path='/iptv' element={<PageOperators/>}/>
       <Route path='/iptv/:operator' element={<PageDevices/>}/>
       <Route path='/iptv/:operator/:devices' element={<PageDevices/>}/>
@@ -22,7 +23,9 @@ export const PagesRouter = () => {
       <Route path='/media' element={<PageCinemas/>}/>
       <Route path='/media/:cinema' element={<PageManual/>}/>
 
-      <Route path='/choose' element={<PageChoosingOperator/>}/>
+      <Route path='/faq' element={<Blank/>}/>
+      <Route path='/about' element={<Blank/>}/>
+
       <Route path='/blank' element={<Blank/>}/>
       <Route path='*' element={<Navigate to='/'/>}/>
     </Routes>

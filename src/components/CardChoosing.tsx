@@ -24,27 +24,27 @@ export default function CardChoosing({operator}: Props): JSX.Element {
         transition: '1s',
         border: `solid 5px ${appColors.mid2}`,
         borderRadius: '1em'
-        // ':hover': {
-        //   transform: 'scale(1.01)',
-        //   transition: '0.4s'
-        // }
       }}
     >
       <CardMedia
         component="img"
         height="100"
         image={`/img/operators/${operator.toLowerCase()}.png`}
-        alt="green iguana"
+        alt={operator}
         sx={{margin: "1em 0 -1em", objectFit: "contain"}}
       />
       <CardContent sx={{textAlign: 'left', color: `${appColors.dark2}`}}>
         <Typography gutterBottom component="h6"
-                    sx={{fontSize: '1.25em'}}
+                    sx={{fontSize: {xs: '1rem', md: '1.25rem'}}}
         >
           {t('price')}
         </Typography>
         <Typography gutterBottom component="div"
-                    sx={{fontSize: '1.25em', lineHeight: '1.75em', color: `${appColors.mid1}`}}
+                    sx={{
+                      fontSize: {xs: '0.9rem', md: '1.25rem'},
+                      lineHeight: {xs: '1.5rem', md: '1.75rem'},
+                      color: `${appColors.mid1}`
+                    }}
         >
           {
             <ul style={{margin: 0}}>
@@ -57,13 +57,17 @@ export default function CardChoosing({operator}: Props): JSX.Element {
           }
         </Typography>
         <Typography gutterBottom component="h6"
-                    sx={{mt: '1em', fontSize: '1.25em'}}
+                    sx={{mt: '1em', fontSize: {xs: '1rem', md: '1.25rem'}}}
         >
           {t('description')}
         </Typography>
         <Typography gutterBottom
                     component="div"
-                    sx={{fontSize: '1.25em', lineHeight: '1.75em', color: `${appColors.mid1}`}}
+                    sx={{
+                      fontSize: {xs: '0.9rem', md: '1.25rem'},
+                      lineHeight: {xs: '1.5rem', md: '1.75rem'},
+                      color: `${appColors.mid1}`
+                    }}
         >
           {
             <ul style={{margin: 0, listStyleImage: "url('/img/icons/arrow.png')", whiteSpace: 'pre-wrap'}}>
@@ -85,7 +89,7 @@ export default function CardChoosing({operator}: Props): JSX.Element {
             mt: '1em',
             textDecoration: 'none',
             color: `${appColors.mid2}`,
-            fontSize: '1.1em',
+            fontSize: {xs: '1rem', md: '1.1rem'},
             fontWeight: '400',
             backgroundColor: `${appColors.mid1}`,
             borderRadius: '0.75em',

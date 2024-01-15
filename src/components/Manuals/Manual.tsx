@@ -225,9 +225,9 @@ function Manual() {
       <Box
         component='h4'
         sx={{
-          m: "3.6em auto 0.5em",
+          m: {xs: '4.5em auto 0.5em', md: '3.6em auto 0.5em'},
           width: '100%',
-          fontSize: '1.75rem',
+          fontSize: {xs: '1.2rem', md: '1.75rem'},
           fontWeight: '600',
           color: appColors.mid2,
           textAlign: 'center',

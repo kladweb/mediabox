@@ -5,28 +5,6 @@ import { useTranslation } from "react-i18next";
 import './cards.scss';
 import { sxMainCards, sxMainDescription } from "../services/sxStyles";
 
-function MainInfo() {
-  const {t} = useTranslation();
-  const navigate = useNavigate();
-
-  return (
-    <>
-      <Service
-        textInfo={t('mainText1')}
-        pageNavigation='iptv'
-        nameService='IPTV'
-        descriptionService={t('mainButton1')}
-      />
-      <Service
-        textInfo={t('mainText2')}
-        pageNavigation='media'
-        nameService={t('mainButton21')}
-        descriptionService={t('mainButton23')}
-      />
-    </>
-  )
-}
-
 type Props = {
   textInfo: string,
   pageNavigation: string,
@@ -51,6 +29,28 @@ function Service({textInfo, pageNavigation, nameService, descriptionService}: Pr
       </CardActionArea>
     </>
   );
+}
+
+function MainInfo() {
+  const {t} = useTranslation();
+  const navigate = useNavigate();
+
+  return (
+    <Box sx={{mt: 7}}>
+      <Service
+        textInfo={t('mainText1')}
+        pageNavigation='iptv'
+        nameService='IPTV'
+        descriptionService={t('mainButton1')}
+      />
+      <Service
+        textInfo={t('mainText2')}
+        pageNavigation='media'
+        nameService={t('mainButton21')}
+        descriptionService={t('mainButton23')}
+      />
+    </Box>
+  )
 }
 
 export default MainInfo;

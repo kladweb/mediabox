@@ -13,10 +13,12 @@ export default function CardOperator({operator}: Props): JSX.Element {
 
   return (
     <Card sx={{
-      width: 345,
+      width: {xs: '90vw', sm: 345},
+      maxWidth: 345,
       height: 180,
-      margin: "1.5em",
+      margin: {xs: '0.75rem 0', sm: '1.5rem'},
       display: 'flex',
+      justifyContent: 'center',
       backgroundColor: appColors.light1,
       transition: '1s',
       ':hover': {
@@ -27,11 +29,10 @@ export default function CardOperator({operator}: Props): JSX.Element {
       <CardActionArea>
         <CardMedia
           component="img"
-          height="100"
+          // height="100"
           image={`/img/operators/${operator.toLowerCase()}.png`}
-          // image="/img/android.png"
-          alt="green iguana"
-          sx={{margin: "1em 0", objectFit: "contain"}}
+          alt={operator}
+          sx={{margin: "1em 0", height: '5rem', objectFit: "contain"}}
         />
         <CardContent sx={{textAlign: 'center', color: `${appColors.mid1}`}}>
           <Typography gutterBottom variant="h6" component="div"
