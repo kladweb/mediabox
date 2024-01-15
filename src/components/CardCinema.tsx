@@ -9,6 +9,7 @@ type Props = {
 }
 export default function CardCinema({cinema}: Props): JSX.Element {
   const {t} = useTranslation();
+
   return (
     <Card sx={{
       width: 345,
@@ -32,12 +33,12 @@ export default function CardCinema({cinema}: Props): JSX.Element {
       }}>
         <CardMedia
           component="img"
-          image={`/img/players/${cinema.replace(/[-\s]/g, '').toLowerCase()}.png`}
+          image={`/img/apps/${cinema.slice(0, 5)}.png`}
           alt={cinema}
           sx={{display: "block", width: "18%", margin: "0.5em", objectFit: "contain"}}
         />
-        <CardContent sx={{display: "block", width: "60%", color: `${appColors.mid1}`}}>
-          <Typography gutterBottom component="div" sx={{m: "0", fontSize: '1.45em', lineHeight: '1em'}}>
+        <CardContent sx={{display: "block", color: `${appColors.mid1}`}}>
+          <Typography gutterBottom component="div" sx={{mt: "0.25em", fontSize: '1.5em', lineHeight: '1em'}}>
             {cinemas[cinema as keyof (typeof cinemas)]}
           </Typography>
           {
@@ -45,12 +46,12 @@ export default function CardCinema({cinema}: Props): JSX.Element {
                         sx={{
                           m: "0",
                           fontSize: '1em',
-                          lineHeight: '1.5em',
-                          position: 'absolute',
-                          fontStretch: 'condensed'
+                          lineHeight: '1.25em',
+                          // position: 'absolute',
+                          // fontStretch: 'condensed'
                         }}
             >
-              {t(`ottplaybyalex-Note`)}
+              {t(`${cinema}-note`)}
             </Typography>
           }
         </CardContent>

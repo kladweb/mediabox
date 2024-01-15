@@ -28,13 +28,13 @@ function CardsCinemas() {
         sx={{
           m: '3em auto 0.5em',
           width: '100%',
-          fontSize: '2rem',
+          fontSize: '1.75rem',
           fontWeight: '400',
           color: appColors.mid2,
           textAlign: 'center',
         }}
       >
-        {t('headPlayer')}
+        {t('headApplication')}
       </Box>
       <Box component='div' sx={{
         margin: '0 auto',

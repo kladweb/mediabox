@@ -1,11 +1,11 @@
 import { Container, Toolbar } from "@mui/material";
-import Manuals from "../components/Manuals/Manuals";
+import Manual from "../components/Manuals/Manual";
 
 function PageManual() {
   return (
     <Container maxWidth="xl">
       <Toolbar disableGutters sx={{flexWrap: 'wrap'}}>
-        <Manuals/>
+        <Manual/>
       </Toolbar>
     </Container>
   )

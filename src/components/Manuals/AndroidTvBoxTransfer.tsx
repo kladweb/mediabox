@@ -14,6 +14,7 @@ function AndroidTvBoxTransfer({step}: Props) {
   const params = useParams();
   const player = params.player;
   const operator = params.operator;
+  const cinema = params.cinema;
 
   const [numberFiles, setNumberFiles] = useState(2);
 
@@ -40,11 +41,24 @@ function AndroidTvBoxTransfer({step}: Props) {
       <ImageManual image={`androidtvbox_manual4.jpg`}/>
       <CardContent sx={sxManualText1}>{t('androidtvbox_manual2-4')}</CardContent>
       <CardContent sx={sxManualText1}>{t(`androidtvbox_manual2-5_${numberFiles}`)}</CardContent>
-      <ImageManual image={`androidtvbox_manual5_${player}_${numberFiles}.jpg`}/>
-      <CardContent sx={sxManualText1}>{t(`androidtvbox_manual2-6_${numberFiles}`)}</CardContent>
-      <ImageManual image={'androidtvbox_manual6.jpg'}/>
-      <ImageManual image={'androidtvbox_manual7.jpg'}/>
-      <ImageManual image={`androidtvbox_manual8_${player}_${numberFiles}.jpg`}/>
+      {
+        (cinema) ?
+          <>
+            <ImageManual image={`androidtvbox_manual5_${cinema}_${numberFiles}.jpg`}/>
+            <CardContent sx={sxManualText1}>{t(`androidtvbox_manual2-6_${numberFiles}`)}</CardContent>
+            <ImageManual image={'androidtvbox_manual6.jpg'}/>
+            <ImageManual image={'androidtvbox_manual7.jpg'}/>
+            <ImageManual image={`androidtvbox_manual8_${cinema}_${numberFiles}.jpg`}/>
+          </>
+          :
+          <>
+            <ImageManual image={`androidtvbox_manual5_${player}_${numberFiles}.jpg`}/>
+            <CardContent sx={sxManualText1}>{t(`androidtvbox_manual2-6_${numberFiles}`)}</CardContent>
+            <ImageManual image={'androidtvbox_manual6.jpg'}/>
+            <ImageManual image={'androidtvbox_manual7.jpg'}/>
+            <ImageManual image={`androidtvbox_manual8_${player}_${numberFiles}.jpg`}/>
+          </>
+      }
     </Card>
   );
 }

@@ -43,8 +43,15 @@ import KineskopPlaylist from "./KineskopPlaylist";
 import SharaTvRegistration from "./SharaTvRegistration";
 import SharaTvBuy from "./SharaTvBuy";
 import SharaTvPlaylist from "./SharaTvPlaylist";
+import HdvideoboxDownload from "./HdvideoboxDownload";
+import HdvideoboxInstall from "./HdvideoboxInstall";
+import LampaAndroidDownload from "./LampaAndroidDownload";
+import LampaAndroidInstall from "./LampaAndroidInstall";
+import LampaSetup from "./LampaSetup";
+import LampaSmarttvInstall from "./LampaSmarttvInstall";
+import LampaBrowserInstall from "./LampaBrowserInstall";
 
-function Manuals() {
+function Manual() {
   const navigate = useNavigate();
   const {t} = useTranslation();
   const params = useParams();
@@ -52,6 +59,7 @@ function Manuals() {
   const devices = params.devices;
   const device = params.device;
   const player = params.player;
+  const cinema = params.cinema;
   const stepManuals: JSX.Element[] = [];
 
   useEffect(() => {
@@ -186,6 +194,32 @@ function Manuals() {
     stepManuals.push(<FlexIptvInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
+  //HD VIDEOBOX
+  if (cinema === 'hdvideobox') {
+    stepManuals.push(<HdvideoboxDownload key={stepManuals.length} step={stepManuals.length + 1}/>);
+    stepManuals.push(<AndroidTvBoxTransfer key={stepManuals.length} step={stepManuals.length + 1}/>);
+    stepManuals.push(<HdvideoboxInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
+  }
+
+  //Lampa android
+  if (cinema === 'lampaandroid') {
+    stepManuals.push(<LampaAndroidDownload key={stepManuals.length} step={stepManuals.length + 1}/>);
+    stepManuals.push(<AndroidTvBoxTransfer key={stepManuals.length} step={stepManuals.length + 1}/>);
+    stepManuals.push(<LampaAndroidInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
+  }
+
+  if (cinema === 'lampasmarttv') {
+    stepManuals.push(<LampaSmarttvInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
+  }
+
+  if (cinema === 'lampabrowser') {
+    stepManuals.push(<LampaBrowserInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
+  }
+
+  if (cinema && cinema !== 'hdvideobox') {
+    stepManuals.push(<LampaSetup key={stepManuals.length} step={stepManuals.length + 1}/>);
+  }
+
   return (
     <>
       <Box
@@ -199,11 +233,13 @@ function Manuals() {
           textAlign: 'center',
         }}
       >
-        {t('headManual')}
+        {
+          (cinema) ? <>{t('headManualCinema')}</> : <>{t('headManualIptv')}</>
+        }
       </Box>
       {stepManuals}
     </>
   );
 }
 
-export default Manuals;
+export default Manual;

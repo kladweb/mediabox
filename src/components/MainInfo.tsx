@@ -9,39 +9,48 @@ function MainInfo() {
   const {t} = useTranslation();
   const navigate = useNavigate();
 
-  const handlerChoosePageIptv = () => {
-    navigate('/iptv');
-  }
-
-  const handlerChoosePageMedia = () => {
-    navigate('/media');
-  }
-
   return (
     <>
-      <Box component='p' sx={sxMainDescription}>{t('mainText1')}</Box>
-      <CardActionArea sx={sxMainCards} onClick={handlerChoosePageIptv}>
+      <Service
+        textInfo={t('mainText1')}
+        pageNavigation='iptv'
+        nameService='IPTV'
+        descriptionService={t('mainButton1')}
+      />
+      <Service
+        textInfo={t('mainText2')}
+        pageNavigation='media'
+        nameService={t('mainButton21')}
+        descriptionService={t('mainButton23')}
+      />
+    </>
+  )
+}
+
+type Props = {
+  textInfo: string,
+  pageNavigation: string,
+  nameService: string,
+  descriptionService: string
+}
+
+function Service({textInfo, pageNavigation, nameService, descriptionService}: Props) {
+  const navigate = useNavigate();
+  return (
+    <>
+      <Box component='p' sx={sxMainDescription}>{textInfo}</Box>
+      <CardActionArea sx={sxMainCards} onClick={() => {
+        navigate(`/${pageNavigation}`);
+      }}>
         <Typography gutterBottom variant="h5" component="div" sx={{fontSize: '3em', p: 0, m: 0}}>
-          IPTV
+          {nameService}
         </Typography>
         <Typography gutterBottom variant="h6" component="div" sx={{fontSize: '1.25em'}}>
-          {t('mainButton1')}
-        </Typography>
-      </CardActionArea>
-      <Box component='p' sx={sxMainDescription}>{t('mainText2')}</Box>
-      <CardActionArea sx={sxMainCards} onClick={handlerChoosePageMedia}>
-        <Typography gutterBottom variant="h5" component="div" sx={{fontSize: '3em', p: 0, m: 0}}>
-          {t('mainButton21')}
-        </Typography>
-        <Typography gutterBottom variant="h6" component="div" sx={{fontSize: '1.25em'}}>
-          {t('mainButton22')}
-        </Typography>
-        <Typography gutterBottom variant="h6" component="div" sx={{fontSize: '1.25em'}}>
-          {t('mainButton23')}
+          {descriptionService}
         </Typography>
       </CardActionArea>
     </>
-  )
+  );
 }
 
 export default MainInfo;
