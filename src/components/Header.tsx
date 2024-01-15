@@ -94,7 +94,7 @@ function Header() {
             }}
           >
             <NavLink id="RouterNavLink" to={'/'} key={0} className='navPages-links navPages-links-first'>
-              IPTV-BOX
+              MEDIABOX
             </NavLink>
           </Typography>
           <Box
