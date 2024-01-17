@@ -26,7 +26,7 @@ function HdvideoboxDownload({step}: Props) {
       <Box component='a' href={linkVimu} target="_blank" sx={sxLinksRegistration}>
         Vimu+Media+Player.apk
       </Box>
-      <CardContent sx={sxManualText1}>{t('ottnavigator_manual1-2')}</CardContent>
+      <CardContent sx={sxManualText1}>{t('ottnavigator_manual1-21')}</CardContent>
     </Card>
   );
 }

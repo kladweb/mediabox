@@ -29,7 +29,7 @@ function LampaSetup({step}: Props) {
       sx={sxCardMain}
     >
       <Box component='h4' sx={sxHeadMain}>
-        {t('step')}{step}{t('step-LampaAndroidSetup')}
+        {t('step')}{step}{t('step-LampaSetup')}
       </Box>
       <CardContent sx={sxManualText1}>{t('lampa_manual3-1')}</CardContent>
       <ImageManual image={'lampa_manual_01.jpg'}/>
