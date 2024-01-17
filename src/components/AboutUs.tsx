@@ -39,12 +39,20 @@ function AboutUs() {
         <Box component='p' sx={{my: 0}}>{t('aboutContent01')}</Box>
         <Box component='p' sx={{my: 0}}>{t('aboutContent02')}</Box>
         <Box component='p' sx={{my: 0}}>{t('aboutContent03')}</Box>
+
         {/*<Box component='p' sx={{my: 0}}>{t('aboutContent04')}</Box>*/}
         {/*<Box component='p' sx={{m: '1rem auto', textAlign: 'center'}}>*/}
         {/*  <iframe*/}
         {/*    src="https://widget.qiwi.com/widgets/middle-widget-300x300?publicKey=48e7qUxn9T7RyYE1MVZswX1FRSbE6iyCj2gCRwwF3Dnh5XrasNTx3BGPiMsyXQFNKQhvukniQG8RTVhYm3iP3gNCbB6hPp7rGp6PTgYWATbbY2X9N5sxYJ2EnwadsXcikzpa7NUd7Sgpqae9gQVPXGAJjr3XtSQY3498tfaxVEey1H8zoywrXJBvMb1W2&noCache=true"*/}
         {/*    width="300" height="300" scrolling="no" frameBorder="0"></iframe>*/}
         {/*</Box>*/}
+
+
+        {/*<Box component='p' sx={{m: '1rem auto', textAlign: 'center'}}>*/}
+        {/*  <iframe src="https://yoomoney.ru/quickpay/fundraise/button?billNumber=wMn1HQHWqSU.240116&" width="330"*/}
+        {/*          height="50" frameBorder="0"  scrolling="no"></iframe>*/}
+        {/*</Box>*/}
+
         <Box component='p' sx={{my: 0}}>{t('aboutContent05')}</Box>
         <Box component='p' sx={{my: '1rem', fontStyle: 'italic', textAlign: 'center'}}>{t('aboutContent06')}</Box>
         <Box component='p' sx={{my: 0}}>{t('aboutContent07')}</Box>

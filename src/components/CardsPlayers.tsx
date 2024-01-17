@@ -31,7 +31,7 @@ function CardsPlayers() {
     setTimeout(() => {
       setIsOpenLoader(false);
       navigate(player.replace(/[-\s]/g, '').toLowerCase());
-    }, 1500);
+    }, 2500);
   }
 
   return (
