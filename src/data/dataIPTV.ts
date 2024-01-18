@@ -65,6 +65,14 @@ export const operators: object = {
       'https://jinopro.net/welcome/signup/54e9515db854ab61',
       'https://iseetv.net/welcome/signup/54e9515db854ab61',
     ],
+    linksDirect: [
+      'https://ilook.tv/',
+      'https://vipdrive.net/',
+      'https://tvlider.net/',
+      'https://melord.net/',
+      'https://jinopro.net/',
+      'https://iseetv.net/',
+    ],
     epg: 'http://epg.it999.ru/epg.xml.gz'
   },
   sharavoz: {
@@ -72,12 +80,18 @@ export const operators: object = {
     links: [
       'https://ztempz.xyz/YZoaV4m2wgp-qvc0IYnwHb4TgHBqZaaFgzY8AoVUr2zQJ8fB-w4elw=='
     ],
+    linksDirect: [
+      'https://ztempz.xyz/'
+    ],
     epg: 'http://iptv-content.webhop.net/guide.xml'
   },
   viplime: {
     name: 'VipLime',
     links: [
       'http://viplime.fun/index.php?user=2006'
+    ],
+    linksDirect: [
+      'http://viplime.fun/'
     ],
     epg: 'http://epg.cdntv.online/full.xml.gz'
   },
@@ -89,12 +103,21 @@ export const operators: object = {
       'https://smotrivip.com/?pp=23417',
       'https://russianiptv.com/?pp=23417'
     ],
+    linksDirect: [
+      'https://ott-iptv-connect.com/',
+      'https://otttviptv.com/',
+      'https://smotrivip.com/',
+      'https://russianiptv.com/'
+    ],
     epg: 'http://epg.iptvx.tv/xmltv.xml.gz'
   },
   kineskopclub: {
     name: 'Kineskop.club',
     links: [
       'https://kineskop.club/?p=MTAxMTI0MA'
+    ],
+    linksDirect: [
+      'https://kineskop.club/'
     ],
     epg: 'http://st.kineskop.tv/epg.xml.gz'
   },
@@ -109,6 +132,9 @@ export const operators: object = {
     name: 'SHARA-TV',
     links: [
       'https://shara-tv.org/r/19149/'
+    ],
+    linksDirect: [
+      'https://shara-tv.org/'
     ],
     epg: 'http://epg.tvfor.pro/epgtv.xml.gz',
     epgold2: 'http://iptv-content.rv77.pw/epg.xml.gz',

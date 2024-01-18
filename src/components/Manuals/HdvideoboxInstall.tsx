@@ -33,8 +33,8 @@ function HdvideoboxInstall({step}: Props) {
       <CardContent sx={sxManualText1}>{t('hdvideobox_manual2-8')}</CardContent>
       <CardContent sx={sxManualText1}>{t('hdvideobox_manual2-9')}</CardContent>
       <ImageManual image={'hdvid_manual_06.jpg'}/>
-      <ImageManual image={'hdvid_manual_07.jpg'}/>
       <CardContent sx={sxManualText1}>{t('hdvideobox_manual2-10')}</CardContent>
+      <ImageManual image={'hdvid_manual_07.jpg'}/>
       <ImageManual image={'hdvid_manual_08.jpg'}/>
       <ImageManual image={'hdvid_manual_09.jpg'}/>
       <CardContent sx={sxManualText1}>{t('enjoy_manual01')}</CardContent>

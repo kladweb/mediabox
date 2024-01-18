@@ -33,14 +33,16 @@ export const sxManualText1 = {
 
 export const sxLinksRegistration = {
   display: 'inline-block',
-  p: '0.2em 0.5em 0.4em',
+  p: '0.4em 0.5em',
   m: '0.25em 0.5em',
-  textDecoration: 'none',
+  // textDecoration: 'none',
   color: `${appColors.mid2}`,
   fontSize: {xs: '0.8rem', md: '1.1rem'},
-  fontWeight: '400',
+  fontWeight: '300',
   backgroundColor: `${appColors.mid1}`,
   borderRadius: '0.5em',
+  border: 'none',
+  cursor: 'pointer',
   transition: '0.2s',
   ':hover': {
     opacity: '0.8',

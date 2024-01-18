@@ -17,6 +17,10 @@ function IlookRegistration({step}: Props) {
   const operator = params.operator;
   const links: string[] = operators[operator as keyof (typeof operators)]['links'];
 
+  const handlerOperator = (link: string) => {
+    window.open(link);
+  }
+
   return (
     <Card
       component='div'
@@ -31,9 +35,10 @@ function IlookRegistration({step}: Props) {
         links.map((link, i) =>
           <Box
             key={i}
-            component='a'
-            href={link}
-            target="_blank"
+            component='button'
+            onClick={() => {
+              handlerOperator(link);
+            }}
             sx={sxLinksRegistration}
           >
             {`${operators[operator as keyof (typeof operators)]['name']}${i + 1}`}
