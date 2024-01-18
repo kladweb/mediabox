@@ -14,6 +14,10 @@ export default function CardChoosing({operator}: Props): JSX.Element {
   const links: string[] = operators[operator as keyof (typeof operators)]['links'];
   const mirrors = links.slice(1);
 
+  const handlerOperator = (link: string) => {
+    window.open(link);
+  }
+
   return (
     <Card
       component='div'
@@ -80,12 +84,13 @@ export default function CardChoosing({operator}: Props): JSX.Element {
           }
         </Typography>
         <Box
-          component='a'
-          href={links[0]}
-          target="_blank"
+          component='button'
+          onClick={() => {
+            handlerOperator(links[0]);
+          }}
           sx={{
             display: 'inline-block',
-            p: '0.5em 1em 0.55em',
+            p: '0.6em 1em 0.5em',
             mt: '1em',
             textDecoration: 'none',
             color: `${appColors.mid2}`,
@@ -93,6 +98,8 @@ export default function CardChoosing({operator}: Props): JSX.Element {
             fontWeight: '400',
             backgroundColor: `${appColors.mid1}`,
             borderRadius: '0.75em',
+            border: 'none',
+            cursor: 'pointer',
             transition: '0.2s',
             ':hover': {
               opacity: '0.8',
@@ -109,12 +116,13 @@ export default function CardChoosing({operator}: Props): JSX.Element {
                 mirrors.map((mirror, i) =>
                   <Box
                     key={i}
-                    component='a'
-                    href={mirror}
-                    target="_blank"
+                    component='button'
+                    onClick={() => {
+                      handlerOperator(mirror);
+                    }}
                     sx={{
                       display: 'inline-block',
-                      p: '0.2em 0.5em 0.4em',
+                      p: '0.4em 0.5em',
                       m: '1em 0.5em 0 0',
                       textDecoration: 'none',
                       color: `${appColors.mid2}`,
@@ -122,6 +130,8 @@ export default function CardChoosing({operator}: Props): JSX.Element {
                       fontWeight: '400',
                       backgroundColor: `${appColors.mid1}`,
                       borderRadius: '0.5em',
+                      border: 'none',
+                      cursor: 'pointer',
                       transition: '0.2s',
                       ':hover': {
                         opacity: '0.8',

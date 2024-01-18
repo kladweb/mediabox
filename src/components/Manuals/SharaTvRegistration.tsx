@@ -15,6 +15,10 @@ function SharaTvRegistration({step}: Props) {
   const operator = params.operator;
   const links: string[] = operators[operator as keyof (typeof operators)]['links'];
 
+  const handlerOperator = (link: string) => {
+    window.open(link);
+  }
+
   return (
     <Card
       component='div'
@@ -25,7 +29,12 @@ function SharaTvRegistration({step}: Props) {
       </Box>
       <CardContent sx={sxManualText1}>{t('sharatv_manual1-1')}
       </CardContent>
-      <Box component='a' href={links[0]} target="_blank" sx={sxLinksRegistration}>
+      <Box component='button'
+           onClick={() => {
+             handlerOperator(links[0]);
+           }}
+           sx={sxLinksRegistration}
+      >
         {operators[operator as keyof (typeof operators)]['name']}
       </Box>
       <ImageManual image={'sharatv_manual_01.jpg'}/>
