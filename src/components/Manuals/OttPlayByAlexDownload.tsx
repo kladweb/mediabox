@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Box, Card, CardContent } from "@mui/material";
-import { sxManualText1, sxCardMain, sxHeadMain, sxLinksRegistration } from "../../services/sxStyles";
+import { sxManualText1, sxCardMain, sxHeadMain, sxLink1 } from "../../services/sxStyles";
 
 type Props = {
   step: number;
@@ -32,7 +32,7 @@ function OttPlayByAlexDownload({step}: Props) {
             component='a'
             href={links[nameLink as keyof (typeof links)]}
             target="_blank"
-            sx={sxLinksRegistration}
+            sx={sxLink1}
           >
             {t(nameLink)}
           </Box>

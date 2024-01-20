@@ -17,6 +17,7 @@ function ImageManual({image}: any) {
     }
   }
 
+
   return (
     <CardMedia
       component="img"

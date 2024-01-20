@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Box, Card, CardContent } from "@mui/material";
 import ImageManual from "./ImageManual";
 import { operators } from "../../data/dataIPTV";
-import { sxManualText1, sxCardMain, sxHeadMain, sxLinksRegistration } from "../../services/sxStyles";
+import { sxManualText1, sxCardMain, sxHeadMain, sxButtonLinkOperator } from "../../services/sxStyles";
 
 type Props = {
   step: number;
@@ -33,7 +33,7 @@ function SzaravozRegistration({step}: Props) {
            onClick={() => {
              handlerOperator(links[0]);
            }}
-           sx={sxLinksRegistration}
+           sx={sxButtonLinkOperator}
       >
         {operators[operator as keyof (typeof operators)]['name']}
       </Box>

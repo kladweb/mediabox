@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Box, Card, CardContent } from "@mui/material";
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import ImageManual from "./ImageManual";
-import { sxManualText1, sxCardMain, sxHeadMain, sxToggle1, sxLinksRegistration } from "../../services/sxStyles";
+import { sxManualText1, sxCardMain, sxHeadMain, sxToggle1, sxLink1 } from "../../services/sxStyles";
 import { useState } from "react";
 import ToggleButton from "@mui/material/ToggleButton";
 
@@ -54,7 +54,7 @@ function SsIptvSamsungInstall({step}: Props) {
         (alignment === 'first') ?
           <>
             <CardContent sx={sxManualText1}>{t('ssiptv_manual1-51')}</CardContent>
-            <Box component='a' href={linkSsiptvTizen} target="_blank" sx={sxLinksRegistration}>
+            <Box component='a' href={linkSsiptvTizen} target="_blank" sx={sxLink1}>
               ssiptv_tizen_usb.zip
             </Box>
             <CardContent sx={sxManualText1}>{t('ssiptv_manual1-52')}</CardContent>
@@ -71,7 +71,7 @@ function SsIptvSamsungInstall({step}: Props) {
         (alignment === 'second') ?
           <>
             <CardContent sx={sxManualText1}>{t('ssiptv_manual1-51')}</CardContent>
-            <Box component='a' href={linkSsiptvOrsay} target="_blank" sx={sxLinksRegistration}>
+            <Box component='a' href={linkSsiptvOrsay} target="_blank" sx={sxLink1}>
               ssiptv_orsay_usb.zip
             </Box>
             <CardContent sx={sxManualText1}>{t('ssiptv_manual1-52')}</CardContent>

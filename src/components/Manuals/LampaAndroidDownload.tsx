@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Box, Card, CardContent } from "@mui/material";
-import { sxManualText1, sxCardMain, sxHeadMain, sxLinksRegistration } from "../../services/sxStyles";
+import { sxManualText1, sxCardMain, sxHeadMain, sxLink1 } from "../../services/sxStyles";
 
 type Props = {
   step: number;
@@ -19,11 +19,11 @@ function LampaAndroidDownload({step}: Props) {
         {t('step')}{step}{t('step-LampaAndroidDownload')}
       </Box>
       <CardContent sx={sxManualText1}>{t('lampaandroid_manual1-1')}</CardContent>
-      <Box component='a' href={linkLampa} target="_blank" sx={sxLinksRegistration}>
+      <Box component='a' href={linkLampa} target="_blank" sx={sxLink1}>
         Lampa+v7.7.7-82.apk
       </Box>
       <CardContent sx={sxManualText1}>{t('hdvideobox_manual1-2')}</CardContent>
-      <Box component='a' href={linkVimu} target="_blank" sx={sxLinksRegistration}>
+      <Box component='a' href={linkVimu} target="_blank" sx={sxLink1}>
         Vimu+Media+Player.apk
       </Box>
       <CardContent sx={sxManualText1}>{t('ottnavigator_manual1-2')}</CardContent>

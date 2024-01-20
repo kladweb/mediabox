@@ -1,11 +1,7 @@
-import * as React from "react";
-import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
-import { appColors } from "../../services/appColors";
 import ImageManual from "./ImageManual";
-import { operators } from "../../data/dataIPTV";
-import { sxManualText1, sxCardMain, sxHeadMain, sxLinksRegistration } from "../../services/sxStyles";
+import { sxManualText1, sxCardMain, sxHeadMain, sxLink1 } from "../../services/sxStyles";
 
 type Props = {
   step: number;
@@ -13,9 +9,6 @@ type Props = {
 
 function OttplayerWebSetup({step}: Props) {
   const {t} = useTranslation();
-  const params = useParams();
-  const operator = params.operator;
-  const player = params.player;
   const linkOttplayer: string = 'https://ottplayer.tv/';
 
   return (
@@ -27,7 +20,7 @@ function OttplayerWebSetup({step}: Props) {
         {t('step')}{step}{t('step-OttplayerWebSetup')}
       </Box>
       <CardContent sx={sxManualText1}>{t('ottplayer_manual1-1')}</CardContent>
-      <Box component='a' href={linkOttplayer} target="_blank" sx={sxLinksRegistration}>
+      <Box component='a' href={linkOttplayer} target="_blank" sx={sxLink1}>
         OttPlayer website
       </Box>
       <ImageManual image={'ottplayer_manual_01.jpg'}/>

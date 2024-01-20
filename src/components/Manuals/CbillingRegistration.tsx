@@ -5,7 +5,7 @@ import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
 import { appColors } from "../../services/appColors";
 import ImageManual from "./ImageManual";
 import { operators } from "../../data/dataIPTV";
-import { sxManualText1, sxCardMain, sxHeadMain, sxLinksRegistration } from "../../services/sxStyles";
+import { sxManualText1, sxCardMain, sxHeadMain, sxButtonLinkOperator } from "../../services/sxStyles";
 
 type Props = {
   step: number;
@@ -39,7 +39,7 @@ function CbillingRegistration({step}: Props) {
             onClick={() => {
               handlerOperator(link);
             }}
-            sx={sxLinksRegistration}
+            sx={sxButtonLinkOperator}
           >
             {`${operators[operator as keyof (typeof operators)]['name']}${i + 1}`}
           </Box>

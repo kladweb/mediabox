@@ -1,15 +1,7 @@
 import { useTranslation } from "react-i18next";
-import { Box, Card, CardContent } from "@mui/material";
 import ImageManual from "./ImageManual";
-import {
-  sxManualText1,
-  sxCardMain,
-  sxHeadMain,
-  sxLinksRegistration,
-  sxToggle1,
-  sxMainCards, sxMainDescription
-} from "../../services/sxStyles";
-import { appColors } from "../../services/appColors";
+import { Box, Card, CardContent } from "@mui/material";
+import { sxManualText1, sxCardMain, sxHeadMain, sxLinksPlugins, } from "../../services/sxStyles";
 
 type Props = {
   step: number;
@@ -22,6 +14,7 @@ function LampaSetup({step}: Props) {
     'https://nb557.github.io/plugins/online_mod.js',
     'https://bwa.to/plugins/prestige.js'
   ];
+  const linksPluginsRezerv1 = 'http://lampa.stream/modss';
 
   return (
     <Card
@@ -41,8 +34,9 @@ function LampaSetup({step}: Props) {
       <ImageManual image={'lampa_manual_04.jpg'}/>
       <CardContent sx={sxManualText1}>{t('lampa_manual3-5')}</CardContent>
       {
-        linksPlugins.map((link) => <CardContent
-          sx={{my: '0.5rem', py: 0, fontSize: '1.25rem', fontWeight: '500', color: appColors.mid2}}>
+        linksPlugins.map((link, index) => <CardContent
+          key={index}
+          sx={sxLinksPlugins}>
           {link}
         </CardContent>)
       }
@@ -51,7 +45,15 @@ function LampaSetup({step}: Props) {
       <ImageManual image={'lampa_manual_07.jpg'}/>
       <CardContent sx={sxManualText1}>{t('lampa_manual3-6')}</CardContent>
       <ImageManual image={'lampa_manual_08.jpg'}/>
-      <CardContent sx={sxManualText1}>{t('lampa_manual3-7')}</CardContent>
+
+
+      <CardContent sx={sxManualText1}>
+        {t('lampa_manual3-7')}{'\n'}
+        {t('lampa_manual3-71')}{'\n'}
+        {t('lampa_manual3-72')}
+        {linksPluginsRezerv1}{'.\n'}
+        {t('lampa_manual3-73')}
+      </CardContent>
       <CardContent sx={sxManualText1}>{t('hdvideobox_manual2-8')}</CardContent>
       <CardContent sx={sxManualText1}>{t('lampa_manual3-8')}</CardContent>
       <ImageManual image={'lampa_manual_09.jpg'}/>

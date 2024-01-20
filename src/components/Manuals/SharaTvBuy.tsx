@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Box, Card, CardContent } from "@mui/material";
 import ImageManual from "./ImageManual";
-import { sxManualText1, sxCardMain, sxHeadMain, sxLinksRegistration } from "../../services/sxStyles";
+import { sxManualText1, sxCardMain, sxHeadMain } from "../../services/sxStyles";
 import { useParams } from "react-router-dom";
 
 type Props = {

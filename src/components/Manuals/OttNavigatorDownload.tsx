@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Box, Card, CardContent } from "@mui/material";
-import { sxManualText1, sxCardMain, sxHeadMain, sxLinksRegistration } from "../../services/sxStyles";
+import { sxManualText1, sxCardMain, sxHeadMain, sxLink1 } from "../../services/sxStyles";
 
 type Props = {
   step: number;
@@ -11,6 +11,7 @@ function OttNavigatorDownload({step}: Props) {
   const {t} = useTranslation();
   const links = {
     link4PDA: 'https://4pda.to/forum/index.php?showtopic=881962',
+    linkFast: 'https://www.dropbox.com/scl/fi/02zqgnu4af2u1w7h0rf0h/OTT-Navigator-23072804-1.6.9.4.apk?rlkey=hehs4rncmif9ggqujftasah1j&dl=1'
   };
 
   return (
@@ -29,7 +30,7 @@ function OttNavigatorDownload({step}: Props) {
             component='a'
             href={links[nameLink as keyof (typeof links)]}
             target="_blank"
-            sx={sxLinksRegistration}
+            sx={sxLink1}
           >
             {t(nameLink)}
           </Box>

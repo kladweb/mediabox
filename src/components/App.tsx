@@ -1,10 +1,10 @@
 import React, { Suspense } from 'react';
 import { BrowserRouter } from "react-router-dom";
 import { Box } from '@mui/material'
-
 import Header from "./Header";
 import { PagesRouter } from "../routes/PagesRouter";
 import { appColors } from "../services/appColors";
+import Counter from "./Counter";
 
 function App(): JSX.Element {
   return (
@@ -17,6 +17,7 @@ function App(): JSX.Element {
             minHeight: '100vh',
             backgroundColor: appColors.mid1,
           }}>
+          <Counter/>
           <PagesRouter/>
         </Box>
       </Suspense>

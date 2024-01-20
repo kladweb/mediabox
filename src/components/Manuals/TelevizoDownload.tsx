@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Box, Card, CardContent } from "@mui/material";
-import { sxManualText1, sxCardMain, sxHeadMain, sxLinksRegistration } from "../../services/sxStyles";
+import { sxManualText1, sxCardMain, sxHeadMain, sxLink1 } from "../../services/sxStyles";
 
 type Props = {
   step: number;
@@ -12,7 +12,7 @@ function TelevizoDownload({step}: Props) {
   const links = {
     linkOfficial: 'https://televizo.net/',
     link4PDA: 'https://4pda.to/forum/index.php?showtopic=943863',
-    // linkFast: 'https://www.dropbox.com/scl/fi/6haivb3jrcasqfy0t9xfb/Televizo_1.9.6.50-google.apk?rlkey=zxgpn050trbdp9bfwq0k5jzn7&dl=1'
+    linkFast: 'https://www.dropbox.com/scl/fi/6haivb3jrcasqfy0t9xfb/Televizo_1.9.6.50-google.apk?rlkey=zxgpn050trbdp9bfwq0k5jzn7&dl=1'
   };
 
   return (
@@ -31,7 +31,7 @@ function TelevizoDownload({step}: Props) {
             component='a'
             href={links[nameLink as keyof (typeof links)]}
             target="_blank"
-            sx={sxLinksRegistration}
+            sx={sxLink1}
           >
             {t(nameLink)}
           </Box>

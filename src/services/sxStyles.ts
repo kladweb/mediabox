@@ -1,4 +1,5 @@
 import { appColors } from "./appColors";
+
 export const sxCardMain = {
   width: '100%',
   m: "1.5em auto",
@@ -31,11 +32,10 @@ export const sxManualText1 = {
   whiteSpace: 'pre-line',
 }
 
-export const sxLinksRegistration = {
+export const sxButtonLinkOperator = {
   display: 'inline-block',
   p: '0.4em 0.5em',
   m: '0.25em 0.5em',
-  // textDecoration: 'none',
   color: `${appColors.mid2}`,
   fontSize: {xs: '0.8rem', md: '1.1rem'},
   fontWeight: '300',
@@ -43,6 +43,23 @@ export const sxLinksRegistration = {
   borderRadius: '0.5em',
   border: 'none',
   cursor: 'pointer',
+  transition: '0.2s',
+  ':hover': {
+    opacity: '0.8',
+    transition: '0.2s'
+  }
+}
+
+export const sxLink1 = {
+  display: 'inline-block',
+  p: '0.2em 0.5em 0.4em',
+  m: '0.25em 0.5em',
+  textDecoration: 'none',
+  color: `${appColors.mid2}`,
+  fontSize: {xs: '0.8rem', md: '1.1rem'},
+  fontWeight: '400',
+  backgroundColor: `${appColors.mid1}`,
+  borderRadius: '0.5em',
   transition: '0.2s',
   ':hover': {
     opacity: '0.8',
@@ -86,4 +103,13 @@ export const sxMainDescription = {
   textAlign: 'left',
   textIndent: '2em'
   // whiteSpace: 'pre-line',
+}
+
+export const sxLinksPlugins = {
+  my: '0.5rem',
+  py: 0,
+  fontSize: {xs: '0.9rem',
+    md: '1.25rem'},
+  fontWeight: '500',
+  color: appColors.mid2
 }
