@@ -1,9 +1,7 @@
-import * as React from 'react';
 import { Card, CardContent, CardMedia, Typography, CardActionArea } from '@mui/material';
 import { appColors } from "../services/appColors";
 import { useTranslation } from "react-i18next";
 import { operators } from "../data/dataIPTV";
-
 
 type Props = {
   operator: string
@@ -29,7 +27,6 @@ export default function CardOperator({operator}: Props): JSX.Element {
       <CardActionArea>
         <CardMedia
           component="img"
-          // height="100"
           image={`/img/operators/${operator.toLowerCase()}.png`}
           alt={operator}
           sx={{margin: "1em 0", height: '5rem', objectFit: "contain"}}

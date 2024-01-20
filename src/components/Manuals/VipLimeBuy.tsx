@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Box, Card, CardContent } from "@mui/material";
 import ImageManual from "./ImageManual";
-import { sxManualText1, sxCardMain, sxHeadMain, sxLinksRegistration } from "../../services/sxStyles";
+import { sxManualText1, sxCardMain, sxHeadMain, sxLink1 } from "../../services/sxStyles";
 
 type Props = {
   step: number;
@@ -20,7 +20,7 @@ function VipLimeBuy({step}: Props) {
         {t('step')}{step}{t('step-IlookBuy')}
       </Box>
       <CardContent sx={sxManualText1}>{t('viplime_manual2-1')}</CardContent>
-      <Box component='a' href={linkVipLimeBot} target="_blank" sx={sxLinksRegistration}>
+      <Box component='a' href={linkVipLimeBot} target="_blank" sx={sxLink1}>
         @VipLime_test_bot
       </Box>
       <ImageManual image={'viplime_manual_05.jpg'}/>

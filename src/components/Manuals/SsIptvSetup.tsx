@@ -2,7 +2,7 @@ import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Box, Card, CardContent } from "@mui/material";
 import ImageManual from "./ImageManual";
-import { sxManualText1, sxCardMain, sxHeadMain, sxLinksRegistration } from "../../services/sxStyles";
+import { sxManualText1, sxCardMain, sxHeadMain, sxLink1 } from "../../services/sxStyles";
 
 type Props = {
   step: number;
@@ -25,7 +25,7 @@ function SsIptvSetup({step}: Props) {
       <CardContent sx={sxManualText1}>{t('ssiptv_manual2-2')}</CardContent>
       <ImageManual image={'ssiptv_manual04.jpg'}/>
       <CardContent sx={sxManualText1}>{t('ssiptv_manual2-3')}</CardContent>
-      <Box component='a' href={linkSsIptv} target="_blank" sx={sxLinksRegistration}>
+      <Box component='a' href={linkSsIptv} target="_blank" sx={sxLink1}>
         SS IPTV website
       </Box>
       <CardContent sx={sxManualText1}>{t('ssiptv_manual2-4')}</CardContent>

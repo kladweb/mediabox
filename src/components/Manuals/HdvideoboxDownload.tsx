@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Box, Card, CardContent } from "@mui/material";
-import { sxManualText1, sxCardMain, sxHeadMain, sxLinksRegistration } from "../../services/sxStyles";
+import { sxManualText1, sxCardMain, sxHeadMain, sxButtonLinkOperator, sxLink1 } from "../../services/sxStyles";
 
 type Props = {
   step: number;
@@ -19,11 +19,11 @@ function HdvideoboxDownload({step}: Props) {
         {t('step')}{step}{t('step-HdvideoboxDownload')}
       </Box>
       <CardContent sx={sxManualText1}>{t('hdvideobox_manual1-1')}</CardContent>
-      <Box component='a' href={linkHdvid} target="_blank" sx={sxLinksRegistration}>
+      <Box component='a' href={linkHdvid} target="_blank" sx={sxLink1}>
         hdvideobox-2.31-fix-MaxVanced.apk
       </Box>
       <CardContent sx={sxManualText1}>{t('hdvideobox_manual1-2')}</CardContent>
-      <Box component='a' href={linkVimu} target="_blank" sx={sxLinksRegistration}>
+      <Box component='a' href={linkVimu} target="_blank" sx={sxLink1}>
         Vimu+Media+Player.apk
       </Box>
       <CardContent sx={sxManualText1}>{t('ottnavigator_manual1-21')}</CardContent>

@@ -102,6 +102,13 @@ function LampaSmarttvInstall({step}: Props) {
           :
           null
       }
+      <CardContent sx={sxManualText1}>
+        {t('mediaStationX_manual5-1_lampa')}
+        <Box component='span' sx={{fontStyle: 'italic'}}>
+          {'ggs2003-mediabox@yahoo.com . '}
+        </Box>
+        {t('mediaStationX_manual5-2_lampa')}
+      </CardContent>
     </Card>
   );
 }

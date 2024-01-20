@@ -32,8 +32,6 @@ function SzaravozPlaylist({step}: Props) {
     }
   }
 
-  console.log(player);
-
   return (
     <Card
       component='div'
