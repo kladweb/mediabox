@@ -65,10 +65,8 @@ function LampaSetup({step}: Props) {
       <ImageManual image={'lampa_manual_12.jpg'}/>
       <CardContent sx={sxManualText1}>{t('lampa_manual3-12')}</CardContent>
       <ImageManual image={'lampa_manual_13.jpg'}/>
-
-
-      <ImageManual image={'lampa_manual_14.jpg'}/>
       <CardContent sx={sxManualText1}>{t('hdvideobox_manual2-10')}</CardContent>
+      <ImageManual image={'lampa_manual_14.jpg'}/>
       <ImageManual image={'lampa_manual_15.jpg'}/>
       <ImageManual image={'lampa_manual_16.jpg'}/>
       <CardContent sx={sxManualText1}>{t('enjoy_manual01')}</CardContent>
