@@ -1,14 +1,11 @@
+import { useEffect } from "react";
 import { NavLink, useNavigate, useParams } from "react-router-dom";
 import { Box } from '@mui/material';
 import { useTranslation } from "react-i18next";
-import CardOperator from "./CardOperator";
 import { appColors } from "../services/appColors";
-
 import { players } from "../data/dataIPTV";
 import './cards.scss';
 import CardPlayer from "./CardPlayer";
-import { useEffect, useState } from "react";
-import LoaderLinear from "./LoaderLinear";
 
 function CardsPlayers() {
   const navigate = useNavigate();
@@ -17,22 +14,11 @@ function CardsPlayers() {
   const params = useParams();
   const device = params.device;
 
-  const [isOpenLoader, setIsOpenLoader] = useState(false);
-
   useEffect(() => {
     if (device && !(deviceNames.includes(device))) {
       navigate('/');
     }
   }, []);
-
-  const hendlerClickPlayer = (e: any, player: string) => {
-    e.preventDefault();
-    setIsOpenLoader(true);
-    setTimeout(() => {
-      setIsOpenLoader(false);
-      navigate(player.replace(/[-\s]/g, '').toLowerCase());
-    }, 2500);
-  }
 
   return (
     <>
@@ -63,13 +49,8 @@ function CardsPlayers() {
               players[device as keyof (typeof players)].map((player, i) =>
                 <NavLink
                   key={i}
-                  // key={operators[operator as keyof (typeof operators)]['name']}
-                  // to={'/device'}
                   to={player.replace(/[-\s]/g, '').toLowerCase()}
                   className='nav-cards'
-                  onClick={(e) => {
-                    hendlerClickPlayer(e, player);
-                  }}
                 >
                   <CardPlayer player={player}/>
                 </NavLink>
@@ -78,17 +59,6 @@ function CardsPlayers() {
           </>
         }
       </Box>
-      <LoaderLinear isOpenLoader={isOpenLoader}/>
-      {/*<Box sx={{*/}
-      {/*  margin: '0 auto',*/}
-      {/*  display: 'block',*/}
-      {/*  width: '100%',*/}
-      {/*  textAlign: 'center',*/}
-      {/*  fontSize: '1rem',*/}
-      {/*  color: appColors.light1,*/}
-      {/*}}>*/}
-      {/*  {t('ottplaybyalex-Note')}*/}
-      {/*</Box>*/}
     </>
   )
 }

@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Box } from '@mui/material';
@@ -50,6 +50,7 @@ import LampaAndroidInstall from "./LampaAndroidInstall";
 import LampaSetup from "./LampaSetup";
 import LampaSmarttvInstall from "./LampaSmarttvInstall";
 import LampaBrowserInstall from "./LampaBrowserInstall";
+import LoaderLinear from "../LoaderLinear";
 
 function Manual() {
   const navigate = useNavigate();
@@ -61,12 +62,19 @@ function Manual() {
   const player = params.player;
   const cinema = params.cinema;
   const stepManuals: JSX.Element[] = [];
+  const [isOpenLoader, setIsOpenLoader] = useState(true);
 
   useEffect(() => {
     if (player && !Object.keys(playersAll).includes(player)) {
       navigate('/');
     }
   }, []);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsOpenLoader(false);
+    }, (cinema) ? 1000 : 2500);
+  }, [isOpenLoader]);
 
   if (operator === 'ilooktv') {
     stepManuals.push(<IlookRegistration key={stepManuals.length} step={stepManuals.length + 1}/>);
@@ -222,22 +230,29 @@ function Manual() {
 
   return (
     <>
-      <Box
-        component='h4'
-        sx={{
-          m: {xs: '4.5em auto 0.5em', md: '3.6em auto 0.5em'},
-          width: '100%',
-          fontSize: {xs: '1.2rem', md: '1.75rem'},
-          fontWeight: '600',
-          color: appColors.mid2,
-          textAlign: 'center',
-        }}
-      >
-        {
-          (cinema) ? <>{t('headManualCinema')}</> : <>{t('headManualIptv')}</>
-        }
-      </Box>
-      {stepManuals}
+      {
+        (isOpenLoader) ?
+          <LoaderLinear isOpenLoader={isOpenLoader}/>
+          :
+          <>
+            <Box
+              component='h4'
+              sx={{
+                m: {xs: '4.5em auto 0.5em', md: '3.6em auto 0.5em'},
+                width: '100%',
+                fontSize: {xs: '1.2rem', md: '1.75rem'},
+                fontWeight: '600',
+                color: appColors.mid2,
+                textAlign: 'center',
+              }}
+            >
+              {
+                (cinema) ? <>{t('headManualCinema')}</> : <>{t('headManualIptv')}</>
+              }
+            </Box>
+            {stepManuals}
+          </>
+      }
     </>
   );
 }

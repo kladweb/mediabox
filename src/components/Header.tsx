@@ -58,9 +58,9 @@ function Header() {
   return (
     <AppBar
       position="fixed"
-      // color="secondary"
       sx={{
         backgroundColor: appColors.dark2,
+        zIndex: '2000'
       }}
     >
       <Container maxWidth="xl">
