@@ -29,13 +29,13 @@ export default function CardOperator({operator}: Props): JSX.Element {
           component="img"
           image={`/img/operators/${operator.toLowerCase()}.png`}
           alt={operator}
+          onLoad={() => setLoaded(true)}
           sx={{
             margin: "1em 0",
             height: '5rem',
             objectFit: "contain",
             display: (loaded) ? 'block' : 'none'
           }}
-          onLoad={() => setLoaded(true)}
         />
         {
           (!loaded) && <Skeleton variant="rounded" width={280} height='5rem' sx={{m: "auto"}}/>

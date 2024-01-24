@@ -3,9 +3,10 @@ import { useTranslation } from "react-i18next";
 import LinearProgress from '@mui/material/LinearProgress';
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+
+import './loaderLinear.scss';
 
 const style = {
   position: 'absolute' as 'absolute',
@@ -17,6 +18,7 @@ const style = {
   bgcolor: 'background.paper',
   boxShadow: 24,
   p: 4,
+  backdropFilter: 'blur(5px)'
 };
 
 type Props = {
@@ -29,7 +31,6 @@ export default function LoaderLinear({isOpenLoader}: Props) {
     <div>
       <Modal
         open={isOpenLoader}
-        // onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
