@@ -17,9 +17,12 @@ function Service({textInfo, pageNavigation, nameService, descriptionService}: Pr
   return (
     <>
       <Box component='p' sx={sxMainDescription}>{textInfo}</Box>
-      <CardActionArea sx={sxMainCards} onClick={() => {
-        navigate(`/${pageNavigation}`);
-      }}>
+      <CardActionArea
+        sx={sxMainCards}
+        onClick={() => {
+          navigate(`/${pageNavigation}`);
+        }}
+      >
         <Typography gutterBottom variant="h5" component="div" sx={{fontSize: '3em', p: 0, m: 0}}>
           {nameService}
         </Typography>
