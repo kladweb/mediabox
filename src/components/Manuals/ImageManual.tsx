@@ -37,8 +37,9 @@ function ImageManual({image}: any) {
       />
       {
         (!loaded) &&
-        <Skeleton variant="rounded"
-                  sx={{m: "0.5em auto", width: `${scaleSmall}%`, height: `9em`}}
+        <Skeleton
+          variant="rounded"
+          sx={{m: "0.5em auto", width: `${scaleSmall}%`, height: `${(window.innerWidth <= 900) ? 4 : 9}em`}}
         />
       }
     </>
