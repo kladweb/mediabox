@@ -1,7 +1,8 @@
 import * as React from 'react';
-import { Card, CardContent, CardMedia, Typography, CardActionArea } from '@mui/material';
+import { Card, CardContent, CardMedia, Typography, CardActionArea, Skeleton } from '@mui/material';
 import { appColors } from "../services/appColors";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 
 
 type IProps = {
@@ -9,6 +10,7 @@ type IProps = {
 }
 export default function CardDevice({device}: IProps): JSX.Element {
   const {t} = useTranslation();
+  const [loaded, setLoaded] = useState(false);
 
   return (
     <Card sx={{
@@ -30,16 +32,25 @@ export default function CardDevice({device}: IProps): JSX.Element {
           component="img"
           height="140"
           image={`/img/devices/${device}.png`}
-          // image="/img/android.png"
           alt="green iguana"
-          sx={{margin: "1em 0", objectFit: "contain"}}
+          sx={{margin: "1em 0", objectFit: "contain", display: (loaded) ? 'block' : 'none'}}
+          onLoad={() => setLoaded(true)}
+          // onLoad={() => setLoaded(false)}
         />
+        {
+          (!loaded) && <Skeleton variant="rounded" width={280} height={140} sx={{m: "auto"}}/>
+        }
         <CardContent sx={{textAlign: 'center', color: `${appColors.dark1}`}}>
-          <Typography gutterBottom variant="h6" component="div"
-                      sx={{fontSize: '1.45em', lineHeight: '1.25em'}}
-          >
-            {t(device)}
-          </Typography>
+          {
+            (loaded) ?
+              <Typography gutterBottom variant="h6" component="div"
+                          sx={{fontSize: '1.45em', lineHeight: '1.25em'}}
+              >
+                {t(device)}
+              </Typography>
+              :
+              <Skeleton variant="text" sx={{fontSize: '1.75rem', width: '80%', m: '0.5rem auto -0.5rem'}}/>
+          }
         </CardContent>
       </CardActionArea>
     </Card>
