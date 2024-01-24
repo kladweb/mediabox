@@ -272,7 +272,7 @@
     "ottplay-smarttv_manual1-4": "Enter your key (see step 4) and click \"OK\".",
     "ottplay-smarttv_manual1-5": "Next, select \"Load Playlist\".",
     "ottplay-smarttv_manual1-6": "После этого должны загрузиться все категории каналов.",
-    "ottplay-smarttv_manual1-7": "ILookTV operator has a peculiarity when loading playlist via key. In this way channel sorting does not work. If you want to download only favorite categories of channels, for example, to hide the category \"Adult\", you need to download the playlist not through the access key, but by entering a link to your playlist. You can find the instructions by selecting android TV set-top box and the same player, but you will have to enter the link to the playlist in SMART TV manually.",
+    "ottplay-smarttv_manual1-7": "The ILookTV operator has a feature when downloading a playlist via a key. Channel sorting does not work with this method. If you want only selected categories of channels to be uploaded, for example, to hide unnecessary categories (folders) of channels, you need to download the playlist not through an access key, but by entering a link to your playlist. You can view the instructions by selecting an android TV set-top box and the same player, but you will have to enter the link to the playlist in SMART TV manually.",
     "step-ssIptvLgTvInstall": " - installing SS IPTV application on LG SMART TV",
     "ssiptv_manual1-1": "Go to our TV. Go to\"LG Store\" and search for \"SS IPTV\".",
     "ssiptv_manual1-2": "Click \"Install\". The application will be installed on your LG SMART TV.",

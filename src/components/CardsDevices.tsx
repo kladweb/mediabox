@@ -47,32 +47,16 @@ function CardsDevices() {
         {
           (!devicesPage) ?
             <>
-              {
-                Object.keys(devices).map((device: string, i: number) =>
-                  <NavLink key={i} to={device.toLowerCase()} className='nav-cards'>
-                    {/*<NavLink key={device} to={'player'} className='nav-cards'>*/}
-                    <CardDevice device={device}/>
-                  </NavLink>
-                )
-              }
+              {Object.keys(devices).map((device: string, i: number) => <CardDevice key={i} device={device}/>)}
             </>
             :
             <>
-              {
-                (devicesPage && devicesNames.includes(devicesPage)) &&
+              {(devicesPage && devicesNames.includes(devicesPage)) &&
                 <>
-                  {
-                    devices[devicesPage as keyof (typeof devices)].map((device: string, i: number) => {
-                        device = device.replace(/[\s]/g, '').toLowerCase();
-                        return (
-                          <NavLink key={i} to={device.toLowerCase()} className='nav-cards'>
-                            {/*<NavLink key={device} to={'player'} className='nav-cards'>*/}
-                            <CardDevice device={device}/>
-                          </NavLink>
-                        );
-                      }
-                    )
-                  }
+                  {devices[devicesPage as keyof (typeof devices)].map((device: string, i: number) => {
+                    device = device.replace(/[\s]/g, '').toLowerCase();
+                    return (<CardDevice key={i} device={device}/>);
+                  })}
                 </>
               }
             </>
