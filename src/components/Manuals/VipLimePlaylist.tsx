@@ -12,6 +12,8 @@ function VipLimePlaylist({step}: Props) {
   const {t} = useTranslation();
   const params = useParams();
   const player = params.player;
+  const devises = params.devices;
+
 
   return (
     <Card
@@ -19,22 +21,33 @@ function VipLimePlaylist({step}: Props) {
       sx={sxCardMain}
     >
       {
-        (player !== 'ottnavigator') ?
-          <>
-            <Box component='h4' sx={sxHeadMain}>{t('step')}{step}{t('step-IlookPlaylist')}</Box>
-            <CardContent sx={sxManualText1}>{t('viplime_manual3-1')}</CardContent>
-            <CardContent sx={sxManualText1}>{t('viplime_manual3-2')}</CardContent>
-            <ImageManual image={'viplime_manual_06.jpg'}/>
-          </>
-          :
-          <>
-            <Box component='h4' sx={sxHeadMain}>{t('step')}{step}{t('step-IlookChoose')}</Box>
-            <CardContent sx={sxManualText1}>{t('viplime_manual3-3')}</CardContent>
-            <ImageManual image={'viplime_manual_07.jpg'}/>
-          </>
+        (player !== 'ottnavigator' && devises !== 'smarttv') &&
+        <>
+          <Box component='h4' sx={sxHeadMain}>{t('step')}{step}{t('step-IlookPlaylist')}</Box>
+          <CardContent sx={sxManualText1}>{t('viplime_manual3-1')}</CardContent>
+          <CardContent sx={sxManualText1}>{t('viplime_manual3-2')}</CardContent>
+          <ImageManual image={'viplime_manual_06.jpg'}/>
+        </>
       }
       {
-        (player === 'ottplayer' || player === 'ssiptv' || player === 'ottnavigator') ?
+        (player !== 'ottnavigator' && devises === 'smarttv') &&
+        <>
+          <Box component='h4' sx={sxHeadMain}>{t('step')}{step}{t('step-IlookPlaylist')}</Box>
+          <CardContent sx={sxManualText1}>{t('viplime_manual3-1')}</CardContent>
+          <CardContent sx={sxManualText1}>{t('viplime_manual3-22')}</CardContent>
+          <ImageManual image={'viplime_manual_062.jpg'}/>
+        </>
+      }
+      {
+        (player === 'ottnavigator') &&
+        <>
+          <Box component='h4' sx={sxHeadMain}>{t('step')}{step}{t('step-IlookChoose')}</Box>
+          <CardContent sx={sxManualText1}>{t('viplime_manual3-3')}</CardContent>
+          <ImageManual image={'viplime_manual_07.jpg'}/>
+        </>
+      }
+      {
+        (player === 'ottplayer' || player === 'ssiptv' || player === 'ottnavigator' || devises === 'smarttv') ?
           null
           :
           <CardContent sx={sxManualText1}>{t('ilooktv_manual3-3')}</CardContent>
