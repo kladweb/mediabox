@@ -178,7 +178,7 @@ function Manual() {
 
   if (devices === 'smarttv' && (player === 'ottplayfoss' || player === 'ottplaybyalex')) {
     stepManuals.push(<SmartTvOttPlayInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
-    if (operator !== 'sharavoz') {
+    if (operator === 'ilooktv') {
       stepManuals.push(<OttPlayFossSetupKey key={stepManuals.length} step={stepManuals.length + 1}/>);
     } else {
       stepManuals.push(<OttPlayFossSetupPlaylist key={stepManuals.length} step={stepManuals.length + 1}/>);
