@@ -64,7 +64,7 @@ function Header() {
       }}
     >
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
+        <Toolbar disableGutters variant="dense">
           <Typography
             variant="h5"
             noWrap
@@ -116,6 +116,7 @@ function Header() {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
+                mt: '0.5rem',
                 display: {xs: 'block', md: 'none'},
               }}
             >
@@ -170,7 +171,7 @@ function Header() {
                   key={page}
                   onClick={handleCloseNavMenu}
                   sx={{
-                    m: 2,
+                    mx: 2,
                     color: appColors.light1,
                     display: 'block',
                     textTransform: 'uppercase',
@@ -188,7 +189,7 @@ function Header() {
             <Button
               onClick={handleOpenUserMenu}
               sx={{
-                my: 2,
+                my: {xs: 1, md: 1.5},
                 color: appColors.light1,
                 display: 'block',
                 ':hover': {

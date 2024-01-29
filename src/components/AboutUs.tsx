@@ -51,7 +51,7 @@ function AboutUs() {
           textDecoration: 'none',
           textIndent: '0',
           color: `${appColors.mid1}`,
-          fontSize: {xs: '0.8rem', md: '1.1rem'},
+          fontSize: {xs: '1rem', md: '1.1rem'},
           fontWeight: '400',
           textAlign: 'center',
           backgroundColor: `${appColors.mid2}`,
