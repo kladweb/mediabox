@@ -117,3 +117,7 @@ export const sxLinksPlugins = {
   fontWeight: '500',
   color: appColors.mid2
 }
+
+export const sxParagraphAbout1={
+  my: 0, textIndent: '2em'
+}
