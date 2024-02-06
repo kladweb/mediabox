@@ -1,76 +1,77 @@
 import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { NavigateFunction, Params, useNavigate, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Box } from '@mui/material';
 import { appColors } from "../../services/appColors";
 import { playersAll } from "../../data/dataIPTV";
-import IlookRegistration from "./IlookRegistration";
-import IlookBuy from "./IlookBuy";
-import TelevizoDownload from "./TelevizoDownload";
-import AndroidTvBoxTransfer from "./AndroidTvBoxTransfer";
-import TelevizoInstall from "./TelevizoInstall";
-import OttNavigatorDownload from "./OttNavigatorDownload";
-import OttPlayFossDownload from "./OttPlayFossDownload";
-import OttNavigatorInstallPlaylist from "./OttNavigatorInstallPlaylist";
-import OttPlayFossInstall from "./OttPlayFossInstall";
-import AppsHelpDownload from "./AppsHelpDownload";
-import AppsHelpInstall from "./AppsHelpInstall";
-import OttPlayByAlexDownload from "./OttPlayByAlexDownload";
-import OttPlayByAlexInstall from "./OttPlayByAlexInstall";
-import OttplayerWebSetup from "./OttplayerWebSetup";
-import OttplayerInstall from "./OttplayerInstall";
-import IlookPlaylist from "./IlookPlaylist";
-import SmartTvOttPlayInstall from "./SmartTvOttPlayInstall";
-import OttPlayFossSetupPlaylist from "./OttPlayFossSetupPlaylist";
-import OttPlayFossSetupKey from "./OttPlayFossSetupKey";
-import SsIptvLgTvInstall from "./SsIptvLgTvInstall";
-import SsIptvSetup from "./SsIptvSetup";
-import SsIptvSamsungInstall from "./SsIptvSamsungInstall";
-import FlexIptvInstall from "./FlexIptvInstall";
-import SzaravozRegistration from "./SzaravozRegistration";
-import SzaravozBuy from "./SzaravozBuy";
-import SzaravozPlaylist from "./SzaravozPlaylist";
-import OttNavigatorInstallKey from "./OttNavigatorInstallKey";
-import VipLimeRegistration from "./VipLimeRegistration";
-import VipLimeBuy from "./VipLimeBuy";
-import VipLimePlaylist from "./VipLimePlaylist";
-import CbillingRegistration from "./CbillingRegistration";
-import CbillingBuy from "./CbillingBuy";
-import CbillingPlaylist from "./CbillingPlaylist";
-import KineskopRegistration from "./KineskopRegistration";
-import KineskopBuy from "./KineskopBuy";
-import KineskopPlaylist from "./KineskopPlaylist";
-import SharaTvRegistration from "./SharaTvRegistration";
-import SharaTvBuy from "./SharaTvBuy";
-import SharaTvPlaylist from "./SharaTvPlaylist";
-import HdvideoboxDownload from "./HdvideoboxDownload";
-import HdvideoboxInstall from "./HdvideoboxInstall";
-import LampaAndroidDownload from "./LampaAndroidDownload";
-import LampaAndroidInstall from "./LampaAndroidInstall";
-import LampaSetup from "./LampaSetup";
-import LampaSmarttvInstall from "./LampaSmarttvInstall";
-import LampaBrowserInstall from "./LampaBrowserInstall";
+import IlookRegistration from "./Ilook/IlookRegistration";
+import IlookBuy from "./Ilook/IlookBuy";
+import TelevizoDownload from "./Televizo/TelevizoDownload";
+import AndroidTvBoxTransfer from "./AndroidHelp/AndroidTvBoxTransfer";
+import TelevizoInstall from "./Televizo/TelevizoInstall";
+import OttNavigatorDownload from "./OttNavigator/OttNavigatorDownload";
+import OttPlayFossDownload from "./OttPlay/OttPlayFossDownload";
+import OttNavigatorInstallPlaylist from "./OttNavigator/OttNavigatorInstallPlaylist";
+import OttPlayFossInstall from "./OttPlay/OttPlayFossInstall";
+import AppsHelpDownload from "./AndroidHelp/AppsHelpDownload";
+import AppsHelpInstall from "./AndroidHelp/AppsHelpInstall";
+import OttPlayByAlexDownload from "./OttPlay/OttPlayByAlexDownload";
+import OttPlayByAlexInstall from "./OttPlay/OttPlayByAlexInstall";
+import OttplayerWebSetup from "./Ottplayer/OttplayerWebSetup";
+import OttplayerInstall from "./Ottplayer/OttplayerInstall";
+import IlookPlaylist from "./Ilook/IlookPlaylist";
+import SmartTvOttPlayInstall from "./OttPlay/SmartTvOttPlayInstall";
+import OttPlayFossSetupPlaylist from "./OttPlay/OttPlayFossSetupPlaylist";
+import OttPlayFossSetupKey from "./OttPlay/OttPlayFossSetupKey";
+import SsIptvLgTvInstall from "./SsIptv/SsIptvLgTvInstall";
+import SsIptvSetup from "./SsIptv/SsIptvSetup";
+import SsIptvSamsungInstall from "./SsIptv/SsIptvSamsungInstall";
+import FlexIptvInstall from "./FlexIptv/FlexIptvInstall";
+import SharavozRegistration from "./Sharavoz/SharavozRegistration";
+import SharavozBuy from "./Sharavoz/SharavozBuy";
+import SharavozPlaylist from "./Sharavoz/SharavozPlaylist";
+import OttNavigatorInstallKey from "./OttNavigator/OttNavigatorInstallKey";
+import VipLimeRegistration from "./VipLime/VipLimeRegistration";
+import VipLimeBuy from "./VipLime/VipLimeBuy";
+import VipLimePlaylist from "./VipLime/VipLimePlaylist";
+import CbillingRegistration from "./Cbilling/CbillingRegistration";
+import CbillingBuy from "./Cbilling/CbillingBuy";
+import CbillingPlaylist from "./Cbilling/CbillingPlaylist";
+import KineskopRegistration from "./Kineskop/KineskopRegistration";
+import KineskopBuy from "./Kineskop/KineskopBuy";
+import KineskopPlaylist from "./Kineskop/KineskopPlaylist";
+import SharaTvRegistration from "./SharaTv/SharaTvRegistration";
+import SharaTvBuy from "./SharaTv/SharaTvBuy";
+import SharaTvPlaylist from "./SharaTv/SharaTvPlaylist";
+import HdvideoboxDownload from "./Hdvideobox/HdvideoboxDownload";
+import HdvideoboxInstall from "./Hdvideobox/HdvideoboxInstall";
+import LampaAndroidDownload from "./Lampa/LampaAndroidDownload";
+import LampaAndroidInstall from "./Lampa/LampaAndroidInstall";
+import LampaSetup from "./Lampa/LampaSetup";
+import LampaSmarttvInstall from "./Lampa/LampaSmarttvInstall";
+import LampaBrowserInstall from "./Lampa/LampaBrowserInstall";
 import LoaderLinear from "../LoaderLinear";
+import type { ITranslate } from "../../types/typesBox";
 
-function Manual() {
-  const navigate = useNavigate();
-  const {t} = useTranslation();
-  const params = useParams();
-  const operator = params.operator;
-  const devices = params.devices;
-  const device = params.device;
-  const player = params.player;
-  const cinema = params.cinema;
+function Manual(): JSX.Element {
+  const navigate: NavigateFunction = useNavigate();
+  const {t}: ITranslate = useTranslation();
+  const params: Readonly<Params<string>> = useParams();
+  const operator: string | undefined = params.operator;
+  const devices: string | undefined = params.devices;
+  const device: string | undefined = params.device;
+  const player: string | undefined = params.player;
+  const cinema: string | undefined = params.cinema;
   const stepManuals: JSX.Element[] = [];
-  const [isOpenLoader, setIsOpenLoader] = useState(true);
+  const [isOpenLoader, setIsOpenLoader] = useState<boolean>(true);
 
-  useEffect(() => {
+  useEffect((): void => {
     if (player && !Object.keys(playersAll).includes(player)) {
       navigate('/');
     }
   }, []);
 
-  useEffect(() => {
+  useEffect((): void => {
     setTimeout(() => {
       setIsOpenLoader(false);
     }, (cinema) ? 1000 : 2500);
@@ -83,9 +84,9 @@ function Manual() {
   }
 
   if (operator === 'sharavoz') {
-    stepManuals.push(<SzaravozRegistration key={stepManuals.length} step={stepManuals.length + 1}/>);
-    stepManuals.push(<SzaravozBuy key={stepManuals.length} step={stepManuals.length + 1}/>)
-    stepManuals.push(<SzaravozPlaylist key={stepManuals.length} step={stepManuals.length + 1}/>)
+    stepManuals.push(<SharavozRegistration key={stepManuals.length} step={stepManuals.length + 1}/>);
+    stepManuals.push(<SharavozBuy key={stepManuals.length} step={stepManuals.length + 1}/>)
+    stepManuals.push(<SharavozPlaylist key={stepManuals.length} step={stepManuals.length + 1}/>)
   }
 
   if (operator === 'viplime') {
@@ -175,7 +176,6 @@ function Manual() {
   }
 
   //SMART TV
-
   if (devices === 'smarttv' && (player === 'ottplayfoss' || player === 'ottplaybyalex')) {
     stepManuals.push(<SmartTvOttPlayInstall key={stepManuals.length} step={stepManuals.length + 1}/>);
     if (operator === 'ilooktv') {

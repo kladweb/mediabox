@@ -1,5 +1,6 @@
-import * as React from 'react';
-import { NavLink, useNavigate, useParams } from 'react-router-dom';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { useTranslation } from "react-i18next";
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -8,47 +9,40 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import { createTheme, ThemeProvider } from "@mui/material";
-import { useTranslation } from "react-i18next";
-
 import { appColors } from "../services/appColors";
-import './header.scss';
 import { nameApp } from "../data/dataIPTV";
+import { ILocales, ITranslateI18n } from "../types/typesBox";
+import './header.scss';
 
-// const pages = ['Products', 'Pricing', 'Blog'];
-// const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
-
-function Header() {
+function Header(): JSX.Element {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
-  const {t, i18n} = useTranslation();
+  const {t, i18n}: ITranslateI18n = useTranslation();
   const pages: string[] = [`${t('menu1')}`, `${t('menu2')}`, `${t('menu3')}`, `${t('menu4')}`, `${t('menu5')}`];
   const navigation: string[] = ['choose', 'iptv', 'media', 'faq', 'about'];
-  const locales = {
+  const locales: ILocales = {
     en: {title: 'English'},
-    ru: {title: 'Русский'},
+    ru: {title: "Русский"},
   }
 
-  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
+  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>): void => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
+  const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>): void => {
     setAnchorElUser(event.currentTarget);
   };
 
-  const handleCloseNavMenu = () => {
+  const handleCloseNavMenu = (): void => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
+  const handleCloseUserMenu = (): void => {
     setAnchorElUser(null);
   };
 
-  const changeLanguage = (locale: string) => {
+  const changeLanguage = (locale: string): void => {
     setAnchorElUser(null);
     if (locale && locale !== i18n.language) {
       i18n.changeLanguage(locale);
@@ -203,19 +197,13 @@ function Header() {
               sx={{mt: '45px'}}
               id="menu-appbar"
               anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
+              anchorOrigin={{vertical: 'top', horizontal: 'right',}}
               keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
+              transformOrigin={{vertical: 'top', horizontal: 'right',}}
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {Object.keys(locales).map((locale) => (
+              {Object.keys(locales).map((locale: string) => (
                 <MenuItem key={locale} onClick={() => {
                   changeLanguage(locale);
                 }}>

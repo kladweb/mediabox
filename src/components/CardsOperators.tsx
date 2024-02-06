@@ -1,14 +1,14 @@
 import { NavLink } from "react-router-dom";
-import { Box } from '@mui/material';
 import { useTranslation } from "react-i18next";
+import { Box } from '@mui/material';
 import CardOperator from "./CardOperator";
 import { appColors } from "../services/appColors";
-
 import { operators } from "../data/dataIPTV";
+import type { ITranslate } from "../types/typesBox";
 import './cards.scss';
 
-function CardsOperators() {
-  const {t} = useTranslation();
+function CardsOperators(): JSX.Element {
+  const {t}: ITranslate = useTranslation();
   return (
     <>
       <Box
@@ -32,7 +32,7 @@ function CardsOperators() {
       }}
       >
         {
-          Object.keys(operators).map((operator, i) =>
+          Object.keys(operators).map((operator: string, i: number) =>
             <CardOperator key={i} operator={operator}/>
           )
         }

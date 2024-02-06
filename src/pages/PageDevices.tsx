@@ -1,13 +1,13 @@
 import { useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { NavigateFunction, Params, useNavigate, useParams } from "react-router-dom";
 import { Container, Toolbar } from "@mui/material";
 import CardsDevices from "../components/CardsDevices";
-import { devices, operators, players } from "../data/dataIPTV";
+import { operators } from "../data/dataIPTV";
 
-function PageDevices() {
-  const navigate = useNavigate();
-  const params = useParams();
-  const operatorNames = Object.keys(operators);
+function PageDevices(): JSX.Element {
+  const navigate: NavigateFunction = useNavigate();
+  const params: Readonly<Params<string>> = useParams();
+  const operatorNames: string[] = Object.keys(operators);
 
   useEffect(() => {
     if (params.operator && !operatorNames.includes(params.operator)) {

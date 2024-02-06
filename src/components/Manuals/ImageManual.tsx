@@ -1,14 +1,15 @@
 import { useState } from "react";
 import { CardMedia, Skeleton } from "@mui/material";
+import { PropsImg } from "../../types/typesBox";
 
-function ImageManual({image}: any) {
-  const scaleBig = (window.innerWidth <= 900) ? 98 : 70;
-  const scaleSmall = (window.innerWidth <= 900) ? 35 : 15;
-  const [scaleImg, setScaleImg] = useState(scaleSmall);
-  const [cursor, setCursor] = useState('zoom-in');
-  const [loaded, setLoaded] = useState(false);
+function ImageManual({image}: PropsImg) {
+  const scaleBig: number = (window.innerWidth <= 900) ? 98 : 70;
+  const scaleSmall: number = (window.innerWidth <= 900) ? 35 : 15;
+  const [scaleImg, setScaleImg] = useState<number>(scaleSmall);
+  const [cursor, setCursor] = useState<string>('zoom-in');
+  const [loaded, setLoaded] = useState<boolean>(false);
 
-  const handlerZoom = () => {
+  const handlerZoom = (): void => {
     if (scaleImg <= scaleSmall) {
       setScaleImg(scaleBig);
       setCursor('zoom-out');

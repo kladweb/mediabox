@@ -1,9 +1,10 @@
 import { Box } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import { appColors } from "../services/appColors";
+import type { ITranslate } from "../types/typesBox";
 
-export default function Blank() {
-  const {t} = useTranslation();
+export default function Blank(): JSX.Element {
+  const {t}: ITranslate = useTranslation();
   return (
     <Box component='div' sx={{
       height: "100vh",

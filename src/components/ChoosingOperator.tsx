@@ -1,17 +1,16 @@
+import { NavigateFunction, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Box } from "@mui/material";
 import { appColors } from "../services/appColors";
 import { operators } from "../data/dataIPTV";
-import { NavLink, useNavigate } from "react-router-dom";
-import CardDevice from "./CardDevice";
 import CardChoosing from "./CardChoosing";
-import CardOperator from "./CardOperator";
+import type { ITranslate } from "../types/typesBox";
 
-function ChoosingOperator() {
-  const {t} = useTranslation();
-  const navigate = useNavigate();
+function ChoosingOperator(): JSX.Element {
+  const {t}: ITranslate = useTranslation();
+  const navigate: NavigateFunction = useNavigate();
 
-  const handlerBack = () => {
+  const handlerBack = (): void => {
     navigate(-1);
   }
 
@@ -51,7 +50,7 @@ function ChoosingOperator() {
       </Box>
       <Box component='div' sx={{margin: '0 auto 2em', display: 'block', width: {xs: '100%', md: '70%'}}}>
         {
-          Object.keys(operators).map((operator) => (
+          Object.keys(operators).map((operator: string) => (
             <CardChoosing key={operator} operator={operator}/>
           ))
         }

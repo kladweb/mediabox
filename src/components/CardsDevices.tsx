@@ -1,19 +1,19 @@
 import { useEffect } from "react";
-import { NavLink, useNavigate, useParams } from "react-router-dom";
-import { Box } from '@mui/material';
-import { appColors } from "../services/appColors";
 import { useTranslation } from "react-i18next";
+import { NavigateFunction, Params, useNavigate, useParams } from "react-router-dom";
+import { Box } from '@mui/material';
 import CardDevice from "./CardDevice";
-
+import { appColors } from "../services/appColors";
 import { devices } from "../data/dataIPTV";
+import type { ITranslate } from "../types/typesBox";
 import './cards.scss';
 
-function CardsDevices() {
-  const navigate = useNavigate();
-  const devicesNames = Object.keys(devices);
-  const {t} = useTranslation();
-  const params = useParams();
-  const devicesPage = params.devices;
+function CardsDevices(): JSX.Element {
+  const {t}: ITranslate = useTranslation();
+  const navigate: NavigateFunction = useNavigate();
+  const devicesNames: string[] = Object.keys(devices);
+  const params: Readonly<Params<string>> = useParams();
+  const devicesPage: string | undefined = params.devices;
 
   useEffect(() => {
     if (devicesPage && !devicesNames.includes(devicesPage)) {
