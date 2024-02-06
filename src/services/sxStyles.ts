@@ -118,6 +118,32 @@ export const sxLinksPlugins = {
   color: appColors.mid2
 }
 
-export const sxParagraphAbout1={
+export const sxParagraphAbout1 = {
   my: 0, textIndent: '2em'
+}
+
+export const sxButtonCoffee = {
+  display: 'block',
+  width: 'fit-content',
+  p: '0.2em 1em 0.4em',
+  m: '0.5em auto 1em',
+  textDecoration: 'none',
+  textIndent: '0',
+  color: `${appColors.mid1}`,
+  fontSize: {xs: '1rem', md: '1.1rem'},
+  fontWeight: '400',
+  textAlign: 'center',
+  backgroundColor: `${appColors.mid2}`,
+  borderRadius: '0.5em',
+  transition: '0.2s',
+  ':hover': {
+    opacity: '0.8',
+    transition: '0.2s'
+  }
+}
+
+export const sxButtonCoffee2 = {
+  p: '0 0 0.2em',
+  m: '0',
+  fontSize: {xs: '0.8rem', md: '0.9rem'},
 }

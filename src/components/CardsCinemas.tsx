@@ -1,25 +1,14 @@
-import { NavLink, useNavigate, useParams } from "react-router-dom";
-import { Box } from '@mui/material';
 import { useTranslation } from "react-i18next";
+import { NavLink, useParams } from "react-router-dom";
+import { Box } from '@mui/material';
 import { appColors } from "../services/appColors";
-import { players, cinemas } from "../data/dataIPTV";
-import './cards.scss';
-import CardPlayer from "./CardPlayer";
-import { useEffect } from "react";
+import { cinemas } from "../data/dataIPTV";
 import CardCinema from "./CardCinema";
+import './cards.scss';
+import type { ITranslate } from "../types/typesBox";
 
-function CardsCinemas() {
-  const navigate = useNavigate();
-  const deviceNames = Object.keys(players);
-  const {t} = useTranslation();
-  const params = useParams();
-  const device = params.device;
-
-  // useEffect(() => {
-  //   if (device && !(deviceNames.includes(device))) {
-  //     navigate('/');
-  //   }
-  // }, []);
+function CardsCinemas(): JSX.Element {
+  const {t}: ITranslate = useTranslation();
 
   return (
     <>
@@ -44,11 +33,9 @@ function CardsCinemas() {
       }}
       >
         {
-          Object.keys(cinemas).map((cinema, i) =>
+          Object.keys(cinemas).map((cinema: string, i: number) =>
             <NavLink
               key={i}
-              // key={operators[operator as keyof (typeof operators)]['name']}
-              // to={'/device'}
               to={cinema}
               className='nav-cards'
             >

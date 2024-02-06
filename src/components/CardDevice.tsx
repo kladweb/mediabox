@@ -1,19 +1,15 @@
-import * as React from 'react';
-import { Card, CardContent, CardMedia, Typography, CardActionArea, Skeleton } from '@mui/material';
-import { appColors } from "../services/appColors";
-import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { Card, CardContent, CardMedia, Typography, CardActionArea, Skeleton } from '@mui/material';
+import { appColors } from "../services/appColors";
+import { type ITranslate, PropsDevice } from "../types/typesBox";
 
+export default function CardDevice({device}: PropsDevice): JSX.Element {
+  const {t}: ITranslate = useTranslation();
+  const [loaded, setLoaded] = useState<boolean>(false);
 
-type IProps = {
-  device: string
-}
-export default function CardDevice({device}: IProps): JSX.Element {
-  const {t} = useTranslation();
-  const [loaded, setLoaded] = useState(false);
-
-  const card = <Card sx={{
+  const card: JSX.Element = <Card sx={{
     width: {xs: '90vw', md: 345},
     height: 250,
     maxWidth: 345,

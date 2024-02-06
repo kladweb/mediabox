@@ -1,17 +1,14 @@
-import { useNavigate } from "react-router-dom";
-import { Box, CardActionArea, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import { useTranslation } from "react-i18next";
-
-import './cards.scss';
 import { appColors } from "../services/appColors";
-import { sxLink1, sxParagraphAbout1 } from "../services/sxStyles";
-import * as React from "react";
+import { sxButtonCoffee, sxButtonCoffee2, sxParagraphAbout1 } from "../services/sxStyles";
+import type { ITranslate } from "../types/typesBox";
+import './cards.scss';
 
-function AboutUs() {
-  const {t} = useTranslation();
-  const navigate = useNavigate();
-
-  const linkQiwi = 'https://my.qiwi.com/Pavel-KNYAGwCpTu?noCache=true';
+function AboutUs(): JSX.Element {
+  const {t}: ITranslate = useTranslation();
+  const linkQiwi: string = 'https://my.qiwi.com/Pavel-KNYAGwCpTu?noCache=true';
+  const linkBuy: string = 'https://www.buymeacoffee.com/mediabox';
 
   return (
     <>
@@ -43,28 +40,23 @@ function AboutUs() {
         <Box component='p' sx={sxParagraphAbout1}>{t('aboutContent02')}</Box>
         <Box component='p' sx={sxParagraphAbout1}>{t('aboutContent03')}</Box>
         <Box component='p' sx={sxParagraphAbout1}>{t('aboutContent04')}</Box>
-        <Box component='a' href={linkQiwi} target="_blank" sx={{
-          display: 'block',
-          width: 'fit-content',
-          p: '0.2em 1em 0.4em',
-          m: '0.5em auto 2em',
-          textDecoration: 'none',
-          textIndent: '0',
-          color: `${appColors.mid1}`,
-          fontSize: {xs: '1rem', md: '1.1rem'},
-          fontWeight: '400',
-          textAlign: 'center',
-          backgroundColor: `${appColors.mid2}`,
-          borderRadius: '0.5em',
-          transition: '0.2s',
-          ':hover': {
-            opacity: '0.8',
-            transition: '0.2s'
-          }
-        }}>
+        <Box component='a' href={linkQiwi} target="_blank" sx={sxButtonCoffee}>
           {t('aboutContent041')}
+          <Box component='p' sx={sxButtonCoffee2}>{t('aboutContent042')}</Box>
         </Box>
-
+        <Box component='a' href={linkBuy} target="_blank" sx={sxButtonCoffee}>
+          {t('aboutContent041')}
+          <Box component='p' sx={sxButtonCoffee2}>{t('aboutContent043')}</Box>
+        </Box>
+        <Box
+          component='p'
+          sx={{
+            m: '-0.5em 0 0.5em ',
+            textAlign: 'center',
+          }}
+        >
+          {t('aboutContent044')}
+        </Box>
         <Box component='p' sx={sxParagraphAbout1}>{t('aboutContent05')}</Box>
         <Box component='p' sx={{my: '1rem', fontStyle: 'italic', textAlign: 'center'}}>{t('aboutContent06')}</Box>
         <Box component='p' sx={sxParagraphAbout1}>{t('aboutContent07')}</Box>

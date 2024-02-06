@@ -1,19 +1,12 @@
-import { useNavigate } from "react-router-dom";
-import { Box, CardActionArea, Typography } from '@mui/material';
+import { NavigateFunction, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-
-import './cards.scss';
+import { Box, CardActionArea, Typography } from '@mui/material';
 import { sxMainCards, sxMainDescription } from "../services/sxStyles";
+import type { ITranslate, PropsService } from "../types/typesBox";
+import './cards.scss';
 
-type Props = {
-  textInfo: string,
-  pageNavigation: string,
-  nameService: string,
-  descriptionService: string
-}
-
-function Service({textInfo, pageNavigation, nameService, descriptionService}: Props) {
-  const navigate = useNavigate();
+function Service({textInfo, pageNavigation, nameService, descriptionService}: PropsService): JSX.Element {
+  const navigate: NavigateFunction = useNavigate();
   return (
     <>
       <Box component='p' sx={sxMainDescription}>{textInfo}</Box>
@@ -34,9 +27,8 @@ function Service({textInfo, pageNavigation, nameService, descriptionService}: Pr
   );
 }
 
-function MainInfo() {
-  const {t} = useTranslation();
-  const navigate = useNavigate();
+function MainInfo(): JSX.Element {
+  const {t}: ITranslate = useTranslation();
 
   return (
     <Box sx={{mt: 7}}>

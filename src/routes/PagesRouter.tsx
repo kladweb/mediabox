@@ -10,7 +10,7 @@ import Blank from "../components/Blank";
 import PageCinemas from "../pages/PageCinemas";
 import PageAbout from "../pages/PageAbout";
 
-export const PagesRouter = () => {
+export const PagesRouter = (): JSX.Element => {
   return (
     <Routes>
       <Route path='/' element={<PageMain/>}/>

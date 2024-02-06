@@ -1,16 +1,13 @@
-import * as React from 'react';
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Card, CardContent, CardMedia, Typography, CardActionArea, Skeleton } from '@mui/material';
 import { appColors } from "../services/appColors";
-import { useTranslation } from "react-i18next";
 import { cinemas } from "../data/dataIPTV";
-import { useState } from "react";
+import type { ITranslate, PropsCinema } from "../types/typesBox";
 
-type Props = {
-  cinema: string
-}
-export default function CardCinema({cinema}: Props): JSX.Element {
-  const {t} = useTranslation();
-  const [loaded, setLoaded] = useState(false);
+export default function CardCinema({cinema}: PropsCinema): JSX.Element {
+  const {t}: ITranslate = useTranslation();
+  const [loaded, setLoaded] = useState<boolean>(false);
 
   return (
     <Card sx={{

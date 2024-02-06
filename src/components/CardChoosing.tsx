@@ -1,20 +1,17 @@
-import * as React from 'react';
 import { useTranslation } from "react-i18next";
 import { Box, Card, CardContent, CardMedia, Typography } from '@mui/material';
 import { appColors } from "../services/appColors";
 import { operators } from "../data/dataIPTV";
+import { ITranslate, PropsOperator } from "../types/typesBox";
 
-type Props = {
-  operator: string
-}
-export default function CardChoosing({operator}: Props): JSX.Element {
-  const {t} = useTranslation();
+export default function CardChoosing({operator}: PropsOperator): JSX.Element {
+  const {t}: ITranslate = useTranslation();
   const prices: string[] = `${t(`price-${operator}`)}`.split('-');
   const descriptions: string[] = `${t(`description-${operator}`)}`.split('-');
   const links: string[] = operators[operator as keyof (typeof operators)]['links'];
-  const mirrors = links.slice(1);
+  const mirrors: string[] = links.slice(1);
 
-  const handlerOperator = (link: string) => {
+  const handlerOperator = (link: string): void => {
     window.open(link);
   }
 
@@ -85,7 +82,7 @@ export default function CardChoosing({operator}: Props): JSX.Element {
         </Typography>
         <Box
           component='button'
-          onClick={() => {
+          onClick={(): void => {
             handlerOperator(links[0]);
           }}
           sx={{
@@ -113,11 +110,11 @@ export default function CardChoosing({operator}: Props): JSX.Element {
           (mirrors.length > 0) ?
             <div>
               {
-                mirrors.map((mirror, i) =>
+                mirrors.map((mirror: string, i: number) =>
                   <Box
                     key={i}
                     component='button'
-                    onClick={() => {
+                    onClick={(): void => {
                       handlerOperator(mirror);
                     }}
                     sx={{

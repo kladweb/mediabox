@@ -3,14 +3,12 @@ import { NavLink } from "react-router-dom";
 import { Card, CardContent, CardMedia, Typography, CardActionArea, Skeleton } from '@mui/material';
 import { appColors } from "../services/appColors";
 import { operators } from "../data/dataIPTV";
+import { PropsOperator } from "../types/typesBox";
 
-type Props = {
-  operator: string
-}
-export default function CardOperator({operator}: Props): JSX.Element {
-  const [loaded, setLoaded] = useState(false);
+export default function CardOperator({operator}: PropsOperator): JSX.Element {
+  const [loaded, setLoaded] = useState<boolean>(false);
 
-  const card = <Card sx={{
+  const card: JSX.Element = <Card sx={{
     cursor: 'default',
     width: {xs: '90vw', sm: 345},
     maxWidth: 345,

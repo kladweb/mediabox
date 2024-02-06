@@ -1,19 +1,7 @@
-import { useEffect } from "react";
 import { Container, Toolbar } from "@mui/material";
-import { useNavigate, useParams } from "react-router-dom";
-import { players } from "../data/dataIPTV";
 import CardsCinemas from "../components/CardsCinemas";
 
-function PageCinemas() {
-  const navigate = useNavigate();
-  const params = useParams();
-  const deviceNames = Object.keys(players);
-
-  // useEffect(() => {
-  //   if (params.cinema && !deviceNames.includes(params.device)) {
-  //     navigate('/blank');
-  //   }
-  // }, []);
+function PageCinemas(): JSX.Element {
 
   return (
     <Container maxWidth="xl">

@@ -1,15 +1,12 @@
-import * as React from 'react';
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Card, CardContent, CardMedia, Typography, CardActionArea, Skeleton } from '@mui/material';
 import { appColors } from "../services/appColors";
-import { useTranslation } from "react-i18next";
-import { useState } from "react";
+import { type ITranslate, PropsPlayer } from "../types/typesBox";
 
-type Props = {
-  player: string
-}
-export default function CardPlayer({player}: Props): JSX.Element {
-  const {t} = useTranslation();
-  const [loaded, setLoaded] = useState(false);
+export default function CardPlayer({player}: PropsPlayer): JSX.Element {
+  const {t}: ITranslate = useTranslation();
+  const [loaded, setLoaded] = useState<boolean>(false);
 
   return (
     <Card sx={{

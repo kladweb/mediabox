@@ -1,12 +1,15 @@
-export const nameApp = 'MEDIABOX';
+import { Icinemas, Idevices, Ioperators, Iplayers, IplayersAll } from "../types/typesBox";
 
-export const devices = {
+export const nameApp: string
+  = 'MEDIABOX';
+
+export const devices: Idevices = {
   boxes: ['Android TV Box', 'Apple TV'],
   smarttv: ['LG Smart TV', 'SAMSUNG Smart TV']
   // smarttv: ['LG Smart TV', 'SAMSUNG Smart TV', 'Android TV']
 }
 
-export const playersAll = {
+export const playersAll: IplayersAll = {
   ottnavigator: 'OTT Navigator',
   ottplayfoss: 'OTT-play FOSS',
   ottplaybyalex: 'Ott-Play by Alex',
@@ -17,7 +20,7 @@ export const playersAll = {
   riptv: 'rIPTV',
 }
 
-export const players = {
+export const players: Iplayers = {
   androidtvbox: [
     'Televizo',
     'OTT Navigator',
@@ -51,7 +54,7 @@ export const players = {
   ],
 };
 
-export const operators: object = {
+export const operators: Ioperators = {
   ilooktv: {
     name: 'ILookTv',
     links: [
@@ -145,7 +148,7 @@ export const operators: object = {
   }
 }
 
-export const cinemas = {
+export const cinemas: Icinemas = {
   hdvideobox: 'HD Videobox',
   lampaandroid: 'Lampa for android',
   lampasmarttv: 'Lampa for Smart TV',

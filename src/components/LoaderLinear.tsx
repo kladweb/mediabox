@@ -1,14 +1,13 @@
-import * as React from 'react';
 import { useTranslation } from "react-i18next";
 import LinearProgress from '@mui/material/LinearProgress';
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-
+import { type ITranslate, PropsLoader } from "../types/typesBox";
 import './loaderLinear.scss';
 
-const style = {
+const style: Object = {
   position: 'absolute' as 'absolute',
   top: '50%',
   left: '50%',
@@ -21,12 +20,9 @@ const style = {
   backdropFilter: 'blur(5px)'
 };
 
-type Props = {
-  isOpenLoader: boolean;
-}
+export default function LoaderLinear({isOpenLoader}: PropsLoader): JSX.Element {
+  const {t}: ITranslate = useTranslation();
 
-export default function LoaderLinear({isOpenLoader}: Props) {
-  const {t} = useTranslation();
   return (
     <div>
       <Modal

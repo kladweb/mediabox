@@ -1,18 +1,19 @@
 import { useEffect } from "react";
-import { NavLink, useNavigate, useParams } from "react-router-dom";
-import { Box } from '@mui/material';
+import { NavigateFunction, NavLink, Params, useNavigate, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { Box } from '@mui/material';
 import { appColors } from "../services/appColors";
 import { players } from "../data/dataIPTV";
-import './cards.scss';
 import CardPlayer from "./CardPlayer";
+import type { ITranslate } from "../types/typesBox";
+import './cards.scss';
 
-function CardsPlayers() {
-  const navigate = useNavigate();
-  const deviceNames = Object.keys(players);
-  const {t} = useTranslation();
-  const params = useParams();
-  const device = params.device;
+function CardsPlayers(): JSX.Element {
+  const navigate: NavigateFunction = useNavigate();
+  const deviceNames: string[] = Object.keys(players);
+  const {t}: ITranslate = useTranslation();
+  const params: Readonly<Params<string>> = useParams();
+  const device: string | undefined = params.device;
 
   useEffect(() => {
     if (device && !(deviceNames.includes(device))) {
@@ -46,7 +47,7 @@ function CardsPlayers() {
           (device && deviceNames.includes(device)) &&
           <>
             {
-              players[device as keyof (typeof players)].map((player, i) =>
+              players[device as keyof (typeof players)].map((player: string, i: number) =>
                 <NavLink
                   key={i}
                   to={player.replace(/[-\s]/g, '').toLowerCase()}
