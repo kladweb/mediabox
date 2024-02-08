@@ -4,7 +4,7 @@ import ImageManual from "../ImageManual";
 import { sxManualText1, sxCardMain, sxHeadMain, sxLink1 } from "../../../services/sxStyles";
 import type { ITranslate, PropsStep } from '../../../types/typesBox';
 
-function OttplayerWebSetup({step}: PropsStep) {
+function OttplayerWebSetup({step}: PropsStep): JSX.Element {
   const {t}: ITranslate = useTranslation();
   const linkOttplayer: string = 'https://ottplayer.tv/';
 

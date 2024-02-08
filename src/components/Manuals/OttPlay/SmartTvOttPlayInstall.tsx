@@ -9,7 +9,7 @@ import { sxManualText1, sxCardMain, sxHeadMain, sxToggle1 } from "../../../servi
 import { playersAll } from "../../../data/dataIPTV";
 import type { ITranslate, PropsStep } from '../../../types/typesBox';
 
-function SmartTvOttPlayInstall({step}: PropsStep) {
+function SmartTvOttPlayInstall({step}: PropsStep): JSX.Element {
   const [alignment, setAlignment] = useState<string>('');
   const {t}: ITranslate = useTranslation();
   const params: Readonly<Params<string>> = useParams();

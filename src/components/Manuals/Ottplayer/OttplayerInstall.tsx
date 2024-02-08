@@ -5,7 +5,7 @@ import { sxManualText1, sxCardMain, sxHeadMain } from "../../../services/sxStyle
 import { Params, useParams } from "react-router-dom";
 import type { ITranslate, PropsStep } from '../../../types/typesBox';
 
-function OttplayerInstall({step}: PropsStep) {
+function OttplayerInstall({step}: PropsStep): JSX.Element {
   const {t}: ITranslate = useTranslation();
   const params: Readonly<Params<string>> = useParams();
   const devices: string | undefined = params.devices;

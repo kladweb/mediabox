@@ -6,7 +6,7 @@ import { sxManualText1, sxCardMain, sxHeadMain } from "../../../services/sxStyle
 import { operators } from "../../../data/dataIPTV";
 import type { ITranslate, PropsStep } from '../../../types/typesBox';
 
-function FlexIptvInstall({step}: PropsStep) {
+function FlexIptvInstall({step}: PropsStep): JSX.Element {
   const {t}: ITranslate = useTranslation();
   const params: Readonly<Params<string>> = useParams();
   const operator: string | undefined = params.operator;

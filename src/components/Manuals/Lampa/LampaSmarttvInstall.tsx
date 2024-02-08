@@ -7,7 +7,7 @@ import ImageManual from "../ImageManual";
 import { sxManualText1, sxCardMain, sxHeadMain, sxToggle1 } from "../../../services/sxStyles";
 import type { ITranslate, PropsStep } from '../../../types/typesBox';
 
-function LampaSmarttvInstall({step}: PropsStep) {
+function LampaSmarttvInstall({step}: PropsStep): JSX.Element {
   const {t}: ITranslate = useTranslation();
   const [alignment, setAlignment] = useState<string>('');
 

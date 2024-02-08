@@ -4,7 +4,7 @@ import { Box, Card, CardContent } from "@mui/material";
 import { sxManualText1, sxCardMain, sxHeadMain } from "../../../services/sxStyles";
 import type { ITranslate, PropsStep } from '../../../types/typesBox';
 
-function IlookChoose({step}: PropsStep) {
+function IlookChoose({step}: PropsStep): JSX.Element {
   const {t}: ITranslate = useTranslation();
   const params: Readonly<Params<string>> = useParams();
   const device: string | undefined = params.device;

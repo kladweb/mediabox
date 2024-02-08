@@ -4,7 +4,7 @@ import ImageManual from "../ImageManual";
 import { sxManualText1, sxCardMain, sxHeadMain, sxLink1 } from "../../../services/sxStyles";
 import type { ITranslate, PropsStep } from '../../../types/typesBox';
 
-function SsIptvSetup({step}: PropsStep) {
+function SsIptvSetup({step}: PropsStep): JSX.Element {
   const {t}: ITranslate = useTranslation();
   const linkSsIptv: string = 'https://ss-iptv.com/ru/users/playlist';
 

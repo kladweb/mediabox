@@ -4,7 +4,7 @@ import ImageManual from "../ImageManual";
 import { sxManualText1, sxCardMain, sxHeadMain, sxLink1 } from "../../../services/sxStyles";
 import type { ITranslate, PropsStep } from '../../../types/typesBox';
 
-function VipLimeBuy({step}: PropsStep) {
+function VipLimeBuy({step}: PropsStep): JSX.Element {
   const {t}: ITranslate = useTranslation();
   const linkVipLimeBot: string = 'https://t.me/VipLime_test_bot'
 

@@ -3,7 +3,7 @@ import { Box, Card, CardContent } from "@mui/material";
 import { sxManualText1, sxCardMain, sxHeadMain, sxLink1 } from "../../../services/sxStyles";
 import { ILinks, ITranslate, PropsStep } from '../../../types/typesBox';
 
-function OttPlayFossDownload({step}: PropsStep) {
+function OttPlayFossDownload({step}: PropsStep): JSX.Element {
   const {t}: ITranslate = useTranslation();
   const links: ILinks = {
     linkOfficial: 'https://ottp.eu.org/www/install/android/',

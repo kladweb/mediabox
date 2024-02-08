@@ -3,7 +3,7 @@ import { Box, Card, CardContent } from "@mui/material";
 import { sxManualText1, sxCardMain, sxHeadMain, sxLink1 } from "../../../services/sxStyles";
 import { ILinks, ITranslate, PropsStep } from '../../../types/typesBox';
 
-function OttNavigatorDownload({step}: PropsStep) {
+function OttNavigatorDownload({step}: PropsStep): JSX.Element {
   const {t}: ITranslate = useTranslation();
   const links: ILinks = {
     link4PDA: 'https://4pda.to/forum/index.php?showtopic=881962',

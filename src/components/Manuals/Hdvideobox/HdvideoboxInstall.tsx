@@ -4,7 +4,7 @@ import ImageManual from "../ImageManual";
 import { sxManualText1, sxCardMain, sxHeadMain } from "../../../services/sxStyles";
 import type { ITranslate, PropsStep } from '../../../types/typesBox';
 
-function HdvideoboxInstall({step}: PropsStep) {
+function HdvideoboxInstall({step}: PropsStep): JSX.Element {
   const {t}: ITranslate = useTranslation();
 
   return (

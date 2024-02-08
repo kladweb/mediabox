@@ -3,7 +3,7 @@ import { Box, Card, CardContent } from "@mui/material";
 import { sxManualText1, sxCardMain, sxHeadMain, sxLink1 } from "../../../services/sxStyles";
 import type { ITranslate, PropsStep } from '../../../types/typesBox';
 
-function LampaAndroidDownload({step}: PropsStep) {
+function LampaAndroidDownload({step}: PropsStep): JSX.Element {
   const {t}: ITranslate = useTranslation();
   const linkLampa: string = 'https://www.dropbox.com/scl/fi/4bylxbdm6kcm0gjlbzxla/Lampa-v7.7.7-82.apk?rlkey=drfpvnnkluy73qwry7td5ezby&dl=1'
   const linkVimu: string = 'https://www.dropbox.com/scl/fi/ph3p26byqoujw7pyi8eap/Vimu-Media-Player-6.82.apk?rlkey=0l17nfi3som7gmryu761zgsts&dl=1'
