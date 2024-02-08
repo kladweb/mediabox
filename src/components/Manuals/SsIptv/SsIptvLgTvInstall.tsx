@@ -3,7 +3,7 @@ import { Box, Card, CardContent } from "@mui/material";
 import { sxManualText1, sxCardMain, sxHeadMain } from "../../../services/sxStyles";
 import type { ITranslate, PropsStep } from '../../../types/typesBox';
 
-function SsIptvLgTvInstall({step}: PropsStep) {
+function SsIptvLgTvInstall({step}: PropsStep): JSX.Element {
   const {t}: ITranslate = useTranslation();
 
   return (

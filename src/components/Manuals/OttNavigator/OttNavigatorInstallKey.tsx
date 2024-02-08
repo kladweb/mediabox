@@ -6,7 +6,7 @@ import { sxManualText1, sxCardMain, sxHeadMain } from "../../../services/sxStyle
 import { Params, useParams } from "react-router-dom";
 import type { ITranslate, PropsStep } from '../../../types/typesBox';
 
-function OttNavigatorInstallKey({step}: PropsStep) {
+function OttNavigatorInstallKey({step}: PropsStep): JSX.Element {
   const params: Readonly<Params<string>> = useParams();
   const operator: string | undefined = params.operator;
   const {t}: ITranslate = useTranslation();

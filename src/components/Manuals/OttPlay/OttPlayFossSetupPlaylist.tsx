@@ -6,7 +6,7 @@ import { sxManualText1, sxCardMain, sxHeadMain } from "../../../services/sxStyle
 import { playersAll } from "../../../data/dataIPTV";
 import type { ITranslate, PropsStep } from '../../../types/typesBox';
 
-function OttPlayFossSetupPlaylist({step}: PropsStep) {
+function OttPlayFossSetupPlaylist({step}: PropsStep): JSX.Element {
   const {t}: ITranslate = useTranslation();
   const params: Readonly<Params<string>> = useParams();
   const player: string | undefined = params.player;

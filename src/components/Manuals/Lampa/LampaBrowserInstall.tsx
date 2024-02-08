@@ -4,7 +4,7 @@ import { sxManualText1, sxCardMain, sxHeadMain } from "../../../services/sxStyle
 import { appColors } from "../../../services/appColors";
 import type { ITranslate, PropsStep } from '../../../types/typesBox';
 
-function LampaBrowserInstall({step}: PropsStep) {
+function LampaBrowserInstall({step}: PropsStep): JSX.Element {
   const {t}: ITranslate = useTranslation();
 
   return (

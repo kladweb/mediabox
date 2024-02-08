@@ -5,7 +5,7 @@ import ImageManual from "../ImageManual";
 import { sxManualText1, sxCardMain, sxHeadMain } from "../../../services/sxStyles";
 import type { ITranslate, PropsStep } from '../../../types/typesBox';
 
-function SharavozPlaylist({step}: PropsStep) {
+function SharavozPlaylist({step}: PropsStep): JSX.Element {
   const {t}: ITranslate = useTranslation();
   const params: Readonly<Params<string>> = useParams();
   const device: string | undefined = params.device;

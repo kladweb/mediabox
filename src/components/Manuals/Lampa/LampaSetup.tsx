@@ -4,7 +4,7 @@ import { Box, Card, CardContent } from "@mui/material";
 import { sxManualText1, sxCardMain, sxHeadMain, sxLinksPlugins, } from "../../../services/sxStyles";
 import type { ITranslate, PropsStep } from '../../../types/typesBox';
 
-function LampaSetup({step}: PropsStep) {
+function LampaSetup({step}: PropsStep): JSX.Element {
   const {t}: ITranslate = useTranslation();
   const linksPlugins: string[] = [
     'https://cub.red/plugin/tmdb-proxy',

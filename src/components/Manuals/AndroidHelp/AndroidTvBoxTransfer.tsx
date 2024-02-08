@@ -4,10 +4,10 @@ import { useTranslation } from "react-i18next";
 import { Box, Card, CardContent } from "@mui/material";
 import ImageManual from "../ImageManual";
 import { sxManualText1, sxCardMain, sxHeadMain } from "../../../services/sxStyles";
-import type { PropsStep } from '../../../types/typesBox';
+import type { ITranslate, PropsStep } from '../../../types/typesBox';
 
-function AndroidTvBoxTransfer({step}: PropsStep) {
-  const {t} = useTranslation();
+function AndroidTvBoxTransfer({step}: PropsStep): JSX.Element {
+  const {t}: ITranslate = useTranslation();
   const params: Readonly<Params<string>> = useParams();
   const player: string | undefined = params.player;
   const operator: string | undefined = params.operator;
@@ -22,13 +22,8 @@ function AndroidTvBoxTransfer({step}: PropsStep) {
   }, []);
 
   return (
-    <Card
-      component='div'
-      sx={sxCardMain}
-    >
-      <Box component='h4' sx={sxHeadMain}>
-        {t('step')}{step}{t('step-AndroidTvBoxTransfer')}
-      </Box>
+    <Card component='div' sx={sxCardMain}>
+      <Box component='h4' sx={sxHeadMain}>{t('step')}{step}{t('step-AndroidTvBoxTransfer')}</Box>
       <CardContent sx={sxManualText1}>{t('androidtvbox_manual2-1')}</CardContent>
       <ImageManual image={`androidtvbox_manual1.jpg`}/>
       <CardContent sx={sxManualText1}>{t('androidtvbox_manual2-2')}</CardContent>

@@ -3,7 +3,7 @@ import { Box, Card, CardContent } from "@mui/material";
 import { sxManualText1, sxCardMain, sxHeadMain, sxLink1 } from "../../../services/sxStyles";
 import type { ITranslate, PropsStep } from '../../../types/typesBox';
 
-function HdvideoboxDownload({step}: PropsStep) {
+function HdvideoboxDownload({step}: PropsStep): JSX.Element {
   const {t}: ITranslate = useTranslation();
   const linkHdvid: string = 'https://www.dropbox.com/scl/fi/kpeoasy5y4glfi56tts8q/hdvideobox-2.31-fix-MaxVanced.apk?rlkey=915idjx3tgr5bmnt7picuysnd&dl=1'
   const linkVimu: string = 'https://www.dropbox.com/scl/fi/ph3p26byqoujw7pyi8eap/Vimu-Media-Player-6.82.apk?rlkey=0l17nfi3som7gmryu761zgsts&dl=1'

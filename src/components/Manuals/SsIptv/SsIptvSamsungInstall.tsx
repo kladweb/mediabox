@@ -8,7 +8,7 @@ import { useState } from "react";
 import ToggleButton from "@mui/material/ToggleButton";
 import type { ITranslate, PropsStep } from '../../../types/typesBox';
 
-function SsIptvSamsungInstall({step}: PropsStep) {
+function SsIptvSamsungInstall({step}: PropsStep): JSX.Element {
   const {t}: ITranslate = useTranslation();
   const linkSsiptvTizen: string = 'https://ss-iptv.com/files/ssiptv_tizen_usb.zip';
   const linkSsiptvOrsay: string = 'https://ss-iptv.com/files/ssiptv_orsay_usb.zip';

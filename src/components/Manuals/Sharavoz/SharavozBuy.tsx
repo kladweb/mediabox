@@ -4,7 +4,7 @@ import ImageManual from "../ImageManual";
 import { sxManualText1, sxCardMain, sxHeadMain } from "../../../services/sxStyles";
 import type { ITranslate, PropsStep } from '../../../types/typesBox';
 
-function SharavozBuy({step}: PropsStep) {
+function SharavozBuy({step}: PropsStep): JSX.Element {
   const {t}: ITranslate = useTranslation();
 
   return (

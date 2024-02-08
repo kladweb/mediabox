@@ -6,7 +6,7 @@ import { operators } from "../../../data/dataIPTV";
 import { sxManualText1, sxCardMain, sxHeadMain, sxButtonLinkOperator } from "../../../services/sxStyles";
 import type { PropsStep, ITranslate } from '../../../types/typesBox';
 
-function IlookRegistration({step}: PropsStep) {
+function IlookRegistration({step}: PropsStep): JSX.Element {
   const {t}: ITranslate = useTranslation();
   const params: Readonly<Params<string>> = useParams();
   const operator: string | undefined = params.operator;

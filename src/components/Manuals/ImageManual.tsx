@@ -2,7 +2,7 @@ import { useState } from "react";
 import { CardMedia, Skeleton } from "@mui/material";
 import { PropsImg } from "../../types/typesBox";
 
-function ImageManual({image}: PropsImg) {
+function ImageManual({image}: PropsImg): JSX.Element {
   const scaleBig: number = (window.innerWidth <= 900) ? 98 : 70;
   const scaleSmall: number = (window.innerWidth <= 900) ? 35 : 15;
   const [scaleImg, setScaleImg] = useState<number>(scaleSmall);
