@@ -58,7 +58,10 @@ function SharavozPlaylist({step}: PropsStep): JSX.Element {
         (params.player === 'ottplayer' || params.player === 'ottnavigator' || devices === 'smarttv') ?
           null
           :
-          <CardContent sx={sxManualText1}>{t('ilooktv_manual3-3')}</CardContent>
+          <>
+            <CardContent sx={sxManualText1}>{t('ilooktv_manual3-3')}</CardContent>
+            <CardContent sx={sxManualText1}>{t('ilooktv_manual3-4')}</CardContent>
+          </>
       }
       <CardContent sx={sxManualText1}>{t('szaravoz_manual3-4')}</CardContent>
     </Card>
