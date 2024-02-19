@@ -42,7 +42,10 @@ function CbillingPlaylist({step}: PropsStep): JSX.Element {
         (player === 'ottplayer' || player === 'ottnavigator' || devices === 'smarttv') ?
           null
           :
-          <CardContent sx={sxManualText1}>{t('ilooktv_manual3-3')}</CardContent>
+          <>
+            <CardContent sx={sxManualText1}>{t('ilooktv_manual3-3')}</CardContent>
+            <CardContent sx={sxManualText1}>{t('ilooktv_manual3-4')}</CardContent>
+          </>
       }
       <CardContent sx={sxManualText1}>{t('szaravoz_manual3-4')}</CardContent>
     </Card>

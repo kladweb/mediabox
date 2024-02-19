@@ -49,7 +49,10 @@ function IlookPlaylist({step}: PropsStep): JSX.Element {
               (player === 'ottplayer' || player == 'ssiptv' || player == 'flexiptv') ?
                 null
                 :
-                <CardContent sx={sxManualText1}>{t('ilooktv_manual3-3')}</CardContent>
+                <>
+                  <CardContent sx={sxManualText1}>{t('ilooktv_manual3-3')}</CardContent>
+                  <CardContent sx={sxManualText1}>{t('ilooktv_manual3-4')}</CardContent>
+                </>
             }
           </>
       }

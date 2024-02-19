@@ -30,6 +30,7 @@ function KineskopPlaylist({step}: PropsStep): JSX.Element {
             <CardContent sx={sxManualText1}>{t('kineskopclub_manual3-4')}</CardContent>
             <ImageManual image={'kineskop_manual_08.jpg'}/>
             <CardContent sx={sxManualText1}>{t('ilooktv_manual3-3')}</CardContent>
+            <CardContent sx={sxManualText1}>{t('ilooktv_manual3-4')}</CardContent>
           </>
       }
       <CardContent sx={sxManualText1}>{t('szaravoz_manual3-4')}</CardContent>

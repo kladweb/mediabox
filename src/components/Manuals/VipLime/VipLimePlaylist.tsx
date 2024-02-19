@@ -43,7 +43,10 @@ function VipLimePlaylist({step}: PropsStep): JSX.Element {
         (player === 'ottplayer' || player === 'ssiptv' || player === 'ottnavigator' || devices === 'smarttv') ?
           null
           :
-          <CardContent sx={sxManualText1}>{t('ilooktv_manual3-3')}</CardContent>
+          <>
+            <CardContent sx={sxManualText1}>{t('ilooktv_manual3-3')}</CardContent>
+            <CardContent sx={sxManualText1}>{t('ilooktv_manual3-4')}</CardContent>
+          </>
       }
       <CardContent sx={sxManualText1}>{t('viplime_manual3-4')}</CardContent>
     </Card>
