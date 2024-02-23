@@ -7,8 +7,7 @@ import './cards.scss';
 
 function AboutUs(): JSX.Element {
   const {t}: ITranslate = useTranslation();
-  const linkQiwi: string = 'https://my.qiwi.com/Pavel-KNYAGwCpTu?noCache=true';
-  const linkBuy: string = 'https://www.buymeacoffee.com/mediabox';
+  const linkMoney: string = 'https://yoomoney.ru/fundraise/1124NP8L2IV.240223';
 
   return (
     <>
@@ -40,13 +39,9 @@ function AboutUs(): JSX.Element {
         <Box component='p' sx={sxParagraphAbout1}>{t('aboutContent02')}</Box>
         <Box component='p' sx={sxParagraphAbout1}>{t('aboutContent03')}</Box>
         <Box component='p' sx={sxParagraphAbout1}>{t('aboutContent04')}</Box>
-        <Box component='a' href={linkQiwi} target="_blank" sx={sxButtonCoffee}>
+        <Box component='a' href={linkMoney} target="_blank" sx={sxButtonCoffee}>
           {t('aboutContent041')}
           <Box component='p' sx={sxButtonCoffee2}>{t('aboutContent042')}</Box>
-        </Box>
-        <Box component='a' href={linkBuy} target="_blank" sx={sxButtonCoffee}>
-          {t('aboutContent041')}
-          <Box component='p' sx={sxButtonCoffee2}>{t('aboutContent043')}</Box>
         </Box>
         <Box
           component='p'
