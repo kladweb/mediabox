@@ -25,30 +25,30 @@ function AndroidTvBoxTransfer({step}: PropsStep): JSX.Element {
     <Card component='div' sx={sxCardMain}>
       <Box component='h4' sx={sxHeadMain}>{t('step')}{step}{t('step-AndroidTvBoxTransfer')}</Box>
       <CardContent sx={sxManualText1}>{t('androidtvbox_manual2-1')}</CardContent>
-      <ImageManual image={`androidtvbox_manual1.jpg`}/>
+      <ImageManual image='AndroidHelp/androidtvbox_manual1.jpg'/>
       <CardContent sx={sxManualText1}>{t('androidtvbox_manual2-2')}</CardContent>
-      <ImageManual image={`androidtvbox_manual2.jpg`}/>
-      <ImageManual image={`androidtvbox_manual3.jpg`}/>
+      <ImageManual image='AndroidHelp/androidtvbox_manual2.jpg'/>
+      <ImageManual image='AndroidHelp/androidtvbox_manual3.jpg'/>
       <CardContent sx={sxManualText1}>{t('androidtvbox_manual2-3')}</CardContent>
-      <ImageManual image={`androidtvbox_manual4.jpg`}/>
+      <ImageManual image='AndroidHelp/androidtvbox_manual4.jpg'/>
       <CardContent sx={sxManualText1}>{t('androidtvbox_manual2-4')}</CardContent>
       <CardContent sx={sxManualText1}>{t(`androidtvbox_manual2-5_${numberFiles}`)}</CardContent>
       {
         (cinema) ?
           <>
-            <ImageManual image={`androidtvbox_manual5_${cinema}_${numberFiles}.jpg`}/>
+            <ImageManual image={`AndroidHelp/androidtvbox_manual5_${cinema}_${numberFiles}.jpg`}/>
             <CardContent sx={sxManualText1}>{t(`androidtvbox_manual2-6_${numberFiles}`)}</CardContent>
-            <ImageManual image={'androidtvbox_manual6.jpg'}/>
-            <ImageManual image={'androidtvbox_manual7.jpg'}/>
-            <ImageManual image={`androidtvbox_manual8_${cinema}_${numberFiles}.jpg`}/>
+            <ImageManual image='AndroidHelp/androidtvbox_manual6.jpg'/>
+            <ImageManual image='AndroidHelp/androidtvbox_manual7.jpg'/>
+            <ImageManual image={`AndroidHelp/androidtvbox_manual8_${cinema}_${numberFiles}.jpg`}/>
           </>
           :
           <>
-            <ImageManual image={`androidtvbox_manual5_${player}_${numberFiles}.jpg`}/>
+            <ImageManual image={`AndroidHelp/androidtvbox_manual5_${player}_${numberFiles}.jpg`}/>
             <CardContent sx={sxManualText1}>{t(`androidtvbox_manual2-6_${numberFiles}`)}</CardContent>
-            <ImageManual image={'androidtvbox_manual6.jpg'}/>
-            <ImageManual image={'androidtvbox_manual7.jpg'}/>
-            <ImageManual image={`androidtvbox_manual8_${player}_${numberFiles}.jpg`}/>
+            <ImageManual image='AndroidHelp/androidtvbox_manual6.jpg'/>
+            <ImageManual image='AndroidHelp/androidtvbox_manual7.jpg'/>
+            <ImageManual image={`AndroidHelp/androidtvbox_manual8_${player}_${numberFiles}.jpg`}/>
           </>
       }
     </Card>

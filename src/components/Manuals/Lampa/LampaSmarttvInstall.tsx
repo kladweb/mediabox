@@ -25,15 +25,15 @@ function LampaSmarttvInstall({step}: PropsStep): JSX.Element {
       <Box component='h4' sx={sxHeadMain}>{t('step')}{step}{t('step-smartTv-ottplayInstall')}{'Lampa'}</Box>
       <CardContent sx={sxManualText1}>{t('mediaStationX_manual3-1_media')}</CardContent>
       <CardContent sx={sxManualText1}>{t('mediaStationX_manual3-2')}</CardContent>
-      <ImageManual image={'mediastation_01.jpg'}/>
+      <ImageManual image='Mediastation/mediastation_01.jpg'/>
       <CardContent sx={sxManualText1}>{t('mediaStationX_manual3-10')}</CardContent>
-      <ImageManual image={'mediastation_06.jpg'}/>
+      <ImageManual image='Mediastation/mediastation_06.jpg'/>
       <CardContent sx={sxManualText1}>{t('mediaStationX_manual3-11')}</CardContent>
-      <ImageManual image={'mediastation_07.jpg'}/>
+      <ImageManual image='Mediastation/mediastation_07.jpg'/>
       <CardContent sx={sxManualText1}>{t('mediaStationX_manual3-3')}</CardContent>
-      <ImageManual image={'mediastation_02.jpg'}/>
+      <ImageManual image='Mediastation/mediastation_02.jpg'/>
       <CardContent sx={sxManualText1}>{t('mediaStationX_manual3-4')}</CardContent>
-      <ImageManual image={'mediastation_03.jpg'}/>
+      <ImageManual image='Mediastation/mediastation_03.jpg'/>
       <CardContent sx={sxManualText1}>
         {t('mediaStationX_manual3-5')}
         {'Lampa'}
@@ -60,7 +60,7 @@ function LampaSmarttvInstall({step}: PropsStep): JSX.Element {
         (alignment === 'first') ?
           <>
             <CardContent sx={sxManualText1}>{t('mediaStationX_manual3-8_lampa')}</CardContent>
-            <ImageManual image={'lampa_manual_17.jpg'}/>
+            <ImageManual image='Lampa/lampa_manual_17.jpg'/>
             <CardContent sx={sxManualText1}>{t('mediaStationX_manual3-9')}</CardContent>
             <CardContent sx={sxManualText1}>{t('mediaStationX_manual3-12_lampa')}</CardContent>
           </>
@@ -71,17 +71,17 @@ function LampaSmarttvInstall({step}: PropsStep): JSX.Element {
         (alignment === 'second') ?
           <>
             <CardContent sx={sxManualText1}>{t('mediaStationX_manual4-1')}</CardContent>
-            <ImageManual image={'mediastation_10.jpg'}/>
+            <ImageManual image='Mediastation/mediastation_10.jpg'/>
             <CardContent sx={sxManualText1}>{t('mediaStationX_manual3-9')}</CardContent>
-            <ImageManual image={'mediastation_11.jpg'}/>
+            <ImageManual image='Mediastation/mediastation_11.jpg'/>
             <CardContent sx={sxManualText1}>{t('mediaStationX_manual4-2')}</CardContent>
-            <ImageManual image={'mediastation_12.jpg'}/>
+            <ImageManual image='Mediastation/mediastation_12.jpg'/>
             <CardContent sx={sxManualText1}>{t(`mediaStationX_manual4-3_ottplaybyalex`)}</CardContent>
-            <ImageManual image={`mediastation_13_ottplayfoss.jpg`}/>
+            <ImageManual image='Mediastation/mediastation_13_ottplayfoss.jpg'/>
             <CardContent sx={sxManualText1}>{t('mediaStationX_manual4-35_lampa')}</CardContent>
-            <ImageManual image={'lampa_manual_18.jpg'}/>
+            <ImageManual image='Lampa/lampa_manual_18.jpg'/>
             <CardContent sx={sxManualText1}>{t('mediaStationX_manual4-4')}{'Lampa'}.</CardContent>
-            <ImageManual image={'lampa_manual_19.jpg'}/>
+            <ImageManual image='Lampa/lampa_manual_19.jpg'/>
             <CardContent sx={sxManualText1}>{t('mediaStationX_manual4-5')}</CardContent>
           </>
           :

@@ -24,10 +24,10 @@ function IlookPlaylist({step}: PropsStep): JSX.Element {
               {t('step')}{step}{t('step-IlookPlaylist-smarttv')}
             </Box>
             <CardContent sx={sxManualText1}>{t('ilooktv_manual3-1')}</CardContent>
-            <ImageManual image={`${operator}_manual5.jpg`}/>
-            <ImageManual image={`${operator}_manual51.jpg`}/>
+            <ImageManual image='Ilooktv/ilooktv_manual5.jpg'/>
+            <ImageManual image='Ilooktv/ilooktv_manual51.jpg'/>
             <CardContent sx={sxManualText1}>{t('ilooktv_manual_smarttv_3-11')}</CardContent>
-            <ImageManual image={`${operator}_manual55.jpg`}/>
+            <ImageManual image='Ilooktv/ilooktv_manual55.jpg'/>
             <CardContent sx={sxManualText1}>{t('ilooktv_manual_smarttv_3-12')}</CardContent>
           </>
           :
@@ -43,7 +43,7 @@ function IlookPlaylist({step}: PropsStep): JSX.Element {
                 <CardContent sx={sxManualText1}>{t('ilooktv_manual3-11')}</CardContent>
             }
             <CardContent sx={sxManualText1}>{t('ilooktv_manual3-13')}</CardContent>
-            <ImageManual image={`${operator}_manual4.jpg`}/>
+            <ImageManual image='Ilooktv/ilooktv_manual4.jpg'/>
             <CardContent sx={sxManualText1}>{t('ilooktv_manual3-2')}</CardContent>
             {
               (player === 'ottplayer' || player == 'ssiptv' || player == 'flexiptv') ?

@@ -14,9 +14,9 @@ function KineskopBuy({step}: PropsStep): JSX.Element {
       </Box>
       <CardContent sx={sxManualText1}>{t('ilooktv_manual2-1')}</CardContent>
       <CardContent sx={sxManualText1}>{t('kineskopclub_manual2-2')}</CardContent>
-      <ImageManual image={'kineskop_manual_09.jpg'}/>
+      <ImageManual image='Kineskop/kineskop_manual_09.jpg'/>
       <CardContent sx={sxManualText1}>{t('kineskopclub_manual2-3')}</CardContent>
-      <ImageManual image={'kineskop_manual_10.jpg'}/>
+      <ImageManual image='Kineskop/kineskop_manual_10.jpg'/>
     </Card>
   );
 }

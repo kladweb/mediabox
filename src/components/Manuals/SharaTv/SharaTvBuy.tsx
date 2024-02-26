@@ -11,16 +11,16 @@ function SharaTvBuy({step}: PropsStep): JSX.Element {
     <Card component='div' sx={sxCardMain}>
       <Box component='h4' sx={sxHeadMain}>{t('step')}{step}{t('step-IlookBuy')}</Box>
       <CardContent sx={sxManualText1}>{t('sharatv_manual2-1')}</CardContent>
-      <ImageManual image={'sharatv_manual_04.jpg'}/>
+      <ImageManual image='SharaTv/sharatv_manual_04.jpg'/>
       <CardContent sx={sxManualText1}>{t('sharatv_manual2-2')}</CardContent>
-      <ImageManual image={'sharatv_manual_05.jpg'}/>
+      <ImageManual image='SharaTv/sharatv_manual_05.jpg'/>
       <CardContent sx={sxManualText1}>{t('sharatv_manual2-2')}</CardContent>
-      <ImageManual image={'sharatv_manual_06.jpg'}/>
+      <ImageManual image='SharaTv/sharatv_manual_06.jpg'/>
       <CardContent sx={sxManualText1}>{t('sharatv_manual2-5')}</CardContent>
-      <ImageManual image={'sharatv_manual_10.jpg'}/>
+      <ImageManual image='SharaTv/sharatv_manual_10.jpg'/>
       <CardContent sx={sxManualText1}>{t('sharatv_manual2-6')}</CardContent>
       <CardContent sx={sxManualText1}>{t('sharatv_manual2-7')}</CardContent>
-      <ImageManual image={'sharatv_manual_12.jpg'}/>
+      <ImageManual image='SharaTv/sharatv_manual_12.jpg'/>
     </Card>
   );
 }

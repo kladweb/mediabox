@@ -18,7 +18,7 @@ function CbillingPlaylist({step}: PropsStep): JSX.Element {
           <>
             <Box component='h4' sx={sxHeadMain}>{t('step')}{step}{t('step-IlookPlaylist')}</Box>
             <CardContent sx={sxManualText1}>{t('cbilling_manual3-1')}</CardContent>
-            <ImageManual image={'cbilling_manual_08.jpg'}/>
+            <ImageManual image='Cbilling/cbilling_manual_08.jpg'/>
             {
               (player === 'flexiptv' ||
                 player === 'ottnavigator' ||
@@ -28,14 +28,14 @@ function CbillingPlaylist({step}: PropsStep): JSX.Element {
                 :
                 <CardContent sx={sxManualText1}>{t('cbilling_manual3-2')}</CardContent>
             }
-            <ImageManual image={'cbilling_manual_09.jpg'}/>
+            <ImageManual image='Cbilling/cbilling_manual_09.jpg'/>
           </>
           :
           <>
             <Box component='h4' sx={sxHeadMain}>{t('step')}{step}{t('step-IlookChoose')}</Box>
             <CardContent sx={sxManualText1}>{t('cbilling_manual3-3')}</CardContent>
             <CardContent sx={sxManualText1}>{t('cbilling_manual3-4')}</CardContent>
-            <ImageManual image={'cbilling_manual_08.jpg'}/>
+            <ImageManual image='Cbilling/cbilling_manual_08.jpg'/>
           </>
       }
       {

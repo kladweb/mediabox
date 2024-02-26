@@ -36,9 +36,9 @@ function CbillingRegistration({step}: PropsStep): JSX.Element {
         )
       }
       <CardContent sx={sxManualText1}>{t('cbilling_manual1-2')}</CardContent>
-      <ImageManual image={'cbilling_manual_01.jpg'}/>
+      <ImageManual image='Cbilling/cbilling_manual_01.jpg'/>
       <CardContent sx={sxManualText1}>{t('cbilling_manual1-3')}</CardContent>
-      <ImageManual image={'cbilling_manual_03.jpg'}/>
+      <ImageManual image='Cbilling/cbilling_manual_03.jpg'/>
       <CardContent sx={sxManualText1}>{t('ilooktv_manual1-4')}</CardContent>
     </Card>
   );

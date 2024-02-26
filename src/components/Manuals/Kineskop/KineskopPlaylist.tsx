@@ -15,20 +15,20 @@ function KineskopPlaylist({step}: PropsStep): JSX.Element {
     <Card component='div' sx={sxCardMain}>
       <Box component='h4' sx={sxHeadMain}>{t('step')}{step}{t('step-IlookPlaylist')}</Box>
       <CardContent sx={sxManualText1}>{t('kineskopclub_manual3-1')}</CardContent>
-      <ImageManual image={'kineskop_manual_05.jpg'}/>
+      <ImageManual image='Kineskop/kineskop_manual_05.jpg'/>
       <CardContent sx={sxManualText1}>{t('kineskopclub_manual3-2')}</CardContent>
-      <ImageManual image={'kineskop_manual_06.jpg'}/>
+      <ImageManual image='Kineskop/kineskop_manual_06.jpg'/>
       <CardContent sx={sxManualText1}>{t('kineskopclub_manual3-3')}</CardContent>
       {
         (player === 'ottplayer' || devices === 'smarttv') ?
           <>
             <CardContent sx={sxManualText1}>{t('kineskopclub_manual3-42')}</CardContent>
-            <ImageManual image={'kineskop_manual_07.jpg'}/>
+            <ImageManual image='Kineskop/kineskop_manual_07.jpg'/>
           </>
           :
           <>
             <CardContent sx={sxManualText1}>{t('kineskopclub_manual3-4')}</CardContent>
-            <ImageManual image={'kineskop_manual_08.jpg'}/>
+            <ImageManual image='Kineskop/kineskop_manual_08.jpg'/>
             <CardContent sx={sxManualText1}>{t('ilooktv_manual3-3')}</CardContent>
             <CardContent sx={sxManualText1}>{t('ilooktv_manual3-4')}</CardContent>
           </>

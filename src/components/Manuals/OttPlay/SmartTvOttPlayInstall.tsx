@@ -31,15 +31,15 @@ function SmartTvOttPlayInstall({step}: PropsStep): JSX.Element {
       <Box component='h4' sx={sxHeadMain}>{t('step')}{step}{t('step-smartTv-ottplayInstall')}{playerName}</Box>
       <CardContent sx={sxManualText1}>{t(`mediaStationX_manual3-1_${device}`)}</CardContent>
       <CardContent sx={sxManualText1}>{t('mediaStationX_manual3-2')}</CardContent>
-      <ImageManual image={'mediastation_01.jpg'}/>
+      <ImageManual image='Mediastation/mediastation_01.jpg'/>
       <CardContent sx={sxManualText1}>{t('mediaStationX_manual3-10')}</CardContent>
-      <ImageManual image={'mediastation_06.jpg'}/>
+      <ImageManual image='Mediastation/mediastation_06.jpg'/>
       <CardContent sx={sxManualText1}>{t('mediaStationX_manual3-11')}</CardContent>
-      <ImageManual image={'mediastation_07.jpg'}/>
+      <ImageManual image='Mediastation/mediastation_07.jpg'/>
       <CardContent sx={sxManualText1}>{t('mediaStationX_manual3-3')}</CardContent>
-      <ImageManual image={'mediastation_02.jpg'}/>
+      <ImageManual image='Mediastation/mediastation_02.jpg'/>
       <CardContent sx={sxManualText1}>{t('mediaStationX_manual3-4')}</CardContent>
-      <ImageManual image={'mediastation_03.jpg'}/>
+      <ImageManual image='Mediastation/mediastation_03.jpg'/>
       <CardContent sx={sxManualText1}>
         {t('mediaStationX_manual3-5')}
         {playerName}
@@ -66,9 +66,9 @@ function SmartTvOttPlayInstall({step}: PropsStep): JSX.Element {
         (alignment === 'first') ?
           <>
             <CardContent sx={sxManualText1}>{t(`mediaStationX_manual3-8_${player}`)}</CardContent>
-            <ImageManual image={`mediastation_04_${player}.jpg`}/>
+            <ImageManual image={`Mediastation/mediastation_04_${player}.jpg`}/>
             <CardContent sx={sxManualText1}>{t('mediaStationX_manual3-9')}</CardContent>
-            <ImageManual image={`mediastation_05_${player}.jpg`}/>
+            <ImageManual image={`Mediastation/mediastation_05_${player}.jpg`}/>
             <CardContent sx={sxManualText1}>{t('mediaStationX_manual3-12')}{playerName}.</CardContent>
           </>
           :
@@ -78,17 +78,17 @@ function SmartTvOttPlayInstall({step}: PropsStep): JSX.Element {
         (alignment === 'second') ?
           <>
             <CardContent sx={sxManualText1}>{t('mediaStationX_manual4-1')}</CardContent>
-            <ImageManual image={'mediastation_10.jpg'}/>
+            <ImageManual image='Mediastation/mediastation_10.jpg'/>
             <CardContent sx={sxManualText1}>{t('mediaStationX_manual3-9')}</CardContent>
-            <ImageManual image={'mediastation_11.jpg'}/>
+            <ImageManual image='Mediastation/mediastation_11.jpg'/>
             <CardContent sx={sxManualText1}>{t('mediaStationX_manual4-2')}</CardContent>
-            <ImageManual image={'mediastation_12.jpg'}/>
+            <ImageManual image='Mediastation/mediastation_12.jpg'/>
             <CardContent sx={sxManualText1}>{t(`mediaStationX_manual4-3_${player}`)}</CardContent>
-            <ImageManual image={`mediastation_13_${player}.jpg`}/>
+            <ImageManual image={`Mediastation/mediastation_13_${player}.jpg`}/>
             <CardContent sx={sxManualText1}>{t(`mediaStationX_manual4-35_${player}`)}</CardContent>
-            <ImageManual image={`mediastation_14_${player}.jpg`}/>
+            <ImageManual image={`Mediastation/mediastation_14_${player}.jpg`}/>
             <CardContent sx={sxManualText1}>{t('mediaStationX_manual4-4')}{playerName}.</CardContent>
-            <ImageManual image={`mediastation_15_${player}.jpg`}/>
+            <ImageManual image={`Mediastation/mediastation_15_${player}.jpg`}/>
             <CardContent sx={sxManualText1}>{t('mediaStationX_manual4-5')}</CardContent>
           </>
           :

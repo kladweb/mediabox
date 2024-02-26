@@ -38,9 +38,9 @@ function SharavozPlaylist({step}: PropsStep): JSX.Element {
           <Box component='h4' sx={sxHeadMain}>{t('step')}{step}{t('step-IlookChoose')}</Box>
       }
       <CardContent sx={sxManualText1}>{t('szaravoz_manual3-1')}</CardContent>
-      <ImageManual image={'szaravoz_manual_03.jpg'}/>
+      <ImageManual image='Sharavoz/szaravoz_manual_03.jpg'/>
       <CardContent sx={sxManualText1}>{t('szaravoz_manual3-2')}</CardContent>
-      <ImageManual image={'szaravoz_manual_04.jpg'}/>
+      <ImageManual image='Sharavoz/szaravoz_manual_04.jpg'/>
       <CardContent sx={sxManualText1}>
         {t(`szaravoz_manual3-3_${player}`)}
         {
@@ -53,7 +53,7 @@ function SharavozPlaylist({step}: PropsStep): JSX.Element {
             <>{t('szaravoz_manual3-3_copy')}</>
         }
       </CardContent>
-      <ImageManual image={`szaravoz_manual_05_${player}.jpg`}/>
+      <ImageManual image={`Sharavoz/szaravoz_manual_05_${player}.jpg`}/>
       {
         (params.player === 'ottplayer' || params.player === 'ottnavigator' || devices === 'smarttv') ?
           null

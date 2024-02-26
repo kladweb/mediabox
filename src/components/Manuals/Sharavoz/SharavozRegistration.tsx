@@ -30,10 +30,10 @@ function SharavozRegistration({step}: PropsStep): JSX.Element {
         {operators[operator as keyof (typeof operators)]['name']}
       </Box>
       <CardContent sx={sxManualText1}>{t('ilooktv_manual1-2')}</CardContent>
-      <ImageManual image={`szaravoz_manual_01.jpg`}/>
+      <ImageManual image='Sharavoz/szaravoz_manual_01.jpg'/>
       <CardContent sx={sxManualText1}>{t('szaravoz_manual1-3')}</CardContent>
       <CardContent sx={sxManualText1}>{t('ilooktv_manual1-4')}</CardContent>
-      <ImageManual image={`szaravoz_manual_02.jpg`}/>
+      <ImageManual image='Sharavoz/szaravoz_manual_02.jpg'/>
     </Card>
   );
 }
