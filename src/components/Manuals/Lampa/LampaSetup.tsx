@@ -17,13 +17,13 @@ function LampaSetup({step}: PropsStep): JSX.Element {
     <Card component='div' sx={sxCardMain}>
       <Box component='h4' sx={sxHeadMain}>{t('step')}{step}{t('step-LampaSetup')}</Box>
       <CardContent sx={sxManualText1}>{t('lampa_manual3-1')}</CardContent>
-      <ImageManual image={'lampa_manual_01.jpg'}/>
+      <ImageManual image='Lampa/lampa_manual_01.jpg'/>
       <CardContent sx={sxManualText1}>{t('lampa_manual3-2')}</CardContent>
-      <ImageManual image={'lampa_manual_02.jpg'}/>
+      <ImageManual image='Lampa/lampa_manual_02.jpg'/>
       <CardContent sx={sxManualText1}>{t('lampa_manual3-3')}</CardContent>
-      <ImageManual image={'lampa_manual_03.jpg'}/>
+      <ImageManual image='Lampa/lampa_manual_03.jpg'/>
       <CardContent sx={sxManualText1}>{t('lampa_manual3-4')}</CardContent>
-      <ImageManual image={'lampa_manual_04.jpg'}/>
+      <ImageManual image='Lampa/lampa_manual_04.jpg'/>
       <CardContent sx={sxManualText1}>{t('lampa_manual3-5')}</CardContent>
       {
         linksPlugins.map((link: string, index: number) => <CardContent
@@ -32,11 +32,11 @@ function LampaSetup({step}: PropsStep): JSX.Element {
           {link}
         </CardContent>)
       }
-      <ImageManual image={'lampa_manual_05.jpg'}/>
-      <ImageManual image={'lampa_manual_06.jpg'}/>
-      <ImageManual image={'lampa_manual_07.jpg'}/>
+      <ImageManual image='Lampa/lampa_manual_05.jpg'/>
+      <ImageManual image='Lampa/lampa_manual_06.jpg'/>
+      <ImageManual image='Lampa/lampa_manual_07.jpg'/>
       <CardContent sx={sxManualText1}>{t('lampa_manual3-6')}</CardContent>
-      <ImageManual image={'lampa_manual_08.jpg'}/>
+      <ImageManual image='Lampa/lampa_manual_08.jpg'/>
       <CardContent sx={sxManualText1}>
         {t('lampa_manual3-7')}{'\n'}
         {t('lampa_manual3-71')}{'\n'}
@@ -46,19 +46,19 @@ function LampaSetup({step}: PropsStep): JSX.Element {
       </CardContent>
       <CardContent sx={sxManualText1}>{t('hdvideobox_manual2-8')}</CardContent>
       <CardContent sx={sxManualText1}>{t('lampa_manual3-8')}</CardContent>
-      <ImageManual image={'lampa_manual_09.jpg'}/>
+      <ImageManual image='Lampa/lampa_manual_09.jpg'/>
       <CardContent sx={sxManualText1}>{t('lampa_manual3-9')}</CardContent>
-      <ImageManual image={'lampa_manual_10.jpg'}/>
+      <ImageManual image='Lampa/lampa_manual_10.jpg'/>
       <CardContent sx={sxManualText1}>{t('lampa_manual3-10')}</CardContent>
-      <ImageManual image={'lampa_manual_11.jpg'}/>
+      <ImageManual image='Lampa/lampa_manual_11.jpg'/>
       <CardContent sx={sxManualText1}>{t('lampa_manual3-11')}</CardContent>
-      <ImageManual image={'lampa_manual_12.jpg'}/>
+      <ImageManual image='Lampa/lampa_manual_12.jpg'/>
       <CardContent sx={sxManualText1}>{t('lampa_manual3-12')}</CardContent>
-      <ImageManual image={'lampa_manual_13.jpg'}/>
+      <ImageManual image='Lampa/lampa_manual_13.jpg'/>
       <CardContent sx={sxManualText1}>{t('hdvideobox_manual2-10')}</CardContent>
-      <ImageManual image={'lampa_manual_14.jpg'}/>
-      <ImageManual image={'lampa_manual_15.jpg'}/>
-      <ImageManual image={'lampa_manual_16.jpg'}/>
+      <ImageManual image='Lampa/lampa_manual_14.jpg'/>
+      <ImageManual image='Lampa/lampa_manual_15.jpg'/>
+      <ImageManual image='Lampa/lampa_manual_16.jpg'/>
       <CardContent sx={sxManualText1}>{t('enjoy_manual01')}</CardContent>
     </Card>
   );

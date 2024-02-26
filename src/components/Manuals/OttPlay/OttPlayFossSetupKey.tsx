@@ -17,28 +17,28 @@ function OttPlayFossSetupKey({step}: PropsStep): JSX.Element {
         {t('step')}{step}{t('step-ottplayfossSetup')}{playersAll[player as keyof (typeof playersAll)]}
       </Box>
       <CardContent sx={sxManualText1}>{t('ottplayfoss_manual2-45')}</CardContent>
-      <ImageManual image={'ottplayfoss_manual4.jpg'}/>
+      <ImageManual image='OttPlay/ottplayfoss_manual4.jpg'/>
       <CardContent sx={sxManualText1}>{t('ottplayfoss_manual2-5')}</CardContent>
-      <ImageManual image={'ottplayfoss_manual5.jpg'}/>
+      <ImageManual image='OttPlay/ottplayfoss_manual5.jpg'/>
       {
         (player === 'ottplaybyalex') &&
         <>
           <CardContent sx={sxManualText1}>{t('ottplay-smarttv_manual1-01')}</CardContent>
-          <ImageManual image={'ilooktv_smartTv_ottplay_001.jpg'}/>
+          <ImageManual image='Ilooktv/ilooktv_smartTv_ottplay_001.jpg'/>
         </>
       }
       <CardContent sx={sxManualText1}>{t('ottplay-smarttv_manual1-1')}</CardContent>
-      <ImageManual image={'ilooktv_smartTv_ottplay_01.jpg'}/>
+      <ImageManual image='Ilooktv/ilooktv_smartTv_ottplay_01.jpg'/>
       <CardContent sx={sxManualText1}>{t('ottplay-smarttv_manual1-2')}</CardContent>
       <CardContent sx={sxManualText1}>{t('ottplay-smarttv_manual1-3')}</CardContent>
-      <ImageManual image={'ilooktv_smartTv_ottplay_02.jpg'}/>
+      <ImageManual image='Ilooktv/ilooktv_smartTv_ottplay_02.jpg'/>
       <CardContent sx={sxManualText1}>{t('ottplay-smarttv_manual1-4')}</CardContent>
-      <ImageManual image={'ilooktv_smartTv_ottplay_03.jpg'}/>
+      <ImageManual image='Ilooktv/ilooktv_smartTv_ottplay_03.jpg'/>
       <CardContent sx={sxManualText1}>{t('ottplay-smarttv_manual1-5')}</CardContent>
       <CardContent sx={sxManualText1}>{t('ottplay-smarttv_manual1-6')}</CardContent>
-      <ImageManual image={'ilooktv_smartTv_ottplay_04.jpg'}/>
+      <ImageManual image='Ilooktv/ilooktv_smartTv_ottplay_04.jpg'/>
       <CardContent sx={sxManualText1}>{t('ottplay-smarttv_manual1-7')}</CardContent>
-      <ImageManual image={'ottplayfoss_manual15.jpg'}/>
+      <ImageManual image='OttPlay/ottplayfoss_manual15.jpg'/>
       <CardContent sx={sxManualText1}>{t('note_manual01')}</CardContent>
       <CardContent sx={sxManualText1}>{t('enjoy_manual01')}</CardContent>
     </Card>

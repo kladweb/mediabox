@@ -53,7 +53,7 @@ function SsIptvSamsungInstall({step}: PropsStep): JSX.Element {
             <CardContent sx={sxManualText1}>{t('ssiptv_manual1-53')}</CardContent>
             <CardContent sx={sxManualText1}>{t('ssiptv_manual1-56')}</CardContent>
             <CardContent sx={sxManualText1}>{t('ssiptv_manual1-57')}</CardContent>
-            <ImageManual image={'ssiptv_manual11.jpg'}/>
+            <ImageManual image='SsIptv/ssiptv_manual11.jpg'/>
             <CardContent sx={sxManualText1}>{t('ssiptv_manual1-54')}</CardContent>
           </>
           :
@@ -70,7 +70,7 @@ function SsIptvSamsungInstall({step}: PropsStep): JSX.Element {
             <CardContent sx={sxManualText1}>{t('ssiptv_manual1-53')}</CardContent>
             <CardContent sx={sxManualText1}>{t('ssiptv_manual1-56')}</CardContent>
             <CardContent sx={sxManualText1}>{t('ssiptv_manual1-58')}</CardContent>
-            <ImageManual image={'ssiptv_manual12.jpg'}/>
+            <ImageManual image='SsIptv/ssiptv_manual12.jpg'/>
             <CardContent sx={sxManualText1}>{t('ssiptv_manual1-55')}</CardContent>
           </>
           :

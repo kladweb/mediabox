@@ -11,7 +11,7 @@ function LampaAndroidInstall({step}: PropsStep): JSX.Element {
     <Card component='div' sx={sxCardMain}>
       <Box component='h4' sx={sxHeadMain}>{t('step')}{step}{t('step-LampaAndroidInstall')}</Box>
       <CardContent sx={sxManualText1}>{t('hdvideobox_manual2-1')}</CardContent>
-      <ImageManual image={'androidtvbox_manual8_lampaandroid_2.jpg'}/>
+      <ImageManual image='AndroidHelp/androidtvbox_manual8_lampaandroid_2.jpg'/>
       <CardContent sx={sxManualText1}>{t('hdvideobox_manual2-3')}</CardContent>
       <CardContent sx={sxManualText1}>{t('lampaandroid_manual2-4')}</CardContent>
     </Card>

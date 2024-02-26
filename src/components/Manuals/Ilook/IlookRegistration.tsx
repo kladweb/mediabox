@@ -41,9 +41,9 @@ function IlookRegistration({step}: PropsStep): JSX.Element {
         )
       }
       <CardContent sx={sxManualText1}>{t('ilooktv_manual1-2')}</CardContent>
-      <ImageManual image={`${operator}_manual1.jpg`}/>
+      <ImageManual image='Ilooktv/ilooktv_manual1.jpg'/>
       <CardContent sx={sxManualText1}>{t('ilooktv_manual1-3')}</CardContent>
-      <ImageManual image={`${operator}_manual2.jpg`}/>
+      <ImageManual image='Ilooktv/ilooktv_manual2.jpg'/>
       <CardContent sx={sxManualText1}>{t('ilooktv_manual1-4')}</CardContent>
     </Card>
   );

@@ -19,7 +19,7 @@ function VipLimePlaylist({step}: PropsStep): JSX.Element {
           <Box component='h4' sx={sxHeadMain}>{t('step')}{step}{t('step-IlookPlaylist')}</Box>
           <CardContent sx={sxManualText1}>{t('viplime_manual3-1')}</CardContent>
           <CardContent sx={sxManualText1}>{t('viplime_manual3-2')}</CardContent>
-          <ImageManual image={'viplime_manual_06.jpg'}/>
+          <ImageManual image='VipLime/viplime_manual_06.jpg'/>
         </>
       }
       {
@@ -28,7 +28,7 @@ function VipLimePlaylist({step}: PropsStep): JSX.Element {
           <Box component='h4' sx={sxHeadMain}>{t('step')}{step}{t('step-IlookPlaylist')}</Box>
           <CardContent sx={sxManualText1}>{t('viplime_manual3-1')}</CardContent>
           <CardContent sx={sxManualText1}>{t('viplime_manual3-22')}</CardContent>
-          <ImageManual image={'viplime_manual_062.jpg'}/>
+          <ImageManual image='VipLime/viplime_manual_062.jpg'/>
         </>
       }
       {
@@ -36,7 +36,7 @@ function VipLimePlaylist({step}: PropsStep): JSX.Element {
         <>
           <Box component='h4' sx={sxHeadMain}>{t('step')}{step}{t('step-IlookChoose')}</Box>
           <CardContent sx={sxManualText1}>{t('viplime_manual3-3')}</CardContent>
-          <ImageManual image={'viplime_manual_07.jpg'}/>
+          <ImageManual image='VipLime/viplime_manual_07.jpg'/>
         </>
       }
       {

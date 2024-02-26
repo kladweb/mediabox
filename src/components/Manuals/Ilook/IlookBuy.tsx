@@ -19,7 +19,7 @@ function IlookBuy({step}: PropsStep): JSX.Element {
         {t('step')}{step}{t('step-IlookBuy')}
       </Box>
       <CardContent sx={sxManualText1}>{t('ilooktv_manual2-1')}</CardContent>
-      <ImageManual image={`${operator}_manual3.jpg`}/>
+      <ImageManual image={`Ilooktv/${operator}_manual3.jpg`}/>
       <CardContent sx={sxManualText1}>{t('ilooktv_manual2-2')}</CardContent>
     </Card>
   );

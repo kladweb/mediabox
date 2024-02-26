@@ -12,9 +12,9 @@ function SharavozBuy({step}: PropsStep): JSX.Element {
       <Box component='h4' sx={sxHeadMain}>{t('step')}{step}{t('step-SharavozBuy')}</Box>
       <CardContent sx={sxManualText1}>{t('szaravoz_manual2-1')}</CardContent>
       <CardContent sx={sxManualText1}>{t('szaravoz_manual2-2')}</CardContent>
-      <ImageManual image={'szaravoz_manual_10.jpg'}/>
+      <ImageManual image='Sharavoz/szaravoz_manual_10.jpg'/>
       <CardContent sx={sxManualText1}>{t('szaravoz_manual2-3')}</CardContent>
-      <ImageManual image={'szaravoz_manual_11.jpg'}/>
+      <ImageManual image='Sharavoz/szaravoz_manual_11.jpg'/>
     </Card>
   );
 }
