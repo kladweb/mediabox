@@ -75,7 +75,7 @@ export interface IplayersAll {
 export interface Iplayers {
   androidtvbox: string[],
   appletv: string[],
-  lgsmarttv:string[],
+  lgsmarttv: string[],
   samsungsmarttv: string[],
   androidtv: string[],
 }
@@ -91,7 +91,7 @@ export interface Ioperators {
   ilooktv: {
     name: string,
     links: string[],
-    linksDirect:string[],
+    linksDirect: string[],
     epg: string
   },
   sharavoz: {
@@ -101,6 +101,12 @@ export interface Ioperators {
     epg: string,
   },
   viplime: {
+    name: string,
+    links: string[],
+    linksDirect: string[],
+    epg: string
+  },
+  domavip: {
     name: string,
     links: string[],
     linksDirect: string[],
