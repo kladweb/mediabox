@@ -52,6 +52,9 @@ import LampaSmarttvInstall from "./Lampa/LampaSmarttvInstall";
 import LampaBrowserInstall from "./Lampa/LampaBrowserInstall";
 import LoaderLinear from "../LoaderLinear";
 import type { ITranslate } from "../../types/typesBox";
+import DomaVipBuy from "./Domavip/DomaVipBuy";
+import DomaVipRegistration from "./Domavip/DomaVipRegistration";
+import DomaVipPlaylist from "./Domavip/DomaVipPlaylist";
 
 function Manual(): JSX.Element {
   const navigate: NavigateFunction = useNavigate();
@@ -99,6 +102,12 @@ function Manual(): JSX.Element {
     stepManuals.push(<CbillingRegistration key={stepManuals.length} step={stepManuals.length + 1}/>);
     stepManuals.push(<CbillingBuy key={stepManuals.length} step={stepManuals.length + 1}/>);
     stepManuals.push(<CbillingPlaylist key={stepManuals.length} step={stepManuals.length + 1}/>);
+  }
+
+  if (operator === 'domavip') {
+    stepManuals.push(<DomaVipRegistration key={stepManuals.length} step={stepManuals.length + 1}/>);
+    stepManuals.push(<DomaVipBuy key={stepManuals.length} step={stepManuals.length + 1}/>);
+    stepManuals.push(<DomaVipPlaylist key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
   if (operator === 'kineskopclub') {

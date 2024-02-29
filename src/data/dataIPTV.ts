@@ -58,7 +58,6 @@ export const operators: Ioperators = {
   ilooktv: {
     name: 'ILookTv',
     links: [
-      'https://ilook.tv/welcome/signup/54e9515db854ab61',
       'https://vipdrive.net/welcome/signup/54e9515db854ab61',
       'https://tvlider.net/welcome/signup/54e9515db854ab61',
       'https://melord.net/welcome/signup/54e9515db854ab61',
@@ -94,6 +93,16 @@ export const operators: Ioperators = {
       'http://viplime.fun/'
     ],
     epg: 'http://epg.cdntv.online/full.xml.gz'
+  },
+  domavip: {
+    name: 'DOMA.VIP',
+    links: [
+      'http://doma.vip/index.php?invited=1116'
+    ],
+    linksDirect: [
+      'http://doma.vip/'
+    ],
+    epg: 'http://epg.cdntv.online/full.xml.gz',
   },
   cbilling: {
     name: 'cbilling',
