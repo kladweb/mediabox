@@ -17,7 +17,7 @@ function DomaVipPlaylist({step}: PropsStep): JSX.Element {
       <CardContent sx={sxManualText1}>{t('domavip_manual3-1')}</CardContent>
       <ImageManual image='DomaVip/domavip_06.jpg'/>
       {
-        (player === 'ottplayer' || devices === 'smarttv') ?
+        (player === 'ottplayer' || player === 'flexiptv' || devices === 'smarttv') ?
          <>
            <CardContent sx={sxManualText1}>{t('domavip_manual3-21')}{t('domavip_manual3-3')}</CardContent>
            <ImageManual image='DomaVip/domavip_08.jpg'/>
