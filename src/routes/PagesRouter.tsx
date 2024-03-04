@@ -9,12 +9,16 @@ import PagePlayers from "../pages/PagePlayers";
 import Blank from "../components/Blank";
 import PageCinemas from "../pages/PageCinemas";
 import PageAbout from "../pages/PageAbout";
+import PageChannels from "../pages/PageChannels";
 
 export const PagesRouter = (): JSX.Element => {
   return (
     <Routes>
       <Route path='/' element={<PageMain/>}/>
       <Route path='/choose' element={<PageChoosingOperator/>}/>
+      <Route path='/lists' element={<PageChannels/>}>
+        <Route path=':operator' element={<Blank/>}/>
+      </Route>
       <Route path='/iptv' element={<PageOperators/>}/>
       <Route path='/iptv/:operator' element={<PageDevices/>}/>
       <Route path='/iptv/:operator/:devices' element={<PageDevices/>}/>

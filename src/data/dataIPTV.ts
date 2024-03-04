@@ -157,6 +157,10 @@ export const operators: Ioperators = {
   }
 }
 
+export const listsChannels = {
+
+}
+
 export const cinemas: Icinemas = {
   hdvideobox: 'HD Videobox',
   lampaandroid: 'Lampa for android',

@@ -25,6 +25,16 @@ export type PropsOperator = {
   operator: string;
 }
 
+interface callbackType {
+  (myArgument: string): void
+}
+
+export type PropsListChannels = {
+  operator: string;
+  aktiveCard: string;
+  changeCard: callbackType;
+}
+
 export type PropsLoader = {
   isOpenLoader: boolean;
 }
@@ -144,3 +154,4 @@ export interface Ioperators {
     epg3_lite: string,
   }
 }
+
