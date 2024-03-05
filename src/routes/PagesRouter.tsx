@@ -10,14 +10,17 @@ import Blank from "../components/Blank";
 import PageCinemas from "../pages/PageCinemas";
 import PageAbout from "../pages/PageAbout";
 import PageChannels from "../pages/PageChannels";
+import CategoriesOperator from "../components/СategoriesOperator";
+// import { useCategoriesList } from '../components/ListsChannels';
 
 export const PagesRouter = (): JSX.Element => {
+  // const {categoriesList} = useCategoriesList;
   return (
     <Routes>
       <Route path='/' element={<PageMain/>}/>
       <Route path='/choose' element={<PageChoosingOperator/>}/>
       <Route path='/lists' element={<PageChannels/>}>
-        <Route path=':operator' element={<Blank/>}/>
+        <Route path=':operator' element={<CategoriesOperator/>}/>
       </Route>
       <Route path='/iptv' element={<PageOperators/>}/>
       <Route path='/iptv/:operator' element={<PageDevices/>}/>

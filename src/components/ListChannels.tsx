@@ -11,14 +11,19 @@ export default function ListChannels({operator, aktiveCard, changeCard}: PropsLi
   const [isActive, steIsActive] = useState<boolean>(false);
 
   const handlerList = () => {
-    steIsActive(isActive => !isActive);
-    changeCard(operator);
-    navigate(`/lists/${operator}`);
+    steIsActive(!isActive);
+    if (!isActive && operator !== aktiveCard) {
+      navigate(`/lists/${operator}`);
+      changeCard(operator);
+    } else {
+      navigate(`/lists`);
+      changeCard('');
+    }
   }
 
   useEffect(() => {
     if (operator !== aktiveCard) {
-      steIsActive(() => false);
+      steIsActive(false);
     }
   }, [aktiveCard]);
 

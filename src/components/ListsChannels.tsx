@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 import { appColors } from "../services/appColors";
 import { Box } from "@mui/material";
@@ -9,11 +9,46 @@ import ListChannels from "./ListChannels";
 
 function ListsChannels(): JSX.Element {
   const {t}: ITranslate = useTranslation();
-  const [aktiveCard, setActiveCard] = useState<string>('')
+  const [activeCard, setActiveCard] = useState<string>('');
+  const [categoriesList, setCategoriesList] = useState<object | null>(null);
+  const [channelsList, setChannelsList] = useState<object | null>(null);
 
   const changeCard = (nameCard: string) => {
     setActiveCard(nameCard);
   }
+
+  useEffect(() => {
+    fetch('/listObj.json')
+      .then((response) => response.json())
+      .then((data) => {
+        // console.log(data);
+        setChannelsList(data);
+        const listCategoriesOperator = [];
+        const catList: any = {};
+        for (let key in data) {
+          const keyShort = key.replace('List', '');
+          catList[keyShort] = [];
+          data[key].forEach((elem: any, index: number) => {
+            if (!catList[keyShort].includes(data[key][index]['group'])) {
+              catList[keyShort].push(data[key][index]['group']);
+            }
+          })
+        }
+        setCategoriesList(catList);
+      });
+    // fetch('/listArr.json')
+    //   .then((response) => response.json())
+    //   .then((data) => {
+    //     console.log('ttt', data);
+    //   });
+  }, []);
+
+  // {
+  //   headers: {
+  //     'Content-Type': 'application/json',
+  //     'Accept': 'application/json'
+  //   }
+  // }
 
   return (
     <>
@@ -42,13 +77,13 @@ function ListsChannels(): JSX.Element {
             <ListChannels
               key={i}
               operator={operator}
-              aktiveCard={aktiveCard}
+              aktiveCard={activeCard}
               changeCard={changeCard}
             />
           )
         }
       </Box>
-      <Outlet/>
+      <Outlet context={{categoriesList, channelsList}}/>
     </>
   )
 }
