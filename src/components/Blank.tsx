@@ -8,6 +8,7 @@ export default function Blank(): JSX.Element {
   return (
     <Box component='div' sx={{
       height: "100vh",
+      width: '100%',
       display: "flex",
       justifyContent: "center",
       alignItems: "center"
