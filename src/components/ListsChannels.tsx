@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, Params, useParams } from "react-router-dom";
 import { appColors } from "../services/appColors";
 import { Box } from "@mui/material";
 import type { ITranslate } from "../types/typesBox";
@@ -9,6 +9,8 @@ import ListChannels from "./ListChannels";
 
 function ListsChannels(): JSX.Element {
   const {t}: ITranslate = useTranslation();
+  const params: Readonly<Params<string>> = useParams();
+  const operator = params.operator;
   const [activeCard, setActiveCard] = useState<string>('');
   const [categoriesList, setCategoriesList] = useState<object | null>(null);
   const [channelsList, setChannelsList] = useState<object | null>(null);
@@ -19,7 +21,15 @@ function ListsChannels(): JSX.Element {
   }
 
   useEffect(() => {
-    fetch('/listObj.json')
+    if (operator) {
+      setActiveCard(operator);
+    }
+    fetch('/listObj.json', {
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      }
+    })
       .then((response) => response.json())
       .then((data) => {
         setChannelsList(data);
@@ -38,13 +48,6 @@ function ListsChannels(): JSX.Element {
         setCategoriesList(catList);
       });
   }, []);
-
-  // {
-  //   headers: {
-  //     'Content-Type': 'application/json',
-  //     'Accept': 'application/json'
-  //   }
-  // }
 
   return (
     <>
@@ -73,7 +76,7 @@ function ListsChannels(): JSX.Element {
             <ListChannels
               key={i}
               operator={operator}
-              aktiveCard={activeCard}
+              activeCard={activeCard}
               changeCard={changeCard}
             />
           )

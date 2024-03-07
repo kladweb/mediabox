@@ -1,18 +1,17 @@
-import { useEffect, useState } from "react";
-import { NavigateFunction, NavLink, Outlet, useNavigate } from "react-router-dom";
-import { Card, CardContent, CardMedia, Typography, CardActionArea, Skeleton } from '@mui/material';
+import React, { useEffect, useState } from "react";
+import { NavigateFunction, useNavigate } from "react-router-dom";
+import { Card, CardMedia, CardActionArea, Skeleton } from '@mui/material';
 import { appColors } from "../services/appColors";
-import { operators } from "../data/dataIPTV";
 import type { PropsListChannels } from "../types/typesBox";
 
-export default function ListChannels({operator, aktiveCard, changeCard}: PropsListChannels): JSX.Element {
+function ListChannels({operator, activeCard, changeCard}: PropsListChannels): JSX.Element {
   const navigate: NavigateFunction = useNavigate();
   const [loaded, setLoaded] = useState<boolean>(false);
-  const [isActive, steIsActive] = useState<boolean>(false);
+  const [isActive, setIsActive] = useState<boolean>(false);
 
   const handlerList = () => {
-    steIsActive(!isActive);
-    if (!isActive && operator !== aktiveCard) {
+    setIsActive(!isActive);
+    if (!isActive && operator !== activeCard) {
       setTimeout(() => {
         navigate(`/lists/${operator}`);
       }, 0);
@@ -24,10 +23,12 @@ export default function ListChannels({operator, aktiveCard, changeCard}: PropsLi
   }
 
   useEffect(() => {
-    if (operator !== aktiveCard) {
-      steIsActive(false);
+    if (operator !== activeCard) {
+      setIsActive(false);
+    } else {
+      setIsActive(true);
     }
-  }, [aktiveCard]);
+  }, [activeCard]);
 
   const card: JSX.Element = <Card
     sx={{
@@ -41,12 +42,7 @@ export default function ListChannels({operator, aktiveCard, changeCard}: PropsLi
       backgroundColor: appColors.light1,
       boxShadow: isActive ? 'none' : `3px 3px 10px ${appColors.dark2}`,
       transform: isActive ? 'translate(3px, 3px)' : 'none',
-      transition: '0.2s',
-      ':hover': {
-        // boxShadow: `0`,
-        // transform: 'translate(3px, 3px)',
-        // transition: '0.1s',
-      },
+      transition: '0.2s'
     }}
     onClick={handlerList}
   >
@@ -77,3 +73,6 @@ export default function ListChannels({operator, aktiveCard, changeCard}: PropsLi
     </>
   );
 }
+
+// export default React.memo(ListChannels);
+export default ListChannels;

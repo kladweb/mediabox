@@ -32,7 +32,7 @@ interface callbackType {
 
 export type PropsListChannels = {
   operator: string;
-  aktiveCard: string;
+  activeCard: string;
   changeCard: callbackType;
 }
 
@@ -49,6 +49,13 @@ export type PropsService = {
 
 export type PropsCategoriesList = OutletProps & {
   categoriesList: null | object
+}
+
+export type PropsImageChannel = {
+  index: number,
+  srcImgChannel: string,
+  altImgChannel: string,
+  nameImgChannel: string
 }
 
 export interface ITranslate {
