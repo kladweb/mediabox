@@ -20,8 +20,15 @@ function Header(): JSX.Element {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
   const {t, i18n}: ITranslateI18n = useTranslation();
-  const pages: string[] = [`${t('menu1')}`, `${t('menu2')}`, `${t('menu3')}`, `${t('menu4')}`, `${t('menu5')}`];
-  const navigation: string[] = ['choose', 'iptv', 'media', 'faq', 'about'];
+  const pages: string[] = [
+    `${t('menu1')}`,
+    `${t('menu2')}`,
+    `${t('menu3')}`,
+    `${t('menu4')}`,
+    `${t('menu5')}`,
+    `${t('menu6')}`
+  ];
+  const navigation: string[] = ['choose', 'lists', 'iptv', 'media', 'faq', 'about'];
   const locales: ILocales = {
     en: {title: 'English'},
     ru: {title: "Русский"},

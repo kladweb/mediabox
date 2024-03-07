@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { cinemas, playersAll } from "../data/dataIPTV";
+import { OutletProps } from "react-router-dom";
 
 export type PropsStep = {
   step: number;
@@ -25,6 +26,16 @@ export type PropsOperator = {
   operator: string;
 }
 
+interface callbackType {
+  (myArgument: string): void
+}
+
+export type PropsListChannels = {
+  operator: string;
+  aktiveCard: string;
+  changeCard: callbackType;
+}
+
 export type PropsLoader = {
   isOpenLoader: boolean;
 }
@@ -34,6 +45,10 @@ export type PropsService = {
   pageNavigation: string,
   nameService: string,
   descriptionService: string
+}
+
+export type PropsCategoriesList = OutletProps & {
+  categoriesList: null | object
 }
 
 export interface ITranslate {
@@ -144,3 +159,5 @@ export interface Ioperators {
     epg3_lite: string,
   }
 }
+
+export type ContextCategoriesType = { [index: string]: any };
