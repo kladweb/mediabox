@@ -13,7 +13,9 @@ export default function ListChannels({operator, aktiveCard, changeCard}: PropsLi
   const handlerList = () => {
     steIsActive(!isActive);
     if (!isActive && operator !== aktiveCard) {
-      navigate(`/lists/${operator}`);
+      setTimeout(() => {
+        navigate(`/lists/${operator}`);
+      }, 0);
       changeCard(operator);
     } else {
       navigate(`/lists`);
@@ -30,9 +32,9 @@ export default function ListChannels({operator, aktiveCard, changeCard}: PropsLi
   const card: JSX.Element = <Card
     sx={{
       cursor: 'default',
-      width: {xs: '30vw', sm: 115},
+      width: {xs: '25vw', sm: 115},
       maxWidth: 115,
-      height: 80,
+      height: 50,
       margin: {xs: '0.5rem', sm: '1rem'},
       display: 'flex',
       justifyContent: 'center',
@@ -43,7 +45,7 @@ export default function ListChannels({operator, aktiveCard, changeCard}: PropsLi
       ':hover': {
         // boxShadow: `0`,
         // transform: 'translate(3px, 3px)',
-        transition: '0.1s',
+        // transition: '0.1s',
       },
     }}
     onClick={handlerList}
@@ -55,27 +57,13 @@ export default function ListChannels({operator, aktiveCard, changeCard}: PropsLi
         alt={operator}
         onLoad={() => setLoaded(true)}
         sx={{
-          m: '0 0.1rem',
+          m: '-1rem 0.1rem 0',
           p: '0',
           height: '5rem',
           objectFit: "contain",
           display: (loaded) ? 'block' : 'none',
         }}
         className='cardList'
-      />
-      <CardMedia
-        component="img"
-        image={`/img/operators/${operator.toLowerCase()}.png`}
-        alt={operator}
-        onLoad={() => setLoaded(true)}
-        sx={{
-          m: '0 0.1rem',
-          p: '0',
-          height: '5rem',
-          objectFit: "contain",
-          display: (loaded) ? 'block' : 'none',
-          filter: 'grayscale(100%)',
-        }}
       />
       {
         (!loaded) && <Skeleton variant="rounded" width={280} height='5rem' sx={{m: "auto"}}/>

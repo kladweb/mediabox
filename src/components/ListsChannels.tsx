@@ -12,6 +12,7 @@ function ListsChannels(): JSX.Element {
   const [activeCard, setActiveCard] = useState<string>('');
   const [categoriesList, setCategoriesList] = useState<object | null>(null);
   const [channelsList, setChannelsList] = useState<object | null>(null);
+  const [isListLoaded, setIsListLoaded] = useState<boolean>(false);
 
   const changeCard = (nameCard: string) => {
     setActiveCard(nameCard);
@@ -21,8 +22,8 @@ function ListsChannels(): JSX.Element {
     fetch('/listObj.json')
       .then((response) => response.json())
       .then((data) => {
-        // console.log(data);
         setChannelsList(data);
+        setIsListLoaded(true);
         const listCategoriesOperator = [];
         const catList: any = {};
         for (let key in data) {
@@ -36,11 +37,6 @@ function ListsChannels(): JSX.Element {
         }
         setCategoriesList(catList);
       });
-    // fetch('/listArr.json')
-    //   .then((response) => response.json())
-    //   .then((data) => {
-    //     console.log('ttt', data);
-    //   });
   }, []);
 
   // {
@@ -83,7 +79,7 @@ function ListsChannels(): JSX.Element {
           )
         }
       </Box>
-      <Outlet context={{categoriesList, channelsList}}/>
+      <Outlet context={{categoriesList, channelsList, isListLoaded}}/>
     </>
   )
 }
