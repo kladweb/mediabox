@@ -18,9 +18,10 @@ function ListChannel({index, srcImgChannel, altImgChannel, nameImgChannel}: Prop
   return (
     <Box key={index} component="div"
          sx={{
-           display: 'block',
+           display: 'flex',
            m: '0.2rem 0.5rem',
-           width: '21rem',
+           width: {xs: '100%', sm: '45%', md: '31%', lg: '23%'},
+           height: {xs: '3rem', md: '4rem'},
            textAlign: 'left',
            backgroundColor: appColors.light11,
            borderRadius: '0.5rem'
@@ -31,13 +32,12 @@ function ListChannel({index, srcImgChannel, altImgChannel, nameImgChannel}: Prop
         src={srcImgChannel}
         alt={altImgChannel}
         sx={{
-          display: `${imageLoaded ? 'inline-block' : 'none'}`,
+          display: `${imageLoaded ? 'block' : 'none'}`,
           m: {xs: '0.2rem 0.5rem', md: '0.5rem'},
-          height: {xs: '2rem', md: '3rem'},
-          maxWidth: {xs: '25%', md: '25%'},
+          // height: {xs: '2rem', md: '3rem'},
+          width: {xs: '15%', md: '25%'},
           objectFit: "contain",
-          borderRadius: {xs: '3px', md: '5px'},
-          verticalAlign: 'middle'
+          borderRadius: {xs: '3px', md: '5px'}
         }}
         onError={handlerErrorImg}
         onLoad={handlerLoadImg}
@@ -48,13 +48,21 @@ function ListChannel({index, srcImgChannel, altImgChannel, nameImgChannel}: Prop
               display: 'inline-block',
               m: {xs: '0.2rem 0.5rem', md: '0.5rem'},
               height: {xs: '2rem', md: '3rem'},
-              width: {xs: '25%', md: '25%'},
-              verticalAlign: 'middle'
+              width: {xs: '15%', md: '25%'}
             }}/>
         )
       }
 
-      <Box component="div" sx={{display: 'inline-block', width: '70%', verticalAlign: 'middle'}}>
+      <Box component="div"
+           sx={{
+             ml: '0.5rem',
+             display: "flex",
+             justifyContent: "left",
+             alignItems: "center",
+             width: '70%',
+             verticalAlign: 'middle'
+           }}
+      >
         <Box component="span" sx={{wordWrap: 'break-word'}}
         >
           {nameImgChannel}
