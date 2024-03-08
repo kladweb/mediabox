@@ -46,7 +46,7 @@ function ListChannel({index, srcImgChannel, altImgChannel, nameImgChannel}: Prop
         (imageLoaded ? null :
             <Skeleton variant="rounded" sx={{
               display: 'inline-block',
-              m: {xs: '0.2rem 0.5rem', md: '0.5rem'},
+              m: {xs: '0.5rem', md: '0.5rem'},
               height: {xs: '2rem', md: '3rem'},
               width: {xs: '15%', md: '25%'}
             }}/>

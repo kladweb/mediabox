@@ -1,13 +1,17 @@
 import { Container, Toolbar } from "@mui/material";
 import ListsChannels from "../components/ListsChannels";
+import ScrollUp from "../components/ScrollUp";
 
 function PageChannels(): JSX.Element {
   return (
-    <Container maxWidth="xl">
-      <Toolbar disableGutters sx={{flexWrap: 'wrap'}}>
-        <ListsChannels/>
-      </Toolbar>
-    </Container>
+    <>
+      <ScrollUp/>
+      <Container maxWidth="xl">
+        <Toolbar disableGutters sx={{flexWrap: 'wrap'}}>
+          <ListsChannels/>
+        </Toolbar>
+      </Container>
+    </>
   )
 }
 
