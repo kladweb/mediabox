@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Outlet, Params, useParams } from "react-router-dom";
 import { appColors } from "../services/appColors";
 import { Box } from "@mui/material";
@@ -10,12 +10,11 @@ import ListChannels from "./ListChannels";
 function ListsChannels(): JSX.Element {
   const {t}: ITranslate = useTranslation();
   const params: Readonly<Params<string>> = useParams();
-  const operator = params.operator;
+  const operator: string = params.operator as string;
   const [activeCard, setActiveCard] = useState<string>('');
   const [categoriesList, setCategoriesList] = useState<object | null>(null);
   const [channelsList, setChannelsList] = useState<object | null>(null);
   const [isListLoaded, setIsListLoaded] = useState<boolean>(false);
-
   const changeCard = (nameCard: string) => {
     setActiveCard(nameCard);
   }
@@ -87,4 +86,5 @@ function ListsChannels(): JSX.Element {
   )
 }
 
-export default ListsChannels;
+export default React.memo(ListsChannels);
+// export default ListsChannels;

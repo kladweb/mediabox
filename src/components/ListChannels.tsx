@@ -12,10 +12,12 @@ function ListChannels({operator, activeCard, changeCard}: PropsListChannels): JS
   const handlerList = () => {
     setIsActive(!isActive);
     if (!isActive && operator !== activeCard) {
+      navigate(`/lists`);
+      changeCard('');
       setTimeout(() => {
         navigate(`/lists/${operator}`);
+        changeCard(operator);
       }, 0);
-      changeCard(operator);
     } else {
       navigate(`/lists`);
       changeCard('');
@@ -74,5 +76,5 @@ function ListChannels({operator, activeCard, changeCard}: PropsListChannels): JS
   );
 }
 
-// export default React.memo(ListChannels);
-export default ListChannels;
+export default React.memo(ListChannels);
+// export default ListChannels;

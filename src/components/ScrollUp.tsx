@@ -32,8 +32,8 @@ const ScrollDiv: any = styled.div`
     opacity: 0.5;
   }
 
-  ${({toShow}: any) => css`
-    transform: translateX(${toShow ? '0' : '300%'})`};
+  ${({$toShow}: any) => css`
+    transform: translateX(${$toShow ? '0' : '300%'})`};
 `;
 
 const ScrollUp = () => {
@@ -66,7 +66,7 @@ const ScrollUp = () => {
   }
 
   return (
-    <ScrollDiv onClick={scrollPage} toShow={show}>
+    <ScrollDiv onClick={scrollPage} $toShow={show}>
       {/*<span className='material-icons-outlined'>expand_less</span>*/}
       <KeyboardArrowUpIcon fontSize='large'/>
     </ScrollDiv>
