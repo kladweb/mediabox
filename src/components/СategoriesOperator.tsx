@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Params, useParams, useOutletContext } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import {
@@ -46,6 +46,10 @@ function CategoriesOperator(): JSX.Element {
     }
   }
 
+  useEffect(() => {
+    collapseAll();
+  }, [operator]);
+
   const loader: JSX.Element = (
     <Box component="div"
          sx={{
@@ -64,7 +68,7 @@ function CategoriesOperator(): JSX.Element {
       return (
         <Accordion
           defaultExpanded={false}
-          key={index}
+          key={`accordion${operator}${index}`}
           sx={{color: appColors.light1, backgroundColor: appColors.light11}}
           expanded={expandedAccordions.includes(index)}
         >
@@ -93,7 +97,7 @@ function CategoriesOperator(): JSX.Element {
                 if (channelObj['group' as keyof (typeof channelObj)] === element) {
                   return (
                     <ListChannel
-                      key={index}
+                      key={`${operator}${index}`}
                       index={index}
                       srcImgChannel={srcImgChannel}
                       altImgChannel={altImgChannel}
