@@ -72,4 +72,5 @@ function ListChannel({index, srcImgChannel, altImgChannel, nameImgChannel}: Prop
   );
 }
 
-export default React.memo(ListChannel);
+// export default React.memo(ListChannel);
+export default ListChannel;

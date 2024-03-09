@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Params, useParams, useOutletContext } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import {
@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { appColors } from "../services/appColors";
-import type { ContextCategoriesType, ITranslate } from "../types/typesBox";
+import { ContextCategoriesType, ITranslate } from "../types/typesBox";
 import ListChannel from "./ListChannel";
 
 function CategoriesOperator(): JSX.Element {
@@ -18,10 +18,7 @@ function CategoriesOperator(): JSX.Element {
   const {categoriesList, channelsList, isListLoaded} = useOutletContext<ContextCategoriesType>();
   const [expandedAccordions, setExpandedAccordions] = useState<number[]>([]);
   const params: Readonly<Params<string>> = useParams();
-  let operator: string = '';
-  if (params.operator) {
-    operator = params.operator;
-  }
+  const operator = params.operator;
   let accordionList: JSX.Element = <></>;
 
   const collapseAll = () => {
@@ -30,7 +27,7 @@ function CategoriesOperator(): JSX.Element {
 
   const expandAll = () => {
     const newArray: number[] = [];
-    categoriesList[operator].forEach((log: string, index: number) => newArray.push(index));
+    categoriesList[operator as string].forEach((log: string, index: number) => newArray.push(index));
     setExpandedAccordions(newArray);
   };
 
@@ -46,6 +43,10 @@ function CategoriesOperator(): JSX.Element {
     }
   }
 
+  // useEffect(() => {
+  //   collapseAll();
+  // }, [operator]);
+
   const loader: JSX.Element = (
     <Box component="div"
          sx={{
@@ -60,13 +61,14 @@ function CategoriesOperator(): JSX.Element {
   );
 
   if (isListLoaded) {
-    accordionList = categoriesList[operator].map((element: string, index: number) => {
+    accordionList = categoriesList[operator as string].map((element: string, index: number) => {
       return (
         <Accordion
           defaultExpanded={false}
-          key={index}
+          key={`accordion${operator}${index}`}
           sx={{color: appColors.light1, backgroundColor: appColors.light11}}
           expanded={expandedAccordions.includes(index)}
+          TransitionProps={{unmountOnExit: true}}
         >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon sx={{color: appColors.light1}}/>}
@@ -83,7 +85,7 @@ function CategoriesOperator(): JSX.Element {
             sx={{display: 'flex', justifyContent: 'center', flexWrap: 'wrap'}}
           >
             {
-              channelsList[`${operator}List`].map((channelObj: object, index: number) => {
+              channelsList[`${operator}List`].map((channelObj: object, i: number) => {
                 let srcImgChannel: string = channelObj['src' as keyof (typeof channelObj)];
                 let altImgChannel: string = channelObj['name' as keyof (typeof channelObj)];
                 let nameImgChannel: string = channelObj['name' as keyof (typeof channelObj)];
@@ -93,8 +95,8 @@ function CategoriesOperator(): JSX.Element {
                 if (channelObj['group' as keyof (typeof channelObj)] === element) {
                   return (
                     <ListChannel
-                      key={index}
-                      index={index}
+                      key={`${operator}${i}`}
+                      index={i}
                       srcImgChannel={srcImgChannel}
                       altImgChannel={altImgChannel}
                       nameImgChannel={nameImgChannel}
@@ -111,21 +113,21 @@ function CategoriesOperator(): JSX.Element {
 
   return (
     <Box component="div" sx={{width: '100%', textAlign: 'center', mb: '3rem'}}>
+      <Box
+        component="img"
+        src={`/img/operators/${operator ? operator.toLowerCase() : 'img'}.png`}
+        alt={operator}
+        sx={{
+          margin: "1.5rem auto 0",
+          width: {xs: '15rem', md: '20rem'},
+          objectFit: "contain",
+          backgroundColor: appColors.light1,
+          borderRadius: {xs: '5px', md: '10px'},
+        }}
+      />
       {
         (isListLoaded) ?
           <>
-            <Box
-              component="img"
-              src={`/img/operators/${operator.toLowerCase()}.png`}
-              alt={operator}
-              sx={{
-                margin: "1.5rem auto 0",
-                width: {xs: '15rem', md: '20rem'},
-                objectFit: "contain",
-                backgroundColor: appColors.light1,
-                borderRadius: {xs: '5px', md: '10px'},
-              }}
-            />
             <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', '& > *': {m: 1,},}}>
               <ButtonGroup variant="outlined" color="warning" aria-label="Medium-sized button group">
                 <Button key="one" onClick={expandAll}>{t('menuExpand')}</Button>,
@@ -137,12 +139,11 @@ function CategoriesOperator(): JSX.Element {
             </Box>
           </>
           :
-          <>
-            {loader}
-          </>
+          <>{loader}</>
       }
     </Box>
   )
 }
 
-export default CategoriesOperator;
+export default React.memo(CategoriesOperator);
+// export default CategoriesOperator;
