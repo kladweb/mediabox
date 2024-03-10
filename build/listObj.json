@@ -46803,14 +46803,469 @@
   ],
   "kineskopclubList": [
     {
+      "name": "Первый Канал",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/119"
+    },
+    {
+      "name": "Первый Канал HD",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/250"
+    },
+    {
+      "name": "Первый Канал HD orig",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/674"
+    },
+    {
+      "name": "Первый Канал Европа",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/425"
+    },
+    {
+      "name": "Первый Канал +2",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/372"
+    },
+    {
+      "name": "Первый Канал +2 orig",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1134"
+    },
+    {
+      "name": "Первый Канал +4",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/373"
+    },
+    {
+      "name": "Первый Канал +4 HD",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/851"
+    },
+    {
+      "name": "Первый Канал +6",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/431"
+    },
+    {
+      "name": "Россия 1",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/79"
+    },
+    {
+      "name": "Россия 1 HD",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/251"
+    },
+    {
+      "name": "Россия HD orig",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/675"
+    },
+    {
+      "name": "Россия 1 +2",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/374"
+    },
+    {
+      "name": "Россия 1 +2 orig",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1135"
+    },
+    {
+      "name": "Россия 1 +4",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/375"
+    },
+    {
+      "name": "Россия 1 +6",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/432"
+    },
+    {
+      "name": "РТР-Планета",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/42"
+    },
+    {
+      "name": "Россия К",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/82"
+    },
+    {
+      "name": "Россия К HD",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1639"
+    },
+    {
+      "name": "Россия К HD orig 8000k",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1739"
+    },
+    {
+      "name": "Россия К HD orig-265",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1804"
+    },
+    {
+      "name": "НТВ 512k",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/725"
+    },
+    {
+      "name": "НТВ",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/98"
+    },
+    {
+      "name": "НТВ HD",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/256"
+    },
+    {
+      "name": "НТВ HD orig",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/677"
+    },
+    {
+      "name": "НТВ +2",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/406"
+    },
+    {
+      "name": "НТВ +2 orig",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1136"
+    },
+    {
+      "name": "НТВ +4",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/409"
+    },
+    {
+      "name": "НТВ +7",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/435"
+    },
+    {
+      "name": "НТВ Мир",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/179"
+    },
+    {
+      "name": "ТВЦ 512k",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/732"
+    },
+    {
+      "name": "ТВЦ",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/321"
+    },
+    {
+      "name": "ТВЦ HD",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1640"
+    },
+    {
+      "name": "ТВЦ HD orig 8000k",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1741"
+    },
+    {
+      "name": "ТВЦ HD orig-265",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1805"
+    },
+    {
+      "name": "ТВЦ +2",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/809"
+    },
+    {
       "name": "TVCI",
       "group": "Общие",
       "src": "http://de.kineskop.club/icon_cache/43"
     },
     {
+      "name": "РЕН ТВ",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/102"
+    },
+    {
+      "name": "РЕН ТВ HD",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1054"
+    },
+    {
+      "name": "РЕН ТВ HD orig",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1738"
+    },
+    {
+      "name": "Рен ТВ +2",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/407"
+    },
+    {
+      "name": "Рен ТВ +2 orig",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1137"
+    },
+    {
+      "name": "РЕН ТВ +4",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/408"
+    },
+    {
+      "name": "РЕН ТВ +7",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/436"
+    },
+    {
+      "name": "СТС",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/100"
+    },
+    {
+      "name": "СТС HD",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/836"
+    },
+    {
+      "name": "СТС HD orig",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/837"
+    },
+    {
+      "name": "СТС +2",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/404"
+    },
+    {
+      "name": "СТС +2 orig",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1138"
+    },
+    {
+      "name": "СТС +4",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/405"
+    },
+    {
+      "name": "СТС +7",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/434"
+    },
+    {
+      "name": "СТС Love",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/324"
+    },
+    {
+      "name": "ТНТ",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/114"
+    },
+    {
+      "name": "ТНТ HD",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/429"
+    },
+    {
+      "name": "ТНТ HD orig",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/676"
+    },
+    {
+      "name": "ТНТ +2",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/384"
+    },
+    {
+      "name": "ТНТ +2 orig",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1139"
+    },
+    {
+      "name": "ТНТ +4",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/385"
+    },
+    {
+      "name": "ТНТ +7",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/433"
+    },
+    {
+      "name": "Пятница!",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/273"
+    },
+    {
+      "name": "Пятница! HD",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/832"
+    },
+    {
+      "name": "Пятница! HD orig",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1736"
+    },
+    {
+      "name": "Пятница +2",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/410"
+    },
+    {
+      "name": "Пятница +2 orig",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1140"
+    },
+    {
+      "name": "Пятница +4",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/411"
+    },
+    {
+      "name": "Пятница +7",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/437"
+    },
+    {
       "name": "Luxury",
       "group": "Общие",
       "src": "http://de.kineskop.club/icon_cache/718"
+    },
+    {
+      "name": "Звезда 512k",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/720"
+    },
+    {
+      "name": "Звезда",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/49"
+    },
+    {
+      "name": "Звезда +2",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/802"
+    },
+    {
+      "name": "Звезда +4",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/801"
+    },
+    {
+      "name": "Домашний 512k",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/731"
+    },
+    {
+      "name": "Домашний",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/315"
+    },
+    {
+      "name": "Домашний +2",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/807"
+    },
+    {
+      "name": "Домашний +2 orig",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1141"
+    },
+    {
+      "name": "Домашний +4",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/800"
+    },
+    {
+      "name": "ТНТ4",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/93"
+    },
+    {
+      "name": "ТНТ4 HD",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1006"
+    },
+    {
+      "name": "ТНТ4 HD orig",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1742"
+    },
+    {
+      "name": "ТНТ4 +2",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/805"
+    },
+    {
+      "name": "Время",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/120"
+    },
+    {
+      "name": "ТВ 3",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/223"
+    },
+    {
+      "name": "ТВ 3 HD",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/831"
+    },
+    {
+      "name": "ТВ 3 HD orig",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1740"
+    },
+    {
+      "name": "ТВ 3 +2",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/442"
+    },
+    {
+      "name": "ТВ 3 +2 orig",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1142"
+    },
+    {
+      "name": "ТВ 3 +4",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/443"
+    },
+    {
+      "name": "ТВ 3 +7",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/439"
+    },
+    {
+      "name": "5 Канал 512k",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/728"
+    },
+    {
+      "name": "5 Канал",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/106"
+    },
+    {
+      "name": "5 Канал +2",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/808"
+    },
+    {
+      "name": "5 Канал +2 orig",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1143"
+    },
+    {
+      "name": "5 Канал +4",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1145"
     },
     {
       "name": "Большой Эфир HD",
@@ -46828,9 +47283,69 @@
       "src": "http://de.kineskop.club/icon_cache/481"
     },
     {
+      "name": "Перец international",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/485"
+    },
+    {
+      "name": "Сарафан",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/111"
+    },
+    {
+      "name": "Мир",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/122"
+    },
+    {
+      "name": "Мир HD",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1507"
+    },
+    {
+      "name": "Мир HD orig",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1749"
+    },
+    {
+      "name": "Мир +4",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/803"
+    },
+    {
+      "name": "Мир +7",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1669"
+    },
+    {
+      "name": "Мир 24 HD",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/460"
+    },
+    {
+      "name": "Мир 24 HD orig",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1733"
+    },
+    {
+      "name": "Че",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/313"
+    },
+    {
+      "name": "RTVi",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/182"
+    },
+    {
       "name": "Ю",
       "group": "Общие",
       "src": "http://de.kineskop.club/icon_cache/220"
+    },
+    {
+      "name": "Ностальгия",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/221"
     },
     {
       "name": "ОТР",
@@ -46883,6 +47398,16 @@
       "src": "http://de.kineskop.club/icon_cache/1196"
     },
     {
+      "name": "RT Док HD",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/386"
+    },
+    {
+      "name": "RT Док HD orig",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1747"
+    },
+    {
       "name": "FashionBox",
       "group": "Общие",
       "src": "http://de.kineskop.club/icon_cache/561"
@@ -46898,9 +47423,44 @@
       "src": "http://de.kineskop.club/icon_cache/1549"
     },
     {
+      "name": "Fashion TV UHD orig",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/781"
+    },
+    {
+      "name": "Insight UHD 4k orig",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/773"
+    },
+    {
       "name": "Love Nature HD",
       "group": "Общие",
       "src": "http://de.kineskop.club/icon_cache/1645"
+    },
+    {
+      "name": "Love Nature HD orig",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1746"
+    },
+    {
+      "name": "Love Nature 4k",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/850"
+    },
+    {
+      "name": "Love Nature 4k orig RUM",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1293"
+    },
+    {
+      "name": "MyZen TV 4K",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/852"
+    },
+    {
+      "name": "Museum 4K",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1239"
     },
     {
       "name": "Телеканал Театр",
@@ -46918,9 +47478,24 @@
       "src": "http://de.kineskop.club/icon_cache/678"
     },
     {
+      "name": "E HD orig",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1165"
+    },
+    {
+      "name": "Поехали!",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/788"
+    },
+    {
       "name": "Поехали HD",
       "group": "Общие",
       "src": "http://de.kineskop.club/icon_cache/1186"
+    },
+    {
+      "name": "Поехали HD orig",
+      "group": "Общие",
+      "src": "http://de.kineskop.club/icon_cache/1735"
     },
     {
       "name": "Драйв",
@@ -47028,6 +47603,16 @@
       "src": "http://de.kineskop.club/icon_cache/1716"
     },
     {
+      "name": "Россия 24 512k",
+      "group": "Новостные",
+      "src": "http://de.kineskop.club/icon_cache/723"
+    },
+    {
+      "name": "Россия 24",
+      "group": "Новостные",
+      "src": "http://de.kineskop.club/icon_cache/80"
+    },
+    {
       "name": "Известия",
       "group": "Новостные",
       "src": "http://de.kineskop.club/icon_cache/494"
@@ -47043,9 +47628,44 @@
       "src": "http://de.kineskop.club/icon_cache/1416"
     },
     {
+      "name": "РБК HD orig",
+      "group": "Новостные",
+      "src": "http://de.kineskop.club/icon_cache/1737"
+    },
+    {
+      "name": "Мир 24",
+      "group": "Новостные",
+      "src": "http://de.kineskop.club/icon_cache/323"
+    },
+    {
+      "name": "Дождь",
+      "group": "Новостные",
+      "src": "http://de.kineskop.club/icon_cache/283"
+    },
+    {
+      "name": "Дождь HD",
+      "group": "Новостные",
+      "src": "http://de.kineskop.club/icon_cache/1698"
+    },
+    {
+      "name": "Дождь HD orig",
+      "group": "Новостные",
+      "src": "http://de.kineskop.club/icon_cache/1730"
+    },
+    {
       "name": "Euronews Россия",
       "group": "Новостные",
       "src": "http://de.kineskop.club/icon_cache/241"
+    },
+    {
+      "name": "Russia Today",
+      "group": "Новостные",
+      "src": "http://de.kineskop.club/icon_cache/76"
+    },
+    {
+      "name": "Russia Today HD",
+      "group": "Новостные",
+      "src": "http://de.kineskop.club/icon_cache/391"
     },
     {
       "name": "BBC World News",
@@ -47073,6 +47693,11 @@
       "src": "http://de.kineskop.club/icon_cache/177"
     },
     {
+      "name": "Discovery Channel HD orig",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/745"
+    },
+    {
       "name": "National Geographic",
       "group": "Научные",
       "src": "http://de.kineskop.club/icon_cache/92"
@@ -47083,9 +47708,19 @@
       "src": "http://de.kineskop.club/icon_cache/240"
     },
     {
+      "name": "National Geographic HD orig 8000k",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/744"
+    },
+    {
       "name": "Арсенал HD",
       "group": "Научные",
       "src": "http://de.kineskop.club/icon_cache/714"
+    },
+    {
+      "name": "Арсенал HD orig",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/1061"
     },
     {
       "name": "Первый Космический HD",
@@ -47093,9 +47728,34 @@
       "src": "http://de.kineskop.club/icon_cache/479"
     },
     {
+      "name": "Наука",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/109"
+    },
+    {
+      "name": "Наука HD",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/828"
+    },
+    {
+      "name": "Наука HD orig",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/1062"
+    },
+    {
+      "name": "Viasat Explore",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/54"
+    },
+    {
       "name": "Viasat Explore HD",
       "group": "Научные",
       "src": "http://de.kineskop.club/icon_cache/1656"
+    },
+    {
+      "name": "Viasat Nature",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/52"
     },
     {
       "name": "Viasat Nature HD",
@@ -47103,9 +47763,24 @@
       "src": "http://de.kineskop.club/icon_cache/1658"
     },
     {
+      "name": "Viasat History",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/55"
+    },
+    {
       "name": "Viasat History HD",
       "group": "Научные",
       "src": "http://de.kineskop.club/icon_cache/1657"
+    },
+    {
+      "name": "Viasat Nature/History HD",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/528"
+    },
+    {
+      "name": "Viasat Nature/History HD orig",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/1059"
     },
     {
       "name": "Discovery Science 1300k",
@@ -47118,9 +47793,39 @@
       "src": "http://de.kineskop.club/icon_cache/669"
     },
     {
+      "name": "Discovery Science HD orig",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/746"
+    },
+    {
+      "name": "Investigation Discovery 1300k",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/203"
+    },
+    {
       "name": "Investigation Discovery HD",
       "group": "Научные",
       "src": "http://de.kineskop.club/icon_cache/752"
+    },
+    {
+      "name": "Investigation Discovery HD orig",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/756"
+    },
+    {
+      "name": "DTX",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/205"
+    },
+    {
+      "name": "DTX HD",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/750"
+    },
+    {
+      "name": "DTX HD orig",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/754"
     },
     {
       "name": "Galaxy",
@@ -47133,6 +47838,16 @@
       "src": "http://de.kineskop.club/icon_cache/775"
     },
     {
+      "name": "Galaxy HD orig",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/1057"
+    },
+    {
+      "name": "The Explorers HD",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/1900"
+    },
+    {
       "name": "Animal Planet 1300k",
       "group": "Научные",
       "src": "http://de.kineskop.club/icon_cache/97"
@@ -47143,9 +47858,44 @@
       "src": "http://de.kineskop.club/icon_cache/255"
     },
     {
+      "name": "Animal Planet HD orig",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/757"
+    },
+    {
+      "name": "Animal Planet HD orig RUM",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/1202"
+    },
+    {
+      "name": "Домашние животные",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/71"
+    },
+    {
+      "name": "Nat Geo Wild",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/212"
+    },
+    {
+      "name": "Nat Geo Wild HD",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/252"
+    },
+    {
+      "name": "Nat Geo Wild HD orig 8000k",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/748"
+    },
+    {
       "name": "Da Vinci Learning",
       "group": "Научные",
       "src": "http://de.kineskop.club/icon_cache/56"
+    },
+    {
+      "name": "История",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/275"
     },
     {
       "name": "History",
@@ -47158,14 +47908,39 @@
       "src": "http://de.kineskop.club/icon_cache/231"
     },
     {
+      "name": "History HD orig 8000k",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/887"
+    },
+    {
       "name": "H2 HD",
       "group": "Научные",
       "src": "http://de.kineskop.club/icon_cache/664"
     },
     {
+      "name": "H2 HD orig",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/1058"
+    },
+    {
       "name": "HGTV HD",
       "group": "Научные",
       "src": "http://de.kineskop.club/icon_cache/1078"
+    },
+    {
+      "name": "HGTV HD orig",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/1745"
+    },
+    {
+      "name": "Моя Планета",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/101"
+    },
+    {
+      "name": "Моя Планета HD",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/533"
     },
     {
       "name": "Travel",
@@ -47186,6 +47961,16 @@
       "name": "Travel + Adventure HD",
       "group": "Научные",
       "src": "http://de.kineskop.club/icon_cache/670"
+    },
+    {
+      "name": "Travel + Adventure HD orig 8000k",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/888"
+    },
+    {
+      "name": "TravelXP 4K orig",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/1661"
     },
     {
       "name": "TravelXP HD",
@@ -47223,9 +48008,24 @@
       "src": "http://de.kineskop.club/icon_cache/1723"
     },
     {
+      "name": "Оружие orig",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/1113"
+    },
+    {
       "name": "Загородная жизнь",
       "group": "Научные",
       "src": "http://de.kineskop.club/icon_cache/11"
+    },
+    {
+      "name": "Усадьба",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/38"
+    },
+    {
+      "name": "Охота и рыбалка",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/34"
     },
     {
       "name": "Диалоги о Рыбалке",
@@ -47238,9 +48038,19 @@
       "src": "http://de.kineskop.club/icon_cache/554"
     },
     {
+      "name": "Дикая Рыбалка HD orig",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/1060"
+    },
+    {
       "name": "Дикая Охота HD",
       "group": "Научные",
       "src": "http://de.kineskop.club/icon_cache/555"
+    },
+    {
+      "name": "Дикая Охота HD orig",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/1063"
     },
     {
       "name": "Охотник и Рыболов HD",
@@ -47256,6 +48066,26 @@
       "name": "Ретро",
       "group": "Научные",
       "src": "http://de.kineskop.club/icon_cache/583"
+    },
+    {
+      "name": "Психология 21",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/72"
+    },
+    {
+      "name": "Вопросы и ответы",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/73"
+    },
+    {
+      "name": "Телекафе",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/181"
+    },
+    {
+      "name": "Кухня ТВ",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/190"
     },
     {
       "name": "Первый Вегетарианский",
@@ -47278,6 +48108,36 @@
       "src": "http://de.kineskop.club/icon_cache/672"
     },
     {
+      "name": "TLC 1300k",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/201"
+    },
+    {
+      "name": "TLC HD",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/141"
+    },
+    {
+      "name": "TLC HD orig",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/747"
+    },
+    {
+      "name": "TLC HD orig mp2",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/1014"
+    },
+    {
+      "name": "Ocean TV",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/215"
+    },
+    {
+      "name": "Совершенно Секретно",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/216"
+    },
+    {
       "name": "English Club HD",
       "group": "Научные",
       "src": "http://de.kineskop.club/icon_cache/264"
@@ -47288,9 +48148,19 @@
       "src": "http://de.kineskop.club/icon_cache/288"
     },
     {
+      "name": "Авто Плюс",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/192"
+    },
+    {
       "name": "Авто Плюс HD",
       "group": "Научные",
       "src": "http://de.kineskop.club/icon_cache/1010"
+    },
+    {
+      "name": "Авто Плюс HD orig",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/1729"
     },
     {
       "name": "Зоопарк",
@@ -47298,9 +48168,34 @@
       "src": "http://de.kineskop.club/icon_cache/37"
     },
     {
+      "name": "Бобер",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/48"
+    },
+    {
+      "name": "Т 24",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/59"
+    },
+    {
       "name": "365 Дней ТВ",
       "group": "Научные",
       "src": "http://de.kineskop.club/icon_cache/184"
+    },
+    {
+      "name": "Кто есть кто",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/198"
+    },
+    {
+      "name": "Доктор",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/50"
+    },
+    {
+      "name": "RTG",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/214"
     },
     {
       "name": "RTG HD",
@@ -47308,9 +48203,19 @@
       "src": "http://de.kineskop.club/icon_cache/530"
     },
     {
+      "name": "Мама",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/419"
+    },
+    {
       "name": "Мужской",
       "group": "Научные",
       "src": "http://de.kineskop.club/icon_cache/229"
+    },
+    {
+      "name": "HD Life HD",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/175"
     },
     {
       "name": "Живая Природа HD",
@@ -47333,6 +48238,16 @@
       "src": "http://de.kineskop.club/icon_cache/552"
     },
     {
+      "name": "НТВ Право",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/547"
+    },
+    {
+      "name": "НТВ Стиль",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/548"
+    },
+    {
       "name": "DocuBox",
       "group": "Научные",
       "src": "http://de.kineskop.club/icon_cache/560"
@@ -47353,6 +48268,16 @@
       "src": "http://de.kineskop.club/icon_cache/878"
     },
     {
+      "name": "Живая планета",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/884"
+    },
+    {
+      "name": "Звезда Плюс",
+      "group": "Научные",
+      "src": "http://de.kineskop.club/icon_cache/1212"
+    },
+    {
       "name": "Открытый Мир",
       "group": "Научные",
       "src": "http://de.kineskop.club/icon_cache/1163"
@@ -47368,6 +48293,71 @@
       "src": "http://de.kineskop.club/icon_cache/1280"
     },
     {
+      "name": "Матч!",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/81"
+    },
+    {
+      "name": "Матч! HD",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/287"
+    },
+    {
+      "name": "Матч! HD Orig",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/619"
+    },
+    {
+      "name": "Матч! Футбол 1",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/194"
+    },
+    {
+      "name": "Матч! Футбол 1 HD",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/454"
+    },
+    {
+      "name": "Матч! Футбол 1 HD Orig",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/616"
+    },
+    {
+      "name": "Матч! Футбол 2",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/218"
+    },
+    {
+      "name": "Матч! Футбол 2 HD",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/246"
+    },
+    {
+      "name": "Матч! Футбол 2 HD Orig",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/617"
+    },
+    {
+      "name": "Матч! Футбол 3",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/245"
+    },
+    {
+      "name": "Матч! Футбол 3 HD",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/455"
+    },
+    {
+      "name": "Матч! Футбол 3 HD Orig",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/618"
+    },
+    {
+      "name": "Матч! Премьер",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/219"
+    },
+    {
       "name": "Телеканал Футбол",
       "group": "Спортивные",
       "src": "http://de.kineskop.club/icon_cache/270"
@@ -47378,14 +48368,99 @@
       "src": "http://de.kineskop.club/icon_cache/1659"
     },
     {
+      "name": "Телеканал Футбол Orig",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/630"
+    },
+    {
+      "name": "Телеканал Футбол HD orig",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/1743"
+    },
+    {
       "name": "Хоккейный HD",
       "group": "Спортивные",
       "src": "http://de.kineskop.club/icon_cache/1211"
     },
     {
+      "name": "Матч! Премьер HD",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/524"
+    },
+    {
+      "name": "Матч! Премьер HD Orig",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/615"
+    },
+    {
+      "name": "Viasat Sport",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/57"
+    },
+    {
+      "name": "Viasat Sport HD",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/529"
+    },
+    {
+      "name": "Viasat Sport HD Orig",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/623"
+    },
+    {
+      "name": "Матч! Арена",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/84"
+    },
+    {
+      "name": "Матч! Арена HD",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/248"
+    },
+    {
+      "name": "Матч! Арена HD Orig",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/621"
+    },
+    {
+      "name": "Матч! Игра",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/108"
+    },
+    {
+      "name": "Матч! Игра HD",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/174"
+    },
+    {
+      "name": "Матч! Игра HD Orig",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/620"
+    },
+    {
+      "name": "Матч! Планета",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/193"
+    },
+    {
+      "name": "Матч! Страна",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/222"
+    },
+    {
       "name": "Матч! Страна HD",
       "group": "Спортивные",
       "src": "http://de.kineskop.club/icon_cache/1420"
+    },
+    {
+      "name": "Матч! Боец",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/191"
+    },
+    {
+      "name": "Матч! Страна HD orig",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/1422"
     },
     {
       "name": "Матч! Боец HD",
@@ -47398,6 +48473,21 @@
       "src": "http://de.kineskop.club/icon_cache/448"
     },
     {
+      "name": "Eurosport 1 1300k",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/90"
+    },
+    {
+      "name": "Eurosport 1 HD",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/176"
+    },
+    {
+      "name": "Eurosport 1 HD Orig",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/624"
+    },
+    {
       "name": "Eurosport 2 1300k",
       "group": "Спортивные",
       "src": "http://de.kineskop.club/icon_cache/91"
@@ -47406,6 +48496,11 @@
       "name": "Eurosport 2 HD",
       "group": "Спортивные",
       "src": "http://de.kineskop.club/icon_cache/253"
+    },
+    {
+      "name": "Eurosport 2 HD Orig",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/625"
     },
     {
       "name": "Сетанта Спорт 1",
@@ -47418,6 +48513,11 @@
       "src": "http://de.kineskop.club/icon_cache/513"
     },
     {
+      "name": "Сетанта Спорт 1 HD Orig 8000k",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/585"
+    },
+    {
       "name": "Сетанта Спорт 2",
       "group": "Спортивные",
       "src": "http://de.kineskop.club/icon_cache/1115"
@@ -47428,9 +48528,39 @@
       "src": "http://de.kineskop.club/icon_cache/514"
     },
     {
+      "name": "Сетанта Спорт 2 HD Orig 8000k",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/586"
+    },
+    {
+      "name": "Сетанта Спорт UA 1300k",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/843"
+    },
+    {
+      "name": "Сетанта Спорт UA HD",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/796"
+    },
+    {
+      "name": "Сетанта Спорт UA HD orig",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/797"
+    },
+    {
+      "name": "Сетанта Спорт + UA",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/1414"
+    },
+    {
       "name": "Сетанта Спорт + UA HD",
       "group": "Спортивные",
       "src": "http://de.kineskop.club/icon_cache/885"
+    },
+    {
+      "name": "Сетанта Спорт + UA HD Orig",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/1223"
     },
     {
       "name": "Сетанта Казахстан",
@@ -47441,6 +48571,11 @@
       "name": "Сетанта Казахстан HD",
       "group": "Спортивные",
       "src": "http://de.kineskop.club/icon_cache/1636"
+    },
+    {
+      "name": "Сетанта Казахстан HD orig 8000k",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/1762"
     },
     {
       "name": "Сетанта Спорт 1 HD Geo",
@@ -47463,9 +48598,24 @@
       "src": "http://de.kineskop.club/icon_cache/482"
     },
     {
+      "name": "КХЛ",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/228"
+    },
+    {
+      "name": "КХЛ PRIME HD",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/456"
+    },
+    {
       "name": "КХЛ PRIME",
       "group": "Спортивные",
       "src": "http://de.kineskop.club/icon_cache/1415"
+    },
+    {
+      "name": "КХЛ PRIME HD Orig",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/622"
     },
     {
       "name": "Конный Мир HD",
@@ -47491,6 +48641,16 @@
       "name": "Русский Экстрим HD",
       "group": "Спортивные",
       "src": "http://de.kineskop.club/icon_cache/539"
+    },
+    {
+      "name": "Rex UHD 4k orig",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/784"
+    },
+    {
+      "name": "Rex UHD 4k orig AAC",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/685"
     },
     {
       "name": "Fast&FunBox",
@@ -47523,6 +48683,11 @@
       "src": "http://de.kineskop.club/icon_cache/658"
     },
     {
+      "name": "Мир баскетбола",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/739"
+    },
+    {
       "name": "Sport 1",
       "group": "Спортивные",
       "src": "http://de.kineskop.club/icon_cache/786"
@@ -47536,6 +48701,21 @@
       "name": "Sport 3 HD",
       "group": "Спортивные",
       "src": "http://de.kineskop.club/icon_cache/1855"
+    },
+    {
+      "name": "Udar",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/1123"
+    },
+    {
+      "name": "udar HD",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/827"
+    },
+    {
+      "name": "udar HD orig",
+      "group": "Спортивные",
+      "src": "http://de.kineskop.club/icon_cache/1748"
     },
     {
       "name": "Старт HD",
@@ -47588,9 +48768,24 @@
       "src": "http://de.kineskop.club/icon_cache/1728"
     },
     {
+      "name": "TV 1000",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/53"
+    },
+    {
       "name": "TV 1000 HD",
       "group": "Кино",
       "src": "http://de.kineskop.club/icon_cache/870"
+    },
+    {
+      "name": "TV 1000 HD orig 8000k",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/1703"
+    },
+    {
+      "name": "TV 1000 HD orig-265",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/1802"
     },
     {
       "name": "TV 1000 CEE",
@@ -47603,14 +48798,34 @@
       "src": "http://de.kineskop.club/icon_cache/1717"
     },
     {
+      "name": "TV 1000 Action",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/51"
+    },
+    {
       "name": "TV 1000 Action HD",
       "group": "Кино",
       "src": "http://de.kineskop.club/icon_cache/1197"
     },
     {
+      "name": "TV 1000 Action HD orig 8000k",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/1702"
+    },
+    {
+      "name": "TV 1000 Action HD orig-265",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/1801"
+    },
+    {
       "name": "TV 1000 Action CEE HD",
       "group": "Кино",
       "src": "http://de.kineskop.club/icon_cache/1303"
+    },
+    {
+      "name": "TV 1000 Русское Кино",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/58"
     },
     {
       "name": "TV 1000 Русское Кино HD",
@@ -47628,14 +48843,74 @@
       "src": "http://de.kineskop.club/icon_cache/1718"
     },
     {
+      "name": "TV 1000 World Kino HD orig",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/1763"
+    },
+    {
+      "name": "VIP Megahit HD",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/132"
+    },
+    {
+      "name": "VIP Megahit HD orig",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/762"
+    },
+    {
+      "name": "VIP Premiere HD",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/131"
+    },
+    {
+      "name": "VIP Premiere HD orig",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/763"
+    },
+    {
+      "name": "VIP Comedy HD",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/133"
+    },
+    {
+      "name": "VIP Comedy HD orig",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/764"
+    },
+    {
       "name": "VIP Serial HD",
       "group": "Кино",
       "src": "http://de.kineskop.club/icon_cache/1248"
     },
     {
+      "name": "VIP Serial HD orig",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/1265"
+    },
+    {
       "name": "Камеди HD",
       "group": "Кино",
       "src": "http://de.kineskop.club/icon_cache/1148"
+    },
+    {
+      "name": "Камеди HD orig 8000k",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/1151"
+    },
+    {
+      "name": "Мосфильм",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/1160"
+    },
+    {
+      "name": "Мосфильм. Золотая коллекция HD",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/1191"
+    },
+    {
+      "name": "Мосфильм. Золотая коллекция HD orig 8000k",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/1192"
     },
     {
       "name": "Советская Киноклассика HD",
@@ -47688,9 +48963,19 @@
       "src": "http://de.kineskop.club/icon_cache/472"
     },
     {
+      "name": "Шокирующее HD orig",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/768"
+    },
+    {
       "name": "Комедийное HD",
       "group": "Кино",
       "src": "http://de.kineskop.club/icon_cache/473"
+    },
+    {
+      "name": "Комедийное HD orig",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/770"
     },
     {
       "name": "Наше Крутое HD",
@@ -47698,9 +48983,19 @@
       "src": "http://de.kineskop.club/icon_cache/474"
     },
     {
+      "name": "Наше Крутое HD orig",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/765"
+    },
+    {
       "name": "Душевное кино HD",
       "group": "Кино",
       "src": "http://de.kineskop.club/icon_cache/475"
+    },
+    {
+      "name": "Душевное кино HD orig",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/766"
     },
     {
       "name": "Остросюжетное Кино HD",
@@ -47708,9 +49003,24 @@
       "src": "http://de.kineskop.club/icon_cache/476"
     },
     {
+      "name": "Остросюжетное Кино HD orig",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/758"
+    },
+    {
+      "name": "Настоящее Страшное ТВ",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/67"
+    },
+    {
       "name": "Премиальное HD",
       "group": "Кино",
       "src": "http://de.kineskop.club/icon_cache/471"
+    },
+    {
+      "name": "Премиальное HD orig",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/760"
     },
     {
       "name": "Криминальное HD",
@@ -47723,6 +49033,16 @@
       "src": "http://de.kineskop.club/icon_cache/233"
     },
     {
+      "name": "Кинохит HD",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/1250"
+    },
+    {
+      "name": "Кинохит HD Orig",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/1421"
+    },
+    {
       "name": "Киномикс",
       "group": "Кино",
       "src": "http://de.kineskop.club/icon_cache/199"
@@ -47731,6 +49051,11 @@
       "name": "Киномикс HD",
       "group": "Кино",
       "src": "http://de.kineskop.club/icon_cache/557"
+    },
+    {
+      "name": "Киномикс HD orig",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/1279"
     },
     {
       "name": "Киносемья 1300k",
@@ -47778,9 +49103,34 @@
       "src": "http://de.kineskop.club/icon_cache/556"
     },
     {
+      "name": "Кино ТВ",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/447"
+    },
+    {
+      "name": "Кино ТВ HD",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/274"
+    },
+    {
+      "name": "Кино ТВ HD orig",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/1705"
+    },
+    {
       "name": "Про Любовь HD",
       "group": "Кино",
       "src": "http://de.kineskop.club/icon_cache/1147"
+    },
+    {
+      "name": "Про Любовь HD orig 8000k",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/1150"
+    },
+    {
+      "name": "Кино UHD 4k orig",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/785"
     },
     {
       "name": "Hollywood",
@@ -47818,14 +49168,64 @@
       "src": "http://de.kineskop.club/icon_cache/673"
     },
     {
+      "name": "Cinema",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/217"
+    },
+    {
+      "name": "Cinema HD",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/1246"
+    },
+    {
+      "name": "Cinema HD orig",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/1264"
+    },
+    {
+      "name": "Ultra HD Cinema 4k orig",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/782"
+    },
+    {
+      "name": "Ultra HD Cinema 4k orig mp2",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/681"
+    },
+    {
       "name": "Наше Новое Кино",
       "group": "Кино",
       "src": "http://de.kineskop.club/icon_cache/316"
     },
     {
+      "name": "Дом Кино",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/121"
+    },
+    {
+      "name": "Победа",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/776"
+    },
+    {
       "name": "Победа HD",
       "group": "Кино",
       "src": "http://de.kineskop.club/icon_cache/889"
+    },
+    {
+      "name": "Победа HD orig 8000k",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/1734"
+    },
+    {
+      "name": "Русский Иллюзион",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/63"
+    },
+    {
+      "name": "Иллюзион +",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/64"
     },
     {
       "name": "ТВ 21",
@@ -47838,9 +49238,74 @@
       "src": "http://de.kineskop.club/icon_cache/68"
     },
     {
+      "name": "Русский Бестселлер",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/99"
+    },
+    {
+      "name": "Русский Детектив",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/276"
+    },
+    {
+      "name": "Русский Роман",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/116"
+    },
+    {
+      "name": "Русский Роман HD",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/1277"
+    },
+    {
+      "name": "Русская Комедия",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/421"
+    },
+    {
       "name": "Кинокомедия",
       "group": "Кино",
       "src": "http://de.kineskop.club/icon_cache/185"
+    },
+    {
+      "name": "Кинокомедия HD",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/1268"
+    },
+    {
+      "name": "Кинокомедия HD orig",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/1278"
+    },
+    {
+      "name": "Мир Сериала",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/40"
+    },
+    {
+      "name": "Мир Сериала HD",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/1722"
+    },
+    {
+      "name": "НТВ Сериал",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/468"
+    },
+    {
+      "name": "НТВ Сериал HD",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/1727"
+    },
+    {
+      "name": "Сериал UHD 4k orig",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/772"
+    },
+    {
+      "name": "Суббота!",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/314"
     },
     {
       "name": "Феникс+Кино",
@@ -47878,9 +49343,19 @@
       "src": "http://de.kineskop.club/icon_cache/188"
     },
     {
+      "name": "Киносерия HD",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/1269"
+    },
+    {
       "name": "Shot TV",
       "group": "Кино",
       "src": "http://de.kineskop.club/icon_cache/232"
+    },
+    {
+      "name": "Киносемья HD orig",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/1887"
     },
     {
       "name": "Любимое Кино",
@@ -47893,9 +49368,19 @@
       "src": "http://de.kineskop.club/icon_cache/1721"
     },
     {
+      "name": "Дом Кино Премиум HD",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/458"
+    },
+    {
       "name": "Кинопремьера HD",
       "group": "Кино",
       "src": "http://de.kineskop.club/icon_cache/173"
+    },
+    {
+      "name": "Кинопремьера HD orig",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/761"
     },
     {
       "name": "Индийское Кино",
@@ -47911,6 +49396,16 @@
       "name": "Наше любимое HD",
       "group": "Кино",
       "src": "http://de.kineskop.club/icon_cache/535"
+    },
+    {
+      "name": "Наше любимое HD orig",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/769"
+    },
+    {
+      "name": "НТВ Хит",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/549"
     },
     {
       "name": "Дорама",
@@ -47941,6 +49436,11 @@
       "name": "Киносвидание",
       "group": "Кино",
       "src": "http://de.kineskop.club/icon_cache/196"
+    },
+    {
+      "name": "Киносвидание HD",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/1270"
     },
     {
       "name": "Киноужас",
@@ -48003,9 +49503,19 @@
       "src": "http://de.kineskop.club/icon_cache/1189"
     },
     {
+      "name": "Киноджем 1 HD orig",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/1731"
+    },
+    {
       "name": "Киноджем 2 HD",
       "group": "Кино",
       "src": "http://de.kineskop.club/icon_cache/1190"
+    },
+    {
+      "name": "Киноджем 2 HD orig",
+      "group": "Кино",
+      "src": "http://de.kineskop.club/icon_cache/1732"
     },
     {
       "name": "Суббота! HD",
@@ -48083,6 +49593,16 @@
       "src": "http://de.kineskop.club/icon_cache/262"
     },
     {
+      "name": "Мульт",
+      "group": "Детские",
+      "src": "http://de.kineskop.club/icon_cache/278"
+    },
+    {
+      "name": "Мульт HD",
+      "group": "Детские",
+      "src": "http://de.kineskop.club/icon_cache/488"
+    },
+    {
       "name": "Капитан Фантастика HD",
       "group": "Детские",
       "src": "http://de.kineskop.club/icon_cache/713"
@@ -48098,6 +49618,11 @@
       "src": "http://de.kineskop.club/icon_cache/721"
     },
     {
+      "name": "Карусель",
+      "group": "Детские",
+      "src": "http://de.kineskop.club/icon_cache/61"
+    },
+    {
       "name": "Карусель HD",
       "group": "Детские",
       "src": "http://de.kineskop.club/icon_cache/1637"
@@ -48108,6 +49633,11 @@
       "src": "http://de.kineskop.club/icon_cache/440"
     },
     {
+      "name": "Карусель +2 orig",
+      "group": "Детские",
+      "src": "http://de.kineskop.club/icon_cache/1144"
+    },
+    {
       "name": "Карусель +4",
       "group": "Детские",
       "src": "http://de.kineskop.club/icon_cache/441"
@@ -48116,6 +49646,16 @@
       "name": "Карусель +7",
       "group": "Детские",
       "src": "http://de.kineskop.club/icon_cache/438"
+    },
+    {
+      "name": "СТС Kids",
+      "group": "Детские",
+      "src": "http://de.kineskop.club/icon_cache/682"
+    },
+    {
+      "name": "СТС Kids HD",
+      "group": "Детские",
+      "src": "http://de.kineskop.club/icon_cache/863"
     },
     {
       "name": "Тип Топ HD",
@@ -48148,9 +49688,24 @@
       "src": "http://de.kineskop.club/icon_cache/806"
     },
     {
+      "name": "Уникум",
+      "group": "Детские",
+      "src": "http://de.kineskop.club/icon_cache/60"
+    },
+    {
       "name": "JimJam",
       "group": "Детские",
       "src": "http://de.kineskop.club/icon_cache/266"
+    },
+    {
+      "name": "Радость Моя",
+      "group": "Детские",
+      "src": "http://de.kineskop.club/icon_cache/124"
+    },
+    {
+      "name": "Ani",
+      "group": "Детские",
+      "src": "http://de.kineskop.club/icon_cache/146"
     },
     {
       "name": "Детский Мир",
@@ -48166,6 +49721,16 @@
       "name": "В Гостях у Сказки",
       "group": "Детские",
       "src": "http://de.kineskop.club/icon_cache/424"
+    },
+    {
+      "name": "Мультимузыка",
+      "group": "Детские",
+      "src": "http://de.kineskop.club/icon_cache/115"
+    },
+    {
+      "name": "О!",
+      "group": "Детские",
+      "src": "http://de.kineskop.club/icon_cache/546"
     },
     {
       "name": "FAN",
@@ -48223,9 +49788,24 @@
       "src": "http://de.kineskop.club/icon_cache/112"
     },
     {
+      "name": "ТНТ Music",
+      "group": "Музыкальные",
+      "src": "http://de.kineskop.club/icon_cache/44"
+    },
+    {
       "name": "Муз ТВ",
       "group": "Музыкальные",
       "src": "http://de.kineskop.club/icon_cache/317"
+    },
+    {
+      "name": "M1",
+      "group": "Музыкальные",
+      "src": "http://de.kineskop.club/icon_cache/165"
+    },
+    {
+      "name": "M1 HD",
+      "group": "Музыкальные",
+      "src": "http://de.kineskop.club/icon_cache/869"
     },
     {
       "name": "Stingray CMusic",
@@ -48236,6 +49816,11 @@
       "name": "Ru TV",
       "group": "Музыкальные",
       "src": "http://de.kineskop.club/icon_cache/260"
+    },
+    {
+      "name": "Музыка Первого",
+      "group": "Музыкальные",
+      "src": "http://de.kineskop.club/icon_cache/83"
     },
     {
       "name": "1HD Music",
@@ -48313,6 +49898,16 @@
       "src": "http://de.kineskop.club/icon_cache/540"
     },
     {
+      "name": "Шансон ТВ",
+      "group": "Музыкальные",
+      "src": "http://de.kineskop.club/icon_cache/25"
+    },
+    {
+      "name": "Ля Минор",
+      "group": "Музыкальные",
+      "src": "http://de.kineskop.club/icon_cache/187"
+    },
+    {
       "name": "Stingray IConcerts HD",
       "group": "Музыкальные",
       "src": "http://de.kineskop.club/icon_cache/663"
@@ -48368,6 +49963,11 @@
       "src": "http://de.kineskop.club/icon_cache/1228"
     },
     {
+      "name": "Интер HD orig",
+      "group": "Украинские",
+      "src": "http://de.kineskop.club/icon_cache/1259"
+    },
+    {
       "name": "Интер+",
       "group": "Украинские",
       "src": "http://de.kineskop.club/icon_cache/35"
@@ -48398,6 +49998,21 @@
       "src": "http://de.kineskop.club/icon_cache/1231"
     },
     {
+      "name": "НТН HD orig",
+      "group": "Украинские",
+      "src": "http://de.kineskop.club/icon_cache/1256"
+    },
+    {
+      "name": "ICTV UA",
+      "group": "Украинские",
+      "src": "http://de.kineskop.club/icon_cache/168"
+    },
+    {
+      "name": "ICTV HD",
+      "group": "Украинские",
+      "src": "http://de.kineskop.club/icon_cache/868"
+    },
+    {
       "name": "ICTV 2 HD",
       "group": "Украинские",
       "src": "http://de.kineskop.club/icon_cache/1714"
@@ -48408,6 +50023,11 @@
       "src": "http://de.kineskop.club/icon_cache/1806"
     },
     {
+      "name": "ICTV HD orig",
+      "group": "Украинские",
+      "src": "http://de.kineskop.club/icon_cache/1129"
+    },
+    {
       "name": "1+1 Марафон",
       "group": "Украинские",
       "src": "http://de.kineskop.club/icon_cache/148"
@@ -48416,6 +50036,11 @@
       "name": "1+1 Марафон HD",
       "group": "Украинские",
       "src": "http://de.kineskop.club/icon_cache/835"
+    },
+    {
+      "name": "1+1  Марафон HD orig",
+      "group": "Украинские",
+      "src": "http://de.kineskop.club/icon_cache/1128"
     },
     {
       "name": "1+1 Україна",
@@ -48443,9 +50068,44 @@
       "src": "http://de.kineskop.club/icon_cache/1022"
     },
     {
+      "name": "ТЕТ HD orig",
+      "group": "Украинские",
+      "src": "http://de.kineskop.club/icon_cache/1124"
+    },
+    {
       "name": "5 Канал Украина HD",
       "group": "Украинские",
       "src": "http://de.kineskop.club/icon_cache/154"
+    },
+    {
+      "name": "СТБ",
+      "group": "Украинские",
+      "src": "http://de.kineskop.club/icon_cache/151"
+    },
+    {
+      "name": "СТБ HD",
+      "group": "Украинские",
+      "src": "http://de.kineskop.club/icon_cache/867"
+    },
+    {
+      "name": "СТБ HD orig",
+      "group": "Украинские",
+      "src": "http://de.kineskop.club/icon_cache/1131"
+    },
+    {
+      "name": "Новый Канал",
+      "group": "Украинские",
+      "src": "http://de.kineskop.club/icon_cache/156"
+    },
+    {
+      "name": "Новый Канал HD",
+      "group": "Украинские",
+      "src": "http://de.kineskop.club/icon_cache/866"
+    },
+    {
+      "name": "Новый Канал HD orig",
+      "group": "Украинские",
+      "src": "http://de.kineskop.club/icon_cache/1130"
     },
     {
       "name": "Мега",
@@ -48458,6 +50118,11 @@
       "src": "http://de.kineskop.club/icon_cache/1225"
     },
     {
+      "name": "Мега HD orig",
+      "group": "Украинские",
+      "src": "http://de.kineskop.club/icon_cache/1262"
+    },
+    {
       "name": "2+2",
       "group": "Украинские",
       "src": "http://de.kineskop.club/icon_cache/149"
@@ -48466,6 +50131,11 @@
       "name": "2+2 HD",
       "group": "Украинские",
       "src": "http://de.kineskop.club/icon_cache/1023"
+    },
+    {
+      "name": "2+2 HD orig",
+      "group": "Украинские",
+      "src": "http://de.kineskop.club/icon_cache/1125"
     },
     {
       "name": "Наше Любимое Кино HD UA",
@@ -48483,9 +50153,19 @@
       "src": "http://de.kineskop.club/icon_cache/1232"
     },
     {
+      "name": "Пиксель HD orig",
+      "group": "Украинские",
+      "src": "http://de.kineskop.club/icon_cache/1255"
+    },
+    {
       "name": "ATR HD",
       "group": "Украинские",
       "src": "http://de.kineskop.club/icon_cache/1154"
+    },
+    {
+      "name": "Квартал ТВ",
+      "group": "Украинские",
+      "src": "http://de.kineskop.club/icon_cache/412"
     },
     {
       "name": "Прямой UA",
@@ -48506,6 +50186,11 @@
       "name": "ПлюсПлюс HD",
       "group": "Украинские",
       "src": "http://de.kineskop.club/icon_cache/1024"
+    },
+    {
+      "name": "ТРК Киев",
+      "group": "Украинские",
+      "src": "http://de.kineskop.club/icon_cache/14"
     },
     {
       "name": "News 24 HD",
@@ -48538,6 +50223,11 @@
       "src": "http://de.kineskop.club/icon_cache/730"
     },
     {
+      "name": "Первый автомобильный HD",
+      "group": "Украинские",
+      "src": "http://de.kineskop.club/icon_cache/651"
+    },
+    {
       "name": "Zoom",
       "group": "Украинские",
       "src": "http://de.kineskop.club/icon_cache/145"
@@ -48546,6 +50236,11 @@
       "name": "Zoom HD",
       "group": "Украинские",
       "src": "http://de.kineskop.club/icon_cache/1226"
+    },
+    {
+      "name": "Zoom HD orig",
+      "group": "Украинские",
+      "src": "http://de.kineskop.club/icon_cache/1261"
     },
     {
       "name": "К1",
@@ -48558,6 +50253,11 @@
       "src": "http://de.kineskop.club/icon_cache/1229"
     },
     {
+      "name": "К1 HD orig",
+      "group": "Украинские",
+      "src": "http://de.kineskop.club/icon_cache/1258"
+    },
+    {
       "name": "К2",
       "group": "Украинские",
       "src": "http://de.kineskop.club/icon_cache/153"
@@ -48568,6 +50268,26 @@
       "src": "http://de.kineskop.club/icon_cache/1230"
     },
     {
+      "name": "К2 HD orig",
+      "group": "Украинские",
+      "src": "http://de.kineskop.club/icon_cache/1257"
+    },
+    {
+      "name": "Оце",
+      "group": "Украинские",
+      "src": "http://de.kineskop.club/icon_cache/158"
+    },
+    {
+      "name": "ОЦЕ HD",
+      "group": "Украинские",
+      "src": "http://de.kineskop.club/icon_cache/864"
+    },
+    {
+      "name": "ОЦЕ HD orig",
+      "group": "Украинские",
+      "src": "http://de.kineskop.club/icon_cache/1132"
+    },
+    {
       "name": "Бигуди",
       "group": "Украинские",
       "src": "http://de.kineskop.club/icon_cache/160"
@@ -48576,6 +50296,16 @@
       "name": "Рада HD",
       "group": "Украинские",
       "src": "http://de.kineskop.club/icon_cache/163"
+    },
+    {
+      "name": "М2 1300k",
+      "group": "Украинские",
+      "src": "http://de.kineskop.club/icon_cache/166"
+    },
+    {
+      "name": "М2 HD",
+      "group": "Украинские",
+      "src": "http://de.kineskop.club/icon_cache/865"
     },
     {
       "name": "Сонце UA",
@@ -48623,6 +50353,11 @@
       "src": "http://de.kineskop.club/icon_cache/1227"
     },
     {
+      "name": "Enter-фильм HD orig",
+      "group": "Украинские",
+      "src": "http://de.kineskop.club/icon_cache/1260"
+    },
+    {
       "name": "Freedom UA",
       "group": "Украинские",
       "src": "http://de.kineskop.club/icon_cache/536"
@@ -48661,6 +50396,11 @@
       "name": "Перший Західний HD",
       "group": "Украинские",
       "src": "http://de.kineskop.club/icon_cache/1153"
+    },
+    {
+      "name": "Тернополь 1 HD",
+      "group": "Украинские",
+      "src": "http://de.kineskop.club/icon_cache/892"
     },
     {
       "name": "Первый Городской HD",
@@ -48846,6 +50586,11 @@
       "name": "5SPORT HD IL",
       "group": "Израильские",
       "src": "http://de.kineskop.club/icon_cache/1606"
+    },
+    {
+      "name": "5SPORT 4K IL orig",
+      "group": "Израильские",
+      "src": "http://de.kineskop.club/icon_cache/1852"
     },
     {
       "name": "i24 HD IL",
@@ -49093,6 +50838,16 @@
       "src": "http://de.kineskop.club/icon_cache/1767"
     },
     {
+      "name": "Беларусь 5 BY",
+      "group": "Белорусские",
+      "src": "http://de.kineskop.club/icon_cache/572"
+    },
+    {
+      "name": "Беларусь 5 HD BY",
+      "group": "Белорусские",
+      "src": "http://de.kineskop.club/icon_cache/795"
+    },
+    {
       "name": "Беларусь 24 HD BY",
       "group": "Белорусские",
       "src": "http://de.kineskop.club/icon_cache/180"
@@ -49113,6 +50868,16 @@
       "src": "http://de.kineskop.club/icon_cache/880"
     },
     {
+      "name": "РТР Беларусь",
+      "group": "Белорусские",
+      "src": "http://de.kineskop.club/icon_cache/1547"
+    },
+    {
+      "name": "РТР Беларусь HD BY",
+      "group": "Белорусские",
+      "src": "http://de.kineskop.club/icon_cache/1768"
+    },
+    {
       "name": "НТВ Беларусь BY",
       "group": "Белорусские",
       "src": "http://de.kineskop.club/icon_cache/1772"
@@ -49121,6 +50886,11 @@
       "name": "KIKA DE",
       "group": "Немецкие",
       "src": "http://de.kineskop.club/icon_cache/508"
+    },
+    {
+      "name": "KIKA HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1676"
     },
     {
       "name": "RTL DE",
@@ -49133,6 +50903,11 @@
       "src": "http://de.kineskop.club/icon_cache/1015"
     },
     {
+      "name": "RTL HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1341"
+    },
+    {
       "name": "RTL 2 DE",
       "group": "Немецкие",
       "src": "http://de.kineskop.club/icon_cache/510"
@@ -49141,6 +50916,11 @@
       "name": "RTL 2 HD DE",
       "group": "Немецкие",
       "src": "http://de.kineskop.club/icon_cache/1017"
+    },
+    {
+      "name": "RTL 2 HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1349"
     },
     {
       "name": "Super RTL DE",
@@ -49158,6 +50938,21 @@
       "src": "http://de.kineskop.club/icon_cache/1016"
     },
     {
+      "name": "VOX HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1335"
+    },
+    {
+      "name": "VOXup HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1650"
+    },
+    {
+      "name": "WDR Köln HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1888"
+    },
+    {
       "name": "ZDF info DE",
       "group": "Немецкие",
       "src": "http://de.kineskop.club/icon_cache/817"
@@ -49166,6 +50961,11 @@
       "name": "ZDF Info HD DE",
       "group": "Немецкие",
       "src": "http://de.kineskop.club/icon_cache/1320"
+    },
+    {
+      "name": "ZDF Info HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1328"
     },
     {
       "name": "ZDF Neo DE",
@@ -49178,6 +50978,11 @@
       "src": "http://de.kineskop.club/icon_cache/1266"
     },
     {
+      "name": "ZDF Neo HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1345"
+    },
+    {
       "name": "ZDF DE",
       "group": "Немецкие",
       "src": "http://de.kineskop.club/icon_cache/507"
@@ -49186,6 +50991,11 @@
       "name": "ZDF HD DE",
       "group": "Немецкие",
       "src": "http://de.kineskop.club/icon_cache/1092"
+    },
+    {
+      "name": "ZDF HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1334"
     },
     {
       "name": "RTL plus DE",
@@ -49203,9 +51013,19 @@
       "src": "http://de.kineskop.club/icon_cache/897"
     },
     {
+      "name": "N-TV HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1339"
+    },
+    {
       "name": "Welt HD DE",
       "group": "Немецкие",
       "src": "http://de.kineskop.club/icon_cache/898"
+    },
+    {
+      "name": "Welt hd DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1332"
     },
     {
       "name": "Toggo Plus DE",
@@ -49218,6 +51038,11 @@
       "src": "http://de.kineskop.club/icon_cache/1019"
     },
     {
+      "name": "Sat.1 HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1333"
+    },
+    {
       "name": "Sat.1 Gold HD DE",
       "group": "Немецкие",
       "src": "http://de.kineskop.club/icon_cache/1033"
@@ -49228,9 +51053,19 @@
       "src": "http://de.kineskop.club/icon_cache/1030"
     },
     {
+      "name": "Disney HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1337"
+    },
+    {
       "name": "Kabel Eins HD DE",
       "group": "Немецкие",
       "src": "http://de.kineskop.club/icon_cache/1025"
+    },
+    {
+      "name": "Kabel Eins HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1351"
     },
     {
       "name": "ProSieben HD DE",
@@ -49238,9 +51073,19 @@
       "src": "http://de.kineskop.club/icon_cache/1020"
     },
     {
+      "name": "ProSieben HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1343"
+    },
+    {
       "name": "Sixx HD DE",
       "group": "Немецкие",
       "src": "http://de.kineskop.club/icon_cache/1027"
+    },
+    {
+      "name": "Sixx HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1338"
     },
     {
       "name": "ProSieben Maxx HD DE",
@@ -49248,9 +51093,24 @@
       "src": "http://de.kineskop.club/icon_cache/1028"
     },
     {
+      "name": "ProSieben Maxx HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1340"
+    },
+    {
+      "name": "Kabel Eins Doku HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1348"
+    },
+    {
       "name": "Deluxe Music HD DE",
       "group": "Немецкие",
       "src": "http://de.kineskop.club/icon_cache/1031"
+    },
+    {
+      "name": "Deluxe Music HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1677"
     },
     {
       "name": "Sport 1 HD DE",
@@ -49258,14 +51118,29 @@
       "src": "http://de.kineskop.club/icon_cache/1032"
     },
     {
+      "name": "Sport 1 HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1356"
+    },
+    {
       "name": "Eurosport 1 Germany HD DE",
       "group": "Немецкие",
       "src": "http://de.kineskop.club/icon_cache/1034"
     },
     {
+      "name": "Eurosport 1 Germany HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1355"
+    },
+    {
       "name": "TLC Germany HD DE",
       "group": "Немецкие",
       "src": "http://de.kineskop.club/icon_cache/1036"
+    },
+    {
+      "name": "TLC Germany HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1344"
     },
     {
       "name": "MTV Germany HD DE",
@@ -49278,9 +51153,19 @@
       "src": "http://de.kineskop.club/icon_cache/1038"
     },
     {
+      "name": "Super RTL HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1350"
+    },
+    {
       "name": "Nitro HD DE",
       "group": "Немецкие",
       "src": "http://de.kineskop.club/icon_cache/1039"
+    },
+    {
+      "name": "Nitro HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1342"
     },
     {
       "name": "Tele 5 HD DE",
@@ -49288,9 +51173,19 @@
       "src": "http://de.kineskop.club/icon_cache/1041"
     },
     {
+      "name": "Tele 5 HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1330"
+    },
+    {
       "name": "DMAX HD DE",
       "group": "Немецкие",
       "src": "http://de.kineskop.club/icon_cache/1042"
+    },
+    {
+      "name": "DMAX HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1357"
     },
     {
       "name": "Discovery HD DE",
@@ -49298,9 +51193,19 @@
       "src": "http://de.kineskop.club/icon_cache/1046"
     },
     {
+      "name": "Discovery HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1388"
+    },
+    {
       "name": "Das Erste HD DE",
       "group": "Немецкие",
       "src": "http://de.kineskop.club/icon_cache/1047"
+    },
+    {
+      "name": "Das Erste HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1336"
     },
     {
       "name": "ARTE HD DE",
@@ -49313,9 +51218,19 @@
       "src": "http://de.kineskop.club/icon_cache/1051"
     },
     {
+      "name": "ORF 1 HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1372"
+    },
+    {
       "name": "ORF 2 N HD DE",
       "group": "Немецкие",
       "src": "http://de.kineskop.club/icon_cache/1052"
+    },
+    {
+      "name": "ORF 2 N HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1373"
     },
     {
       "name": "ORF III HD DE",
@@ -49323,9 +51238,24 @@
       "src": "http://de.kineskop.club/icon_cache/1304"
     },
     {
+      "name": "ORF III HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1672"
+    },
+    {
       "name": "ORF Sport + HD DE",
       "group": "Немецкие",
       "src": "http://de.kineskop.club/icon_cache/1305"
+    },
+    {
+      "name": "ORF Sport + HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1678"
+    },
+    {
+      "name": "Bild HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1700"
     },
     {
       "name": "Sportdigital Fussball HD DE",
@@ -49333,9 +51263,19 @@
       "src": "http://de.kineskop.club/icon_cache/1298"
     },
     {
+      "name": "Sportdigital Fussball HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1353"
+    },
+    {
       "name": "Sport 1+ HD DE",
       "group": "Немецкие",
       "src": "http://de.kineskop.club/icon_cache/1299"
+    },
+    {
+      "name": "Sport 1+ HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1354"
     },
     {
       "name": "Edge Sport HD DE",
@@ -49343,9 +51283,34 @@
       "src": "http://de.kineskop.club/icon_cache/1300"
     },
     {
+      "name": "Edge Sport HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1352"
+    },
+    {
+      "name": "Waidwerk HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1329"
+    },
+    {
+      "name": "Anixe Serie HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1346"
+    },
+    {
       "name": "3 Sat HD DE",
       "group": "Немецкие",
       "src": "http://de.kineskop.club/icon_cache/1321"
+    },
+    {
+      "name": "3 Sat HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1347"
+    },
+    {
+      "name": "Phoenix HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1325"
     },
     {
       "name": "Syfy HD DE",
@@ -49353,9 +51318,19 @@
       "src": "http://de.kineskop.club/icon_cache/1379"
     },
     {
+      "name": "Servus TV HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1423"
+    },
+    {
       "name": "RTL Up HD DE",
       "group": "Немецкие",
       "src": "http://de.kineskop.club/icon_cache/1557"
+    },
+    {
+      "name": "RTL Up HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1648"
     },
     {
       "name": "Sky Sport premier league HD DE",
@@ -49368,9 +51343,24 @@
       "src": "http://de.kineskop.club/icon_cache/1572"
     },
     {
+      "name": "Bayerisches Fernsehen Nord HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1674"
+    },
+    {
+      "name": "ARD Alpha HD DE orig",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1679"
+    },
+    {
       "name": "Tagesschau 24 HD DE",
       "group": "Немецкие",
       "src": "http://de.kineskop.club/icon_cache/1756"
+    },
+    {
+      "name": "One ARD HD DE",
+      "group": "Немецкие",
+      "src": "http://de.kineskop.club/icon_cache/1901"
     },
     {
       "name": "One ARD HD DE orig",
@@ -49451,6 +51441,11 @@
       "name": "Golf Channel HD PL",
       "group": "Польские",
       "src": "http://de.kineskop.club/icon_cache/1095"
+    },
+    {
+      "name": "Canal+ Sport2 HD PL",
+      "group": "Польские",
+      "src": "http://de.kineskop.club/icon_cache/1096"
     },
     {
       "name": "nSport+ HD PL",
@@ -49593,6 +51588,11 @@
       "src": "http://de.kineskop.club/icon_cache/1387"
     },
     {
+      "name": "Первый канал Евразия KZ",
+      "group": "Казахские",
+      "src": "http://de.kineskop.club/icon_cache/1654"
+    },
+    {
       "name": "Хабар 24 KZ",
       "group": "Казахские",
       "src": "http://de.kineskop.club/icon_cache/389"
@@ -49668,6 +51668,11 @@
       "src": "http://de.kineskop.club/icon_cache/814"
     },
     {
+      "name": "ТНВ Планета TA Orig",
+      "group": "Таджикские",
+      "src": "http://de.kineskop.club/icon_cache/1122"
+    },
+    {
       "name": "Ajara TV HD Geo",
       "group": "Грузинские",
       "src": "http://de.kineskop.club/icon_cache/590"
@@ -49713,6 +51718,11 @@
       "src": "http://de.kineskop.club/icon_cache/602"
     },
     {
+      "name": "Ictimai TV HD Aze",
+      "group": "Азербайджанские",
+      "src": "http://de.kineskop.club/icon_cache/603"
+    },
+    {
       "name": "Space TV HD Aze",
       "group": "Азербайджанские",
       "src": "http://de.kineskop.club/icon_cache/604"
@@ -49726,6 +51736,11 @@
       "name": "Dunya TV Aze",
       "group": "Азербайджанские",
       "src": "http://de.kineskop.club/icon_cache/607"
+    },
+    {
+      "name": "CBC Sport HD Aze",
+      "group": "Азербайджанские",
+      "src": "http://de.kineskop.club/icon_cache/608"
     },
     {
       "name": "CBC HD Aze",
@@ -49928,6 +51943,16 @@
       "src": "http://de.kineskop.club/icon_cache/717"
     },
     {
+      "name": "Fox Türkiye HD TR orig",
+      "group": "Турецкие",
+      "src": "http://de.kineskop.club/icon_cache/1100"
+    },
+    {
+      "name": "Star TV HD TR orig",
+      "group": "Турецкие",
+      "src": "http://de.kineskop.club/icon_cache/1101"
+    },
+    {
       "name": "Power TV HD TR",
       "group": "Турецкие",
       "src": "http://de.kineskop.club/icon_cache/1252"
@@ -49943,9 +51968,149 @@
       "src": "http://de.kineskop.club/icon_cache/1548"
     },
     {
+      "name": "Sinema Aksiyon 2 HD TR orig",
+      "group": "Турецкие",
+      "src": "http://de.kineskop.club/icon_cache/1819"
+    },
+    {
+      "name": "Sinema Aile HD TR orig",
+      "group": "Турецкие",
+      "src": "http://de.kineskop.club/icon_cache/1820"
+    },
+    {
+      "name": "Sinema Aile 2 HD TR orig",
+      "group": "Турецкие",
+      "src": "http://de.kineskop.club/icon_cache/1821"
+    },
+    {
+      "name": "Sinema Komedi HD TR orig",
+      "group": "Турецкие",
+      "src": "http://de.kineskop.club/icon_cache/1822"
+    },
+    {
+      "name": "Sinema Komedi 2 HD TR orig",
+      "group": "Турецкие",
+      "src": "http://de.kineskop.club/icon_cache/1823"
+    },
+    {
+      "name": "Sinema 1001 HD TR orig",
+      "group": "Турецкие",
+      "src": "http://de.kineskop.club/icon_cache/1824"
+    },
+    {
+      "name": "Sinema Aksiyon HD TR orig",
+      "group": "Турецкие",
+      "src": "http://de.kineskop.club/icon_cache/1825"
+    },
+    {
+      "name": "Sinema TV HD TR orig",
+      "group": "Турецкие",
+      "src": "http://de.kineskop.club/icon_cache/1826"
+    },
+    {
+      "name": "Sinema 2 HD TR orig",
+      "group": "Турецкие",
+      "src": "http://de.kineskop.club/icon_cache/1827"
+    },
+    {
+      "name": "History Türkiye HD TR orig",
+      "group": "Турецкие",
+      "src": "http://de.kineskop.club/icon_cache/1828"
+    },
+    {
+      "name": "Discovery Channel Türkiye HD TR orig",
+      "group": "Турецкие",
+      "src": "http://de.kineskop.club/icon_cache/1829"
+    },
+    {
+      "name": "Spor Smart HD TR orig",
+      "group": "Турецкие",
+      "src": "http://de.kineskop.club/icon_cache/1830"
+    },
+    {
+      "name": "Viasat History HD TR orig",
+      "group": "Турецкие",
+      "src": "http://de.kineskop.club/icon_cache/1831"
+    },
+    {
+      "name": "Dizismart Premium HD TR orig",
+      "group": "Турецкие",
+      "src": "http://de.kineskop.club/icon_cache/1832"
+    },
+    {
+      "name": "Moviesmart Türk HD TR orig",
+      "group": "Турецкие",
+      "src": "http://de.kineskop.club/icon_cache/1833"
+    },
+    {
+      "name": "Baby TV Europe HD TR orig",
+      "group": "Турецкие",
+      "src": "http://de.kineskop.club/icon_cache/1834"
+    },
+    {
+      "name": "Discovery Science Türkiye HD TR orig",
+      "group": "Турецкие",
+      "src": "http://de.kineskop.club/icon_cache/1835"
+    },
+    {
+      "name": "Dizismart Max HD TR orig",
+      "group": "Турецкие",
+      "src": "http://de.kineskop.club/icon_cache/1836"
+    },
+    {
+      "name": "Sinema 1002 HD TR orig",
+      "group": "Турецкие",
+      "src": "http://de.kineskop.club/icon_cache/1837"
+    },
+    {
+      "name": "Boomerang Türkiye HD TR orig",
+      "group": "Турецкие",
+      "src": "http://de.kineskop.club/icon_cache/1838"
+    },
+    {
+      "name": "Nat Geo Wild Türkiye HD TR orig",
+      "group": "Турецкие",
+      "src": "http://de.kineskop.club/icon_cache/1839"
+    },
+    {
+      "name": "National Geographic Türkiye HD TR orig",
+      "group": "Турецкие",
+      "src": "http://de.kineskop.club/icon_cache/1840"
+    },
+    {
+      "name": "Disney Junior Türkiye HD TR orig",
+      "group": "Турецкие",
+      "src": "http://de.kineskop.club/icon_cache/1841"
+    },
+    {
+      "name": "Eurosport 1 HD TR orig",
+      "group": "Турецкие",
+      "src": "http://de.kineskop.club/icon_cache/1842"
+    },
+    {
+      "name": "Eurosport 2 HD TR orig",
+      "group": "Турецкие",
+      "src": "http://de.kineskop.club/icon_cache/1843"
+    },
+    {
       "name": "NBA TV HD TR",
       "group": "Турецкие",
       "src": "http://de.kineskop.club/icon_cache/1844"
+    },
+    {
+      "name": "Love Nature HD TR orig",
+      "group": "Турецкие",
+      "src": "http://de.kineskop.club/icon_cache/1845"
+    },
+    {
+      "name": "Spor Smart 2 HD TR orig",
+      "group": "Турецкие",
+      "src": "http://de.kineskop.club/icon_cache/1846"
+    },
+    {
+      "name": "Moviesmart Classic HD TR orig",
+      "group": "Турецкие",
+      "src": "http://de.kineskop.club/icon_cache/1847"
     },
     {
       "name": "Dream Turk HD TR",
@@ -50068,6 +52233,11 @@
       "src": "http://de.kineskop.club/icon_cache/1185"
     },
     {
+      "name": "BCU Ultra 4K",
+      "group": "BCU",
+      "src": "http://de.kineskop.club/icon_cache/1238"
+    },
+    {
       "name": "BCU RUSerial HD",
       "group": "BCU",
       "src": "http://de.kineskop.club/icon_cache/1184"
@@ -50128,9 +52298,19 @@
       "src": "http://de.kineskop.club/icon_cache/1510"
     },
     {
+      "name": "BCU Premiere Ultra 4K",
+      "group": "BCU",
+      "src": "http://de.kineskop.club/icon_cache/1511"
+    },
+    {
       "name": "BCU Cosmo HD",
       "group": "BCU",
       "src": "http://de.kineskop.club/icon_cache/1512"
+    },
+    {
+      "name": "BCU Kids 4K",
+      "group": "BCU",
+      "src": "http://de.kineskop.club/icon_cache/1513"
     },
     {
       "name": "BCU TruMotion HD",
@@ -50186,6 +52366,16 @@
       "name": "BOX SERIAL HD",
       "group": "MAGIC BOX",
       "src": "http://de.kineskop.club/icon_cache/1536"
+    },
+    {
+      "name": "BOX MUSIC 4K",
+      "group": "MAGIC BOX",
+      "src": "http://de.kineskop.club/icon_cache/1537"
+    },
+    {
+      "name": "BOX RELAX 4K",
+      "group": "MAGIC BOX",
+      "src": "http://de.kineskop.club/icon_cache/1538"
     },
     {
       "name": "BOX GAME HD",
@@ -50248,6 +52438,16 @@
       "src": "http://de.kineskop.club/icon_cache/1682"
     },
     {
+      "name": "BOX Premiere 4K",
+      "group": "MAGIC BOX",
+      "src": "http://de.kineskop.club/icon_cache/1701"
+    },
+    {
+      "name": "BOX Remast 4K",
+      "group": "MAGIC BOX",
+      "src": "http://de.kineskop.club/icon_cache/1712"
+    },
+    {
       "name": "BOX fantasy HD",
       "group": "MAGIC BOX",
       "src": "http://de.kineskop.club/icon_cache/1724"
@@ -50256,6 +52456,11 @@
       "name": "BOX mayday HD",
       "group": "MAGIC BOX",
       "src": "http://de.kineskop.club/icon_cache/1725"
+    },
+    {
+      "name": "BOX SERIAL 4K",
+      "group": "MAGIC BOX",
+      "src": "http://de.kineskop.club/icon_cache/1726"
     },
     {
       "name": "BOX SportCast 1 live HD",
@@ -50321,6 +52526,11 @@
       "name": "BOX APOCALYPSE HD",
       "group": "MAGIC BOX",
       "src": "http://de.kineskop.club/icon_cache/1879"
+    },
+    {
+      "name": "BOX Remast+ 4K",
+      "group": "MAGIC BOX",
+      "src": "http://de.kineskop.club/icon_cache/1885"
     },
     {
       "name": "CineMan HD",
@@ -50431,6 +52641,11 @@
       "name": "CineMan Fitnes HD",
       "group": "CINEMAN",
       "src": "http://de.kineskop.club/icon_cache/1886"
+    },
+    {
+      "name": "CineMan Relax 4K",
+      "group": "CINEMAN",
+      "src": "http://de.kineskop.club/icon_cache/1892"
     },
     {
       "name": "Fresh Cinema HD",
