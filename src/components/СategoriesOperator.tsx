@@ -12,6 +12,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { appColors } from "../services/appColors";
 import { ContextCategoriesType, ITranslate } from "../types/typesBox";
 import ListChannel from "./ListChannel";
+import { operators } from "../data/dataIPTV";
 
 function CategoriesOperator(): JSX.Element {
   const {t}: ITranslate = useTranslation();
@@ -19,7 +20,12 @@ function CategoriesOperator(): JSX.Element {
   const [expandedAccordions, setExpandedAccordions] = useState<number[]>([]);
   const params: Readonly<Params<string>> = useParams();
   const operator = params.operator;
+  const links: string[] = operators[operator as keyof (typeof operators)]['links'];
   let accordionList: JSX.Element = <></>;
+
+  const handlerOperator = (link: string): void => {
+    window.open(link);
+  }
 
   const collapseAll = () => {
     setExpandedAccordions([]);
@@ -43,10 +49,6 @@ function CategoriesOperator(): JSX.Element {
     }
   }
 
-  // useEffect(() => {
-  //   collapseAll();
-  // }, [operator]);
-
   const loader: JSX.Element = (
     <Box component="div"
          sx={{
@@ -55,7 +57,7 @@ function CategoriesOperator(): JSX.Element {
            my: '2rem'
          }}>
       <Stack sx={{color: `${appColors.mid2}`, display: 'block'}}>
-        <CircularProgress color="inherit" sx={{textAlign: 'center'}}/>
+        <CircularProgress color="inherit" sx={{textAlign: 'center'}} />
       </Stack>
     </Box>
   );
@@ -71,7 +73,7 @@ function CategoriesOperator(): JSX.Element {
           TransitionProps={{unmountOnExit: true}}
         >
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon sx={{color: appColors.light1}}/>}
+            expandIcon={<ExpandMoreIcon sx={{color: appColors.light1}} />}
             aria-controls={`${element}-content`}
             id={`${element}-header`}
             sx={{mx: {xs: '10%', md: '35%'}, fontSize: {xs: '1rem', md: '1.25rem'}}}
@@ -117,12 +119,16 @@ function CategoriesOperator(): JSX.Element {
         component="img"
         src={`/img/operators/${operator ? operator.toLowerCase() : 'img'}.png`}
         alt={operator}
+        onClick={(): void => {
+          handlerOperator(links[0]);
+        }}
         sx={{
           margin: "1.5rem auto 0",
           width: {xs: '15rem', md: '20rem'},
           objectFit: "contain",
           backgroundColor: appColors.light1,
           borderRadius: {xs: '5px', md: '10px'},
+          cursor: "pointer"
         }}
       />
       {
