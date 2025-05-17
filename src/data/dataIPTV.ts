@@ -107,7 +107,7 @@ export const operators: Ioperators = {
   cbilling: {
     name: 'cbilling',
     links: [
-      'https://ott-iptv-connect.com/?pp=23417',
+      'http://cbillingtv.com/pl/23417',
       'https://otttviptv.com/?pp=23417',
       'https://smotrivip.com/?pp=23417',
       'https://russianiptv.com/?pp=23417'
