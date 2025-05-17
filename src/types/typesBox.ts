@@ -124,12 +124,12 @@ export interface Ioperators {
     linksDirect: string[],
     epg: string
   },
-  domavip: {
-    name: string,
-    links: string[],
-    linksDirect: string[],
-    epg: string
-  },
+  // domavip: {
+  //   name: string,
+  //   links: string[],
+  //   linksDirect: string[],
+  //   epg: string
+  // },
   cbilling: {
     name: string,
     links: string[],

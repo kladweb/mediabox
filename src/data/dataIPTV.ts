@@ -94,16 +94,16 @@ export const operators: Ioperators = {
     ],
     epg: 'http://epg.cdntv.online/full.xml.gz'
   },
-  domavip: {
-    name: 'DOMA.VIP',
-    links: [
-      'http://doma.vip/index.php?invited=1116'
-    ],
-    linksDirect: [
-      'http://doma.vip/'
-    ],
-    epg: 'http://epg.cdntv.online/full.xml.gz',
-  },
+  // domavip: {
+  //   name: 'DOMA.VIP',
+  //   links: [
+  //     'http://doma.vip/index.php?invited=1116'
+  //   ],
+  //   linksDirect: [
+  //     'http://doma.vip/'
+  //   ],
+  //   epg: 'http://epg.cdntv.online/full.xml.gz',
+  // },
   cbilling: {
     name: 'cbilling',
     links: [
