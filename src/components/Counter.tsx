@@ -9,11 +9,11 @@ export default function Counter(): JSX.Element {
       height: '1px',
       margin: '-1px'
     }}>
-      <a href="http://www.24log.de" target="_blank">
-        <img src="http://counter.24log.ru/buttons/cl4/45-0.gif" alt="html counter"/>
+      <a href="https://www.24log.de" target="_blank">
+        <img src="https://counter.24log.ru/buttons/cl4/45-0.gif" alt="html counter"/>
       </a>
-      <a href="http://www.24log.ru" target="_blank">
-        <img src="http://counter.24log.ru/count4_282048_45_1_5.pcx" alt="counter" title="counter"/>
+      <a href="https://www.24log.ru" target="_blank">
+        <img src="https://counter.24log.ru/count4_282048_45_1_5.pcx" alt="counter" title="counter"/>
       </a>
     </Box>
   );
