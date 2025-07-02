@@ -109,19 +109,19 @@ export interface Ioperators {
   ilooktv: {
     name: string,
     links: string[],
-    linksDirect: string[],
+    // linksDirect: string[],
     epg: string
   },
   sharavoz: {
     name: string,
     links: string[],
-    linksDirect: string[],
+    // linksDirect: string[],
     epg: string,
   },
   viplime: {
     name: string,
     links: string[],
-    linksDirect: string[],
+    // linksDirect: string[],
     epg: string
   },
   // domavip: {
@@ -133,13 +133,19 @@ export interface Ioperators {
   cbilling: {
     name: string,
     links: string[],
-    linksDirect: string[],
+    // linksDirect: string[],
     epg: string
   },
   kineskopclub: {
     name: string,
     links: string[],
-    linksDirect: string[],
+    // linksDirect: string[],
+    epg: string
+  },
+  russkoetv: {
+    name: string,
+    links: string[],
+    // linksDirect: string[],
     epg: string
   },
   // satbiling: {
@@ -147,20 +153,20 @@ export interface Ioperators {
   //   links: string[],
   //   epg: string
   // },
-  sharatv: {
-    name: string,
-    links: string[],
-    linksDirect: string[],
-    epg: string,
-    epgold2: string,
-    epgOld: string,
-    epg1: string,
-    epg2: string,
-    epg3: string,
-    epg1_lite: string,
-    epg2_lite: string,
-    epg3_lite: string,
-  }
+  // sharatv: {
+  //   name: string,
+  //   links: string[],
+  //   // linksDirect: string[],
+  //   epg: string,
+  //   epgold2: string,
+  //   epgOld: string,
+  //   epg1: string,
+  //   epg2: string,
+  //   epg3: string,
+  //   epg1_lite: string,
+  //   epg2_lite: string,
+  //   epg3_lite: string,
+  // }
 }
 
 export type ContextCategoriesType = { [index: string]: any };

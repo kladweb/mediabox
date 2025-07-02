@@ -64,14 +64,22 @@ export const operators: Ioperators = {
       'https://jinopro.net/welcome/signup/54e9515db854ab61',
       'https://iseetv.net/welcome/signup/54e9515db854ab61',
     ],
-    linksDirect: [
-      'https://ilook.tv/',
-      'https://vipdrive.net/',
-      'https://tvlider.net/',
-      'https://melord.net/',
-      'https://jinopro.net/',
-      'https://iseetv.net/',
-    ],
+    // linksDirect: [
+    //   'https://ilook.tv/',
+    //   'https://vipdrive.net/',
+    //   'https://tvlider.net/',
+    //   'https://melord.net/',
+    //   'https://jinopro.net/',
+    //   'https://iseetv.net/',
+    // ],
+    // linksDirect: [
+    //   'ilook.tv',
+    //   'vipdrive.net',
+    //   'tvlider.net',
+    //   'melord.net',
+    //   'jinopro.net',
+    //   'iseetv.net',
+    // ],
     epg: 'http://epg.it999.ru/epg.xml.gz'
   },
   sharavoz: {
@@ -79,9 +87,9 @@ export const operators: Ioperators = {
     links: [
       'https://ztempz.xyz/YZoaV4m2wgp-qvc0IYnwHb4TgHBqZaaFgzY8AoVUr2zQJ8fB-w4elw=='
     ],
-    linksDirect: [
-      'https://ztempz.xyz/'
-    ],
+    // linksDirect: [
+    //   'https://ztempz.xyz/'
+    // ],
     epg: 'http://iptv-content.webhop.net/guide.xml'
   },
   viplime: {
@@ -89,9 +97,9 @@ export const operators: Ioperators = {
     links: [
       'http://viplime.fun/index.php?user=2006'
     ],
-    linksDirect: [
-      'http://viplime.fun/'
-    ],
+    // linksDirect: [
+    //   'http://viplime.fun/'
+    // ],
     epg: 'http://epg.cdntv.online/full.xml.gz'
   },
   // domavip: {
@@ -110,12 +118,12 @@ export const operators: Ioperators = {
       'https://cbillingtv.com/pl/23417',
       'https://smotrivip.com/?pp=23417',
     ],
-    linksDirect: [
-      'https://ott-iptv-connect.com/',
-      'https://otttviptv.com/',
-      'https://smotrivip.com/',
-      'https://russianiptv.com/'
-    ],
+    // linksDirect: [
+    //   'https://ott-iptv-connect.com/',
+    //   'https://otttviptv.com/',
+    //   'https://smotrivip.com/',
+    //   'https://russianiptv.com/'
+    // ],
     epg: 'http://epg.iptvx.tv/xmltv.xml.gz'
   },
   kineskopclub: {
@@ -123,9 +131,9 @@ export const operators: Ioperators = {
     links: [
       'https://kineskop.club/?p=MTAxMTI0MA'
     ],
-    linksDirect: [
-      'https://kineskop.club/'
-    ],
+    // linksDirect: [
+    //   'https://kineskop.club/'
+    // ],
     epg: 'http://st.kineskop.tv/epg.xml.gz'
   },
   // satbiling: {
@@ -135,23 +143,30 @@ export const operators: Ioperators = {
   //   ],
   //   epg: 'http://epg.cdntv.online/full.xml.gz'
   // },
-  sharatv: {
-    name: 'SHARA-TV',
+  // sharatv: {
+  //   name: 'SHARA-TV',
+  //   links: [
+  //     'https://shara-tv.org/r/19149/'
+  //   ],
+  //   // linksDirect: [
+  //   //   'https://shara-tv.org/'
+  //   // ],
+  //   epg: 'http://epg.tvfor.pro/epgtv.xml.gz',
+  //   epgold2: 'http://iptv-content.rv77.pw/epg.xml.gz',
+  //   epgOld: 'http://stb.shara-tv.org/epg/epgtv.xml.gz',
+  //   epg1: 'http://iptv-content.rv77.pw/guide.xml',
+  //   epg2: 'http://iptv-content.rv77.pw/epg.xml.gz',
+  //   epg3: 'http://iptv-content.rv77.pw/epg.xml.xz',
+  //   epg1_lite: 'http://iptv-content.rv77.pw/guide-lite.xml',
+  //   epg2_lite: 'http://iptv-content.rv77.pw/epg-lite.xml.gz',
+  //   epg3_lite: 'http://iptv-content.rv77.pw/epg-lite.xml.xz'
+  // },
+  russkoetv: {
+    name: 'RUSSKOETV',
     links: [
-      'https://shara-tv.org/r/19149/'
+      'https://russkoetv.shop?ref=268902'
     ],
-    linksDirect: [
-      'https://shara-tv.org/'
-    ],
-    epg: 'http://epg.tvfor.pro/epgtv.xml.gz',
-    epgold2: 'http://iptv-content.rv77.pw/epg.xml.gz',
-    epgOld: 'http://stb.shara-tv.org/epg/epgtv.xml.gz',
-    epg1: 'http://iptv-content.rv77.pw/guide.xml',
-    epg2: 'http://iptv-content.rv77.pw/epg.xml.gz',
-    epg3: 'http://iptv-content.rv77.pw/epg.xml.xz',
-    epg1_lite: 'http://iptv-content.rv77.pw/guide-lite.xml',
-    epg2_lite: 'http://iptv-content.rv77.pw/epg-lite.xml.gz',
-    epg3_lite: 'http://iptv-content.rv77.pw/epg-lite.xml.xz'
+    epg: 'http://rutv.aws-static-hosting.com/epg.xml.gz'
   }
 }
 

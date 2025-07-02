@@ -55,6 +55,9 @@ import type { ITranslate } from "../../types/typesBox";
 import DomaVipBuy from "./Domavip/DomaVipBuy";
 import DomaVipRegistration from "./Domavip/DomaVipRegistration";
 import DomaVipPlaylist from "./Domavip/DomaVipPlaylist";
+import RusskoetvRegistration from "./Russkoetv/RusskoetvRegistration";
+import RusskoetvBuy from "./Russkoetv/RusskoetvBuy";
+import RusskoetvPlaylist from "./Russkoetv/RusskoetvPlaylist";
 
 function Manual(): JSX.Element {
   const navigate: NavigateFunction = useNavigate();
@@ -114,6 +117,12 @@ function Manual(): JSX.Element {
     stepManuals.push(<KineskopRegistration key={stepManuals.length} step={stepManuals.length + 1}/>);
     stepManuals.push(<KineskopBuy key={stepManuals.length} step={stepManuals.length + 1}/>);
     stepManuals.push(<KineskopPlaylist key={stepManuals.length} step={stepManuals.length + 1}/>);
+  }
+
+  if (operator === 'russkoetv') {
+    stepManuals.push(<RusskoetvRegistration key={stepManuals.length} step={stepManuals.length + 1}/>);
+    stepManuals.push(<RusskoetvBuy key={stepManuals.length} step={stepManuals.length + 1}/>);
+    stepManuals.push(<RusskoetvPlaylist key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
   if (operator === 'sharatv') {
