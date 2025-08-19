@@ -44,7 +44,8 @@ export default function CardChoosing({operator}: PropsOperator): JSX.Element {
                     sx={{
                       fontSize: {xs: '0.9rem', md: '1.25rem'},
                       lineHeight: {xs: '1.5rem', md: '1.75rem'},
-                      color: `${appColors.mid1}`
+                      color: `${appColors.mid1}`,
+                      whiteSpace: 'pre-wrap',
                     }}
         >
           {
