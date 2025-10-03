@@ -45,7 +45,7 @@ function ListsChannels(): JSX.Element {
           })
         }
         setCategoriesList(catList);
-      });
+      })
   }, []);
 
   return (
@@ -86,5 +86,5 @@ function ListsChannels(): JSX.Element {
   )
 }
 
-export default React.memo(ListsChannels);
-// export default ListsChannels;
+// export default React.memo(ListsChannels);
+export default ListsChannels;

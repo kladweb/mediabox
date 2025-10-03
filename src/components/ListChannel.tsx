@@ -15,6 +15,8 @@ function ListChannel({index, srcImgChannel, altImgChannel, nameImgChannel}: Prop
     setImageLoaded(true);
   }
 
+  console.log(srcImgChannel);
+
   return (
     <Box key={index} component="div"
          sx={{
