@@ -126,6 +126,13 @@ export const operators: Ioperators = {
     // ],
     epg: 'http://epg.iptvx.tv/xmltv.xml.gz'
   },
+  tvteam: {
+    name: 'TV.TEAM',
+    links: [
+      'https://tv.team/420774',
+    ],
+    epg: 'http://epg.it999.ru/epg.xml.gz',
+  },
   kineskopclub: {
     name: 'Kineskop.club',
     links: [
