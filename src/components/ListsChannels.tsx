@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { Outlet, Params, useParams } from "react-router-dom";
-import { appColors } from "../services/appColors";
-import { Box } from "@mui/material";
-import type { ITranslate } from "../types/typesBox";
-import { useTranslation } from "react-i18next";
-import { operators } from "../data/dataIPTV";
+import React, {useEffect, useState} from "react";
+import {Outlet, Params, useParams} from "react-router-dom";
+import {appColors} from "../services/appColors";
+import {Box} from "@mui/material";
+import type {ITranslate} from "../types/typesBox";
+import {useTranslation} from "react-i18next";
+import {operators} from "../data/dataIPTV";
 import ListChannels from "./ListChannels";
 
 function ListsChannels(): JSX.Element {
@@ -31,6 +31,7 @@ function ListsChannels(): JSX.Element {
     })
       .then((response) => response.json())
       .then((data) => {
+        console.log(data);
         setChannelsList(data);
         setIsListLoaded(true);
         const listCategoriesOperator = [];
@@ -44,6 +45,7 @@ function ListsChannels(): JSX.Element {
             }
           })
         }
+        console.log(catList);
         setCategoriesList(catList);
       })
   }, []);
