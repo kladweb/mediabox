@@ -1,51 +1,25 @@
-import React, { useEffect, useState } from "react";
-import { Outlet, Params, useParams } from "react-router-dom";
-import { appColors } from "../services/appColors";
-import { Box } from "@mui/material";
-import type { ITranslate } from "../types/typesBox";
-import { useTranslation } from "react-i18next";
-import { operators } from "../data/dataIPTV";
+import React, {useEffect, useState} from "react";
+import {Outlet, Params, useParams} from "react-router-dom";
+import {appColors} from "../services/appColors";
+import {Box} from "@mui/material";
+import type {ITranslate} from "../types/typesBox";
+import {useTranslation} from "react-i18next";
+import {operators} from "../data/dataIPTV";
 import ListChannels from "./ListChannels";
 
 function ListsChannels(): JSX.Element {
   const {t}: ITranslate = useTranslation();
   const params: Readonly<Params<string>> = useParams();
-  const operator: string = params.operator as string;
+  const currentOperator = params.operator;
   const [activeCard, setActiveCard] = useState<string>('');
-  const [categoriesList, setCategoriesList] = useState<object | null>(null);
-  const [channelsList, setChannelsList] = useState<object | null>(null);
-  const [isListLoaded, setIsListLoaded] = useState<boolean>(false);
   const changeCard = (nameCard: string) => {
     setActiveCard(nameCard);
   }
 
   useEffect(() => {
-    if (operator) {
-      setActiveCard(operator);
+    if (currentOperator) {
+      setActiveCard(currentOperator);
     }
-    fetch('/listObj.json', {
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      }
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        setChannelsList(data);
-        setIsListLoaded(true);
-        const listCategoriesOperator = [];
-        const catList: any = {};
-        for (let key in data) {
-          const keyShort = key.replace('List', '');
-          catList[keyShort] = [];
-          data[key].forEach((elem: any, index: number) => {
-            if (!catList[keyShort].includes(data[key][index]['group'])) {
-              catList[keyShort].push(data[key][index]['group']);
-            }
-          })
-        }
-        setCategoriesList(catList);
-      })
   }, []);
 
   return (
@@ -81,7 +55,7 @@ function ListsChannels(): JSX.Element {
           )
         }
       </Box>
-      <Outlet context={{categoriesList, channelsList, isListLoaded}}/>
+      <Outlet/>
     </>
   )
 }

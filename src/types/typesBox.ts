@@ -1,6 +1,6 @@
-import { useTranslation } from "react-i18next";
-import { cinemas, playersAll } from "../data/dataIPTV";
-import { OutletProps } from "react-router-dom";
+import {useTranslation} from "react-i18next";
+import {cinemas, playersAll} from "../data/dataIPTV";
+import {OutletProps} from "react-router-dom";
 
 export type PropsStep = {
   step: number;
@@ -105,68 +105,24 @@ export interface Icinemas {
   lampabrowser: string
 }
 
+type IOperator = {
+  name: string,
+  links: string[],
+  // linksDirect: string[],
+  epg: string,
+}
+
 export interface Ioperators {
-  ilooktv: {
-    name: string,
-    links: string[],
-    // linksDirect: string[],
-    epg: string
-  },
-  sharavoz: {
-    name: string,
-    links: string[],
-    // linksDirect: string[],
-    epg: string,
-  },
-  viplime: {
-    name: string,
-    links: string[],
-    // linksDirect: string[],
-    epg: string
-  },
-  // domavip: {
-  //   name: string,
-  //   links: string[],
-  //   linksDirect: string[],
-  //   epg: string
-  // },
-  cbilling: {
-    name: string,
-    links: string[],
-    // linksDirect: string[],
-    epg: string
-  },
-  kineskopclub: {
-    name: string,
-    links: string[],
-    // linksDirect: string[],
-    epg: string
-  },
-  russkoetv: {
-    name: string,
-    links: string[],
-    // linksDirect: string[],
-    epg: string
-  },
-  // satbiling: {
-  //   name: string,
-  //   links: string[],
-  //   epg: string
-  // },
-  // sharatv: {
-  //   name: string,
-  //   links: string[],
-  //   // linksDirect: string[],
-  //   epg: string,
-  //   epgold2: string,
-  //   epgOld: string,
-  //   epg1: string,
-  //   epg2: string,
-  //   epg3: string,
-  //   epg1_lite: string,
-  //   epg2_lite: string,
-  //   epg3_lite: string,
-  // }
+  ilooktv: IOperator,
+  sharavoz: IOperator,
+  viplime: IOperator,
+  // domavip: IOperator,
+  cbilling: IOperator,
+  kineskopclub: IOperator,
+  tvteam: IOperator,
+  russkoetv: IOperator,
+  // satbiling: IOperator,
+  // sharatv: IOperator
 }
 
 export type ContextCategoriesType = { [index: string]: any };

@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { NavigateFunction, useNavigate } from "react-router-dom";
-import { Card, CardMedia, CardActionArea, Skeleton } from '@mui/material';
-import { appColors } from "../services/appColors";
-import type { PropsListChannels } from "../types/typesBox";
+import React, {useEffect, useState} from "react";
+import {NavigateFunction, useNavigate} from "react-router-dom";
+import {Card, CardMedia, CardActionArea, Skeleton} from '@mui/material';
+import {appColors} from "../services/appColors";
+import type {PropsListChannels} from "../types/typesBox";
 
 function ListChannels({operator, activeCard, changeCard}: PropsListChannels): JSX.Element {
   const navigate: NavigateFunction = useNavigate();
