@@ -58,6 +58,7 @@ import DomaVipPlaylist from "./Domavip/DomaVipPlaylist";
 import RusskoetvRegistration from "./Russkoetv/RusskoetvRegistration";
 import RusskoetvBuy from "./Russkoetv/RusskoetvBuy";
 import RusskoetvPlaylist from "./Russkoetv/RusskoetvPlaylist";
+import TvTeamRegistration from "./TvTeam/TvTeamRegistration";
 
 function Manual(): JSX.Element {
   const navigate: NavigateFunction = useNavigate();
@@ -105,6 +106,10 @@ function Manual(): JSX.Element {
     stepManuals.push(<CbillingRegistration key={stepManuals.length} step={stepManuals.length + 1}/>);
     stepManuals.push(<CbillingBuy key={stepManuals.length} step={stepManuals.length + 1}/>);
     stepManuals.push(<CbillingPlaylist key={stepManuals.length} step={stepManuals.length + 1}/>);
+  }
+
+  if (operator === 'tvteam') {
+    stepManuals.push(<TvTeamRegistration key={stepManuals.length} step={stepManuals.length + 1}/>);
   }
 
   if (operator === 'domavip') {

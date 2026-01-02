@@ -38,20 +38,20 @@ function AboutUs(): JSX.Element {
         <Box component='p' sx={sxParagraphAbout1}>{t('aboutContent01')}</Box>
         <Box component='p' sx={sxParagraphAbout1}>{t('aboutContent02')}</Box>
         <Box component='p' sx={sxParagraphAbout1}>{t('aboutContent03')}</Box>
-        <Box component='p' sx={sxParagraphAbout1}>{t('aboutContent04')}</Box>
-        <Box component='a' href={linkMoney} target="_blank" sx={sxButtonCoffee}>
-          {t('aboutContent041')}
-          <Box component='p' sx={sxButtonCoffee2}>{t('aboutContent042')}</Box>
-        </Box>
-        <Box
-          component='p'
-          sx={{
-            m: '-0.5em 0 0.5em ',
-            textAlign: 'center',
-          }}
-        >
-          {t('aboutContent044')}
-        </Box>
+        {/*<Box component='p' sx={sxParagraphAbout1}>{t('aboutContent04')}</Box>*/}
+        {/*<Box component='a' href={linkMoney} target="_blank" sx={sxButtonCoffee}>*/}
+        {/*  {t('aboutContent041')}*/}
+        {/*  <Box component='p' sx={sxButtonCoffee2}>{t('aboutContent042')}</Box>*/}
+        {/*</Box>*/}
+        {/*<Box*/}
+        {/*  component='p'*/}
+        {/*  sx={{*/}
+        {/*    m: '-0.5em 0 0.5em ',*/}
+        {/*    textAlign: 'center',*/}
+        {/*  }}*/}
+        {/*>*/}
+        {/*  {t('aboutContent044')}*/}
+        {/*</Box>*/}
         <Box component='p' sx={sxParagraphAbout1}>{t('aboutContent05')}</Box>
         <Box component='p' sx={{my: '1rem', fontStyle: 'italic', textAlign: 'center'}}>{t('aboutContent06')}</Box>
         <Box component='p' sx={sxParagraphAbout1}>{t('aboutContent07')}</Box>
