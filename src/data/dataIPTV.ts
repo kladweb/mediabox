@@ -171,7 +171,8 @@ export const operators: Ioperators = {
   russkoetv: {
     name: 'RUSSKOETV',
     links: [
-      'https://russkoetv.shop?ref=268902'
+      'https://russkoetv.shop?ref=277521'
+      // 'https://russkoetv.shop?ref=268902'
     ],
     epg: 'http://rutv.aws-static-hosting.com/epg.xml.gz'
   }
