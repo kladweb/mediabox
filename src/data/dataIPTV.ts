@@ -58,11 +58,13 @@ export const operators: Ioperators = {
   ilooktv: {
     name: 'ILookTv',
     links: [
-      'https://vipdrive.net/welcome/signup/54e9515db854ab61',
-      'https://tvlider.net/welcome/signup/54e9515db854ab61',
-      'https://melord.net/welcome/signup/54e9515db854ab61',
-      'https://jinopro.net/welcome/signup/54e9515db854ab61',
-      'https://iseetv.net/welcome/signup/54e9515db854ab61',
+      'https://iedem.tv/welcome/register/ebda9d784f539765',
+      'https://iedemtv.netlify.app'
+      // 'https://vipdrive.net/welcome/signup/54e9515db854ab61',
+      // 'https://tvlider.net/welcome/signup/54e9515db854ab61',
+      // 'https://melord.net/welcome/signup/54e9515db854ab61',
+      // 'https://jinopro.net/welcome/signup/54e9515db854ab61',
+      // 'https://iseetv.net/welcome/signup/54e9515db854ab61',
     ],
     // linksDirect: [
     //   'https://ilook.tv/',
